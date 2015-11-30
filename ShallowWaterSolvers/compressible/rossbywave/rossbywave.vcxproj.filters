@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6c26225e-4a9f-4baf-9974-4c93abc4bd4a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2bfafbca-7f70-494e-aed5-f2da6b746755}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f5a15b6e-e7e8-4a7e-946f-bfe7aec157fa}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adaptlob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cacheCeta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cacheCphi1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cacheCphi2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cacheSeta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cacheSphi1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cacheSphi2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dphysics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldvars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jacobian.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loadLinCoeffs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loadNLinCoeffs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mnewt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qrdcmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qrsolv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quad2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quad2dmod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="residual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rsolv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dphysics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldvars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nrtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nrtypes_nr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nrutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nrutil_nr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="linparams.txt" />
+    <Text Include="newparams.txt" />
+  </ItemGroup>
+</Project>
