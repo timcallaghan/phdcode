@@ -7,3 +7,7 @@ ShallowWaterSolvers/incompressible/driver/.vs/
 ShallowWaterSolvers/incompressible/rossbywave/.vs/
 ShallowWaterSolvers/incompressible/rossbywave/rossbywave.sdf
 ShallowWaterSolvers/incompressible/rossbywave/rossbywave.opensdf
+ShallowWaterSolvers/compressible/driver/driver.opensdf
+ShallowWaterSolvers/compressible/driver/driver.sdf
+ShallowWaterSolvers/compressible/driver/Debug/
+ShallowWaterSolvers/compressible/driver/Release/
