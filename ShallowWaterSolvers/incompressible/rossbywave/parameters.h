@@ -18,11 +18,11 @@ const DP Omega = 2.0*pi/(24.0*60.0*60.0); // Earth's angular velocity
 const DP aref = 6.37122e06; // Radius of the Earth
 // Declare characteristic scales
 const DP href = 8.0e03; // Characteristic length scale (m)
-const DP cref = Omega/30.0; // Characteristic angular velocity scale of the Rossby wave (s^-1)
+const DP cref_ = Omega/30.0; // Characteristic angular velocity scale of the Rossby wave (s^-1)
 const DP vref = 40.0; // Characteristic velocity scale(m*s^-1)
 const DP wref = 7.848e-06; // Characteristic angular velocity scale of the zonal flow (s^-1)
 // Define the nondimensional numbers
-const DP Sr = aref*cref/vref; // Strouhal number
+const DP Sr = aref*cref_/vref; // Strouhal number
 const DP Fr = vref/sqrt(g*href); // Froude number
 const DP Ro = vref/(2.0*Omega*aref); // Rossby number
 // Dimensionless zonal flow parameters
@@ -97,19 +97,19 @@ public:
 // Initialise one instance each of the classes
 // and then assign the dynamic intialisation
 // variables to their constant couterparts. 
-const cLinParams data;
+const cLinParams data_;
 const cOldParams odata;
 
 // The number of coeffs in each series from the linear solution
-const int Nlin = data.Nlin;
+const int Nlin = data_.Nlin;
 // The number of wavelengths used in the linear solution.
-const int kappa = data.kappa;
+const int kappa = data_.kappa;
 // The polar free surface height used in the linear solution
-const DP h0 = data.h0;
+const DP h0 = data_.h0;
 // The zonal angular velocity used in the linear solution
-const DP w = data.w*wref*aref/vref;
+const DP w = data_.w*wref*aref/vref;
 // The RH amplitude condition used in the linera solution
-const DP Vzon = data.Vzon;
+const DP Vzon = data_.Vzon;
 
 // Previous longitudinal truncation
 const int Mold = odata.Mold;
