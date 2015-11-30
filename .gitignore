@@ -1,0 +1,9 @@
+ShallowWaterSolvers/incompressible/driver/Release/
+ShallowWaterSolvers/incompressible/rossbywave/Debug/
+ShallowWaterSolvers/incompressible/driver/Debug/
+ShallowWaterSolvers/incompressible/driver/driver.opensdf
+ShallowWaterSolvers/incompressible/driver/driver.sdf
+ShallowWaterSolvers/incompressible/driver/.vs/
+ShallowWaterSolvers/incompressible/rossbywave/.vs/
+ShallowWaterSolvers/incompressible/rossbywave/rossbywave.sdf
+ShallowWaterSolvers/incompressible/rossbywave/rossbywave.opensdf
