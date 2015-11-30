@@ -1,0 +1,41 @@
+% app1.tex (will be Appendix A)
+
+\chapter[EVALUATION OF VOLUME SPECIFICATION JACOBIAN\\ ELEMENTS]{EVALUATION OF VOLUME SPECIFICATION JACOBIAN ELEMENTS} \label{App:1}
+The Jacobian elements for the incompressible volume specification equation described in equation \eqref{eq:Voljac} can be further simplified by noting that the integral
+\begin{equation}
+\frac{\partial f_4}{\partial H_{i,j}} = -\frac{4\kappa}{V_z} \int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} \left[ h^2 +\hat{a}^2+2\hat{a}h  \right]\frac{\partial h}{\partial H_{i,j}}\cos\phi \,d\phi\, d\eta \label{eq:Voljac1}
+\end{equation}
+can be split into three separate integrals so that
+\begin{align}
+\frac{\partial f_4}{\partial H_{i,j}} &=  -\frac{4\kappa\hat{a}^2}{V_z} \int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} \frac{\partial h}{\partial H_{i,j}}\cos\phi\,d\phi\,d\eta -\frac{8\kappa\hat{a}}{V_z} \int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} h \frac{\partial h}{\partial H_{i,j}}\cos\phi\,d\phi\,d\eta \notag \\
+& \quad -\frac{4\kappa}{V_z} \int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} h^2 \frac{\partial h}{\partial H_{i,j}}\cos\phi\,d\phi\,d\eta \notag \\
+&=-\frac{4\kappa\hat{a}^2}{V_z} I_1 -\frac{8\kappa\hat{a}}{V_z} I_2 -\frac{4\kappa}{V_z} I_3. \label{eq:Volintsplit}
+\end{align}
+Integrals $I_1$ and $I_2$ can be worked out analytically with the aid of \eqref{eq:dhdH}. When $i=0$ we have
+\begin{align}
+I_1&=\int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} \cos(2j\phi)\cos\phi\,d\phi\,d\eta \notag \\
+&=-\frac{\pi (-1)^j}{(4j^2-1)\kappa} \quad,j=0,\ldots,N,
+\end{align}
+and for $i\ge1$ we obtain
+\begin{align}
+I_1&=\int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} \cos(\kappa i \eta)(-1)^j\left[\cos(2j\phi)+\cos \bigl(2(j-1)\phi \bigr) \right]\cos\phi\,d\phi\,d\eta \notag \\
+&=0 \quad, \forall j.
+\end{align}
+
+Similarly for $I_2$, when $i=0$ we have
+\begin{align}
+I_2 &= \int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} h \cos(2j\phi)\cos\phi\,d\phi\,d\eta \notag \\
+&=\frac{\pi}{\kappa}\sum_{n=0}^N H_{0,n} \left[ \frac{(-1)^{j-n}(1-4j^2-4n^2)}{16j^4+(1-4n^2)^2-8j^2(1+4n^2)}\right] \quad,j=0,\ldots,N.
+\end{align}
+When $i\ge1$,
+\begin{align}
+I_2&=\int\limits_0^{\pi/\kappa} \int\limits_0^{\pi/2} h \cos(\kappa i \eta)(-1)^j\left[\cos(2j\phi)+\cos \bigl(2(j-1)\phi \bigr) \right]\cos\phi\,d\phi\,d\eta \notag \\
+&=\frac{\pi}{2\kappa}\sum_{n=1}^N H_{i,n} g(j,n) \quad,j=1,\ldots,N
+\end{align}
+where
+\begin{align*}
+g(j,n)&=\frac{96(-1+2j)(-1+2n)}{(-3+2j-2n)(-1+2j-2n)(1+2j-2n)(3+2j-2n)} \times \\
+& \quad\times\frac{\left[ 4(-1+j)j+(-3+2n)(1+2n)\right]}{(-5+2j+2n)(-3+2j+2n)(-1+2j+2n)(1+2j+2n)}.
+\end{align*}
+
+These expressions can be used to directly evaluate their respective integral components in \eqref{eq:Volintsplit} so that only $I_3$ need be evaluated using numerical quadrature. By analytically evaluating the integral components in this manner the computation times were observed to decrease\footnote{Decrease is relative to just evaluating the entire integral using numerical quadrature, rather than performing analytical evaluation.} because the individual integrand components differ significantly in scale, meaning any adaptive quadrature method has to work very hard to obtain reasonable accuracy when the integrals are not separated using the above analytical technique.

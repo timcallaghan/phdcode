@@ -1,0 +1,284 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      4793,        188]*)
+(*NotebookOutlinePosition[      5436,        210]*)
+(*  CellTagsIndexPosition[      5392,        206]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(ur[\[Eta]_, \[Phi]_] = \[Sum]\+\(m = 1\)\%M\(\[Sum]\+\(l = m\)\%\(2  M \
++ m - 1\)\(A\_\(m, l\)\) 
+            Sqrt[\((2  l + 1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+            LegendreP[l, m, Sin[\[Phi]]]*Sin[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Sum]\+\(m = 1\)\%M\(\[Sum]\+\(l = m\)\%\(2\ M + m - 1\)A\_\(m, l\)\ \
+\@\(\(\((2\ l + 1)\)\ \(\((l - m)\)!\)\)\/\(4\ \[Pi]\ \(\((l + m)\)!\)\)\)\ \
+LegendreP[l, m, Sin[\[Phi]]]\ Sin[\[Kappa]\ m\ \[Eta]]\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"A", "=", 
+      RowBox[{"(", GridBox[{
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"}
+            }], ")"}]}]], "Input"],
+
+Cell[BoxData[
+    \({{1, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 
+        0}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(A[\([1, 3]\)]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(ur[\[Eta]_, \[Phi]_] := \[Sum]\+\(m = 1\)\%3\(\[Sum]\+\(l = m\)\%\(6 + \
+m - 1\)A[\([m, l - m + 1]\)]*
+            Sqrt[\((2  l + 1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+            LegendreP[l, m, Sin[\[Phi]]]*Sin[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Kappa] = 4\)], "Input"],
+
+Cell[BoxData[
+    \(4\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(ur[\[Eta]_, \[Phi]_] := \[Sum]\+\(m = 1\)\%3\(\[Sum]\+\(l = m\)\%\(6 + \
+m - 1\)A[\([m, l - m + 1]\)]*
+            Sqrt[\((2  l + 1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+            LegendreP[l, m, Sin[\[Phi]]]*Sin[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 0.2386191860831969\)], "Input"],
+
+Cell[BoxData[
+    \(0.2386191860831969`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = Pi/3\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/3\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ur[eta, phi]\)], "Input"],
+
+Cell[BoxData[
+    \(0.3463402654891444`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Precision\)], "Input"],
+
+Cell[BoxData[
+    \(Precision\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Kappa]\)], "Input"],
+
+Cell[BoxData[
+    \(4\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(A[\([1, 2]\)]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(N[Sin[180]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-0.8011526357338304`\)\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(ur[\[Eta]_] := \[Sum]\+\(m = 1\)\%3\(\[Sum]\+\(l = m\)\%\(6 + m - 1\)A[\
+\([m, l - m + 1]\)]*
+            Sqrt[\((2  l + 1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+            LegendreP[l, m, Sin[0.2386191860831969]]*
+            Sin[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ur[Pi/3]\)], "Input"],
+
+Cell[BoxData[
+    \(0.3463402654891444`\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{900, 522},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 276, 4, 51, "Input"],
+Cell[2006, 58, 240, 3, 61, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2283, 66, 231, 6, 57, "Input"],
+Cell[2517, 74, 103, 2, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2657, 81, 46, 1, 30, "Input"],
+Cell[2706, 84, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[2756, 88, 280, 4, 51, "Input"],
+
+Cell[CellGroupData[{
+Cell[3061, 96, 45, 1, 30, "Input"],
+Cell[3109, 99, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[3159, 103, 280, 4, 51, "Input"],
+
+Cell[CellGroupData[{
+Cell[3464, 111, 57, 1, 30, "Input"],
+Cell[3524, 114, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3614, 120, 43, 1, 30, "Input"],
+Cell[3660, 123, 42, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3739, 129, 45, 1, 30, "Input"],
+Cell[3787, 132, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3877, 138, 42, 1, 30, "Input"],
+Cell[3922, 141, 43, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4002, 147, 41, 1, 30, "Input"],
+Cell[4046, 150, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4118, 156, 46, 1, 30, "Input"],
+Cell[4167, 159, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4239, 165, 44, 1, 30, "Input"],
+Cell[4286, 168, 58, 1, 29, "Output"]
+}, Open  ]],
+Cell[4359, 172, 296, 5, 95, "Input"],
+
+Cell[CellGroupData[{
+Cell[4680, 181, 41, 1, 30, "Input"],
+Cell[4724, 184, 53, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

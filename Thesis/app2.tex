@@ -1,0 +1,66 @@
+% app2.tex (will be Appendix B)
+
+\chapter[COMPRESSIBLE LINEARIZED SYSTEM DERIVATION]{COMPRESSIBLE LINEARIZED SYSTEM DERIVATION}
+\label{App:2}
+
+The individual equations that comprise the rows of the linear system given by \eqref{eq:geneigen} are obtained by using orthogonality of the base expansion functions. The general process is identical to that used in section~\ref{subsec:lingalerl} of chapter~\ref{chap:2} and will not be repeated here. Rather, we simply state the results of the integrations and algebraic manipulations. For integer truncation level $N$, the truncated system of equations corresponding to conservation of mass, given by equation \eqref{eq:commasslin2}, is as follows:
+for $l=1$ we have
+\begin{align}
+&\left[- \frac{\kappa(\gamma-1)h_o}{\gamma} -\frac{3\kappa \omega \mathrm{Fr}^2 (\gamma-1)}{8 \gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] P_{\kappa,1} -\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,2} \notag \\
+&\quad+ \left[\frac{h_o(\gamma-1)}{2\gamma} +\frac{\omega \mathrm{Fr}^2(\gamma-3)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,1} + \frac{\omega \mathrm{Fr}^2(\gamma-3)}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,2} \notag \\
+&\quad+\frac{3\kappa \omega}{2}H_{\kappa,1}-\frac{\kappa \omega}{2}H_{\kappa,2}=c\left[\frac{3\kappa \mathrm{Sr}}{2}H_{\kappa,1}-\frac{\kappa \mathrm{Sr}}{2}H_{\kappa,2} \right],\label{eq:commassl0}
+\end{align}
+for $l=2$ we have
+\begin{align}
+&-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,1} + \left[-\frac{\kappa h_o(\gamma-1)}{\gamma} -\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{4\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] P_{\kappa,2} \notag \\
+&\,-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,3} + \left[\frac{3 h_o(\gamma-1)}{2\gamma} +\frac{\omega \mathrm{Fr}^2(9\gamma-7)}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,1} \notag \\
+&\,+\left[\frac{3 h_o(\gamma-1)}{2\gamma} +\frac{\omega \mathrm{Fr}^2(9\gamma-11)}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,2} +\frac{\omega \mathrm{Fr}^2(3\gamma-5)}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,3} \notag \\
+&\,+\frac{\kappa \omega}{2}H_{\kappa,1}-\kappa \omega H_{\kappa,2}+\frac{\kappa \omega}{2}H_{\kappa,3}=c\left[\frac{\kappa \mathrm{Sr}}{2} H_{\kappa,1}-\kappa \mathrm{Sr} H_{\kappa,2}+\frac{\kappa \mathrm{Sr}}{2} H_{\kappa,3} \right], \label{eq:commassl2}
+\end{align}
+for $3\le l\le N-1$ we have
+\begin{align}
+&-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,l-1} + \Biggl[-\frac{\kappa h_o(\gamma-1)}{\gamma} \notag \\
+&\quad-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{4\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\Biggr] P_{\kappa,l}-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,l+1} \notag \\
+&\quad+\frac{\omega \mathrm{Fr}^2[2(l-2)(\gamma-1)+3\gamma-1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)Q_{\kappa,l-2} \notag\\
+&\quad+ \left[\frac{(2l-1) h_o(\gamma-1)}{2\gamma} +\frac{\omega \mathrm{Fr}^2[6(l-1)(\gamma-1)+3\gamma-1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,l-1} \notag \\
+&\quad+\left[\frac{(2l-1) h_o(\gamma-1)}{2\gamma}+\frac{\omega \mathrm{Fr}^2[6l(\gamma-1)-3\gamma+1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,l} \notag \\
+&\quad+\frac{\omega \mathrm{Fr}^2[2(l+1)(\gamma-1)-3\gamma+1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,l+1} \notag \\
+&\quad+\frac{\kappa \omega (-1)^l}{2}H_{\kappa,l-1}-\kappa \omega (-1)^l H_{\kappa,l}
++\frac{\kappa \omega (-1)^l}{2}H_{\kappa,l+1} \notag \\
+&\quad=c\left[\frac{\kappa \mathrm{Sr}(-1)^l}{2} H_{\kappa,l-1}-\kappa \mathrm{Sr}(-1)^l H_{\kappa,l}+\frac{\kappa \mathrm{Sr}(-1)^l}{2} H_{\kappa,l+1} \right] \label{eq:commassl3p}
+\end{align}
+and for $l=N$ we have
+\begin{align}
+&-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{8\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,N-1} + \Biggl[-\frac{\kappa h_o(\gamma-1)}{\gamma} \notag \\
+&\quad-\frac{\kappa \omega \mathrm{Fr}^2(\gamma-1)}{4\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\Biggr] P_{\kappa,N} \notag \\
+&\quad+\frac{\omega \mathrm{Fr}^2[2(N-2)(\gamma-1)+3\gamma-1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)Q_{\kappa,N-2} \notag\\
+&\quad+ \left[\frac{(2N-1) h_o(\gamma-1)}{2\gamma} +\frac{\omega \mathrm{Fr}^2[6(N-1)(\gamma-1)+3\gamma-1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,N-1} \notag \\
+&\quad+\left[\frac{(2N-1) h_o(\gamma-1)}{2\gamma}+\frac{\omega \mathrm{Fr}^2[6N(\gamma-1)-3\gamma+1]}{16\gamma}\left( \frac{1}{\mathrm{Ro}}+\omega \right)\right] Q_{\kappa,N} \notag \\
+&\quad+\frac{\kappa \omega (-1)^N}{2}H_{\kappa,N-1}-\kappa \omega (-1)^N H_{\kappa,N}
+ =c\left[\frac{\kappa \mathrm{Sr}(-1)^N}{2} H_{\kappa,N-1}-\kappa \mathrm{Sr}(-1)^N H_{\kappa,N} \right] \label{eq:commasslN}
+\end{align}
+
+For the $\lambda$-momentum equation given by \eqref{eq:comlamlin2}, the individual component equations of the linear system are given by: for $l=0$,
+\begin{equation}
+-\frac{\kappa \omega}{2} P_{\kappa,1}-\frac{1}{4}\left(\frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,1} + \frac{\kappa}{\mathrm{Fr}^2} H_{\kappa,1} = c\left[-\frac{\kappa \mathrm{Sr}}{2} P_{\kappa,1} \right], \label{eq:comlaml0}
+\end{equation}
+for $l=1$,
+\begin{multline}
+-\frac{\kappa \omega}{2} P_{\kappa,1}-\frac{\kappa \omega}{2} P_{\kappa,2}-\frac{1}{4}\left(\frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,2} + \frac{\kappa}{\mathrm{Fr}^2} H_{\kappa,1}- \frac{\kappa}{\mathrm{Fr}^2} H_{\kappa,2} \\
+= c\left[-\frac{\kappa \mathrm{Sr}}{2} P_{\kappa,1} -\frac{\kappa \mathrm{Sr}}{2} P_{\kappa,2}\right] \label{eq:comlaml1}
+\end{multline}
+and for $l\ge2$,
+\begin{multline}
+-\frac{\kappa \omega}{2} P_{\kappa,l}-\frac{\kappa \omega}{2} P_{\kappa,l+1}+\frac{1}{4}\left(\frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,l-1}-\frac{1}{4}\left(\frac{1}{\mathrm{Ro}}+\omega \right) Q_{\kappa,l+1} \\- \frac{\kappa(-1)^l}{\mathrm{Fr}^2} H_{\kappa,l}+ \frac{\kappa(-1)^l}{\mathrm{Fr}^2} H_{\kappa,l+1}
+= c\left[-\frac{\kappa \mathrm{Sr}}{2} P_{\kappa,l} -\frac{\kappa \mathrm{Sr}}{2} P_{\kappa,l+1}\right]. \label{eq:comlaml2p}
+\end{multline}
+
+Similarly, from the $\phi$ momentum equation \eqref{eq:comphilin2} we have: for $1\le l \le N-1$,
+\begin{multline}
+\frac{1}{2}\left(\frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,l}-\frac{1}{2}\left(\frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,l+1}+\kappa \omega Q_{\kappa,l} + \frac{2l(-1)^{l+1}}{\mathrm{Fr}^2} H_{\kappa,l}\\- \frac{2l(-1)^{l+1}}{\mathrm{Fr}^2} H_{\kappa,l+1}=c\left[\kappa \mathrm{Sr} Q_{\kappa,l}\right], \label{eq:comphil1p}
+\end{multline}
+and for $l=N$ we have
+\begin{equation}
+\frac{1}{2}\left(\frac{1}{\mathrm{Ro}}+\omega \right)P_{\kappa,N}+\kappa \omega Q_{\kappa,N} + \frac{2N(-1)^{N+1}}{\mathrm{Fr}^2} H_{\kappa,N}=c\left[\kappa \mathrm{Sr} Q_{\kappa,N}\right]. \label{eq:comphilN}
+\end{equation}
+These relations are then used to construct the generalized eigenvalue problem expressed by \eqref{eq:geneigen}.

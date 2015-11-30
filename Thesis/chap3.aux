@@ -1,0 +1,141 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}INCOMPRESSIBLE NONLINEAR SHALLOW ATMOSPHERE MODEL}{40}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:3}{{3}{40}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Problem Specification}{40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Conservation Equations}{40}}
+\newlabel{eq:massincom2nonlin}{{3.1}{41}}
+\newlabel{eq:lamincom2nonlin}{{3.2}{41}}
+\newlabel{eq:phiincom2nonlin}{{3.3}{41}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Series Representation}{41}}
+\newlabel{eq:Lamseriesfull}{{3.4}{42}}
+\newlabel{eq:Phiseriesfull}{{3.5}{42}}
+\newlabel{eq:Hseriesfull}{{3.6}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Volume Specification}{43}}
+\newlabel{eq:volnl}{{3.7}{43}}
+\newlabel{eq:volcon}{{3.8}{43}}
+\citation{Duran:NMW}
+\citation{Boyd:CFSM}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Numerical Solution Method}{44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Collocation}{44}}
+\citation{Boyd:CFSM}
+\citation{Press:NRC}
+\newlabel{eq:Fofy}{{3.9}{45}}
+\newlabel{eq:yapprox}{{3.10}{45}}
+\newlabel{eq:Eofx}{{3.11}{45}}
+\newlabel{eq:Evec}{{3.12}{45}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Newton--Raphson Technique}{45}}
+\newlabel{sec:NewRap}{{3.2.2}{45}}
+\citation{Press:NRC}
+\citation{Acton:NMW}
+\citation{Press:NRC}
+\newlabel{eq:Taylorapprox}{{3.13}{46}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Damped Newton-Raphson algorithm.}}{47}}
+\newlabel{tab:NewRap}{{3.1}{47}}
+\citation{Press:NRC}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Code Highlights}{48}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Programming Language and Computational Environment}{48}}
+\newlabel{subsec:compinfo}{{3.3.1}{48}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Truncation}{48}}
+\citation{Stokes:TOW}
+\citation{Schwartz:SNW}
+\newlabel{eq:Lamseriestrun}{{3.17}{49}}
+\newlabel{eq:Phiseriestrun}{{3.18}{49}}
+\newlabel{eq:Hseriestrun}{{3.19}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Forcing the Solution}{49}}
+\citation{Boyd:CFSM}
+\citation{Boyd:CFSM}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Collocation Points}{50}}
+\newlabel{eq:delphi}{{3.20}{50}}
+\newlabel{phigrid}{{3.21}{50}}
+\newlabel{eq:deleta}{{3.22}{51}}
+\newlabel{etagrid}{{3.23}{51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}Caching the Basis Functions}{51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}Calculation of the Jacobian Matrix}{52}}
+\citation{Gander:AQR}
+\newlabel{eq:Voljac}{{3.31}{53}}
+\newlabel{eq:dhdH}{{3.32}{53}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.7}Adaptive Integration Method}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.8}Bootstrapping}{54}}
+\newlabel{subsec:bootstrap}{{3.3.8}{54}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Solution and Results}{55}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Measuring the Amplitude}{55}}
+\newlabel{subsec:ampmeas}{{3.4.1}{55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Various amplitude measurement methods}}{56}}
+\newlabel{fig:ampmeas}{{3.1}{56}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Parameters and Constants}{57}}
+\newlabel{subsec:incomparams}{{3.4.2}{57}}
+\citation{Williamson:STS}
+\citation{Phillips:NIP}
+\citation{Williamson:STS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Results for $\kappa =4$, $\omega =1.25$}{58}}
+\newlabel{subsec:incomnlk4w125}{{3.4.3}{58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =4$ and $\omega =1.25$}}{59}}
+\newlabel{fig:CvsAk4w125}{{3.2}{59}}
+\citation{Stokes:TOW}
+\citation{Schwartz:CEA}
+\citation{Cokelet:SGW}
+\citation{Schwartz:SNW}
+\citation{Schwartz:NSE}
+\citation{Chen:SGC}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Incompressible shallow atmosphere free-surface contours for $\kappa =4$, $\omega =1.25$ at limit of computation. The average amplitude is $\@mathcal {A}_{ave}=12.5104 (deg.)$ and the wavespeed is $c=0.9580$.}}{60}}
+\newlabel{fig:k4w125fsend}{{3.3}{60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Results for $\kappa =4$, $\omega =1.0$}{61}}
+\newlabel{subsec:incomnlk4w1}{{3.4.4}{61}}
+\citation{Wilton:OR}
+\citation{Schwartz:NSE}
+\citation{Hogan:SES1}
+\citation{Hogan:SES2}
+\citation{Hogan:SES3}
+\citation{Forbes:SWL1}
+\citation{Forbes:SWL2}
+\citation{Longuet:RIP}
+\citation{Hoskins:SRH}
+\citation{Baines:SPW}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =4$ and $\omega =1.0$}}{62}}
+\newlabel{fig:CvsAk4w1}{{3.4}{62}}
+\citation{Chen:SGC}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 1 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=13.6732 (deg.)$ and the wavespeed is $c=0.3978$.}}{64}}
+\newlabel{fig:k4w1fsb1end}{{3.5}{64}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 4 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=17.11662 (deg.)$ and the wavespeed is $c=0.3997$.}}{65}}
+\newlabel{fig:k4w1fsb4end}{{3.6}{65}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 5 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=17.11662 (deg.)$ and the wavespeed is $c=0.4016$.}}{66}}
+\newlabel{fig:k4w1fsb5end}{{3.7}{66}}
+\citation{Lindzen:NLR}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Incompressible shallow atmosphere free-surface contours with corresponding velocity vector field at end of branch 5 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=17.11662 (deg.)$ and the wavespeed is $c=0.4016$.}}{67}}
+\newlabel{fig:k4w1fsvvb5end}{{3.8}{67}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}Results for $\kappa =5$, $\omega =1.25$}{68}}
+\newlabel{subsec:incomnlk5w125}{{3.4.5}{68}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =5$ and $\omega =1.25$}}{68}}
+\newlabel{fig:CvsAk5w125}{{3.9}{68}}
+\citation{Ames:NMP}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 1 for $\kappa =5$, $\omega =1.25$. The average amplitude is $\@mathcal {A}_{ave}=8.3678 (deg.)$ and the wavespeed is $c=1.5812$.}}{70}}
+\newlabel{fig:k5w125fsb1end}{{3.10}{70}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.6}Results for $\kappa =5$, $\omega =1.0$}{71}}
+\newlabel{subsec:incomnlk5w1}{{3.4.6}{71}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =5$ and $\omega =1.0$}}{71}}
+\newlabel{fig:CvsAk5w1}{{3.11}{71}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 1 for $\kappa =5$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=9.3175 (deg.)$ and the wavespeed is $c=0.9945$.}}{72}}
+\newlabel{fig:k5w1fsend}{{3.12}{72}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Closing Remarks}{73}}
+\@setckpt{chap3}{
+\setcounter{page}{74}
+\setcounter{equation}{39}
+\setcounter{enumi}{6}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{1}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{12}
+\setcounter{table}{1}
+\setcounter{parentequation}{0}
+}

@@ -1,0 +1,79 @@
+\contentsline {chapter}{TABLE OF CONTENTS}{i}
+\contentsline {chapter}{LIST OF TABLES}{v}
+\contentsline {chapter}{LIST OF FIGURES}{vi}
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}
+\contentsline {section}{\numberline {1.1}Brief Literature Review and Research Objective}{1}
+\contentsline {section}{\numberline {1.2}Preliminaries}{4}
+\contentsline {chapter}{\numberline {2}INCOMPRESSIBLE LINEARIZED SHALLOW ATMOSPHERE MODEL}{8}
+\contentsline {section}{\numberline {2.1}Derivation}{8}
+\contentsline {section}{\numberline {2.2}Progressive-Wave Coordinate Transform}{13}
+\contentsline {section}{\numberline {2.3}Non-dimensionalization of the Governing Equations}{14}
+\contentsline {section}{\numberline {2.4}Linearization of the Equations}{15}
+\contentsline {subsection}{\numberline {2.4.1}Base Zonal Flow Derivation}{15}
+\contentsline {subsection}{\numberline {2.4.2}Linearization about the Base Zonal Flow}{17}
+\contentsline {section}{\numberline {2.5}Numerical Solution of the Linearized Equations}{19}
+\contentsline {subsection}{\numberline {2.5.1}Series Representation}{19}
+\contentsline {subsection}{\numberline {2.5.2}Galerkin Method}{21}
+\contentsline {subsection}{\numberline {2.5.3}Truncation and Generalised Eigenvalue Formulation}{25}
+\contentsline {section}{\numberline {2.6}Solution and Results}{27}
+\contentsline {subsection}{\numberline {2.6.1}Parameters and Constants}{27}
+\contentsline {subsection}{\numberline {2.6.2}Results for $\kappa =3,4$ and 5}{29}
+\contentsline {subsection}{\numberline {2.6.3}Comparison with Rossby-Haurwitz solution}{35}
+\contentsline {chapter}{\numberline {3}INCOMPRESSIBLE NONLINEAR SHALLOW ATMOSPHERE MODEL}{40}
+\contentsline {section}{\numberline {3.1}Problem Specification}{40}
+\contentsline {subsection}{\numberline {3.1.1}Conservation Equations}{40}
+\contentsline {subsection}{\numberline {3.1.2}Series Representation}{41}
+\contentsline {subsection}{\numberline {3.1.3}Volume Specification}{43}
+\contentsline {section}{\numberline {3.2}Numerical Solution Method}{44}
+\contentsline {subsection}{\numberline {3.2.1}Collocation}{44}
+\contentsline {subsection}{\numberline {3.2.2}Newton--Raphson Technique}{45}
+\contentsline {section}{\numberline {3.3}Code Highlights}{48}
+\contentsline {subsection}{\numberline {3.3.1}Programming Language and Computational Environment}{48}
+\contentsline {subsection}{\numberline {3.3.2}Truncation}{48}
+\contentsline {subsection}{\numberline {3.3.3}Forcing the Solution}{49}
+\contentsline {subsection}{\numberline {3.3.4}Collocation Points}{50}
+\contentsline {subsection}{\numberline {3.3.5}Caching the Basis Functions}{51}
+\contentsline {subsection}{\numberline {3.3.6}Calculation of the Jacobian Matrix}{52}
+\contentsline {subsection}{\numberline {3.3.7}Adaptive Integration Method}{54}
+\contentsline {subsection}{\numberline {3.3.8}Bootstrapping}{54}
+\contentsline {section}{\numberline {3.4}Solution and Results}{55}
+\contentsline {subsection}{\numberline {3.4.1}Measuring the Amplitude}{55}
+\contentsline {subsection}{\numberline {3.4.2}Parameters and Constants}{57}
+\contentsline {subsection}{\numberline {3.4.3}Results for $\kappa =4$, $\omega =1.25$}{58}
+\contentsline {subsection}{\numberline {3.4.4}Results for $\kappa =4$, $\omega =1.0$}{61}
+\contentsline {subsection}{\numberline {3.4.5}Results for $\kappa =5$, $\omega =1.25$}{68}
+\contentsline {subsection}{\numberline {3.4.6}Results for $\kappa =5$, $\omega =1.0$}{71}
+\contentsline {section}{\numberline {3.5}Closing Remarks}{73}
+\contentsline {chapter}{\numberline {4}COMPRESSIBLE LINEARIZED SHALLOW ATMOSPHERE\\ MODEL}{74}
+\contentsline {section}{\numberline {4.1}Derivation}{74}
+\contentsline {section}{\numberline {4.2}Non-dimensionalization and Problem Simplification}{82}
+\contentsline {subsection}{\numberline {4.2.1}Non-dimensionalization}{82}
+\contentsline {subsection}{\numberline {4.2.2}Problem Simplification}{83}
+\contentsline {section}{\numberline {4.3}Linearization of the Equations}{84}
+\contentsline {section}{\numberline {4.4}Numerical Solution of the Linearized Equations}{86}
+\contentsline {section}{\numberline {4.5}Solution and Results}{87}
+\contentsline {subsection}{\numberline {4.5.1}Model Parameters}{87}
+\contentsline {subsection}{\numberline {4.5.2}Zonal Flow Parameters and Mass Specification}{88}
+\contentsline {subsection}{\numberline {4.5.3}Results for $\kappa =3,4$ and 5}{90}
+\contentsline {chapter}{\numberline {5}COMPRESSIBLE NONLINEAR SHALLOW ATMOSPHERE\\ MODEL}{97}
+\contentsline {section}{\numberline {5.1}Problem Specification}{97}
+\contentsline {subsection}{\numberline {5.1.1}Conservation Equations}{97}
+\contentsline {subsection}{\numberline {5.1.2}Mass Specification}{98}
+\contentsline {section}{\numberline {5.2}Numerical Solution Method}{99}
+\contentsline {subsection}{\numberline {5.2.1}Series Solution and Algorithm}{99}
+\contentsline {subsection}{\numberline {5.2.2}Amplitude Measurement}{102}
+\contentsline {section}{\numberline {5.3}Solution and Results}{103}
+\contentsline {subsection}{\numberline {5.3.1}Model parameters}{103}
+\contentsline {subsection}{\numberline {5.3.2}Results for $\kappa =4$, $\omega =1.25$}{103}
+\contentsline {subsection}{\numberline {5.3.3}Results for $\kappa =4$, $\omega =1.0$}{106}
+\contentsline {subsection}{\numberline {5.3.4}Results for $\kappa =5$, $\omega =1.25$}{108}
+\contentsline {subsection}{\numberline {5.3.5}Results for $\kappa =5$, $\omega =1.0$}{109}
+\contentsline {section}{\numberline {5.4}Closing Remarks}{111}
+\contentsline {chapter}{\numberline {6}CONCLUSION AND CLOSING REMARKS}{112}
+\contentsline {section}{\numberline {6.1}Discussion and Application to Meteorology}{112}
+\contentsline {section}{\numberline {6.2}Future work and Closing Remarks}{114}
+\contentsline {chapter}{\numberline {A}EVALUATION OF VOLUME SPECIFICATION JACOBIAN\\ ELEMENTS}{116}
+\contentsline {chapter}{\numberline {B}COMPRESSIBLE LINEARIZED SYSTEM DERIVATION}{118}
+\contentsline {chapter}{\numberline {C}3D OPENGL ROSSBY WAVE VIEWER}{121}
+\contentsline {chapter}{BIBLIOGRAPHY AND SELECTED READING LIST}{125}
+\contentsline {chapter}{INDEX}{130}

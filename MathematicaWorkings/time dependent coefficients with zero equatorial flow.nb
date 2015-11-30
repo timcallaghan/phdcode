@@ -1,0 +1,208 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      5459,        145]*)
+(*NotebookOutlinePosition[      6103,        167]*)
+(*  CellTagsIndexPosition[      6059,        163]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(ulam[\[Phi]_] = A/2*\((1 - Cos[4*\[Phi]])\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\ A\ \((1 - Cos[4\ \[Phi]])\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(inter[\[Phi]_] = 
+      Simplify[Integrate[\(-K01\)*\((2*Sin[\[Phi]]*ulam[\[Phi]] + 
+                Tan[\[Phi]]*ulam[\[Phi]]^2)\), \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/960\ A\ K01\ \((960\ Cos[\[Phi]] + 360\ A\ Cos[2\ \[Phi]] + 
+          160\ Cos[3\ \[Phi]] - 60\ A\ Cos[4\ \[Phi]] - 96\ Cos[5\ \[Phi]] - 
+          40\ A\ Cos[6\ \[Phi]] + 15\ A\ Cos[8\ \[Phi]])\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho][\[Phi]_] = B*Exp[inter[\[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(B\ \[ExponentialE]\^\(1\/960\ A\ K01\ \((960\ Cos[\[Phi]] + 360\ A\ \
+Cos[2\ \[Phi]] + 160\ Cos[3\ \[Phi]] - 60\ A\ Cos[4\ \[Phi]] - 96\ Cos[5\ \
+\[Phi]] - 40\ A\ Cos[6\ \[Phi]] + 15\ A\ Cos[8\ \[Phi]])\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(A1[\[Phi]_] = 
+      Cos[\[Phi]]*\((c0*Cos[\[Phi]] - ulam[\[Phi]])\)\)], "Input"],
+
+Cell[BoxData[
+    \(Cos[\[Phi]]\ \((c0\ Cos[\[Phi]] - 
+          1\/2\ A\ \((1 - Cos[4\ \[Phi]])\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(\(B1[\[Phi]_]\)\(=\)\(Simplify[
+        Cos[\[Phi]]*\((D[1/\((Cos[\[Phi]]*\[Rho][\[Phi]]\ )\), \[Phi]]*
+                Cos[\[Phi]]*\[Rho][\[Phi]]*\((c0*Cos[\[Phi]] - 
+                    ulam[\[Phi]])\) - 
+              2*\((1 + c0)\)*Sin[\[Phi]])\)]\)\(\ \)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(1\/32\)\)\ \((32 + 16\ c0 + 12\ A\^2\ K01 - 6\ A\^2\ c0\ K01 + 
+          2\ A\ \((8 + 5\ A\^2\ K01 - 8\ c0\ K01)\)\ Cos[\[Phi]] - 
+          2\ A\ \((8 + 5\ A\^2\ K01 - 4\ c0\ K01)\)\ Cos[3\ \[Phi]] - 
+          16\ A\^2\ K01\ Cos[4\ \[Phi]] + 8\ A\^2\ c0\ K01\ Cos[4\ \[Phi]] - 
+          5\ A\^3\ K01\ Cos[5\ \[Phi]] + 8\ A\ c0\ K01\ Cos[5\ \[Phi]] + 
+          5\ A\^3\ K01\ Cos[7\ \[Phi]] + 4\ A\^2\ K01\ Cos[8\ \[Phi]] - 
+          2\ A\^2\ c0\ K01\ Cos[8\ \[Phi]] + A\^3\ K01\ Cos[9\ \[Phi]] - 
+          A\^3\ K01\ Cos[11\ \[Phi]])\)\ Sin[2\ \[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C1[\[Phi]_] = 
+      Simplify[Cos[\[Phi]]*\((D[ulam[\[Phi]], {\[Phi], 2}] - \((2 + c0)\)*
+                Cos[\[Phi]] - \((c0*Cos[\[Phi]] - ulam[\[Phi]])\)*
+                k^2/\((Cos[\[Phi]]^2)\) + 
+              D[1/\((Cos[\[Phi]]*\[Rho][\[Phi]]\ )\), \[Phi]]*
+                Cos[\[Phi]]*\[Rho][\[Phi]]*\((D[
+                      ulam[\[Phi]], \[Phi]] - \((2 + c0)\)*
+                      Sin[\[Phi]])\))\)]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/32\ \((\(-64\) - 32\ c0 - 32\ c0\ k\^2 - 12\ A\^2\ K01 - 
+          6\ A\^2\ c0\ K01 + 
+          4\ A\ \((8\ k\^2 - 3\ \((2 + c0)\)\ K01)\)\ Cos[\[Phi]] + 
+          2\ A\^2\ \((10 + c0)\)\ K01\ Cos[2\ \[Phi]] + 
+          160\ A\ Cos[3\ \[Phi]] - 32\ A\ k\^2\ Cos[3\ \[Phi]] + 
+          24\ A\ K01\ Cos[3\ \[Phi]] + 10\ A\^3\ K01\ Cos[3\ \[Phi]] + 
+          12\ A\ c0\ K01\ Cos[3\ \[Phi]] + 16\ A\^2\ K01\ Cos[4\ \[Phi]] + 
+          8\ A\^2\ c0\ K01\ Cos[4\ \[Phi]] + 96\ A\ Cos[5\ \[Phi]] + 
+          8\ A\ K01\ Cos[5\ \[Phi]] - 10\ A\^3\ K01\ Cos[5\ \[Phi]] + 
+          4\ A\ c0\ K01\ Cos[5\ \[Phi]] - 30\ A\^2\ K01\ Cos[6\ \[Phi]] - 
+          3\ A\^2\ c0\ K01\ Cos[6\ \[Phi]] - 8\ A\ K01\ Cos[7\ \[Phi]] - 
+          8\ A\^3\ K01\ Cos[7\ \[Phi]] - 4\ A\ c0\ K01\ Cos[7\ \[Phi]] - 
+          4\ A\^2\ K01\ Cos[8\ \[Phi]] - 2\ A\^2\ c0\ K01\ Cos[8\ \[Phi]] + 
+          8\ A\^3\ K01\ Cos[9\ \[Phi]] + 10\ A\^2\ K01\ Cos[10\ \[Phi]] + 
+          A\^2\ c0\ K01\ Cos[10\ \[Phi]] + 2\ A\^3\ K01\ Cos[11\ \[Phi]] - 
+          2\ A\^3\ K01\ Cos[13\ \[Phi]])\)\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{1016, 668},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 76, 1, 30, "Input"],
+Cell[1806, 55, 67, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1910, 61, 173, 3, 30, "Input"],
+Cell[2086, 66, 234, 3, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2357, 74, 71, 1, 30, "Input"],
+Cell[2431, 77, 240, 3, 35, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2708, 85, 101, 2, 30, "Input"],
+Cell[2812, 89, 115, 2, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2964, 96, 296, 5, 30, "Input"],
+Cell[3263, 103, 596, 8, 81, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3896, 116, 445, 8, 90, "Input"],
+Cell[4344, 126, 1099, 16, 100, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

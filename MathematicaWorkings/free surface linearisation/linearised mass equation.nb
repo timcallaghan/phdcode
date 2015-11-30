@@ -1,0 +1,1120 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     39462,       1037]*)
+(*NotebookOutlinePosition[     40105,       1059]*)
+(*  CellTagsIndexPosition[     40061,       1055]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(u\_\[Lambda][\[Lambda]_, \[Phi]_, 
+        t_] = \[Omega]*Cos[\[Phi]] + \[Epsilon]*
+          u\_\[Lambda]1[\[Lambda], \[Phi], t] + O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\[Omega]\ Cos[\[Phi]]\), 
+        "+", \(u\_\[Lambda]1[\[Lambda], \[Phi], t]\ \[Epsilon]\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ \[Omega], 
+          Cos[ \[Phi]]], 
+        Subscript[ u, \[Lambda]1][ \[Lambda], \[Phi], t]}, 0, 2, 
+        1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(u\_\[Phi][\[Lambda]_, \[Phi]_, 
+        t_] = \[Epsilon]*u\_\[Phi]1[\[Lambda], \[Phi], t] + 
+        O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(u\_\[Phi]1[\[Lambda], \[Phi], t]\ \[Epsilon]\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]}, 1, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R[\[Lambda]_, \[Phi]_, t_] = 
+      F^2*\[Omega]*\((\[Omega] + 2/R\_o)\)*Cos[\[Phi]]^2 + 
+        C + \[Epsilon]*R\_1[\[Lambda], \[Phi], t] + 
+        O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((C + 
+            F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\), 
+        "+", \(R\_1[\[Lambda], \[Phi], t]\ \[Epsilon]\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ C, 
+          Times[ 
+            Power[ F, 2], \[Omega], 
+            Power[ 
+              Cos[ \[Phi]], 2], 
+            Plus[ \[Omega], 
+              Times[ 2, 
+                Power[ 
+                  Subscript[ R, o], -1]]]]], 
+        Subscript[ R, 1][ \[Lambda], \[Phi], t]}, 0, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho]\_l[\[Lambda]_, \[Phi]_, 
+        t_] = \((\[Rho]\_FS^\((\[Gamma] - 1)\) + \((\[Gamma] - 1)\)*
+              M^2/F^2 \((R[\[Lambda], \[Phi], t] - 1)\))\)^\((1/\((\[Gamma] - 
+                1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + F\^2\ \
+\[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), 
+        "+", \(\(M\^2\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + \
+F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\ \
+R\_1[\[Lambda], \[Phi], t]\ \[Epsilon]\)\/F\^2\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Power[ 
+          Plus[ 
+            Times[ 
+              Power[ F, -2], 
+              Power[ M, 2], 
+              Plus[ -1, \[Gamma]], 
+              Plus[ -1, C, 
+                Times[ 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]]]]], 
+            Power[ 
+              Subscript[ \[Rho], FS], 
+              Plus[ -1, \[Gamma]]]], 
+          Power[ 
+            Plus[ -1, \[Gamma]], -1]], 
+        Times[ 
+          Power[ F, -2], 
+          Power[ M, 2], 
+          Power[ 
+            Plus[ 
+              Times[ 
+                Power[ F, -2], 
+                Power[ M, 2], 
+                Plus[ -1, \[Gamma]], 
+                Plus[ -1, C, 
+                  Times[ 
+                    Power[ F, 2], \[Omega], 
+                    Power[ 
+                      Cos[ \[Phi]], 2], 
+                    Plus[ \[Omega], 
+                      Times[ 2, 
+                        Power[ 
+                          Subscript[ R, o], -1]]]]]], 
+              Power[ 
+                Subscript[ \[Rho], FS], 
+                Plus[ -1, \[Gamma]]]], 
+            Plus[ -1, 
+              Power[ 
+                Plus[ -1, \[Gamma]], -1]]], 
+          Subscript[ R, 1][ \[Lambda], \[Phi], t]]}, 0, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[\[Rho]\_l[\[Lambda], \[Phi], t]*\((R[\[Lambda], \[Phi], t] - 1)\), 
+      t]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{
+          RowBox[{"(", 
+            RowBox[{
+              FractionBox[
+                
+                RowBox[{\(M\^2\), 
+                  " ", \((\(-1\) + C + 
+                      F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                            2\/R\_o)\))\), 
+                  " ", \(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + \
+F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\),
+                   " ", 
+                  RowBox[{
+                    SubsuperscriptBox["R", "1", 
+                      TagBox[\((0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\),
+                     "]"}]}], \(F\^2\)], "+", 
+              
+              RowBox[{\(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + F\
+\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+                RowBox[{
+                  SubsuperscriptBox["R", "1", 
+                    TagBox[\((0, 0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+                  "]"}]}]}], ")"}], " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ 
+            Power[ F, -2], 
+            Power[ M, 2], 
+            Plus[ -1, C, 
+              Times[ 
+                Power[ F, 2], \[Omega], 
+                Power[ 
+                  Cos[ \[Phi]], 2], 
+                Plus[ \[Omega], 
+                  Times[ 2, 
+                    Power[ 
+                      Subscript[ R, o], -1]]]]], 
+            Power[ 
+              Plus[ 
+                Times[ 
+                  Power[ F, -2], 
+                  Power[ M, 2], 
+                  Plus[ -1, \[Gamma]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]]], 
+                Power[ 
+                  Subscript[ \[Rho], FS], 
+                  Plus[ -1, \[Gamma]]]], 
+              Plus[ -1, 
+                Power[ 
+                  Plus[ -1, \[Gamma]], -1]]], 
+            Derivative[ 0, 0, 1][ 
+              Subscript[ R, 1]][ \[Lambda], \[Phi], t]], 
+          Times[ 
+            Power[ 
+              Plus[ 
+                Times[ 
+                  Power[ F, -2], 
+                  Power[ M, 2], 
+                  Plus[ -1, \[Gamma]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]]], 
+                Power[ 
+                  Subscript[ \[Rho], FS], 
+                  Plus[ -1, \[Gamma]]]], 
+              Power[ 
+                Plus[ -1, \[Gamma]], -1]], 
+            Derivative[ 0, 0, 1][ 
+              Subscript[ R, 1]][ \[Lambda], \[Phi], t]]]}, 1, 2, 
+        1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho]\_l[\[Lambda], \[Phi], 
+        t]*\((R[\[Lambda], \[Phi], t] - 1)\)\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\((\(-1\) + C + 
+              F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                    2\/R\_o)\))\)\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \
+\((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\
+\/F\^2 + \[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\),
+         "+", \(\((\(M\^2\ \((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \
+\((\[Omega] + 2\/R\_o)\))\)\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + \
+C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\ \
+R\_1[\[Lambda], \[Phi], t]\)\/F\^2 + \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \
+\((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\
+\/F\^2 + \[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\ \
+R\_1[\[Lambda], \[Phi], t])\)\ \[Epsilon]\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ 
+          Plus[ -1, C, 
+            Times[ 
+              Power[ F, 2], \[Omega], 
+              Power[ 
+                Cos[ \[Phi]], 2], 
+              Plus[ \[Omega], 
+                Times[ 2, 
+                  Power[ 
+                    Subscript[ R, o], -1]]]]], 
+          Power[ 
+            Plus[ 
+              Times[ 
+                Power[ F, -2], 
+                Power[ M, 2], 
+                Plus[ -1, \[Gamma]], 
+                Plus[ -1, C, 
+                  Times[ 
+                    Power[ F, 2], \[Omega], 
+                    Power[ 
+                      Cos[ \[Phi]], 2], 
+                    Plus[ \[Omega], 
+                      Times[ 2, 
+                        Power[ 
+                          Subscript[ R, o], -1]]]]]], 
+              Power[ 
+                Subscript[ \[Rho], FS], 
+                Plus[ -1, \[Gamma]]]], 
+            Power[ 
+              Plus[ -1, \[Gamma]], -1]]], 
+        Plus[ 
+          Times[ 
+            Power[ F, -2], 
+            Power[ M, 2], 
+            Plus[ -1, C, 
+              Times[ 
+                Power[ F, 2], \[Omega], 
+                Power[ 
+                  Cos[ \[Phi]], 2], 
+                Plus[ \[Omega], 
+                  Times[ 2, 
+                    Power[ 
+                      Subscript[ R, o], -1]]]]], 
+            Power[ 
+              Plus[ 
+                Times[ 
+                  Power[ F, -2], 
+                  Power[ M, 2], 
+                  Plus[ -1, \[Gamma]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]]], 
+                Power[ 
+                  Subscript[ \[Rho], FS], 
+                  Plus[ -1, \[Gamma]]]], 
+              Plus[ -1, 
+                Power[ 
+                  Plus[ -1, \[Gamma]], -1]]], 
+            Subscript[ R, 1][ \[Lambda], \[Phi], t]], 
+          Times[ 
+            Power[ 
+              Plus[ 
+                Times[ 
+                  Power[ F, -2], 
+                  Power[ M, 2], 
+                  Plus[ -1, \[Gamma]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]]], 
+                Power[ 
+                  Subscript[ \[Rho], FS], 
+                  Plus[ -1, \[Gamma]]]], 
+              Power[ 
+                Plus[ -1, \[Gamma]], -1]], 
+            Subscript[ R, 1][ \[Lambda], \[Phi], t]]]}, 0, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[R[\[Lambda], \[Phi], t] - 1, t]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{
+          RowBox[{
+            SubsuperscriptBox["R", "1", 
+              TagBox[\((0, 0, 1)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), "]"}], 
+          " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Derivative[ 0, 0, 1][ 
+          Subscript[ R, 1]][ \[Lambda], \[Phi], t]}, 1, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(1/Cos[\[Phi]]*
+      D[\[Rho]\_l[\[Lambda], \[Phi], t]*\((R[\[Lambda], \[Phi], t] - 1)\)*
+          u\_\[Lambda][\[Lambda], \[Phi], t], \[Lambda]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{\(Sec[\[Phi]]\), " ", 
+          RowBox[{"(", 
+            RowBox[{
+              FractionBox[
+                
+                RowBox[{\(M\^2\), " ", "\[Omega]", " ", \(Cos[\[Phi]]\), 
+                  " ", \((\(-1\) + C + 
+                      F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                            2\/R\_o)\))\), 
+                  " ", \(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + \
+F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\),
+                   " ", 
+                  RowBox[{
+                    SubsuperscriptBox["R", "1", 
+                      TagBox[\((1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\),
+                     "]"}]}], \(F\^2\)], "+", 
+              
+              RowBox[{\(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + F\
+\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"\[Omega]", " ", \(Cos[\[Phi]]\), " ", 
+                      RowBox[{
+                        SubsuperscriptBox["R", "1", 
+                          TagBox[\((1, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                        t\), "]"}]}], "+", 
+                    
+                    RowBox[{\((\(-1\) + C + 
+                          F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                                2\/R\_o)\))\), " ", 
+                      RowBox[{
+                        SubsuperscriptBox["u", "\[Lambda]1", 
+                          TagBox[\((1, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                        t\), "]"}]}]}], ")"}]}]}], ")"}], " ", "\[Epsilon]"}],
+         "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ 
+          Sec[ \[Phi]], 
+          Plus[ 
+            Times[ 
+              Power[ F, -2], 
+              Power[ M, 2], \[Omega], 
+              Cos[ \[Phi]], 
+              Plus[ -1, C, 
+                Times[ 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]]]], 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], 
+                Plus[ -1, 
+                  Power[ 
+                    Plus[ -1, \[Gamma]], -1]]], 
+              Derivative[ 1, 0, 0][ 
+                Subscript[ R, 1]][ \[Lambda], \[Phi], t]], 
+            Times[ 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], 
+                Power[ 
+                  Plus[ -1, \[Gamma]], -1]], 
+              Plus[ 
+                Times[ \[Omega], 
+                  Cos[ \[Phi]], 
+                  Derivative[ 1, 0, 0][ 
+                    Subscript[ R, 1]][ \[Lambda], \[Phi], t]], 
+                Times[ 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]], 
+                  Derivative[ 1, 0, 0][ 
+                    Subscript[ u, \[Lambda]1]][ \[Lambda], \[Phi], t]]]]]]}, 
+        1, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(1/Cos[\[Phi]]*
+      D[\[Rho]\_l[\[Lambda], \[Phi], t]*\((R[\[Lambda], \[Phi], t] - 1)\)*
+          u\_\[Phi][\[Lambda], \[Phi], t]*Cos[\[Phi]], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{\(Sec[\[Phi]]\), " ", 
+          RowBox[{"(", 
+            
+            RowBox[{\(\(-2\)\ M\^2\ \[Omega]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ \
+\((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                          2\/R\_o)\))\)\ \((\[Omega] + 
+                    2\/R\_o)\)\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) \
++ C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\ \
+u\_\[Phi]1[\[Lambda], \[Phi], t]\), 
+              "-", \(Sin[\[Phi]]\ \((\(-1\) + C + 
+                    F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                          2\/R\_o)\))\)\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \
+\((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\
+\/F\^2 + \[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\ \
+u\_\[Phi]1[\[Lambda], \[Phi], t]\), 
+              "-", \(2\ F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ \((\
+\[Omega] + 
+                    2\/R\_o)\)\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) \
++ C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\ \
+u\_\[Phi]1[\[Lambda], \[Phi], t]\), "+", 
+              
+              RowBox[{\(Cos[\[Phi]]\), 
+                " ", \((\(-1\) + C + 
+                    F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                          2\/R\_o)\))\), 
+                " ", \(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + \
+F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+                RowBox[{
+                  SubsuperscriptBox["u", "\[Phi]1", 
+                    TagBox[\((0, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+                  "]"}]}]}], ")"}], " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ 
+          Sec[ \[Phi]], 
+          Plus[ 
+            Times[ -2, 
+              Power[ M, 2], \[Omega], 
+              Power[ 
+                Cos[ \[Phi]], 2], 
+              Sin[ \[Phi]], 
+              Plus[ -1, C, 
+                Times[ 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]]]], 
+              Plus[ \[Omega], 
+                Times[ 2, 
+                  Power[ 
+                    Subscript[ R, o], -1]]], 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], 
+                Plus[ -1, 
+                  Power[ 
+                    Plus[ -1, \[Gamma]], -1]]], 
+              Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]], 
+            Times[ -1, 
+              Sin[ \[Phi]], 
+              Plus[ -1, C, 
+                Times[ 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]]]], 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], 
+                Power[ 
+                  Plus[ -1, \[Gamma]], -1]], 
+              Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]], 
+            Times[ -2, 
+              Power[ F, 2], \[Omega], 
+              Power[ 
+                Cos[ \[Phi]], 2], 
+              Sin[ \[Phi]], 
+              Plus[ \[Omega], 
+                Times[ 2, 
+                  Power[ 
+                    Subscript[ R, o], -1]]], 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], 
+                Power[ 
+                  Plus[ -1, \[Gamma]], -1]], 
+              Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]], 
+            Times[ 
+              Cos[ \[Phi]], 
+              Plus[ -1, C, 
+                Times[ 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]]]], 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], 
+                Power[ 
+                  Plus[ -1, \[Gamma]], -1]], 
+              Derivative[ 0, 1, 0][ 
+                Subscript[ u, \[Phi]1]][ \[Lambda], \[Phi], t]]]]}, 1, 2, 
+        1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      D[\[Rho]\_l[\[Lambda], \[Phi], t]*\((R[\[Lambda], \[Phi], t] - 1)\), 
+          t] + 1/Cos[\[Phi]]*
+          D[\[Rho]\_l[\[Lambda], \[Phi], t]*\((R[\[Lambda], \[Phi], t] - 1)\)*
+              u\_\[Lambda][\[Lambda], \[Phi], t], \[Lambda]] + 
+        1/Cos[\[Phi]]*
+          D[\[Rho]\_l[\[Lambda], \[Phi], t]*\((R[\[Lambda], \[Phi], t] - 1)\)*
+              u\_\[Phi][\[Lambda], \[Phi], t]*
+              Cos[\[Phi]], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{\(\((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\(-1\) + C + F\^2\ \
+\[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\^2 + \
+\[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{
+                SubsuperscriptBox["R", "1", 
+                  TagBox[\((0, 0, 1)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+                "]"}], "+", 
+              FractionBox[
+                
+                RowBox[{\(M\^2\), 
+                  " ", \((\(-1\) + C + 
+                      F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                            2\/R\_o)\))\), " ", 
+                  RowBox[{
+                    SubsuperscriptBox["R", "1", 
+                      TagBox[\((0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\),
+                     "]"}]}], \(F\^2\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\ \((\
+\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\/F\
+\^2 + \[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\)], "+", 
+              RowBox[{\(Sec[\[Phi]]\), " ", 
+                RowBox[{"(", 
+                  
+                  RowBox[{\(\(-Sin[\[Phi]]\)\ \((\(-1\) + C + 
+                          F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                                2\/R\_o)\))\)\ u\_\[Phi]1[\[Lambda], \[Phi], 
+                        t]\), "-", \(2\ F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ Sin[\
+\[Phi]]\ \((\[Omega] + 2\/R\_o)\)\ u\_\[Phi]1[\[Lambda], \[Phi], t]\), 
+                    "-", \(\(2\ M\^2\ \[Omega]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ \
+\((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                                    2\/R\_o)\))\)\ \((\[Omega] + 
+                              2\/R\_o)\)\ u\_\[Phi]1[\[Lambda], \[Phi], 
+                            t]\)\/\(\(M\^2\ \((\(-1\) + \[Gamma])\)\ \
+\((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\)\
+\/F\^2 + \[Rho]\_FS\%\(\(-1\) + \[Gamma]\)\)\), "+", 
+                    
+                    RowBox[{\(Cos[\[Phi]]\), 
+                      " ", \((\(-1\) + C + 
+                          F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                                2\/R\_o)\))\), " ", 
+                      RowBox[{
+                        SubsuperscriptBox["u", "\[Phi]1", 
+                          TagBox[\((0, 1, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                        t\), "]"}]}]}], ")"}]}], "+", 
+              RowBox[{\(Sec[\[Phi]]\), " ", 
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"\[Omega]", " ", \(Cos[\[Phi]]\), " ", 
+                      RowBox[{
+                        SubsuperscriptBox["R", "1", 
+                          TagBox[\((1, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                        t\), "]"}]}], "+", 
+                    FractionBox[
+                      
+                      RowBox[{\(M\^2\), " ", "\[Omega]", " ", \(Cos[\[Phi]]\),
+                         " ", \((\(-1\) + C + 
+                            F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                                  2\/R\_o)\))\), " ", 
+                        RowBox[{
+                          SubsuperscriptBox["R", "1", 
+                            TagBox[\((1, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), 
+                          "]"}]}], \(F\^2\ \((\(M\^2\ \((\(-1\) + \[Gamma])\)\
+\ \((\(-1\) + C + F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 2\/R\_o)\))\)\
+\)\/F\^2 + \[Rho]\_FS\%\(\(-1\) + \[Gamma]\))\)\)], "+", 
+                    
+                    RowBox[{\((\(-1\) + C + 
+                          F\^2\ \[Omega]\ Cos[\[Phi]]\^2\ \((\[Omega] + 
+                                2\/R\_o)\))\), " ", 
+                      RowBox[{
+                        SubsuperscriptBox["u", "\[Lambda]1", 
+                          TagBox[\((1, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                        t\), "]"}]}]}], ")"}]}]}], ")"}], " ", "\[Epsilon]"}],
+         "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ 
+          Power[ 
+            Plus[ 
+              Times[ 
+                Power[ F, -2], 
+                Power[ M, 2], 
+                Plus[ -1, \[Gamma]], 
+                Plus[ -1, C, 
+                  Times[ 
+                    Power[ F, 2], \[Omega], 
+                    Power[ 
+                      Cos[ \[Phi]], 2], 
+                    Plus[ \[Omega], 
+                      Times[ 2, 
+                        Power[ 
+                          Subscript[ R, o], -1]]]]]], 
+              Power[ 
+                Subscript[ \[Rho], FS], 
+                Plus[ -1, \[Gamma]]]], 
+            Power[ 
+              Plus[ -1, \[Gamma]], -1]], 
+          Plus[ 
+            Derivative[ 0, 0, 1][ 
+              Subscript[ R, 1]][ \[Lambda], \[Phi], t], 
+            Times[ 
+              Power[ F, -2], 
+              Power[ M, 2], 
+              Plus[ -1, C, 
+                Times[ 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]]]], 
+              Power[ 
+                Plus[ 
+                  Times[ 
+                    Power[ F, -2], 
+                    Power[ M, 2], 
+                    Plus[ -1, \[Gamma]], 
+                    Plus[ -1, C, 
+                      Times[ 
+                        Power[ F, 2], \[Omega], 
+                        Power[ 
+                          Cos[ \[Phi]], 2], 
+                        Plus[ \[Omega], 
+                          Times[ 2, 
+                            Power[ 
+                              Subscript[ R, o], -1]]]]]], 
+                  Power[ 
+                    Subscript[ \[Rho], FS], 
+                    Plus[ -1, \[Gamma]]]], -1], 
+              Derivative[ 0, 0, 1][ 
+                Subscript[ R, 1]][ \[Lambda], \[Phi], t]], 
+            Times[ 
+              Sec[ \[Phi]], 
+              Plus[ 
+                Times[ -1, 
+                  Sin[ \[Phi]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]], 
+                  Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]], 
+                Times[ -2, 
+                  Power[ F, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Sin[ \[Phi]], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]], 
+                  Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]], 
+                Times[ -2, 
+                  Power[ M, 2], \[Omega], 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Sin[ \[Phi]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]], 
+                  Plus[ \[Omega], 
+                    Times[ 2, 
+                      Power[ 
+                        Subscript[ R, o], -1]]], 
+                  Power[ 
+                    Plus[ 
+                      Times[ 
+                        Power[ F, -2], 
+                        Power[ M, 2], 
+                        Plus[ -1, \[Gamma]], 
+                        Plus[ -1, C, 
+                          Times[ 
+                            Power[ F, 2], \[Omega], 
+                            Power[ 
+                              Cos[ \[Phi]], 2], 
+                            Plus[ \[Omega], 
+                              Times[ 2, 
+                                Power[ 
+                                  Subscript[ R, o], -1]]]]]], 
+                      Power[ 
+                        Subscript[ \[Rho], FS], 
+                        Plus[ -1, \[Gamma]]]], -1], 
+                  Subscript[ u, \[Phi]1][ \[Lambda], \[Phi], t]], 
+                Times[ 
+                  Cos[ \[Phi]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]], 
+                  Derivative[ 0, 1, 0][ 
+                    Subscript[ u, \[Phi]1]][ \[Lambda], \[Phi], t]]]], 
+            Times[ 
+              Sec[ \[Phi]], 
+              Plus[ 
+                Times[ \[Omega], 
+                  Cos[ \[Phi]], 
+                  Derivative[ 1, 0, 0][ 
+                    Subscript[ R, 1]][ \[Lambda], \[Phi], t]], 
+                Times[ 
+                  Power[ F, -2], 
+                  Power[ M, 2], \[Omega], 
+                  Cos[ \[Phi]], 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]], 
+                  Power[ 
+                    Plus[ 
+                      Times[ 
+                        Power[ F, -2], 
+                        Power[ M, 2], 
+                        Plus[ -1, \[Gamma]], 
+                        Plus[ -1, C, 
+                          Times[ 
+                            Power[ F, 2], \[Omega], 
+                            Power[ 
+                              Cos[ \[Phi]], 2], 
+                            Plus[ \[Omega], 
+                              Times[ 2, 
+                                Power[ 
+                                  Subscript[ R, o], -1]]]]]], 
+                      Power[ 
+                        Subscript[ \[Rho], FS], 
+                        Plus[ -1, \[Gamma]]]], -1], 
+                  Derivative[ 1, 0, 0][ 
+                    Subscript[ R, 1]][ \[Lambda], \[Phi], t]], 
+                Times[ 
+                  Plus[ -1, C, 
+                    Times[ 
+                      Power[ F, 2], \[Omega], 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Plus[ \[Omega], 
+                        Times[ 2, 
+                          Power[ 
+                            Subscript[ R, o], -1]]]]], 
+                  Derivative[ 1, 0, 0][ 
+                    Subscript[ u, \[Lambda]1]][ \[Lambda], \[Phi], t]]]]]]}, 
+        1, 2, 1]]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{904, 673},
+WindowMargins->{{3, Automatic}, {Automatic, 1}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 180, 3, 30, "Input"],
+Cell[1910, 57, 429, 10, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2376, 72, 149, 3, 30, "Input"],
+Cell[2528, 77, 321, 6, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2886, 88, 199, 4, 30, "Input"],
+Cell[3088, 94, 654, 17, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3779, 116, 236, 4, 30, "Input"],
+Cell[4018, 122, 2104, 56, 84, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6159, 183, 111, 2, 30, "Input"],
+Cell[6273, 187, 3579, 94, 217, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9889, 286, 107, 2, 30, "Input"],
+Cell[9999, 290, 3977, 104, 290, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14013, 399, 66, 1, 30, "Input"],
+Cell[14082, 402, 552, 14, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14671, 421, 179, 3, 30, "Input"],
+Cell[14853, 426, 5097, 126, 285, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19987, 557, 185, 3, 30, "Input"],
+Cell[20175, 562, 7132, 180, 285, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[27344, 747, 476, 9, 50, "Input"],
+Cell[27823, 758, 11623, 276, 533, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

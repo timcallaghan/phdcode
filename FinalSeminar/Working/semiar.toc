@@ -1,0 +1,22 @@
+\pcontentsline {1}{Preliminaries}{2}{3}{1}
+\pcontentsline {0}{Coordinate System}{3}{4}{}
+\pcontentsline {0}{Equations of Motion}{4}{5}{}
+\pcontentsline {0}{Approximations}{5}{6}{}
+\pcontentsline {0}{Shallow Atmosphere Equations}{6}{7}{}
+\pcontentsline {0}{Volume Specification}{7}{8}{}
+\pcontentsline {1}{Linearized Theory}{8}{9}{2}
+\pcontentsline {0}{Zonal Flow and Perturbations}{9}{10}{}
+\pcontentsline {0}{Series Solution}{10}{11}{}
+\pcontentsline {0}{Generalized Eigenvalue Problem}{11}{12}{}
+\pcontentsline {0}{Model Parameters}{12}{13}{}
+\pcontentsline {0}{Comparison with R-H wavespeed}{13}{14}{}
+\pcontentsline {1}{Nonlinear Theory}{14}{15}{3}
+\pcontentsline {0}{Series Solution}{15}{16}{}
+\pcontentsline {0}{Amplitude Forcing and Measurement}{16}{17}{}
+\pcontentsline {0}{Solution Process}{17}{18}{}
+\pcontentsline {0}{Results for $\kappa =4$, $\omega =1.25$}{18}{19}{}
+\pcontentsline {0}{F-S contours, $\kappa =4$, $\omega =1.25$}{19}{20}{}
+\pcontentsline {0}{Results for $\kappa =4$, $\omega =1.0$}{20}{21}{}
+\pcontentsline {0}{F-S contours (end Branch 4), $\kappa =4$, $\omega =1.0$}{21}{22}{}
+\pcontentsline {0}{F-S contours (end Branch 5), $\kappa =4$, $\omega =1.0$}{22}{23}{}
+\pcontentsline {0}{Velocity (end Branch 5), $\kappa =4$, $\omega =1.0$}{23}{24}{}

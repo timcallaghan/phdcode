@@ -1,0 +1,1187 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     31928,       1001]*)
+(*NotebookOutlinePosition[     32894,       1033]*)
+(*  CellTagsIndexPosition[     32762,       1026]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(A1[x_] = \(-x\) + Sqrt[x^2 + B*x/\((K*\((A + B*x)\))\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[A1[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1\) + \@\(1 + B\/\(\((A + B)\)\ K\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(P[x_] = \((1 - x^2)\)*A1[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\((1 - 
+          x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[P[x], x \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[P[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[P[x], x \[Rule] 1/2]\)], "Input"],
+
+Cell[BoxData[
+    \(3\/8\ \((\(-1\) + \@\(\(4\ B + 2\ A\ K + B\ K\)\/\(2\ A\ K + B\ \
+K\)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Q[x_] = \(-x\)*
+          A1[x] - \((1 - 
+              x^2)\)*\((2 - \((\((A + 2*B*x)\)*
+                    A1[x])\)/\((x*\((A + B*x)\))\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-x\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\) - \
+\((1 - x\^2)\)\ \((2 - \(\((A + 2\ B\ x)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\
+\(K\ \((A + B\ x)\)\)\))\)\)\/\(x\ \((A + B\ x)\)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[Q[x], x \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(DirectedInfinity[\@\(Sign[B]\/\(Sign[A]\ Sign[K]\)\)]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[Q[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(1 - \@\(1 + B\/\(\((A + B)\)\ K\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p[x_] = x*Q[x]/P[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(x\ \((\(-x\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\)\))\) - \((1 - x\^2)\)\ \((2 - \(\((A + 2\ B\ x)\)\ \((\(-x\) + \
+\@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/\(x\ \((A + B\ \
+x)\)\))\))\)\)\/\(\((1 - x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A \
++ B\ x)\)\)\))\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[p[x], x \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pshift[x_] = \((x - 1)\)*Q[x]/P[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\((\(-1\) + x)\)\ \((\(-x\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \
+\((A + B\ x)\)\)\))\) - \((1 - x\^2)\)\ \((2 - \(\((A + 2\ B\ x)\)\ \((\(-x\) \
++ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/\(x\ \((A + B\ \
+x)\)\))\))\)\)\/\(\((1 - x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A \
++ B\ x)\)\)\))\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[pshift[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulamp[x_] = D[A1[x], x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1\) + \(2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) + B\/\(K\ \((A \
++ B\ x)\)\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulampp[x_] = D[ulamp[x], x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\((2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) + B\/\(K\ \((A + B\
+\ x)\)\))\)\^2\/\(4\ \((x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\))\)\^\(3/2\)\)\)\) + \(2 + \(2\ B\^3\ x\)\/\(K\ \((A + B\ x)\)\^3\) - \
+\(2\ B\^2\)\/\(K\ \((A + B\ x)\)\^2\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A \
++ B\ x)\)\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R[x_] = 
+      2*x - \((1 - x^2)\)*ulampp[x] + x*ulamp[x] - 
+        A1[x]*k^2/
+            x^2 - \((1 - x^2)\)*\((A + 
+              2*B*x)\)*\((ulamp[x] + 2)\)/\((x*\((A + B*x)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(2\ x - \((1 - 
+            x\^2)\)\ \((\(-\(\((2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) \
++ B\/\(K\ \((A + B\ x)\)\))\)\^2\/\(4\ \((x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\))\)\^\(3/2\)\)\)\) + \(2 + \(2\ B\^3\ x\)\/\(K\ \((A + B\ x)\)\^3\) - \
+\(2\ B\^2\)\/\(K\ \((A + B\ x)\)\^2\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A \
++ B\ x)\)\)\)\))\) + 
+      x\ \((\(-1\) + \(2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) + B\/\(K\ \
+\((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\))\) - \
+\(\((A + 2\ B\ x)\)\ \((1 - x\^2)\)\ \((1 + \(2\ x - \(B\^2\ x\)\/\(K\ \((A + \
+B\ x)\)\^2\) + B\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \
+\((A + B\ x)\)\)\)\))\)\)\/\(x\ \((A + B\ x)\)\) - \(k\^2\ \((\(-x\) + \
+\@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/x\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(q[x_] = x^2*R[x]/P[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/\(\((1 - 
+              x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\
+\))\)\)\)\((x\^2\ \((2\ x - \((1 - 
+                  x\^2)\)\ \((\(-\(\((2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\
+\^2\) + B\/\(K\ \((A + B\ x)\)\))\)\^2\/\(4\ \((x\^2 + \(B\ x\)\/\(K\ \((A + \
+B\ x)\)\))\)\^\(3/2\)\)\)\) + \(2 + \(2\ B\^3\ x\)\/\(K\ \((A + B\ x)\)\^3\) \
+- \(2\ B\^2\)\/\(K\ \((A + B\ x)\)\^2\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \
+\((A + B\ x)\)\)\)\))\) + 
+            x\ \((\(-1\) + \(2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) + B\
+\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\)\)\))\) - \(\((A + 2\ B\ x)\)\ \((1 - x\^2)\)\ \((1 + \(2\ x - \(B\^2\ \
+x\)\/\(K\ \((A + B\ x)\)\^2\) + B\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \
+\(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\))\)\)\/\(x\ \((A + B\ x)\)\) - \(k\^2\ \((\
+\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/x\^2)\))\)\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[q[x], x \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(1\/4\)\) - k\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qshift[x_] = \((x - 1)\)^2*R[x]/P[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/\(\((1 - 
+              x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\
+\))\)\)\)\((\((\(-1\) + x)\)\^2\ \((2\ x - \((1 - 
+                  x\^2)\)\ \((\(-\(\((2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\
+\^2\) + B\/\(K\ \((A + B\ x)\)\))\)\^2\/\(4\ \((x\^2 + \(B\ x\)\/\(K\ \((A + \
+B\ x)\)\))\)\^\(3/2\)\)\)\) + \(2 + \(2\ B\^3\ x\)\/\(K\ \((A + B\ x)\)\^3\) \
+- \(2\ B\^2\)\/\(K\ \((A + B\ x)\)\^2\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \
+\((A + B\ x)\)\)\)\))\) + 
+            x\ \((\(-1\) + \(2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) + B\
+\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\)\)\))\) - \(\((A + 2\ B\ x)\)\ \((1 - x\^2)\)\ \((1 + \(2\ x - \(B\^2\ \
+x\)\/\(K\ \((A + B\ x)\)\^2\) + B\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \
+\(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\))\)\)\/\(x\ \((A + B\ x)\)\) - \(k\^2\ \((\
+\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/x\^2)\))\)\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[qshift[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(?Series\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\<\"Series[f, {x, x0, n}] generates a power series expansion for \
+f about the point x = x0 to order (x - x0)^n. Series[f, {x, x0, nx}, {y, y0, \
+ny}] successively finds series expansions with respect to y, then x.\"\>", 
+      " ", 
+      ButtonBox[
+        StyleBox["More\[Ellipsis]",
+          "SR"],
+        ButtonData:>"Series",
+        Active->True,
+        ButtonStyle->"RefGuideLink"]}]], "Print",
+  CellTags->"Info3224576276-4322868"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Series[Sin[x], {x, 0, 6}]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"x", "-", \(x\^3\/6\), "+", \(x\^5\/120\), "+", 
+        InterpretationBox[\(O[x]\^7\),
+          SeriesData[ x, 0, {}, 1, 7, 1]]}],
+      SeriesData[ x, 0, {1, 0, 
+        Rational[ -1, 6], 0, 
+        Rational[ 1, 120]}, 1, 7, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Series[p[x^2], {x, 0, 3}]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+      "1", "+", \(\((\(-\(3\/\@\(B\/\(A\ K\)\)\)\) + \(A\ \@\(B\/\(A\ K\)\)\ \
+K\)\/B)\)\ x\), 
+        "+", \(\((\(-\(\(2\ A\ K\)\/B\)\) - \(A\ \((1 - B\^2\/\(A\^2\ K\))\)\ \
+K\)\/\(2\ B\) + \(\(B\ \@\(B\/\(A\ K\)\)\)\/A + \(A\ \((1 - B\^2\/\(A\^2\ \
+K\))\)\ \@\(B\/\(A\ K\)\)\ K\)\/\(2\ B\)\)\/\@\(B\/\(A\ K\)\))\)\ x\^2\), 
+        "+", \(\((\(-\(B\/\(A\ \@\(B\/\(A\ K\)\)\)\)\) - \(A\ \((1 - \
+B\^2\/\(A\^2\ K\))\)\ K\)\/\(2\ B\ \@\(B\/\(A\ K\)\)\) - \(2\ \((\(A\ K\)\/B \
+- \(A\ \((1 - B\^2\/\(A\^2\ K\))\)\ K\)\/\(2\ B\))\)\)\/\@\(B\/\(A\ K\)\) + \
+\(A\ K\ \((\(B\ \@\(B\/\(A\ K\)\)\)\/A + \(A\ \((1 - B\^2\/\(A\^2\ K\))\)\ \@\
+\(B\/\(A\ K\)\)\ K\)\/\(2\ B\))\)\)\/B)\)\ x\^3\), "+", 
+        InterpretationBox[\(O[x]\^4\),
+          SeriesData[ x, 0, {}, 0, 4, 1]]}],
+      SeriesData[ x, 0, {1, 
+        Plus[ 
+          Times[ -3, 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]]], 
+          Times[ A, 
+            Power[ B, -1], 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ 1, 2]], K]], 
+        Plus[ 
+          Times[ -2, A, 
+            Power[ B, -1], K], 
+          Times[ 
+            Rational[ -1, 2], A, 
+            Power[ B, -1], 
+            Plus[ 1, 
+              Times[ -1, 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ K, -1]]], K], 
+          Times[ 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], 
+            Plus[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]]], 
+              Times[ 
+                Rational[ 1, 2], A, 
+                Power[ B, -1], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]], K]]]], 
+        Plus[ 
+          Times[ -1, 
+            Power[ A, -1], B, 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]]], 
+          Times[ 
+            Rational[ -1, 2], A, 
+            Power[ B, -1], 
+            Plus[ 1, 
+              Times[ -1, 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ K, -1]]], 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], K], 
+          Times[ -2, 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], 
+            Plus[ 
+              Times[ A, 
+                Power[ B, -1], K], 
+              Times[ 
+                Rational[ -1, 2], A, 
+                Power[ B, -1], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], K]]], 
+          Times[ A, 
+            Power[ B, -1], K, 
+            Plus[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]]], 
+              Times[ 
+                Rational[ 1, 2], A, 
+                Power[ B, -1], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]], K]]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qseris[x_] = Series[q[x^2], {x, 0, 3}]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\(\(-k\^2\)\ \@\(B\/\(A\ K\)\) + 
+              B\^2\/\(4\ A\^2\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\^2\) - 
+              B\/\(2\ A\ \@\(B\/\(A\ K\)\)\ K\)\)\/\@\(B\/\(A\ K\)\)\), 
+        "+", \(\((\(\(-1\) + k\^2\)\/\@\(B\/\(A\ K\)\) + \(A\ \((\(-k\^2\)\ \
+\@\(B\/\(A\ K\)\) + B\^2\/\(4\ A\^2\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\^2\) - B\/\
+\(2\ A\ \@\(B\/\(A\ K\)\)\ K\))\)\ K\)\/B)\)\ x\), 
+        "+", \(\((\(A\ \((\(-1\) + k\^2)\)\ K\)\/B + \(\((\(-k\^2\)\ \
+\@\(B\/\(A\ K\)\) + B\^2\/\(4\ A\^2\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\^2\) - B\/\
+\(2\ A\ \@\(B\/\(A\ K\)\)\ K\))\)\ \((\(A\ K\)\/B - \(A\ \((1 - B\^2\/\(A\^2\ \
+K\))\)\ K\)\/\(2\ B\))\)\)\/\@\(B\/\(A\ K\)\) + \(1\/2\ \((\(-\(\(2 - \(2\ \
+B\^2\)\/\(A\^2\ K\)\)\/\@\(B\/\(A\ K\)\)\)\) + \(1 - B\^2\/\(A\^2\ K\)\)\/\(2\
+\ \@\(B\/\(A\ K\)\)\))\) + 1\/4\ \((\(2\ B\ \((2 - \(2\ B\^2\)\/\(A\^2\ \
+K\))\)\)\/\(A\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\) - \(3\ B\ \((1 - B\^2\/\(A\^2\ \
+K\))\)\)\/\(2\ A\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\))\) - \(2 - \(2\ B\^2\)\/\(A\
+\^2\ K\)\)\/\(2\ \@\(B\/\(A\ K\)\)\) - B\^2\/\(2\ A\^2\ \@\(B\/\(A\ K\)\)\ \
+K\) - \(A\ k\^2\ \((1 - B\^2\/\(A\^2\ K\))\)\ \@\(B\/\(A\ K\)\)\ K\)\/\(2\ \
+B\)\)\/\@\(B\/\(A\ K\)\))\)\ x\^2\), 
+        "+", \(\((\(-\(B\/\(A\ \@\(B\/\(A\ K\)\)\)\)\) + \(\((\(-1\) + \
+k\^2)\)\ \((\(A\ K\)\/B - \(A\ \((1 - B\^2\/\(A\^2\ K\))\)\ K\)\/\(2\ \
+B\))\)\)\/\@\(B\/\(A\ K\)\) + \(A\ K\ \((1\/2\ \((\(-\(\(2 - \(2\ B\^2\)\/\(A\
+\^2\ K\)\)\/\@\(B\/\(A\ K\)\)\)\) + \(1 - B\^2\/\(A\^2\ K\)\)\/\(2\ \
+\@\(B\/\(A\ K\)\)\))\) + 1\/4\ \((\(2\ B\ \((2 - \(2\ B\^2\)\/\(A\^2\ \
+K\))\)\)\/\(A\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\) - \(3\ B\ \((1 - B\^2\/\(A\^2\ \
+K\))\)\)\/\(2\ A\ \((B\/\(A\ K\))\)\^\(3/2\)\ K\))\) - \(2 - \(2\ B\^2\)\/\(A\
+\^2\ K\)\)\/\(2\ \@\(B\/\(A\ K\)\)\) - B\^2\/\(2\ A\^2\ \@\(B\/\(A\ K\)\)\ \
+K\) - \(A\ k\^2\ \((1 - B\^2\/\(A\^2\ K\))\)\ \@\(B\/\(A\ K\)\)\ K\)\/\(2\ \
+B\))\)\)\/B + \(\((\(-k\^2\)\ \@\(B\/\(A\ K\)\) + B\^2\/\(4\ A\^2\ \((B\/\(A\ \
+K\))\)\^\(3/2\)\ K\^2\) - B\/\(2\ A\ \@\(B\/\(A\ K\)\)\ K\))\)\ \((\(-\(\(A\ \
+\((1 - B\^2\/\(A\^2\ K\))\)\ K\)\/\(2\ B\ \@\(B\/\(A\ K\)\)\)\)\) + \(\(A\ \
+K\)\/B - \(A\ \((1 - B\^2\/\(A\^2\ K\))\)\ K\)\/\(2\ B\)\)\/\@\(B\/\(A\ \
+K\)\))\)\)\/\@\(B\/\(A\ K\)\))\)\ x\^3\), "+", 
+        InterpretationBox[\(O[x]\^4\),
+          SeriesData[ x, 0, {}, 0, 4, 1]]}],
+      SeriesData[ x, 0, {
+        Times[ 
+          Plus[ 
+            Times[ -1, 
+              Power[ k, 2], 
+              Power[ 
+                Times[ 
+                  Power[ A, -1], B, 
+                  Power[ K, -1]], 
+                Rational[ 1, 2]]], 
+            Times[ 
+              Rational[ 1, 4], 
+              Power[ A, -2], 
+              Power[ B, 2], 
+              Power[ 
+                Times[ 
+                  Power[ A, -1], B, 
+                  Power[ K, -1]], 
+                Rational[ -3, 2]], 
+              Power[ K, -2]], 
+            Times[ 
+              Rational[ -1, 2], 
+              Power[ A, -1], B, 
+              Power[ 
+                Times[ 
+                  Power[ A, -1], B, 
+                  Power[ K, -1]], 
+                Rational[ -1, 2]], 
+              Power[ K, -1]]], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ -1, 2]]], 
+        Plus[ 
+          Times[ 
+            Plus[ -1, 
+              Power[ k, 2]], 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]]], 
+          Times[ A, 
+            Power[ B, -1], 
+            Plus[ 
+              Times[ -1, 
+                Power[ k, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]]], 
+              Times[ 
+                Rational[ 1, 4], 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -3, 2]], 
+                Power[ K, -2]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Power[ A, -1], B, 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], 
+                Power[ K, -1]]], K]], 
+        Plus[ 
+          Times[ A, 
+            Power[ B, -1], 
+            Plus[ -1, 
+              Power[ k, 2]], K], 
+          Times[ 
+            Plus[ 
+              Times[ -1, 
+                Power[ k, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]]], 
+              Times[ 
+                Rational[ 1, 4], 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -3, 2]], 
+                Power[ K, -2]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Power[ A, -1], B, 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], 
+                Power[ K, -1]]], 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], 
+            Plus[ 
+              Times[ A, 
+                Power[ B, -1], K], 
+              Times[ 
+                Rational[ -1, 2], A, 
+                Power[ B, -1], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], K]]], 
+          Times[ 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], 
+            Plus[ 
+              Times[ 
+                Rational[ 1, 2], 
+                Plus[ 
+                  Times[ -1, 
+                    Plus[ 2, 
+                      Times[ -2, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -1, 2]]], 
+                  Times[ 
+                    Rational[ 1, 2], 
+                    Plus[ 1, 
+                      Times[ -1, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -1, 2]]]]], 
+              Times[ 
+                Rational[ 1, 4], 
+                Plus[ 
+                  Times[ 2, 
+                    Power[ A, -1], B, 
+                    Plus[ 2, 
+                      Times[ -2, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -3, 2]], 
+                    Power[ K, -1]], 
+                  Times[ 
+                    Rational[ -3, 2], 
+                    Power[ A, -1], B, 
+                    Plus[ 1, 
+                      Times[ -1, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -3, 2]], 
+                    Power[ K, -1]]]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Plus[ 2, 
+                  Times[ -2, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], 
+                Power[ K, -1]], 
+              Times[ 
+                Rational[ -1, 2], A, 
+                Power[ B, -1], 
+                Power[ k, 2], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]], K]]]], 
+        Plus[ 
+          Times[ -1, 
+            Power[ A, -1], B, 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]]], 
+          Times[ 
+            Plus[ -1, 
+              Power[ k, 2]], 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], 
+            Plus[ 
+              Times[ A, 
+                Power[ B, -1], K], 
+              Times[ 
+                Rational[ -1, 2], A, 
+                Power[ B, -1], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], K]]], 
+          Times[ A, 
+            Power[ B, -1], K, 
+            Plus[ 
+              Times[ 
+                Rational[ 1, 2], 
+                Plus[ 
+                  Times[ -1, 
+                    Plus[ 2, 
+                      Times[ -2, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -1, 2]]], 
+                  Times[ 
+                    Rational[ 1, 2], 
+                    Plus[ 1, 
+                      Times[ -1, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -1, 2]]]]], 
+              Times[ 
+                Rational[ 1, 4], 
+                Plus[ 
+                  Times[ 2, 
+                    Power[ A, -1], B, 
+                    Plus[ 2, 
+                      Times[ -2, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -3, 2]], 
+                    Power[ K, -1]], 
+                  Times[ 
+                    Rational[ -3, 2], 
+                    Power[ A, -1], B, 
+                    Plus[ 1, 
+                      Times[ -1, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], 
+                    Power[ 
+                      Times[ 
+                        Power[ A, -1], B, 
+                        Power[ K, -1]], 
+                      Rational[ -3, 2]], 
+                    Power[ K, -1]]]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Plus[ 2, 
+                  Times[ -2, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], 
+                Power[ K, -1]], 
+              Times[ 
+                Rational[ -1, 2], A, 
+                Power[ B, -1], 
+                Power[ k, 2], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]], K]]], 
+          Times[ 
+            Plus[ 
+              Times[ -1, 
+                Power[ k, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ 1, 2]]], 
+              Times[ 
+                Rational[ 1, 4], 
+                Power[ A, -2], 
+                Power[ B, 2], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -3, 2]], 
+                Power[ K, -2]], 
+              Times[ 
+                Rational[ -1, 2], 
+                Power[ A, -1], B, 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], 
+                Power[ K, -1]]], 
+            Power[ 
+              Times[ 
+                Power[ A, -1], B, 
+                Power[ K, -1]], 
+              Rational[ -1, 2]], 
+            Plus[ 
+              Times[ 
+                Rational[ -1, 2], A, 
+                Power[ B, -1], 
+                Plus[ 1, 
+                  Times[ -1, 
+                    Power[ A, -2], 
+                    Power[ B, 2], 
+                    Power[ K, -1]]], 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], K], 
+              Times[ 
+                Power[ 
+                  Times[ 
+                    Power[ A, -1], B, 
+                    Power[ K, -1]], 
+                  Rational[ -1, 2]], 
+                Plus[ 
+                  Times[ A, 
+                    Power[ B, -1], K], 
+                  Times[ 
+                    Rational[ -1, 2], A, 
+                    Power[ B, -1], 
+                    Plus[ 1, 
+                      Times[ -1, 
+                        Power[ A, -2], 
+                        Power[ B, 2], 
+                        Power[ K, -1]]], K]]]]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qseris[0]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(-k\^2\)\ \@\(B\/\(A\ K\)\) + B\^2\/\(4\ A\^2\ \((B\/\(A\ \
+K\))\)\^\(3/2\)\ K\^2\) - B\/\(2\ A\ \@\(B\/\(A\ K\)\)\ K\)\)\/\@\(B\/\(A\ \
+K\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[q[x], x \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(1\/4\)\) - k\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(?Simplify\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\<\"Simplify[expr] performs a sequence of algebraic \
+transformations on expr, and returns the simplest form it finds. \
+Simplify[expr, assum] does simplification using assumptions.\"\>", " ", 
+      ButtonBox[
+        StyleBox["More\[Ellipsis]",
+          "SR"],
+        ButtonData:>"Simplify",
+        Active->True,
+        ButtonStyle->"RefGuideLink"]}]], "Print",
+  CellTags->"Info3224577108-7614266"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[qseris[x]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((\(-\(1\/4\)\) - k\^2)\), 
+        "-", \(\(5\ x\)\/\(4\ \@\(B\/\(A\ K\)\)\)\), 
+        "+", \(\((B\/\(2\ A\) - \(9\ A\ K\)\/\(4\ B\))\)\ x\^2\), 
+        "-", \(\(\((\@\(B\/\(A\ K\)\)\ K\ \((9\ B\^2 + 
+                      13\ A\^2\ K)\))\)\ x\^3\)\/\(8\ B\^2\)\), "+", 
+        InterpretationBox[\(O[x]\^4\),
+          SeriesData[ x, 0, {}, 0, 4, 1]]}],
+      SeriesData[ x, 0, {
+        Plus[ 
+          Rational[ -1, 4], 
+          Times[ -1, 
+            Power[ k, 2]]], 
+        Times[ 
+          Rational[ -5, 4], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ -1, 2]]], 
+        Plus[ 
+          Times[ 
+            Rational[ 1, 2], 
+            Power[ A, -1], B], 
+          Times[ 
+            Rational[ -9, 4], A, 
+            Power[ B, -1], K]], 
+        Times[ 
+          Rational[ -1, 8], 
+          Power[ B, -2], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ 1, 2]], K, 
+          Plus[ 
+            Times[ 9, 
+              Power[ B, 2]], 
+            Times[ 13, 
+              Power[ A, 2], K]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{896, 593},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{
+  "Info3224576276-4322868"->{
+    Cell[9045, 300, 470, 11, 44, "Print",
+      CellTags->"Info3224576276-4322868"]},
+  "Info3224577108-7614266"->{
+    Cell[30110, 938, 432, 10, 44, "Print",
+      CellTags->"Info3224577108-7614266"]}
+  }
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{
+  {"Info3224576276-4322868", 32534, 1016},
+  {"Info3224577108-7614266", 32650, 1019}
+  }
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 88, 1, 30, "Input"],
+Cell[1818, 55, 87, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1942, 61, 58, 1, 30, "Input"],
+Cell[2003, 64, 74, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2114, 70, 60, 1, 30, "Input"],
+Cell[2177, 73, 122, 3, 53, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2336, 81, 57, 1, 30, "Input"],
+Cell[2396, 84, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2468, 90, 57, 1, 30, "Input"],
+Cell[2528, 93, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2600, 99, 59, 1, 30, "Input"],
+Cell[2662, 102, 108, 2, 54, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2807, 109, 176, 4, 30, "Input"],
+Cell[2986, 115, 239, 3, 94, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3262, 123, 57, 1, 30, "Input"],
+Cell[3322, 126, 87, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3446, 132, 57, 1, 30, "Input"],
+Cell[3506, 135, 69, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3612, 141, 52, 1, 30, "Input"],
+Cell[3667, 144, 337, 5, 118, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4041, 154, 57, 1, 30, "Input"],
+Cell[4101, 157, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4173, 163, 67, 1, 30, "Input"],
+Cell[4243, 166, 352, 5, 118, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4632, 176, 62, 1, 30, "Input"],
+Cell[4697, 179, 38, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4772, 185, 56, 1, 30, "Input"],
+Cell[4831, 188, 175, 3, 81, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5043, 196, 60, 1, 30, "Input"],
+Cell[5106, 199, 337, 5, 82, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5480, 209, 216, 5, 30, "Input"],
+Cell[5699, 216, 826, 12, 211, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6562, 233, 54, 1, 30, "Input"],
+Cell[6619, 236, 965, 15, 347, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7621, 256, 57, 1, 30, "Input"],
+Cell[7681, 259, 54, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7772, 265, 69, 1, 30, "Input"],
+Cell[7844, 268, 980, 15, 347, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8861, 288, 62, 1, 30, "Input"],
+Cell[8926, 291, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8998, 297, 44, 1, 30, "Input"],
+Cell[9045, 300, 470, 11, 44, "Print",
+  CellTags->"Info3224576276-4322868"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9552, 316, 58, 1, 30, "Input"],
+Cell[9613, 319, 295, 7, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9945, 331, 58, 1, 30, "Input"],
+Cell[10006, 334, 4198, 128, 236, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14241, 467, 71, 1, 30, "Input"],
+Cell[14315, 470, 15297, 440, 839, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29649, 915, 42, 1, 30, "Input"],
+Cell[29694, 918, 179, 3, 106, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29910, 926, 57, 1, 30, "Input"],
+Cell[29970, 929, 54, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30061, 935, 46, 1, 30, "Input"],
+Cell[30110, 938, 432, 10, 44, "Print",
+  CellTags->"Info3224577108-7614266"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30579, 953, 52, 1, 30, "Input"],
+Cell[30634, 956, 1249, 40, 96, "Output"]
+}, Open  ]],
+Cell[31898, 999, 26, 0, 30, "Input"]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

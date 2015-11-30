@@ -1,0 +1,208 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      4294,        140]*)
+(*NotebookOutlinePosition[      4938,        162]*)
+(*  CellTagsIndexPosition[      4894,        158]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(uphi[\[Eta]_, \[Phi]_] = \[Sum]\+\(m = 1\)\%\(M + 1\)\(\[Sum]\+\(n = \
+1\)\%\(N + 1\)\((C\_\(m, n\))\)*Sin[\[Kappa]*m*\[Eta]]*
+            Sin[2*n*\[Phi]]\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Sum]\+\(m = 1\)\%\(M + 1\)\(\[Sum]\+\(n = 1\)\%\(N + 1\)C\_\(m, n\)\ \
+Sin[\[Kappa]\ m\ \[Eta]]\ Sin[2\ n\ \[Phi]]\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(tau = 
+      Simplify[\[Integral]\_0\%\(2*Pi\)\(\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)\
+uphi[\[Eta], \[Phi]]^2*
+              Cos[\[Phi]] \[DifferentialD]\[Phi] \[DifferentialD]\[Eta]\), 
+        Element[\[Kappa], Integers]]\)], "Input"],
+
+Cell[BoxData[
+    \(Sum::"itform" \(\(:\)\(\ \)\) 
+      "Argument \!\(\(\((\(\(\(ExpandAll[\(\(#1, \[Phi], \(\(Trig \[Rule] \
+False\)\), \(\(Modulus \[Rule] 0\)\)\)\)]\)\) &\))\)\)[\(\({m, 1, \(\(M + 1\)\
+\)}\)\)]\) at position \!\(2\) does not have the correct form for an \
+iterator."\)], "Message"],
+
+Cell[BoxData[
+    \(General::"ivar" \(\(:\)\(\ \)\) 
+      "\!\(\[Pi]\/2\) is not a valid variable."\)], "Message"],
+
+Cell[BoxData[
+    \(General::"ivar" \(\(:\)\(\ \)\) 
+      "\!\(\[Pi]\/2\) is not a valid variable."\)], "Message"],
+
+Cell[BoxData[
+    \(General::"ivar" \(\(:\)\(\ \)\) 
+      "\!\(-\(\(\[Pi]\/2\)\)\) is not a valid variable."\)], "Message"],
+
+Cell[BoxData[
+    \(General::"stop" \(\(:\)\(\ \)\) 
+      "Further output of \!\(General :: \"ivar\"\) will be suppressed during \
+this calculation."\)], "Message"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input"],
+
+Cell[BoxData[
+    \(Integers\ \[Epsilon]\ \[Kappa]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[%, C\_\(1, 1\)]\)], "Input"],
+
+Cell[BoxData[
+    \(16\/315\ \[Pi]\ \((42\ C\_\(1, 1\) + 12\ C\_\(1, 2\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(test[\[Phi]_] = \[Sum]\+\(n = 1\)\%4 C\_n*Sin[2*n*\[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    \(Sin[2\ \[Phi]]\ C\_1 + Sin[4\ \[Phi]]\ C\_2 + Sin[6\ \[Phi]]\ C\_3 + 
+      Sin[8\ \[Phi]]\ C\_4\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)test[\[Phi]]^2*
+        Cos[\[Phi]] \[DifferentialD]\[Phi]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/765765\)\((16\ \((51051\ C\_1\%2 + 48620\ C\_2\%2 + 
+            476\ C\_2\ \((65\ C\_3 - 12\ C\_4)\) + 
+            442\ C\_1\ \((66\ C\_2 - 11\ C\_3 + 4\ C\_4)\) + 
+            21\ \((2295\ C\_3\%2 + 1496\ C\_3\ C\_4 + 
+                  2288\ C\_4\%2)\))\))\)\)\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{499, 599},
+WindowMargins->{{19, Automatic}, {Automatic, 9}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 189, 3, 51, "Input"],
+Cell[1919, 57, 152, 2, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2108, 64, 255, 5, 66, "Input"],
+Cell[2366, 71, 302, 5, 78, "Message"],
+Cell[2671, 78, 115, 2, 34, "Message"],
+Cell[2789, 82, 115, 2, 34, "Message"],
+Cell[2907, 86, 124, 2, 34, "Message"],
+Cell[3034, 90, 165, 3, 42, "Message"],
+Cell[3202, 95, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3274, 101, 26, 0, 30, "Input"],
+Cell[3303, 103, 64, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3404, 109, 50, 1, 30, "Input"],
+Cell[3457, 112, 89, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3583, 118, 90, 1, 51, "Input"],
+Cell[3676, 121, 130, 2, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3843, 128, 127, 2, 43, "Input"],
+Cell[3973, 132, 305, 5, 62, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

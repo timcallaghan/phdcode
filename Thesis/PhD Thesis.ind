@@ -1,0 +1,265 @@
+\begin{theindex}
+
+  \item $M_b$, base system mass, 89
+  \item $M_z$, zonal flow mass, 90
+  \item $T$, temperature, 6
+  \item $V_b$, base volume, 31
+  \item $V_z$, zonal flow volume, 32, 43, 58
+  \item $\Omega$, angular velocity, 6
+  \item $\bar{h}$, free-surface height, 8, 74
+  \item $\beta$-plane, 1
+  \item $\kappa$, longitudinal wavenumber, 18, 43
+  \item $\omega$, zonal angular speed, 16, 85
+  \item $\ulam$, 5
+  \item $\uphi$, 5
+  \item $\ur$, 5
+  \item $c$, angular wavespeed, 13
+  \item $h$, free-surface depth, 9, 74
+  \item $h_o$, polar free-surface height, 16, 85
+
+  \indexspace
+
+  \item adiabatic flow, 74
+  \item Amplitude
+    \subitem $\mathcal{A}_{\text{ave}}$, 57
+    \subitem $\mathcal{A}_{\text{e}}$, 57
+    \subitem $\mathcal{A}_{\text{p}}$, 57
+    \subitem maximum allowable, 68
+    \subitem measurement method, 56, 102
+    \subitem measurement of, 55
+  \item atmospheric blocking, 113
+
+  \indexspace
+
+  \item barotropic flow, 94
+  \item basis function, 19
+    \subitem caching, 44, 51, 101
+    \subitem caching example, 51
+    \subitem Fourier, 19
+    \subitem spherical harmonics, 19
+  \item basis recombination, 21, 86, 99
+  \item bifurcation, 69
+  \item bifurcation point, 64
+  \item bootstrapping, 54, 101
+    \subitem type 1, 54
+    \subitem type 2, 54
+    \subitem type 3, 55
+  \item boundary conditions, 19, 21
+
+  \indexspace
+
+  \item characteristic scales, 14
+  \item collocation, 100
+  \item collocation mesh, 50, 101
+    \subitem definition, 51
+    \subitem optimal choice, 45
+  \item collocation method, 44
+    \subitem advantages, 44
+    \subitem algorithm, 45
+  \item computer specifications, 48, 101
+  \item conservation equations
+    \subitem dimensional compressible, 81
+    \subitem dimensional incompressible, 12
+    \subitem incompressible advective form, 13
+    \subitem spherical component form, 6
+  \item continuity equation, 6
+  \item convergence, 29
+  \item convergence of longitude, 20
+  \item Coriolis parameter, 15
+  \item curvature terms, 9
+
+  \indexspace
+
+  \item density, 5
+    \subitem free-surface value, 84
+    \subitem sea-level, 88
+  \item diagonal matrix, 27, 87
+
+  \indexspace
+
+  \item eigenspectrum
+    \subitem incompressible, 33
+  \item eigenvalue, 27, 86
+    \subitem primary physical, 33, 90
+  \item eigenvalues
+    \subitem central band, 33
+  \item eigenvector, 27, 86
+  \item energy conservation, 6, 9
+  \item Euler equation, 6
+
+  \indexspace
+
+  \item finite-difference scheme, 44
+  \item flat-crested wave, 105, 106
+  \item forcing, 49
+    \subitem amplitude, 49, 58, 112
+    \subitem compressible model, 100
+    \subitem thermal, 114
+    \subitem topographical, 114
+    \subitem wavespeed, 49, 61
+  \item Fourier coefficients, 21
+  \item Fourier mode, 18
+  \item Fourier series, 19, 41, 99
+    \subitem truncated, 86
+    \subitem truncation, 25, 48
+  \item free-surface, 5
+  \item Froude number, 15, 28, 83
+
+  \indexspace
+
+  \item Galerkin method, 21, 44, 86
+  \item generalised eigenvalue problem, 25, 86
+    \subitem solution of, 29, 90
+    \subitem truncated, 27
+  \item geostrophic approximation, 38, 94
+  \item gravitaitonal acceleration, 5
+
+  \indexspace
+
+  \item height field matching, 36, 93
+  \item horizontal
+    \subitem acceleration, 11, 78
+    \subitem pressure gradient, 11, 78
+  \item hydrostatic approximation, 10, 77
+
+  \indexspace
+
+  \item ideal fluid, 6
+  \item ideal gas law, 6, 9
+  \item index shifting, 23
+
+  \indexspace
+
+  \item Jacobian matrix, 46, 101
+    \subitem calculation of, 52
+    \subitem linear dependence, 51
+
+  \indexspace
+
+  \item kinematic condition, 12, 79
+
+  \indexspace
+
+  \item large-scale flow, 28
+  \item latitude, 5
+  \item latitude circle, 51
+  \item linear system
+    \subitem infinite, 25
+  \item Linearization
+    \subitem compressible, 85
+    \subitem incompressible, 17
+  \item localised circulation, 64
+  \item longitude, 5
+
+  \indexspace
+
+  \item Mach number, 83
+  \item mass conservation, 6
+  \item mass specification, 88, 98
+  \item momentum conservation, 6
+
+  \indexspace
+
+  \item Newton--Raphson method, 45, 101
+    \subitem algorithm, 46
+    \subitem algorithmic flow chart, 47
+    \subitem damped, 47
+    \subitem shortcomings, 46
+  \item non-dimensionalization
+    \subitem incompressible equations, 14
+  \item normal flow, 11
+  \item North pole, 5
+  \item numerical quadrature
+    \subitem adaptive recursive, 54
+    \subitem Lobatto, 54
+
+  \indexspace
+
+  \item orthogonality, 21, 22
+    \subitem algebraic equations, 24
+
+  \indexspace
+
+  \item parameter specification, 28, 57, 87, 103
+  \item parity, 18, 51
+  \item planetary wave, 1
+  \item polar height parametrisation, 44
+  \item polar stereographic projection, 36, 93
+  \item pole problem, 20
+  \item polytropic atmosphere, 76
+  \item pressure, 5
+    \subitem cut-off low, 66
+    \subitem free-surface value, 84
+    \subitem incompressible, 10
+    \subitem sea-level, 88
+  \item progressive-wave, 13
+  \item pseudospectral method, 45
+
+  \indexspace
+
+  \item radial coordinate, 5
+  \item recurrence relation, 26
+  \item residual equation, 21, 49
+    \subitem redundancy, 51
+  \item residual vector, 101
+  \item resonance
+    \subitem branch, 61
+    \subitem damped, 69, 107, 109
+    \subitem discrete branching, 62
+    \subitem nonlinear, 61, 104, 106, 112
+    \subitem parameter region, 63
+    \subitem planetary wave, 63
+  \item reverse flow, 64
+  \item root finding, 90
+    \subitem multi-dimensional, 45
+  \item Rossby number, 15, 28, 83
+  \item Rossby wave, 1, 15
+    \subitem observational method, 113
+    \subitem stationary, 34, 113
+  \item Rossby--Haurwitz
+    \subitem comparison with compressible\\linearized solution, 92
+    \subitem comparison with incompressible\\linearized solution, 35
+    \subitem formula, 35, 92
+    \subitem free-surface contours, 37
+
+  \indexspace
+
+  \item scale analysis, 10
+  \item series representation, 41
+  \item shallow atmosphere
+    \subitem compressible, 74
+    \subitem incompressible, 8
+  \item shallow atmosphere approximation, 10, 76
+  \item shallow atmosphere equations
+    \subitem non-dimensional compressible, 83, 97
+    \subitem non-dimensional compressible\\linearized, 85
+    \subitem non-dimensional incompressible, 15, 40
+    \subitem non-dimensional incompressible\\linearized, 17, 18
+  \item singular value decomposition, 42
+  \item South pole, 5
+  \item spherical polar coordinate system, 5
+  \item stability
+    \subitem planetary wave, 63
+  \item stagnation point, 20, 63, 65, 107
+    \subitem symmetrical location, 65
+  \item Strouhal number, 15, 28, 83
+  \item super rotation, 16
+  \item symmetry conditions, 19, 43, 86, 99
+
+  \indexspace
+
+  \item unit vector, 5
+
+  \indexspace
+
+  \item valid zonal flow value, 31, 32
+  \item velocity vector, 5
+  \item volume conservation, 31
+  \item volume matching condition, 32
+  \item volume specification, 43
+
+  \indexspace
+
+  \item zonal flow, 15, 84
+
+\end{theindex}

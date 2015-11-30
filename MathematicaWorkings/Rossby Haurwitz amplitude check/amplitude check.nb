@@ -1,0 +1,534 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      9253,        360]*)
+(*NotebookOutlinePosition[      9896,        382]*)
+(*  CellTagsIndexPosition[      9852,        378]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(B[x_] = 
+      2*\((\[CapitalOmega] + \[Omega])\)*
+        K/\((\((\[Kappa] + 1)\)*\((\[Kappa] + 2)\))\)*
+        Cos[x]^\[Kappa]*\((\((\[Kappa]^2 + 2*\[Kappa] + 
+                2)\) - \((\[Kappa] + 1)\)^2*Cos[x]^2)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\ K\ \((\[Omega] + \[CapitalOmega])\)\ Cos[x]\^\[Kappa]\ \((2 + 2\ \
+\[Kappa] + \[Kappa]\^2 - \((1 + \[Kappa])\)\^2\ Cos[x]\^2)\)\)\/\(\((1 + \
+\[Kappa])\)\ \((2 + \[Kappa])\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C1[x_] = 
+      K^2/4*Cos[
+            x]^\((2*\[Kappa])\)*\((\((\[Kappa] + 1)\)*
+              Cos[x]^2 - \((\[Kappa] + 2)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/4\ K\^2\ Cos[x]\^\(2\ \[Kappa]\)\ \((\(-2\) - \[Kappa] + \((1 + \
+\[Kappa])\)\ Cos[x]\^2)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[\(-B[Pi/4]\)/\((4*C1[Pi/4])\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\^\(\(2 + \[Kappa]\)\/2\)\ \((3 + 2\ \[Kappa] + \[Kappa]\^2)\)\ \((\
+\[Omega] + \[CapitalOmega])\)\)\/\(K\ \((1 + \[Kappa])\)\ \((2 + \[Kappa])\)\ \
+\((3 + \[Kappa])\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[C1[Pi/4]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-2\^\(\(-3\) - \[Kappa]\)\)\ K\^2\ \((3 + \[Kappa])\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[B[Pi/4]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\^\(\(-\[Kappa]\)/2\)\ K\ \((3 + 2\ \[Kappa] + \[Kappa]\^2)\)\ \((\
+\[Omega] + \[CapitalOmega])\)\)\/\(\((1 + \[Kappa])\)\ \((2 + \
+\[Kappa])\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Kappa] = 4\)], "Input"],
+
+Cell[BoxData[
+    \(4\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[CapitalOmega] = 2*Pi/\((24*3600)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/43200\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Omega] = 7.848*10^\((\(-6\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(7.848`*^-6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(K = \[Omega]\)], "Input"],
+
+Cell[BoxData[
+    \(7.848`*^-6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[\(-B[Pi/4]\)/\((4*C1[Pi/4])\)]\)], "Input"],
+
+Cell[BoxData[
+    \(10.585583224115336`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Lambda] = 1/\[Kappa]*ArcCos[\(-B[Pi/4]\)/\((4*C1[Pi/4])\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(0.`\)\(\[InvisibleSpace]\)\) + 
+      0.7626004058300505`\ \[ImaginaryI]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[4*C1[Pi/4]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1.3473053999999999`*^-11\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[B[Pi/4]]\)], "Input"],
+
+Cell[BoxData[
+    \(1.426201344`*^-10\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C1[x_] = 
+      K^2/4*Cos[
+            x]^\((2*\[Kappa])\)*\((\((\[Kappa] + 1)\)*
+              Cos[x]^2 - \((\[Kappa] + 2)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1.5397776`*^-11\ Cos[x]\^8\ \((\(-6\) + 5\ Cos[x]\^2)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(4*C1[Pi/4]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1.3473053999999999`*^-11\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(B[x_] = 
+      2*\((\[CapitalOmega] + \[Omega])\)*
+        K/\((\((\[Kappa] + 1)\)*\((\[Kappa] + 2)\))\)*
+        Cos[x]^\[Kappa]*\((\((\[Kappa]^2 + 2*\[Kappa] + 
+                2)\) - \((\[Kappa] + 1)\)^2*Cos[x]^2)\)\)], "Input"],
+
+Cell[BoxData[
+    \(4.22578176`*^-11\ Cos[x]\^4\ \((26 - 25\ Cos[x]\^2)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(B[Pi/4]\)], "Input"],
+
+Cell[BoxData[
+    \(1.426201344`*^-10\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[\(-B[Pi/4]\)/\((4*C1[Pi/4])\)]\)], "Input"],
+
+Cell[BoxData[
+    \(10.585583224115336`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(h[x_, y_] = 
+      h\_0 + a^2/g*A[x] + a^2/g*B[x]*Cos[\[Kappa]*y] + 
+        a^2/g*C1[x]*Cos[2*\[Kappa]*y]\)], "Input"],
+
+Cell[BoxData[
+    \(\(a\^2\ A[x]\)\/g + \(4.22578176`*^-11\ a\^2\ Cos[x]\^4\ \((26 - 25\ \
+Cos[x]\^2)\)\ Cos[4\ y]\)\/g + \(1.5397776`*^-11\ a\^2\ Cos[x]\^8\ \((\(-6\) \
++ 5\ Cos[x]\^2)\)\ Cos[8\ y]\)\/g + h\_0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Clear[K, \[Kappa], \[Omega], \[CapitalOmega]]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(K\)], "Input"],
+
+Cell[BoxData[
+    \(K\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C1[x_] = 
+      K^2/4*Cos[
+            x]^\((2*\[Kappa])\)*\((\((\[Kappa] + 1)\)*
+              Cos[x]^2 - \((\[Kappa] + 2)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/4\ K\^2\ Cos[x]\^\(2\ \[Kappa]\)\ \((\(-2\) - \[Kappa] + \((1 + \
+\[Kappa])\)\ Cos[x]\^2)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(B[x_] = 
+      2*\((\[CapitalOmega] + \[Omega])\)*
+        K/\((\((\[Kappa] + 1)\)*\((\[Kappa] + 2)\))\)*
+        Cos[x]^\[Kappa]*\((\((\[Kappa]^2 + 2*\[Kappa] + 
+                2)\) - \((\[Kappa] + 1)\)^2*Cos[x]^2)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\ K\ \((\[Omega] + \[CapitalOmega])\)\ Cos[x]\^\[Kappa]\ \((2 + 2\ \
+\[Kappa] + \[Kappa]\^2 - \((1 + \[Kappa])\)\^2\ Cos[x]\^2)\)\)\/\(\((1 + \
+\[Kappa])\)\ \((2 + \[Kappa])\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(A[x_] = \[Omega]/2*\((2*\[CapitalOmega] + \[Omega])\)*Cos[x]^2 + 
+        1/4*K^2*Cos[
+              x]^\((2*\[Kappa])\)*\((\((\[Kappa] + 1)\)*
+                Cos[x]^2 + \((2*\[Kappa]^2 - \[Kappa] - 2)\) - 
+              2*\[Kappa]^2*Cos[x]^\((\(-2\))\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\ \[Omega]\ \((\[Omega] + 2\ \[CapitalOmega])\)\ Cos[x]\^2 + 
+      1\/4\ K\^2\ Cos[x]\^\(2\ \[Kappa]\)\ \((\(-2\) - \[Kappa] + 
+            2\ \[Kappa]\^2 + \((1 + \[Kappa])\)\ Cos[x]\^2 - 
+            2\ \[Kappa]\^2\ Sec[x]\^2)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(h[x_, y_] = 
+      h\_0 + a^2/g*A[x] + a^2/g*B[x]*Cos[\[Kappa]*y] + 
+        a^2/g*C1[x]*Cos[2*\[Kappa]*y]\)], "Input"],
+
+Cell[BoxData[
+    \(\(2\ a\^2\ K\ \((\[Omega] + \[CapitalOmega])\)\ Cos[x]\^\[Kappa]\ \((2 \
++ 2\ \[Kappa] + \[Kappa]\^2 - \((1 + \[Kappa])\)\^2\ Cos[x]\^2)\)\ Cos[y\ \
+\[Kappa]]\)\/\(g\ \((1 + \[Kappa])\)\ \((2 + \[Kappa])\)\) + \(a\^2\ K\^2\ \
+Cos[x]\^\(2\ \[Kappa]\)\ \((\(-2\) - \[Kappa] + \((1 + \[Kappa])\)\ \
+Cos[x]\^2)\)\ Cos[2\ y\ \[Kappa]]\)\/\(4\ g\) + \(a\^2\ \((1\/2\ \[Omega]\ \
+\((\[Omega] + 2\ \[CapitalOmega])\)\ Cos[x]\^2 + 1\/4\ K\^2\ Cos[x]\^\(2\ \
+\[Kappa]\)\ \((\(-2\) - \[Kappa] + 2\ \[Kappa]\^2 + \((1 + \[Kappa])\)\ \
+Cos[x]\^2 - 2\ \[Kappa]\^2\ Sec[x]\^2)\))\)\)\/g + h\_0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[h[Pi/4, 0]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1678.4983283321512`\)\(\[InvisibleSpace]\)\) + h\_0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[A[Pi/4]]\)], "Input"],
+
+Cell[BoxData[
+    \(2\^\(\(-3\) - \[Kappa]\)\ \((\(-K\^2\)\ \((3 + \[Kappa] + 
+                4\ \[Kappa]\^2)\) + 
+          2\^\(1 + \[Kappa]\)\ \[Omega]\ \((\[Omega] + 
+                2\ \[CapitalOmega])\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a = 6.37112*10^6\)], "Input"],
+
+Cell[BoxData[
+    \(6.37112`*^6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g = 9.80616\)], "Input"],
+
+Cell[BoxData[
+    \(9.80616`\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{920, 585},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 251, 5, 30, "Input"],
+Cell[1981, 59, 214, 3, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2232, 67, 161, 4, 30, "Input"],
+Cell[2396, 73, 128, 2, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2561, 80, 72, 1, 30, "Input"],
+Cell[2636, 83, 206, 3, 53, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2879, 91, 51, 1, 30, "Input"],
+Cell[2933, 94, 89, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3059, 100, 50, 1, 30, "Input"],
+Cell[3112, 103, 182, 3, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3331, 111, 45, 1, 30, "Input"],
+Cell[3379, 114, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3451, 120, 69, 1, 30, "Input"],
+Cell[3523, 123, 46, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3606, 129, 65, 1, 30, "Input"],
+Cell[3674, 132, 44, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3755, 138, 45, 1, 30, "Input"],
+Cell[3803, 141, 44, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3884, 147, 72, 1, 30, "Input"],
+Cell[3959, 150, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4049, 156, 93, 1, 30, "Input"],
+Cell[4145, 159, 110, 2, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4292, 166, 53, 1, 30, "Input"],
+Cell[4348, 169, 63, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4448, 175, 50, 1, 30, "Input"],
+Cell[4501, 178, 51, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4589, 184, 161, 4, 30, "Input"],
+Cell[4753, 190, 89, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4879, 196, 43, 1, 30, "Input"],
+Cell[4925, 199, 63, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5025, 205, 251, 5, 30, "Input"],
+Cell[5279, 212, 87, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5403, 218, 40, 1, 30, "Input"],
+Cell[5446, 221, 51, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5534, 227, 72, 1, 30, "Input"],
+Cell[5609, 230, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5699, 236, 139, 3, 30, "Input"],
+Cell[5841, 241, 224, 3, 47, "Output"]
+}, Open  ]],
+Cell[6080, 247, 78, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[6183, 252, 34, 1, 30, "Input"],
+Cell[6220, 255, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6292, 261, 161, 4, 30, "Input"],
+Cell[6456, 267, 128, 2, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6621, 274, 251, 5, 30, "Input"],
+Cell[6875, 281, 214, 3, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7126, 289, 290, 5, 30, "Input"],
+Cell[7419, 296, 269, 4, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7725, 305, 139, 3, 30, "Input"],
+Cell[7867, 310, 612, 8, 93, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8516, 323, 53, 1, 30, "Input"],
+Cell[8572, 326, 89, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8698, 332, 50, 1, 30, "Input"],
+Cell[8751, 335, 226, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9014, 344, 49, 1, 30, "Input"],
+Cell[9066, 347, 45, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9148, 353, 44, 1, 30, "Input"],
+Cell[9195, 356, 42, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

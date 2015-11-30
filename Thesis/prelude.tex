@@ -1,0 +1,41 @@
+% prelude.tex (specification of which features in `mathphdthesis.sty' you
+% are using, your personal information, and your title & abstract)
+
+% Specify features of `mathphdthesis.sty' you want to use:
+\titlepgtrue % main title page (required)
+\signaturepagetrue % page for declaration of originality (required)
+\copyrighttrue % copyright page (required)
+\abswithesistrue % abstract to be bound with thesis (optional)
+\acktrue % acknowledgments page (optional)
+\tablecontentstrue % table of contents page (required)
+\tablespagetrue % table of contents page for tables (required only if you have tables)
+\figurespagetrue % table of contents page for figures (required only if you have figures)
+
+\title{LINEAR AND NONLINEAR PROGRESSIVE ROSSBY WAVES ON A ROTATING SPHERE} % use all capital letters
+\author{Timothy G. Callaghan} % use mixed upper & lower case
+\prevdegrees{B.A. B.Sc. Hons (Qld)} % Used to specify your previous degrees...use mixed upper & lower case
+\advisor{Professor Lawrence K. Forbes} % example: Professor Lawrence K. Forbes
+\dept{Mathematics} % your academic department
+\submitdate{October, 2004} % month & year of your thesis submission
+
+\newcommand{\abstextwithesis}
+{\oneandhalfspace We present an analysis of incompressible and compressible flow of a thin layer of fluid with a free-surface on a rotating sphere. Our general aim is to investigate the nature of progressive Rossby wave structures that are possible in this rotating system, with the goal of expanding previous research by conducting an in-depth analysis of wavespeed/amplitude relationships.
+
+A linearized theory for the incompressible dynamics, closely related to the theory developed by B. Haurwitz, is constructed, with good agreement observed between the two separate models. This result is then extended to the numerical solution of the full model, to obtain highly nonlinear large-amplitude progressive-wave solutions in the form of Fourier series. A detailed picture is developed of how the progressive wavespeed depends on the wave amplitude. This approach reveals the presence of nonlinear resonance behaviour, with different disjoint solution branches existing at different values of the amplitude. Additionally, we show that the formation of localised low pressure systems is an inherent feature of the nonlinear dynamics, once the forcing amplitude reaches a certain critical level.
+
+We then derive a new free-surface model for compressible fluid dynamics and repeat the above analysis by first constructing a linearized solution and then using this to guide the computation of nonlinear solutions via a bootstrapping process. It is shown that if the value of the pressure on the free-surface is assumed to be zero, which is consistent with the concept of the atmosphere terminating, then the model almost reduces to the incompressible dynamics with the only difference being a slightly modified conservation of mass equation. By forcing wave amplitude in the model we show that the resonant behaviour observed in the incompressible dynamics is again encountered in the compressible model. The effect of the compressibility is observed to become apparent through damped resonance behaviour in general, so that in some instances two neighbouring disjoint solution branches from the incompressible dynamics are seen to merge into one continuous solution branch when compressible dynamics are incorporated. In closing, some conjectures are made as to how these results might help explain certain observed atmospheric phenomena. In particular it is conjectured that the process of atmospheric blocking is a direct result of critically forced stationary Rossby waves.
+}
+
+\newcommand{\acknowledgement}
+{I would like to sincerely thank my supervisor Professor Larry Forbes for his faithful guidance and insight throughout all stages of this research. Having someone to look up to and learn from is a great honour and privilege, and to him I will be eternally indebted for his enthusiasm and encouragement.
+
+I would also like to express deep gratitude to Dr Simon Wotherspoon for many stimulating and illuminating discussions along the way. His advice, critical analysis and wit have been most welcome and enjoyed immensely. A big thank you also to all my mathematically minded friends both here at UTas and back at UQ for general support and advice. In addition I wish to acknowledge the financial assistance of the Australian government for an APA scholarship; this assistance has ultimately afforded me the time and financial freedom to pursue this research.
+
+Finally I would like to thank friends and family for continued emotional support. In particular Mr Aaron Ryan has been a wonderful friend full of encouragement who I will continue to value highly for his intelligence and like minded sense of humour. To my parents and sisters I owe thanks not only for unconditional love and support but also for believing in me and convincing me otherwise of my doubts in my own ability at those, perhaps rather too frequent, precipitous times throughout this emotionally taxing but highly rewarding period of my life.   }
+
+
+% Take care of things in `mathphdthesis.sty' behind the scenes.
+% Basically just does a check of all the fields that have been activated
+% above and fills out the appropriate pages and adds them to the thesis.
+\beforepreface
+\afterpreface

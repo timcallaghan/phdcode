@@ -1,0 +1,773 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.4) (preloaded format=latex 2000.11.28)  21 OCT 2004 18:47
+entering extended mode
+**semiar.tex
+(semiar.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7m> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+(C:\texmf\tex\latex\prosper\prosper.cls
+Document Class: prosper 2001/07/17, v. 1.5
+(c) 2000-2001 Frederic Goualard, EPFL, Switzerland
+ and Peter Møller Neergaard, Boston Univ., USA
+CVSId: $Id: prosper.cls,v 1.24 2002/11/25 14:35:50 exupery Exp $
+(C:\texmf\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\texmf\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\texmf\tex\latex\graphics\graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+ (C:\texmf\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (C:\texmf\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2003/03/12 v1.1 MiKTeX 'graphics' configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(C:\texmf\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(C:\texmf\tex\latex\seminar\seminar.cls
+Document Class: seminar 1997/10/13, 1.4
+Document Style: `seminar' v1.4 <1997/10/13> (tvz)
+\slidewidth=\dimen104
+\slideheight=\dimen105
+\footheight=\dimen106
+(C:\texmf\tex\latex\base\article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(C:\texmf\tex\latex\base\leqno.clo
+File: leqno.clo 1998/08/17 v1.1c Standard LaTeX option (left equation numbers)
+) (C:\texmf\tex\latex\base\size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen107
+)
+(C:\texmf\tex\latex\seminar\sem-page.sty)
+\before@document=\toks15
+\after@document=\toks16
+\before@enddocument=\toks17
+\c@slide=\count87
+\slide@count=\count88
+\@slidebox=\box26
+\not@slidebox=\box27
+\slide@hook=\toks18
+\after@slide=\toks19
+\slide@footins=\insert233
+\slide@listdepth=\count89
+\saved@specials=\box28
+\before@newslide=\toks20
+\after@slidepage=\toks21
+\slidesep=\skip43
+\c@note=\count90
+\slideframewidth=\dimen108
+\slideframesep=\dimen109
+\semin=\dimen110
+\semcm=\dimen111
+)
+(C:\texmf\tex\latex\seminar\semcolor.sty
+Style Option: `semcolor' for doc style `seminar' 1.01 <2004/05/18> (tvz)
+File: semcolor.sty 2004/05/18 v1.01 (tvz)
+(C:\texmf\tex\latex\pstricks\pstricks.sty
+Package: pstricks 2004/05/12 v0.2l LaTeX wrapper for `PSTricks' (RN,HV)
+
+(C:\texmf\tex\generic\pstricks\pstricks.tex
+`PSTricks' v1.04  <2004/06/22> (tvz)
+\pst@dima=\dimen112
+\pst@dimb=\dimen113
+\pst@dimc=\dimen114
+\pst@dimd=\dimen115
+\pst@dimg=\dimen116
+\pst@dimh=\dimen117
+\pst@hbox=\box29
+\pst@boxg=\box30
+\pst@cnta=\count91
+\pst@cntb=\count92
+\pst@cntc=\count93
+\pst@cntd=\count94
+\pst@cntg=\count95
+\pst@cnth=\count96
+\pst@toks=\toks22
+(C:\texmf\tex\generic\pstricks\pstricks.con)
+\psunit=\dimen118
+\psxunit=\dimen119
+\psyunit=\dimen120
+\pslinewidth=\dimen121
+\pst@customdefs=\toks23
+\pslinearc=\dimen122
+\everypsbox=\toks24
+\psframesep=\dimen123
+\pslabelsep=\dimen124
+\theoverlaybox=\box31
+)
+File: pstricks.tex 2004/06/22 v1.04 `PSTricks' (tvz)
+
+(C:\texmf\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2004/07/04 v2.00 LaTeX color extensions (UK)
+ (C:\texmf\tex\latex\00miktex\color.cfg
+File: color.cfg 2003/03/08 v1.0 MiKTeX 'color' configuration
+)
+Package xcolor Info: Package option `override' ignored on input line 128.
+Package xcolor Info: Driver file: dvips.def on input line 136.
+Package xcolor Info: Color model `cmy' added on input line 972.
+Package xcolor Info: Color model `HTML' added on input line 1000.
+Package xcolor Info: Color model `HSB' added on input line 1006.
+Package xcolor Info: Color model `Gray' added on input line 1012.
+))) (C:\texmf\tex\latex\seminar\semlayer.sty
+\@@slidebox=\box32
+\c@overlay=\count97
+)
+(C:\texmf\tex\latex\seminar\seminar.bug)
+(C:\texmf\tex\latex\seminar\seminar.bg2
+seminar.bg2: various corrections for the Seminar document class added since sem
+inar.bug (waiting Seminar 98)
+(Version 1.6 of <November 20, 1997> (D.G.))
+) (C:\texmf\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2003/11/15 v6.74l Hypertext links for LaTeX
+\@linkdim=\dimen125
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
+
+(C:\texmf\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2003/11/15 v6.74l Hyperref: PDFDocEncoding definition (HO)
+)
+(C:\texmf\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2003/03/08 v1.0 MiKTeX 'hyperref' configuration
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 1829.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 1829.
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 1829.
+Package hyperref Info: Hyper figures OFF on input line 1879.
+Package hyperref Info: Link nesting OFF on input line 1884.
+Package hyperref Info: Hyper index ON on input line 1887.
+Package hyperref Info: Plain pages ON on input line 1892.
+Package hyperref Info: Backreferencing OFF on input line 1899.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2003.
+(C:\texmf\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip10
+Package: url 1999/03/28  ver 1.5x  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2142.
+\Fld@menulength=\count100
+\Field@Width=\dimen126
+\Fld@charsize=\dimen127
+\Choice@toks=\toks25
+\Field@toks=\toks26
+Package hyperref Info: Hyper figures OFF on input line 2617.
+Package hyperref Info: Link nesting OFF on input line 2622.
+Package hyperref Info: Hyper index ON on input line 2625.
+Package hyperref Info: backreferencing OFF on input line 2632.
+Package hyperref Info: Link coloring OFF on input line 2637.
+\c@Item=\count101
+\c@Hfootnote=\count102
+)
+*hyperref using driver hdvips*
+(C:\texmf\tex\latex\hyperref\hdvips.def
+File: hdvips.def 2003/11/15 v6.74l Hyperref driver for dvips
+
+(C:\texmf\tex\latex\hyperref\pdfmark.def
+File: pdfmark.def 2003/11/15 v6.74l Hyperref definitions for pdfmark specials
+\pdf@docset=\toks27
+\pdf@box=\box33
+\pdf@toks=\toks28
+\pdf@defaulttoks=\toks29
+\Fld@listcount=\count103
+\@outlinefile=\write3
+))
+\theoverlays=\box34
+\c@overlaysCount=\count104
+\c@limitOverlays=\count105
+\@tempoLimit=\count106
+\slideWidth=\skip44
+\c@trueSlideCounter=\count107
+
+(C:\texmf\tex\latex\prosper\PPRdefault.sty
+Package: PPRdefault 2000/11/30
+
+`default' style for Prosper ---
+CVSId: $Id: PPRdefault.sty,v 1.3 2001/10/24 15:11:25 exupery Exp $
+ 
+(C:\texmf\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(C:\texmf\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks30
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(C:\texmf\tex\latex\seminar\semhelv.sty
+Style Option: `semhelv' for the `seminar' doc style 1.4 <2000/05/08> (tvz)
+Modified by Stefan (see source for details)
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 8.20007pt on input line 176.
+))
+\c@item@step=\count108
+\c@overlay@page=\count109
+\c@nbAffected=\count110
+\c@savecountAffected=\count111
+) (C:\texmf\tex\latex\HA-prosper\HA-prosper.sty
+Package: HA-prosper 2004/08/20 v4.21 Patch for prosper
+
+(c) 2003-2004 Hendri Adriaens, Tilburg, the Netherlands
+ 
+(C:\texmf\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2004/08/24 v1.4 key=value parser (HA)
+
+(C:\texmf\tex\generic\xkeyval\xkeyval.tex))
+(C:\texmf\tex\latex\seminar\xcomment.sty
+Style-Option: `xcomment' v1.2 <93/02/12> (tvz) 
+\tokout=\write4
+\tokin=\read1
+) (C:\texmf\tex\latex\tools\verbatim.sty
+Package: verbatim 2001/03/12 v1.5p LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks31
+\verbatim@line=\toks32
+\verbatim@in@stream=\read2
+)
+\HAP@tba=\box35
+\HAP@tbb=\box36
+\HAP@tla=\skip45
+\HAP@tlb=\skip46
+\HAP@tlc=\skip47
+\HAP@tld=\skip48
+\c@HAP@tca=\count112
+\c@HAP@notes@slide=\count113
+\c@HAP@notes@true=\count114
+\c@HAP@notes@temp=\count115
+\c@HAP@temp@sc=\count116
+ (semiar.bm) (semiar.bm
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\kappa' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\omega' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 17.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\kappa' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\omega' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\kappa' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\omega' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\kappa' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\omega' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\kappa' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\omega' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 22.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\kappa' on input line 22.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 22.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 22.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\omega' on input line 22.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 22.
+
+)
+\HAP@bmout=\write5
+\c@HAP@sc@toc=\count117
+\c@HAP@sc@pres=\count118
+\c@HAP@sc@slides=\count119
+\c@HAP@listdepth=\count120
+\HAP@lcolwidth=\skip49
+\HAP@rcolwidth=\skip50
+\HAP@frsep=\skip51
+\HAP@colsep=\skip52
+\HAP@topsep=\skip53
+\HAP@bottomsep=\skip54
+\HAP@indent=\skip55
+\c@HAP@onslide@count=\count121
+\c@HAP@onslide@end=\count122
+\HAP@toks@=\toks33
+\c@HAP@oldc@figure=\count123
+\c@HAP@oldc@equation=\count124
+\c@HAP@oldc@table=\count125
+ (C:\texmf\tex\latex\HA-prosper\HA-prosper.cfg)
+(C:\texmf\tex\latex\HA-prosper\Styles\HA\HAPHA.sty
+Package: HAPHA 2004/05/16
+
+`HA' style for HA-prosper
+(c) 2003-2004 Hendri Adriaens, Tilburg, the Netherlands
+Package version: 1.5
+ 
+(C:\texmf\tex\latex\psnfss\pifont.sty
+Package: pifont 2003/03/02 PSNFSS-v9.0c Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+ (C:\texmf\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(C:\texmf\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)))) (C:\texmf\tex\latex\psfrag\psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count126
+\pfg@scount=\count127
+\pfg@temp=\write6
+)
+(C:\texmf\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(C:\texmf\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+ (C:\texmf\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks34
+\ex@=\dimen128
+)) (C:\texmf\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen129
+)
+(C:\texmf\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count128
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count129
+\leftroot@=\count130
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count131
+\DOTSCASE@=\count132
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box37
+\strutbox@=\box38
+\big@size=\dimen130
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count133
+\c@MaxMatrixCols=\count134
+\dotsspace@=\muskip11
+\c@parentequation=\count135
+\dspbrk@lvl=\count136
+\tag@help=\toks35
+\row@=\count137
+\column@=\count138
+\maxfields@=\count139
+\andhelp@=\toks36
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
+\@envbody=\toks37
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+\astrutbox=\box39
+\c@lemma=\count140
+\c@corollary=\count141
+ (semiar.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+Package hyperref Info: Link coloring OFF on input line 114.
+
+(C:\texmf\tex\latex\hyperref\nameref.sty
+Package: nameref 2003/10/30 v2.20 Cross-referencing by name of section
+\c@section@level=\count142
+)
+LaTeX Info: Redefining \ref on input line 114.
+LaTeX Info: Redefining \pageref on input line 114.
+ (semiar.out) (semiar.out)
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 9.84009pt on input line 117.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 117.
+
+(C:\texmf\tex\latex\psnfss\t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 117.
+ (C:\texmf\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 117.
+
+(C:\texmf\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 5.74005pt on input line 117.
+ [1
+
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [2
+
+]
+File: fig1.eps Graphic file (type eps)
+
+<fig1.eps>
+Overfull \hbox (32.53476pt too wide) in paragraph at lines 153--153
+ [][] 
+ []
+
+(semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [3
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [4
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+
+<flower.ps> [5
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 193.
+
+Overfull \hbox (25.71631pt too wide) detected at line 196
+[] [] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 u[] [] [] \OT1/cmr/m/n/10 + \OML/cmm/
+m/it/10 h [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;
+ []
+
+
+Overfull \hbox (35.2538pt too wide) detected at line 200
+[] [] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 u[] [] [] \OMS/cmsy/m/n/10   [] \OML/
+cmm/m/it/10 u[] []  \OT1/cmr/m/n/10 + [][] = 0\OML/cmm/m/it/10 ;
+ []
+
+
+Overfull \hbox (42.43243pt too wide) detected at line 204
+[] [] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 u[] [] [] \OT1/cmr/m/n/10 + [] \OML/c
+mm/m/it/10 u[] []  \OT1/cmr/m/n/10 + [][] = 0\OML/cmm/m/it/10 :
+ []
+
+(semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [6
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [7
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+
+<flower.ps> [8
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [9
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [10
+
+]
+(semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [11
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [12
+
+]
+File: wvchconst1.eps Graphic file (type eps)
+ <wvchconst1.eps>
+(semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [13
+
+] (semiar.toc
+LaTeX Font Info:    Calculating math sizes for size <4> on input line 17.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.79999> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.79999> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/msa/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/msa/m/n' in size <2.79999> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/msa/m/n' in size <2> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/msb/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/msb/m/n' in size <2.79999> not available
+(Font)              size <5> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `U/msb/m/n' in size <2> not available
+(Font)              size <5> substituted on input line 17.
+
+)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [14
+
+]
+Overfull \hbox (36.74121pt too wide) in paragraph at lines 304--304
+[]  
+ []
+
+(semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [15
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [16
+
+] (semiar.toc)
+File: flower.ps Graphic file (type eps)
+
+<flower.ps> [17
+
+]
+File: CvsAk4w125.eps Graphic file (type eps)
+ <CvsAk4w125.eps> (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [18
+
+]
+File: k4w125fsend.eps Graphic file (type eps)
+
+<k4w125fsend.eps> (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [19
+
+]
+File: CvsAk4w1.eps Graphic file (type eps)
+ <CvsAk4w1.eps> (semiar.toc)
+File: flower.ps Graphic file (type eps)
+
+<flower.ps> [20
+
+]
+File: k4w1fsb4end.eps Graphic file (type eps)
+ <k4w1fsb4end.eps> (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [21
+
+]
+File: k4w1fsb5end.eps Graphic file (type eps)
+
+<k4w1fsb5end.eps> (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [22
+
+]
+File: k4w1fsvvb5end.eps Graphic file (type eps)
+ <k4w1fsvvb5end.eps> (semiar.toc)
+File: flower.ps Graphic file (type eps)
+ <flower.ps> [23
+
+]
+\tf@toc=\write7
+ (semiar.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 3.0pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6259 strings out of 95933
+ 73555 string characters out of 1195656
+ 155648 words of memory out of 1155104
+ 8710 multiletter control sequences out of 35000
+ 32189 words of font info for 73 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 47i,16n,50p,342b,834s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on semiar.dvi (23 pages, 171268 bytes).

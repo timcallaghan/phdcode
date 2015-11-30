@@ -1,0 +1,481 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abramowitz:HMF}
+M.~Abromowitz and I.~A. Stegun.
+\newblock {\em Handbook of Mathematical Functions with Formulas, Graphs, and
+  Mathematical Tables}.
+\newblock Dover, 1972.
+
+\bibitem{Acton:NMW}
+F.~S. Acton.
+\newblock {\em Numerical Methods that Work}.
+\newblock Harper and Row, 1970.
+
+\bibitem{Ames:NMP}
+W.~F. Ames.
+\newblock {\em Numerical Methods for partial differential equations}.
+\newblock Academic Press, second edition, 1977.
+
+\bibitem{Arfken:MMP}
+G.~Arfken.
+\newblock {\em Mathematical Methods for Physicists}.
+\newblock Academic Press, 3rd edition, 1985.
+
+\bibitem{Austin:BML}
+J.~F. Austin.
+\newblock The blocking of middle latitude westerly waves by planetary waves.
+\newblock {\em Q.J.R. Meteorol. Soc.}, 106:327--350, 1980.
+
+\bibitem{Baines:SPW}
+P.~G. Baines.
+\newblock The stability of planetary waves on a sphere.
+\newblock {\em J. Fluid Mech.}, 73(part 2):193--213, 1976.
+
+\bibitem{Barton:SEC}
+J.~J. Barton and L.~R. Nackman.
+\newblock {\em Scientific and Engineering C++: {An introduction with advanced
+  techniques and examples}}.
+\newblock Adison-Wesley Publishing Company, Inc., 1994.
+
+\bibitem{Batchelor:IFD}
+G.~K. Batchelor.
+\newblock {\em Introduction to Fluid Dynamics}.
+\newblock Cambridge University Press, 1967.
+
+\bibitem{Bates:GSW}
+J.~R. Bates, Y.~Li, A.~Brandt, S.~F. McCormick, and J.~Ruge.
+\newblock A global shallow-water numerical model based on the semi-lagrangian
+  advection of potential vorticity.
+\newblock {\em Q.J.R. Meteorol. Soc.}, 121:1981--2005, 1995.
+
+\bibitem{Boyd:CFSM}
+John~P. Boyd.
+\newblock {\em Chebyshev and Fourier Spectral Methods}.
+\newblock Dover Publications, 2nd edition, 2000.
+
+\bibitem{Callaghan:NPR}
+T.~G. Callaghan and L.~K. Forbes.
+\newblock Nonlinear progressive {Rossby} waves for incompressible flow on a
+  rotating sphere, {Submitted for publication}.
+\newblock {\em J. Fluid Mech.}, 2004.
+
+\bibitem{Canuto:SMF}
+C.~Canuto.
+\newblock {\em Spectral Methods in Fluid Dynamics}.
+\newblock Springer Series in Computational Physics. Springer-Verlag, 1988.
+
+\bibitem{Charney:MFE}
+J.~G. Charney and J.~G. DeVore.
+\newblock Multiple flow equilibria in the atmosphere and blocking.
+\newblock {\em J. Atmos. Sci.}, 36:1205--1216, 1979.
+
+\bibitem{Charney:CBB}
+J.~G. Charney, J.~Shukla, and K.~C. Mo.
+\newblock Comparison of a barotropic blocking theory with observation.
+\newblock {\em J. Atmos. Sci.}, 38:762--779, 1981.
+
+\bibitem{Chen:SGC}
+B.~Chen and P.G. Saffman.
+\newblock Steady gravity-capillary waves on deep water {II. Numerical results
+  for finite amplitude}.
+\newblock {\em Studies in Appl. Math.}, 62:95--111, 1980b.
+
+\bibitem{Cheong:ADF}
+H.-B. Cheong.
+\newblock Application of double fourier series to the shallow-water equations
+  on a sphere.
+\newblock {\em J. Comput. Phys.}, 165:261--287, 2000.
+
+\bibitem{Cheong:DFS}
+H.-B. Cheong.
+\newblock Double fourier series on a sphere: {Applications to elliptic and
+  vorticity equations}.
+\newblock {\em J. Comput. Phys.}, 157:327--349, 2000.
+
+\bibitem{Cokelet:SGW}
+E.~D. Cokelet.
+\newblock Steep gravity waves in water of arbitrary uniform depth.
+\newblock {\em Philos. Trans. R. Soc. London Ser. {\em A}}, 286:183--230, 1977.
+
+\bibitem{Deitel:CHP}
+H.~M. Deitel and P.~J. Deitel.
+\newblock {\em C++ How to Program}.
+\newblock Prentice Hall, 1994.
+
+\bibitem{Duran:NMW}
+D.~R. Durran.
+\newblock {\em Numerical Methods for Wave Equations in Geophysical Fluid
+  Dynamics}, volume~32 of {\em Texts in applied mathematics}.
+\newblock Springer-Verlag, 1998.
+
+\bibitem{Dutton:CW}
+J.~A. Dutton.
+\newblock {\em The Ceaseless Wind: {An introduction to the theory of
+  atmospheric motion}}.
+\newblock McGraw-Hill, 1976.
+
+\bibitem{Randall:BHA}
+P.~N. Edwards.
+\newblock A brief history of atmospheric general circulation modeling.
+\newblock In D.~A. Randall, editor, {\em General Circulation Development, Past
+  Present and Future: {The Proceedings of a Symposium in Honor of Akio
+  Arakawa}}, pages 67--90. New York: Academic Press, 2000.
+
+\bibitem{Forbes:AIW}
+L.~K. Forbes and S.~R. Belward.
+\newblock Atmospheric interfacial waves in the presence of two moving fluid
+  layers.
+\newblock {\em Phys. Fluids}, 6(10):3306--3316, October 1994.
+
+\bibitem{Forbes:SWL1}
+L.K. Forbes.
+\newblock Surface waves of large amplitude beneath an elastic sheet. {Part 1.}
+  {High}-order series solution.
+\newblock {\em J. Fluid Mech.}, 169:409--428, 1986.
+
+\bibitem{Forbes:SWL2}
+L.K. Forbes.
+\newblock Surface waves of large amplitude beneath an elastic sheet. {Part 2.}
+  {Galerkin} solution.
+\newblock {\em J. Fluid Mech.}, 188:491--508, 1988.
+
+\bibitem{Fox:CPN}
+L.~Fox and I.~B. Parker.
+\newblock {\em Chebyshev Polynomials in Numerical Analysis}.
+\newblock Oxford University Press, 1968.
+
+\bibitem{Gander:AQR}
+W.~Gander and W.~Gautschi.
+\newblock Adaptive quadrature - revisited.
+\newblock {\em BIT}, 40(1):84--101, March 2000.
+
+\bibitem{Golub:MC}
+G.~H. Golub and C.~F.~Van Loan.
+\newblock {\em Matrix Computations}.
+\newblock John Hopkins Series in the Mathematical Sciences. John Hopkins
+  University Press, 1989.
+
+\bibitem{Gottlieb:NAS}
+D.~Gottlieb and S.~A. Orszag.
+\newblock {\em Numerical Analysis of Spectral Methods: {Theory and
+  applications}}.
+\newblock Regional Conference Series in Applied Mathematics. SIAM, 1977.
+
+\bibitem{Haltiner:NWP}
+G.~J. Haltiner.
+\newblock {\em Numerical Weather Prediction}.
+\newblock John Wiley and Sons, Inc., 1971.
+
+\bibitem{Haltiner:NPD}
+G.~J. Haltiner and R.~T. Williams.
+\newblock {\em Numerical Prediction and Dynamic Meteorology}.
+\newblock Wiley, second edition, 1980.
+
+\bibitem{Haurwitz:MAD}
+B.~Haurwitz.
+\newblock The motion of atmospheric disturbances on the spherical earth.
+\newblock {\em J. Mar. Res.}, 3:254--267, 1940.
+
+\bibitem{Hill:CGU}
+F.~S. Hill.
+\newblock {\em Computer Graphics Using OpenGL}.
+\newblock Prentice Hall, second edition, 2001.
+
+\bibitem{Hogan:SES1}
+S.~J. Hogan.
+\newblock Some effects of surface tension on steep water waves.
+\newblock {\em J. Fluid Mech.}, 91:167--180, 1979.
+
+\bibitem{Hogan:SES2}
+S.~J. Hogan.
+\newblock Some effects of surface tension on steep water waves. {Part} 2.
+\newblock {\em J. Fluid Mech.}, 96:417--445, 1980.
+
+\bibitem{Hogan:SES3}
+S.~J. Hogan.
+\newblock Some effects of surface tension on steep water waves. {Part} 3.
+\newblock {\em J. Fluid Mech.}, 110:381--410, 1981.
+
+\bibitem{Holton:IDM}
+James~R. Holton.
+\newblock {\em An Introduction to Dynamic Meteorology}.
+\newblock Academic Press, 1972.
+
+\bibitem{Horton:BVC}
+I.~Horton.
+\newblock {\em Beginning Visual C++ 5}.
+\newblock Wrox Press Ltd., 1997.
+
+\bibitem{Hoskins:SRH}
+B.~J. Hoskins.
+\newblock Stability of the {Rossby-Haurwitz} wave.
+\newblock {\em Q.J.R. Meteorol. Soc.}, 99:723--745, 1973.
+
+\bibitem{Hack:STS}
+R.~Jakob-Chien, J~J. Hack, and D.~L. Williamson.
+\newblock Spectral transform solutions to the shallow water test set.
+\newblock {\em J. Comput. Phys.}, 119:164--187, 1995.
+
+\bibitem{James:ICA}
+I.~N. James.
+\newblock {\em Introduction to Circulating Atmospheres}.
+\newblock Cambridge Atmospheric and Space Science Series. Cambridge University
+  Press, 1995.
+
+\bibitem{Klein:AAA}
+R.~Klein.
+\newblock Asymptotic analyses for atmospheric flows and the construction of
+  asymptotically adaptive numerical methods.
+\newblock {\em ZAMM}, 80:765--777, 2000.
+
+\bibitem{Kreiss:CAM}
+H.-O. Kreiss and J.~Oliger.
+\newblock Comparison of accurate methods for the integration of hyperbolic
+  equations.
+\newblock {\em Tellus}, 24:199--215, 1972.
+
+\bibitem{Kreyszig:AEM}
+E.~Kreyszig.
+\newblock {\em Advanced Engineering Mathematics}.
+\newblock Wiley, sixth edition, 1988.
+
+\bibitem{Krishnamurti:INW}
+T.~N. Krishnamurti and L.~Bounoua.
+\newblock {\em An Introduction to Numerical Weather Prediction Techniques}.
+\newblock CRC Press, 1996.
+
+\bibitem{Lamb:H}
+Sir~H. Lamb.
+\newblock {\em Hydrodynamics}.
+\newblock Dover Publications, 6th edition, 1945.
+
+\bibitem{Lanser:TIS}
+D.~Lanser, J.~G. Blom, and J.~G. Verwer.
+\newblock Time integration of the shallow water equations in spherical
+  geometry.
+\newblock {\em J. Comput. Phys.}, 171:373--393, 2001.
+
+\bibitem{Layton:CSC}
+A.~T. Layton.
+\newblock Cubic spline collocation method for the shallow water equations on
+  the sphere.
+\newblock {\em J. Comput. Phys.}, 179:578--592, 2002.
+
+\bibitem{Layton:SLD}
+A.~T. Layton and W.~F. Spotz.
+\newblock A semi-lagrangian double fourier method for the shallow water
+  equations on the sphere.
+\newblock {\em J. Comput. Phys.}, 189:180--196, 2003.
+
+\bibitem{Lilly:NBI}
+D.~K. Lilly.
+\newblock A note on barotropic instability and predictability.
+\newblock {\em J. Atmos. Sci.}, 30(1):145--146, January 1973.
+
+\bibitem{Lindzen:SPW}
+R.~S. Lindzen.
+\newblock Stationary planetary waves, blocking, and interannual variability.
+\newblock {\em Adv. Geophys.}, 29:251--273, 1986.
+
+\bibitem{Lindzen:NLR}
+R.~S. Lindzen and M.~R. Schoeberl.
+\newblock A note on the limits of rossby wave amplitudes.
+\newblock {\em J. Atmos. Sci.}, 39(5):1171--1174, May 1982.
+
+\bibitem{Loesch:FAS}
+A.~Z. Loesch.
+\newblock Finite-amplitude stability or {Rossby} wave flow.
+\newblock {\em J. Atmos. Sci.}, 35(6):929--939, June 1978.
+
+\bibitem{Longuet:PWRS1}
+M.~S. Longuet-Higgins.
+\newblock Planetary waves on a rotating sphere.
+\newblock {\em Proc. Roy. Soc. London {\em A}}, 279:446--473, 1964.
+
+\bibitem{Longuet:PWRS2}
+M.~S. Longuet-Higgins.
+\newblock Planetary waves on a rotating sphere. {II}.
+\newblock {\em Proc. Roy. Soc. London {\em A}}, 284:40--68, 1965.
+
+\bibitem{Higgins:IRG}
+M.~S. Longuet-Higgins.
+\newblock New integral relations for gravity waves of finite amplitude.
+\newblock {\em J. Fluid Mech.}, 149:205--215, 1984.
+
+\bibitem{Longuet:RIP}
+M.S. Longuet-Higgins and A.E. Gill.
+\newblock Resonant interactions between planetary waves.
+\newblock {\em Proc. R. Soc. Lond. {\em A}}, 299:120--140, 1967.
+
+\bibitem{Lorenz:BIR}
+E.~Lorenz.
+\newblock Barotropic instability of {Rossby} wave motion.
+\newblock {\em J. Atmos. Sci.}, 29(2):258--265, February 1972.
+
+\bibitem{Lorenz:NTG}
+E.~N. Lorenz.
+\newblock {\em The Nature and Theory of the General Circulation of the
+  Atmosphere}.
+\newblock WMO(Series). World Meteorological Organisation, 1967.
+
+\bibitem{Mcwilliams:FTV}
+J.~C. McWilliams, L.~P. Graves, and M.~T. Montgomery.
+\newblock A formal theory for vortex rossby waves and vortex evolution.
+\newblock {\em Geophys. Astro. Fluid Dyn.}, 97(5):275--309, Aug 2003.
+
+\bibitem{Neittaanmaki:IPO}
+P.~Neittaanmaki, M.~Rudnicki, and A.~Savini.
+\newblock {\em Inverse Problems and Optimal Design in Electricity and
+  Magnetism}, volume~35 of {\em Monographs in Electrical and Electronic
+  Engineering}.
+\newblock Oxford Science Publications, 1996.
+
+\bibitem{Neumaier:SIC}
+A.~Neumaier.
+\newblock Solving ill-conditioned and singular linear systems: {A tutorial on
+  regularization}.
+\newblock {\em SIAM Rev.}, 40:636--666, 1998.
+
+\bibitem{Nihei:FSS}
+T.~Nihei and K.~Ishii.
+\newblock A fast solver of the shallow water equations on a sphere using a
+  combined compact difference scheme.
+\newblock {\em J. Comput. Phys.}, 187:639--659, 2003.
+
+\bibitem{Ortega:ISN}
+J.~M. Ortega and W.~C. Rheinboldt.
+\newblock {\em Iterative Solution of Nonlinear Equations in Several Variables}.
+\newblock Computer Science and Applied Mathematics. Academic Press, 1970.
+
+\bibitem{Pedlosky:GFD}
+J.~Pedlosky.
+\newblock {\em Geophysical Fluid Dynamics}.
+\newblock Springer-Verlag, 1982.
+
+\bibitem{Phillips:NIP}
+N.~A. Phillips.
+\newblock Numerical integration of the primitive equations on the hemisphere.
+\newblock {\em Mon. Wea. Rev.}, 87:333--345, 1959.
+
+\bibitem{Pope:TEA}
+V.~Pope and T.~Davies.
+\newblock Testing and evaluating atmospheric climate models.
+\newblock {\em Comp. Sci. Eng.}, 4(5):64--69, Sep-Oct 2002.
+
+\bibitem{Press:NRC}
+W.~H. Press, S.~A. Teukolsky, W.~T. Vetterling, and B.~P Flannery.
+\newblock {\em Numerical Recipes in C++: {The art of scientific computing}}.
+\newblock Cambridge University Press, 2nd edition, 2002.
+
+\bibitem{Rossby:RBV}
+C.-G. Rossby and collaborators.
+\newblock Relation between variations in the intensity of the zonal circulation
+  of the atmosphere and the displacements of the semi-permanent centers of
+  action.
+\newblock {\em J. Mar. Res.}, 2:38--55, 1939.
+
+\bibitem{Salmon:LGF}
+R.~Salmon.
+\newblock {\em Lectures on Geophysical Fluid Dynamics}.
+\newblock Oxford University Press, 1998.
+
+\bibitem{Schwartz:CEA}
+L.~W. Schwartz.
+\newblock Computer extension and analytic continuation of stokes' expansion for
+  gravity waves.
+\newblock {\em J. Fluid Mech.}, 62:553--578, 1974.
+
+\bibitem{Schwartz:NSE}
+L.~W. Schwartz and J.-M. Vanden-Broeck.
+\newblock Numerical solution of the exact equations for capillary-gravity
+  waves.
+\newblock {\em J. Fluid Mech.}, 95:119--139, 1979.
+
+\bibitem{Schwartz:SNW}
+L.W. Schwartz and J.D. Fenton.
+\newblock Strongly nonlinear waves.
+\newblock {\em Ann. Rev. Fluid Mech.}, 14:39--60, 1982.
+
+\bibitem{Shen:ESG}
+J.~Shen.
+\newblock Efficient {spectral-Galerkin} methods {III}: {Polar and cylindrical
+  geometries}.
+\newblock {\em SIAM J. SCI. COMPUT.}, 18(6):1583--1604, November 1997.
+
+\bibitem{Silberman:PWA}
+I.~Silberman.
+\newblock Planetary waves in the atmosphere.
+\newblock {\em J. Met.}, 11:27--34, 1954.
+
+\bibitem{Snyder:MP}
+John~P. Snyder.
+\newblock {\em Map projections--A Working Manual}.
+\newblock U.S. Geological Survey professional paper ; 1395, 1987.
+
+\bibitem{Snyder:CMN}
+M.~A. Snyder.
+\newblock {\em Chebyshev Methods in Numerical Approximation}.
+\newblock Prentice Hall Series in Automatic Computation. Prentice Hall, 1966.
+
+\bibitem{Stokes:TOW}
+G.~G. Stokes.
+\newblock On the theory of oscillatory waves.
+\newblock {\em Camb. Trans.}, viii:441--473, 1847.
+
+\bibitem{Swarztrauber:STM}
+P.~N. Swarztrauber.
+\newblock Spectral transform methods for solving the shallow-water equations on
+  the sphere.
+\newblock {\em Mon. Wea. Rev.}, 124:730--744, 1996.
+
+\bibitem{Taylor:SEM}
+M.~Taylor, J.~Tribbia, and M.~Iskandarani.
+\newblock The spectral element method for the shallow water equations on the
+  sphere.
+\newblock {\em J. Comput. Phys.}, 130:92--108, 1997.
+
+\bibitem{Thuburn:NSR}
+J.~Thuburn and Y.~Li.
+\newblock Numerical simulations of rossby-haurwitz waves.
+\newblock {\em Tellus A}, 52:181--189, 2000.
+
+\bibitem{Tolstykh:VDS}
+M.~A. Tolstykh.
+\newblock Vorticity-divergence semi-lagrangian shallow-water model of the
+  sphere based on compact finite differences.
+\newblock {\em J. Comput. Phys.}, 179:180--200, 2002.
+
+\bibitem{Tomita:SWM}
+H.~Tomita, M.~Tsugawa, M.~Satoh, and K.~Goto.
+\newblock Shallow water model on a modified icosahedral geodesic grid by using
+  spring dynamics.
+\newblock {\em J. Comput. Phys.}, 174:579--613, 2001.
+
+\bibitem{Trulsen:MTR}
+K.~Trulsen and C.~C. Mei.
+\newblock Modulations of three resonating gravity-capillary waves by a long
+  gravity wave.
+\newblock {\em J. Fluid Mech.}, 290:345--376, 1995.
+
+\bibitem{Trulsen:EWW}
+K.~Trulsen and C.~C. Mei.
+\newblock Effects of weak wind damping on wilton's ripples.
+\newblock {\em J. Fluid Mech.}, 335:141--163, 1997.
+
+\bibitem{Nielsen:STA}
+A.~Wiin-Nielsen and H.~Marshall.
+\newblock On the structure of transient atmospheric waves. {Part III}.
+\newblock {\em Atmosfera}, 3:73--109, 1990.
+
+\bibitem{Williamson:STS}
+D.~L. Williamson, J.~B. Drake, J.~J. Hack, R.~Jakob, and P.~N. Swarztrauber.
+\newblock A standard test set for numerical approximations to the shallow water
+  equations in spherical geometry.
+\newblock {\em J. Comput. Phys.}, 102:211--224, 1992.
+
+\bibitem{Wilton:OR}
+J.R. Wilton.
+\newblock On ripples.
+\newblock {\em Philos. Mag.}, 29(6):688--700, 1915.
+
+\end{thebibliography}

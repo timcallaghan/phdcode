@@ -1,0 +1,345 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      8194,        242]*)
+(*NotebookOutlinePosition[      8837,        264]*)
+(*  CellTagsIndexPosition[      8793,        260]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(pO = \(-1\)/2 \((4 - \[Omega]/\((\[Omega] - c*s\_r)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\ \((\(-4\) + \[Omega]\/\(\[Omega] - c\ s\_r\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qO = 
+      1/4 \((\((2*\((\[Omega] + 1/R\_o)\)/\((\[Omega] - c*s\_R)\) + 
+                  1)\) \((3 - \((2  \[Omega] + 1/R\_o)\)/\((\[Omega] - 
+                        c*s\_R)\))\) - \[Kappa] \((\((\[Omega] - 
+                        c*s\_R)\)/\((1/
+                          2*\[Omega]*\((\[Omega] + 2/R\_o)\))\) - 
+                  1/\((\[Omega] - c*s\_R)\))\) \((2 \((\[Omega] + 
+                        1/R\_o)\) \((2  \[Omega] + 
+                          1/R\_o)\)/\((\[Kappa] \((\[Omega] - 
+                              c*s\_R)\))\) - \[Kappa] \((\[Omega] - 
+                        c*s\_R)\))\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/4\ \((\((1 + \(2\ \((\[Omega] + 1\/R\_o)\)\)\/\(\[Omega] - c\ \
+s\_R\))\)\ \((3 - \(2\ \[Omega] + 1\/R\_o\)\/\(\[Omega] - c\ s\_R\))\) - \
+\[Kappa]\ \((\(2\ \((\[Omega] + 1\/R\_o)\)\ \((2\ \[Omega] + 1\/R\_o)\)\)\/\(\
+\[Kappa]\ \((\[Omega] - c\ s\_R)\)\) - \[Kappa]\ \((\[Omega] - 
+                      c\ s\_R)\))\)\ \((\(-\(1\/\(\[Omega] - 
+                        c\ s\_R\)\)\) + \(2\ \((\[Omega] - c\ s\_R)\)\)\/\(\
+\[Omega]\ \((\[Omega] + 2\/R\_o)\)\))\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(f = r*\((r - 1)\) + pO*r + qO\)], "Input"],
+
+Cell[BoxData[
+    \(\((\(-1\) + r)\)\ r + 
+      1\/2\ r\ \((\(-4\) + \[Omega]\/\(\[Omega] - c\ s\_r\))\) + 
+      1\/4\ \((\((1 + \(2\ \((\[Omega] + 1\/R\_o)\)\)\/\(\[Omega] - c\ \
+s\_R\))\)\ \((3 - \(2\ \[Omega] + 1\/R\_o\)\/\(\[Omega] - c\ s\_R\))\) - \
+\[Kappa]\ \((\(2\ \((\[Omega] + 1\/R\_o)\)\ \((2\ \[Omega] + 1\/R\_o)\)\)\/\(\
+\[Kappa]\ \((\[Omega] - c\ s\_R)\)\) - \[Kappa]\ \((\[Omega] - 
+                        c\ s\_R)\))\)\ \((\(-\(1\/\(\[Omega] - 
+                          c\ s\_R\)\)\) + \(2\ \((\[Omega] - c\ s\_R)\)\)\/\(\
+\[Omega]\ \((\[Omega] + 2\/R\_o)\)\))\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[r - pO \[Equal] 0, r]\)], "Input"],
+
+Cell[BoxData[
+    \(Solve::"tdep" \(\(:\)\(\ \)\) 
+      "The equations appear to involve the variables to be solved for in an \
+essentially non-algebraic way."\)], "Message"],
+
+Cell[BoxData[
+    \(Solve[r + 1\/2\ \((4 - \[Omega]\/\(\[Omega] - c\ s\_r\))\) == 0, 
+      r]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(f2 = r*\((r - 1)\) + p*r + q\)], "Input"],
+
+Cell[BoxData[
+    \(q + p\ r + \((\(-1\) + r)\)\ r\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[f2 \[Equal] 0, r]\)], "Input"],
+
+Cell[BoxData[
+    \({{r \[Rule] 
+          1\/2\ \((1 - p - \@\(\((\(-1\) + p)\)\^2 - 4\ q\))\)}, {r \[Rule] 
+          1\/2\ \((1 - p + \@\(\((\(-1\) + p)\)\^2 - 4\ q\))\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Indicie1[p_, q_] = 
+      1\/2\ \((1 - p - \@\(\((\(-1\) + p)\)\^2 - 4\ q\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(Set::"write" \(\(:\)\(\ \)\) 
+      "Tag \!\(Times\) in \!\(\(\((1\/2\\ \(\((1 - p - \@\(\((\(\(-1\)\) + p)\
+\)\^2 - \(\(4\\ q\)\)\))\)\))\)\)[\(\(p_, q_\)\)]\) is Protected."\)], \
+"Message"],
+
+Cell[BoxData[
+    \(1\/2\ \((1 - p - \@\(\((\(-1\) + p)\)\^2 - 4\ q\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Indicie2[pe_, qu_] = 
+      1\/2\ \((1 - pe + \@\(\((\(-1\) + pe)\)\^2 - 4\ qu\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(Set::"write" \(\(:\)\(\ \)\) 
+      "Tag \!\(Times\) in \!\(\(\((1\/2\\ \(\((1 - p + \@\(\((\(\(-1\)\) + p)\
+\)\^2 - \(\(4\\ q\)\)\))\)\))\)\)[\(\(pe_, qu_\)\)]\) is Protected."\)], \
+"Message"],
+
+Cell[BoxData[
+    \(1\/2\ \((1 - pe + \@\(\((\(-1\) + pe)\)\^2 - 4\ qu\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(d1[x_, y_] = 
+      1/2 \((1 - x - Sqrt[\((\(-1\) + x)\)^2 - 4*y])\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\ \((1 - x - \@\(\((\(-1\) + x)\)\^2 - 4\ y\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(indic1 = Simplify[d1[pO, qO]]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/4\ \((6 + \[Omega]\/\(\(-\[Omega]\) + c\ s\_r\) - 
+          2\ \[Sqrt]\((\((\(-3\) + \[Omega]\/\(2\ \[Omega] - 2\ c\ \
+s\_r\))\)\^2 - \((1 + \(2\ \((\[Omega] + 1\/R\_o)\)\)\/\(\[Omega] - c\ \
+s\_R\))\)\ \((3 - \(2\ \[Omega] + 1\/R\_o\)\/\(\[Omega] - c\ s\_R\))\) + \
+\[Kappa]\ \((\(-\[Kappa]\)\ \[Omega] + 
+                        c\ \[Kappa]\ s\_R + \(2\ \((\[Omega] + 1\/R\_o)\)\ \
+\((2\ \[Omega] + 1\/R\_o)\)\)\/\(\[Kappa]\ \((\[Omega] - c\ s\_R)\)\))\)\ \((\
+\(2\ R\_o\ \((\[Omega] - c\ s\_R)\)\)\/\(\[Omega]\ \((2 + \[Omega]\ R\_o)\)\) \
++ 1\/\(\(-\[Omega]\) + c\ s\_R\))\))\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(d2[x_, y_] = 
+      1/2 \((1 - x + Sqrt[\((\(-1\) + x)\)^2 - 4*y])\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\ \((1 - x + \@\(\((\(-1\) + x)\)\^2 - 4\ y\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(indic2 = Simplify[d2[pO, qO]]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\ \((3 + \[Omega]\/\(\(-2\)\ \[Omega] + 2\ c\ s\_r\) + \
+\[Sqrt]\((\((\(-3\) + \[Omega]\/\(2\ \[Omega] - 2\ c\ s\_r\))\)\^2 - \((1 + \
+\(2\ \((\[Omega] + 1\/R\_o)\)\)\/\(\[Omega] - c\ s\_R\))\)\ \((3 - \(2\ \
+\[Omega] + 1\/R\_o\)\/\(\[Omega] - c\ s\_R\))\) + \[Kappa]\ \((\(-\[Kappa]\)\ \
+\[Omega] + 
+                      c\ \[Kappa]\ s\_R + \(2\ \((\[Omega] + 1\/R\_o)\)\ \((2\
+\ \[Omega] + 1\/R\_o)\)\)\/\(\[Kappa]\ \((\[Omega] - c\ s\_R)\)\))\)\ \((\(2\ \
+R\_o\ \((\[Omega] - c\ s\_R)\)\)\/\(\[Omega]\ \((2 + \[Omega]\ R\_o)\)\) + 
+                      1\/\(\(-\[Omega]\) + c\ s\_R\))\))\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[indic1 - indic2]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\[Sqrt]\((\((\(-3\) + \[Omega]\/\(2\ \[Omega] - 2\ c\ s\_r\))\)\^2 - \
+\((1 + \(2\ \((\[Omega] + 1\/R\_o)\)\)\/\(\[Omega] - c\ s\_R\))\)\ \((3 - \(2\
+\ \[Omega] + 1\/R\_o\)\/\(\[Omega] - c\ s\_R\))\) + \[Kappa]\ \
+\((\(-\[Kappa]\)\ \[Omega] + 
+                  c\ \[Kappa]\ s\_R + \(2\ \((\[Omega] + 1\/R\_o)\)\ \((2\ \
+\[Omega] + 1\/R\_o)\)\)\/\(\[Kappa]\ \((\[Omega] - c\ s\_R)\)\))\)\ \((\(2\ R\
+\_o\ \((\[Omega] - c\ s\_R)\)\)\/\(\[Omega]\ \((2 + \[Omega]\ R\_o)\)\) + 
+                  1\/\(\(-\[Omega]\) + c\ s\_R\))\))\)\)\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{832, 555},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 89, 1, 30, "Input"],
+Cell[1819, 55, 87, 1, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1943, 61, 643, 11, 70, "Input"],
+Cell[2589, 74, 500, 7, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3126, 86, 62, 1, 30, "Input"],
+Cell[3191, 89, 599, 9, 106, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3827, 103, 60, 1, 30, "Input"],
+Cell[3890, 106, 175, 3, 42, "Message"],
+Cell[4068, 111, 108, 2, 44, "Output"]
+}, Open  ]],
+Cell[4191, 116, 26, 0, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[4242, 120, 61, 1, 30, "Input"],
+Cell[4306, 123, 64, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4407, 129, 56, 1, 30, "Input"],
+Cell[4466, 132, 188, 3, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4691, 140, 111, 2, 42, "Input"],
+Cell[4805, 144, 212, 4, 36, "Message"],
+Cell[5020, 150, 86, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5143, 156, 116, 2, 42, "Input"],
+Cell[5262, 160, 214, 4, 36, "Message"],
+Cell[5479, 166, 89, 1, 42, "Output"]
+}, Open  ]],
+Cell[5583, 170, 26, 0, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[5634, 174, 101, 2, 30, "Input"],
+Cell[5738, 178, 86, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5861, 184, 62, 1, 30, "Input"],
+Cell[5926, 187, 622, 9, 126, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6585, 201, 101, 2, 30, "Input"],
+Cell[6689, 205, 86, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6812, 211, 62, 1, 30, "Input"],
+Cell[6877, 214, 635, 9, 122, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7549, 228, 58, 1, 30, "Input"],
+Cell[7610, 231, 568, 8, 126, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

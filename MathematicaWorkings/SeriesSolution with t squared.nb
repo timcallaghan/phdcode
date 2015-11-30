@@ -1,0 +1,2094 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     71470,       1949]*)
+(*NotebookOutlinePosition[     72278,       1977]*)
+(*  CellTagsIndexPosition[     72189,       1971]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(A1[x_] = \(-x\) + Sqrt[x^2 + B*x/\((K*\((A + B*x)\))\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(P[t_] = \((1 - t^4)\)*A1[t^2]\)], "Input"],
+
+Cell[BoxData[
+    \(\((1 - 
+          t\^4)\)\ \((\(-t\^2\) + \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Q[t_] = \(-t^2\)*
+          A1[t^2] - \((1 - 
+              t^4)\)*\((2 - \((\((A + 2*B*t^2)\)*
+                    A1[t^2])\)/\((t^2*\((A + B*t^2)\))\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-t\^2\)\ \((\(-t\^2\) + \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\))\) - \((1 - 
+            t\^4)\)\ \((2 - \(\((A + 2\ B\ t\^2)\)\ \((\(-t\^2\) + \@\(t\^4 + \
+\(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\))\)\)\/\(t\^2\ \((A + B\ \
+t\^2)\)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p[t_] = 2*t^2*Q[t]/P[t] - 1\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1\) + \(2\ t\^2\ \((\(-t\^2\)\ \((\(-t\^2\) + \@\(t\^4 + \(B\ t\^2\)\
+\/\(K\ \((A + B\ t\^2)\)\)\))\) - \((1 - t\^4)\)\ \((2 - \(\((A + 2\ B\ t\^2)\
+\)\ \((\(-t\^2\) + \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\))\)\)\/\(t\^2\ \((A + B\ t\^2)\)\))\))\)\)\/\(\((1 - t\^4)\)\ \
+\((\(-t\^2\) + \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\))\)\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[p[t], t \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pshift[x_] = \((x - 1)\)*Q[x]/P[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\((\(-1\) + x)\)\ \((\(-x\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \
+\((A + B\ x)\)\)\))\) - \((1 - x\^2)\)\ \((2 - \(\((A + 2\ B\ x)\)\ \((\(-x\) \
++ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/\(x\ \((A + B\ \
+x)\)\))\))\)\)\/\(\((1 - x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A \
++ B\ x)\)\)\))\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[pshift[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulamp[t_] = D[A1[t^2], t]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-2\)\ t + \(4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\^2)\)\^2\) \
++ \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ t\^2\)\/\(K\ \
+\((A + B\ t\^2)\)\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulampp[t_] = D[ulamp[t], t]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-2\) - \((4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\^2)\)\^2\) + \
+\(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\))\)\^2\/\(4\ \((t\^4 + \(B\ t\^2\)\/\(K\ \
+\((A + B\ t\^2)\)\))\)\^\(3/2\)\) + \(12\ t\^2 + \(8\ B\^3\ t\^4\)\/\(K\ \((A \
++ B\ t\^2)\)\^3\) - \(10\ B\^2\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\^2\) + \(2\ \
+B\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R[t_] = 
+      2*t^2 - \((1 - t^4)\)*\((1/\((4*t^2)\)*ulampp[t] - 
+              1/\((4*t^3)\)*ulamp[t])\) + t^2*1/\((2*t)\)*ulamp[t] - 
+        A1[t^2]*k^2/
+            t^4 - \((1 - t^4)\)*\((A + 
+              2*B*t^2)\)*\((1/\((2*t)\)*ulamp[t] + 
+                2)\)/\((t^2*\((A + B*t^2)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(2\ t\^2 + 
+      1\/2\ t\ \((\(-2\)\ t + \(4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\
+\^2)\)\^2\) + \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ t\
+\^2\)\/\(K\ \((A + B\ t\^2)\)\)\)\))\) - \(k\^2\ \((\(-t\^2\) + \@\(t\^4 + \
+\(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\))\)\)\/t\^4 - \((1 - 
+            t\^4)\)\ \((\(\(-2\) - \((4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A \
++ B\ t\^2)\)\^2\) + \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\))\)\^2\/\(4\ \((t\^4 \
++ \(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\))\)\^\(3/2\)\) + \(12\ t\^2 + \(8\ \
+B\^3\ t\^4\)\/\(K\ \((A + B\ t\^2)\)\^3\) - \(10\ B\^2\ t\^2\)\/\(K\ \((A + B\
+\ t\^2)\)\^2\) + \(2\ B\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ t\
+\^2\)\/\(K\ \((A + B\ t\^2)\)\)\)\)\)\/\(4\ t\^2\) - \(\(-2\)\ t + \(4\ t\^3 \
+- \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\^2)\)\^2\) + \(2\ B\ t\)\/\(K\ \((A + B\
+\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\)\)\)\/\(4\ t\^3\))\) - \(\((A + 2\ B\ t\^2)\)\ \((1 - t\^4)\)\ \
+\((2 + \(\(-2\)\ t + \(4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\^2)\)\^2\
+\) + \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ \
+t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\)\)\)\/\(2\ t\))\)\)\/\(t\^2\ \((A + B\ \
+t\^2)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(q[x_] = 4*t^4*R[t]/P[t]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/\(\((1 - 
+              t\^4)\)\ \((\(-t\^2\) + \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\))\)\)\)\((4\ t\^4\ \((2\ t\^2 + 
+            1\/2\ t\ \((\(-2\)\ t + \(4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A \
++ B\ t\^2)\)\^2\) + \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \
+\(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\)\))\) - \(k\^2\ \((\(-t\^2\) + \
+\@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\))\)\)\/t\^4 - \((1 - 
+                  t\^4)\)\ \((\(\(-2\) - \((4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \
+\((A + B\ t\^2)\)\^2\) + \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\))\)\^2\/\(4\ \
+\((t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\))\)\^\(3/2\)\) + \(12\ t\^2 + \
+\(8\ B\^3\ t\^4\)\/\(K\ \((A + B\ t\^2)\)\^3\) - \(10\ B\^2\ t\^2\)\/\(K\ \
+\((A + B\ t\^2)\)\^2\) + \(2\ B\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 \
++ \(B\ t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\)\)\)\/\(4\ t\^2\) - \(\(-2\)\ t + \
+\(4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\^2)\)\^2\) + \(2\ B\ t\)\/\(K\
+\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ t\^2\)\/\(K\ \((A + B\ \
+t\^2)\)\)\)\)\)\/\(4\ t\^3\))\) - \(\((A + 2\ B\ t\^2)\)\ \((1 - t\^4)\)\ \
+\((2 + \(\(-2\)\ t + \(4\ t\^3 - \(2\ B\^2\ t\^3\)\/\(K\ \((A + B\ t\^2)\)\^2\
+\) + \(2\ B\ t\)\/\(K\ \((A + B\ t\^2)\)\)\)\/\(2\ \@\(t\^4 + \(B\ \
+t\^2\)\/\(K\ \((A + B\ t\^2)\)\)\)\)\)\/\(2\ t\))\)\)\/\(t\^2\ \((A + B\ \
+t\^2)\)\))\))\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[q[t], t \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1\) - 4\ k\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qshift[x_] = \((x - 1)\)^2*R[x]/P[x]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(1\/\(\((1 - 
+              x\^2)\)\ \((\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\
+\))\)\)\)\((\((\(-1\) + x)\)\^2\ \((2\ x - \((1 - 
+                  x\^2)\)\ \((\(-\(\((2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\
+\^2\) + B\/\(K\ \((A + B\ x)\)\))\)\^2\/\(4\ \((x\^2 + \(B\ x\)\/\(K\ \((A + \
+B\ x)\)\))\)\^\(3/2\)\)\)\) + \(2 + \(2\ B\^3\ x\)\/\(K\ \((A + B\ x)\)\^3\) \
+- \(2\ B\^2\)\/\(K\ \((A + B\ x)\)\^2\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \
+\((A + B\ x)\)\)\)\))\) + 
+            x\ \((\(-1\) + \(2\ x - \(B\^2\ x\)\/\(K\ \((A + B\ x)\)\^2\) + B\
+\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ \
+x)\)\)\)\))\) - \(\((A + 2\ B\ x)\)\ \((1 - x\^2)\)\ \((1 + \(2\ x - \(B\^2\ \
+x\)\/\(K\ \((A + B\ x)\)\^2\) + B\/\(K\ \((A + B\ x)\)\)\)\/\(2\ \@\(x\^2 + \
+\(B\ x\)\/\(K\ \((A + B\ x)\)\)\)\))\)\)\/\(x\ \((A + B\ x)\)\) - \(k\^2\ \((\
+\(-x\) + \@\(x\^2 + \(B\ x\)\/\(K\ \((A + B\ x)\)\)\))\)\)\/x\^2)\))\)\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Limit[qshift[x], x \[Rule] 1]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pseries[t_] = Simplify[Series[p[t], {t, 0, 3}]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+      "1", "-", \(\(4\ t\)\/\@\(B\/\(A\ K\)\)\), 
+        "+", \(\((\(2\ B\)\/A - \(4\ A\ K\)\/B)\)\ t\^2\), 
+        "-", \(\(2\ \((\@\(B\/\(A\ K\)\)\ K\ \((B\^2 + 
+                      A\^2\ K)\))\)\ t\^3\)\/B\^2\), "+", 
+        InterpretationBox[\(O[t]\^4\),
+          SeriesData[ t, 0, {}, 0, 4, 1]]}],
+      SeriesData[ t, 0, {1, 
+        Times[ -4, 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ -1, 2]]], 
+        Plus[ 
+          Times[ 2, 
+            Power[ A, -1], B], 
+          Times[ -4, A, 
+            Power[ B, -1], K]], 
+        Times[ -2, 
+          Power[ B, -2], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ 1, 2]], K, 
+          Plus[ 
+            Power[ B, 2], 
+            Times[ 
+              Power[ A, 2], K]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qseries[t_] = Simplify[Series[q[t], {t, 0, 3}]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((\(-1\) - 4\ k\^2)\), "-", \(\(5\ t\)\/\@\(B\/\(A\ K\)\)\), 
+        "+", \(\((\(2\ B\)\/A - \(9\ A\ K\)\/B)\)\ t\^2\), 
+        "-", \(\(\((\@\(B\/\(A\ K\)\)\ K\ \((9\ B\^2 + 
+                      13\ A\^2\ K)\))\)\ t\^3\)\/\(2\ B\^2\)\), "+", 
+        InterpretationBox[\(O[t]\^4\),
+          SeriesData[ t, 0, {}, 0, 4, 1]]}],
+      SeriesData[ t, 0, {
+        Plus[ -1, 
+          Times[ -4, 
+            Power[ k, 2]]], 
+        Times[ -5, 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ -1, 2]]], 
+        Plus[ 
+          Times[ 2, 
+            Power[ A, -1], B], 
+          Times[ -9, A, 
+            Power[ B, -1], K]], 
+        Times[ 
+          Rational[ -1, 2], 
+          Power[ B, -2], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ 1, 2]], K, 
+          Plus[ 
+            Times[ 9, 
+              Power[ B, 2]], 
+            Times[ 13, 
+              Power[ A, 2], K]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pshiftseries[x_] = Simplify[Series[pshift[x], {x, 1, 3}]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(1\/2\), 
+        "+", \(\(\((\(-13\)\ A - 17\ B + 
+                  5\ A\ \@\(1 + B\/\(\((A + B)\)\ K\)\) + 
+                  9\ B\ \@\(1 + B\/\(\((A + B)\)\ K\)\))\)\ \((x - 
+                  1)\)\)\/\(4\ \((A + 
+                  B)\)\ \((\(-1\) + \@\(1 + B\/\(\((A + B)\)\ K\)\))\)\)\), 
+        "+", \(\((\((\(-34\)\ A\^3\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(A\ K + B\ K\)\))\) + 
+                  A\^2\ B\ \((26 - 
+                        9\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) - 
+                        102\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\) + 
+                  B\^3\ \((\(-17\)\ \((\(-2\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) - 
+                        50\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\) - 
+                  2\ A\ B\^2\ \((\(-22\) + 
+                        9\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        59\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\))\)\ \((x - 1)\)\^2)\)/\((8\ \((A + B)\)\^3\ \((\(-1\) + \
+\@\(1 + B\/\(\((A + B)\)\ K\)\))\)\^2\ \@\(1 + B\/\(\((A + B)\)\ K\)\)\ \
+K)\)\), "+", \(\((\((132\ A\^6\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(A\ K + B\ K\)\))\) + 
+                  3\ A\^5\ B\ K\^2\ \((\(-105\) + 
+                        83\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        264\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\) + 
+                  B\^6\ \((33\ \((\(-3\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\) + 
+                        196\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        2\ K\ \((\(-173\) + 
+                              99\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\))\) + K\^2\ \((\(-443\) + 
+                              345\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\))\) + A\^3\ B\^3\ \((\(-63\) + 
+                        17\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        2704\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        16\ K\ \((\(-59\) + 
+                              33\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\))\) + 6\ K\^2\ \((\(-501\) + 
+                              391\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\))\) + 
+                  A\^4\ B\^2\ K\ \((1980\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + \
+B\ K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        6\ \((\(-41\) + 
+                              23\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\))\) + K\ \((\(-1543\) + 
+                              1213\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\
+\)\))\))\) + A\ B\^5\ \((\(-169\) + 
+                        51\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        984\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        24\ K\ \((\(-41\) + 
+                              23\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\))\) + K\^2\ \((\(-1751\) + 
+                              1357\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\
+\)\))\))\) + A\^2\ B\^4\ \((\(-181\) + 
+                        51\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        2172\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        8\ K\ \((\(-167\) + 
+                              93\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\))\) + K\^2\ \((\(-3086\) + 
+                              2394\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\
+\)\))\))\))\)\ \((x - 1)\)\^3)\)/\((16\ \((A + B)\)\^4\ \((\(-1\) + \@\(1 + B\
+\/\(\((A + B)\)\ K\)\))\)\^3\ K\ \((B + A\ K + B\ K)\)\^2)\)\), "+", 
+        InterpretationBox[\(O[x - 1]\^4\),
+          SeriesData[ x, 1, {}, 0, 4, 1]]}],
+      SeriesData[ x, 1, {
+        Rational[ 1, 2], 
+        Times[ 
+          Rational[ 1, 4], 
+          Power[ 
+            Plus[ A, B], -1], 
+          Power[ 
+            Plus[ -1, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], -1], 
+          Plus[ 
+            Times[ -13, A], 
+            Times[ -17, B], 
+            Times[ 5, A, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], 
+            Times[ 9, B, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]]]], 
+        Times[ 
+          Rational[ 1, 8], 
+          Power[ 
+            Plus[ A, B], -3], 
+          Power[ 
+            Plus[ -1, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], -2], 
+          Power[ 
+            Plus[ 1, 
+              Times[ B, 
+                Power[ 
+                  Plus[ A, B], -1], 
+                Power[ K, -1]]], 
+            Rational[ -1, 2]], 
+          Power[ K, -1], 
+          Plus[ 
+            Times[ -34, 
+              Power[ A, 3], K, 
+              Plus[ -1, 
+                Power[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ 
+                        Times[ A, K], 
+                        Times[ B, K]], -1], 
+                    Plus[ B, 
+                      Times[ A, K], 
+                      Times[ B, K]]], 
+                  Rational[ 1, 2]]]], 
+            Times[ 
+              Power[ A, 2], B, 
+              Plus[ 26, 
+                Times[ -9, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ -102, K, 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]]]], 
+            Times[ 
+              Power[ B, 3], 
+              Plus[ 
+                Times[ -17, 
+                  Plus[ -2, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ -50, K, 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]]]], 
+            Times[ -2, A, 
+              Power[ B, 2], 
+              Plus[ -22, 
+                Times[ 9, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 59, K, 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]]]]]], 
+        Times[ 
+          Rational[ 1, 16], 
+          Power[ 
+            Plus[ A, B], -4], 
+          Power[ 
+            Plus[ -1, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], -3], 
+          Power[ K, -1], 
+          Power[ 
+            Plus[ B, 
+              Times[ A, K], 
+              Times[ B, K]], -2], 
+          Plus[ 
+            Times[ 132, 
+              Power[ A, 6], 
+              Power[ K, 3], 
+              Plus[ -1, 
+                Power[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ 
+                        Times[ A, K], 
+                        Times[ B, K]], -1], 
+                    Plus[ B, 
+                      Times[ A, K], 
+                      Times[ B, K]]], 
+                  Rational[ 1, 2]]]], 
+            Times[ 3, 
+              Power[ A, 5], B, 
+              Power[ K, 2], 
+              Plus[ -105, 
+                Times[ 83, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 264, K, 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]]]], 
+            Times[ 
+              Power[ B, 6], 
+              Plus[ 
+                Times[ 33, 
+                  Plus[ -3, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 196, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 2, K, 
+                  Plus[ -173, 
+                    Times[ 99, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 
+                  Power[ K, 2], 
+                  Plus[ -443, 
+                    Times[ 345, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]]]], 
+            Times[ 
+              Power[ A, 3], 
+              Power[ B, 3], 
+              Plus[ -63, 
+                Times[ 17, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 2704, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 16, K, 
+                  Plus[ -59, 
+                    Times[ 33, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 6, 
+                  Power[ K, 2], 
+                  Plus[ -501, 
+                    Times[ 391, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]]]], 
+            Times[ 
+              Power[ A, 4], 
+              Power[ B, 2], K, 
+              Plus[ 
+                Times[ 1980, 
+                  Power[ K, 2], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 6, 
+                  Plus[ -41, 
+                    Times[ 23, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ K, 
+                  Plus[ -1543, 
+                    Times[ 1213, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]]]], 
+            Times[ A, 
+              Power[ B, 5], 
+              Plus[ -169, 
+                Times[ 51, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 984, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 24, K, 
+                  Plus[ -41, 
+                    Times[ 23, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 
+                  Power[ K, 2], 
+                  Plus[ -1751, 
+                    Times[ 1357, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]]]], 
+            Times[ 
+              Power[ A, 2], 
+              Power[ B, 4], 
+              Plus[ -181, 
+                Times[ 51, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 2172, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 8, K, 
+                  Plus[ -167, 
+                    Times[ 93, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 
+                  Power[ K, 2], 
+                  Plus[ -3086, 
+                    Times[ 2394, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]]]]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qshiftseries[x_] = Simplify[Series[qshift[x], {x, 1, 3}]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(-\(\(\((1 - 
+                    k\^2\ \((\(-1\) + \@\(1 + B\/\(\((A + B)\)\ K\)\))\) + \
+\(2 - B\^2\/\(\((A + B)\)\^2\ K\) + B\/\(\((A + B)\)\ K\)\)\/\(2\ \@\(1 + B\/\
+\(\((A + B)\)\ K\)\)\))\)\ \((x - 
+                    1)\)\)\/\(2\ \((\(-1\) + \@\(1 + B\/\(\((A + B)\)\ K\)\))\
+\)\)\)\), 
+        "+", \(\((\((\(-20\)\ A\^4\ k\^2\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + \
+B\ K\)\/\(\((A + B)\)\ K\)\))\) - 
+                  2\ B\^4\ \((9 + 
+                        K\ \((3 + 
+                              8\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\) + 5\ k\^2\ \((1 + 
+                              K)\)\ \((\(-2\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\) + 
+                              2\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\))\))\) - 
+                  5\ A\^3\ B\ K\ \((1 + \@\(\(B + A\ K + B\ K\)\/\(A\ K + B\ \
+K\)\) + 2\ k\^2\ \((\(-4\) + 
+                              3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\) + 8\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\))\))\) - 
+                  A\ B\^3\ \((31 - 
+                        3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        K\ \((25 + 
+                              29\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\))\) + 10\ k\^2\ \((2\ \((\(-2\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\
+\)\))\) + 
+                              8\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                              3\ K\ \((\(-4\) + 
+                                    3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\))\))\) - 
+                  A\^2\ B\^2\ \((8 + \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\) + 6\ K\ \((4 + 3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        10\ k\^2\ \((\(-2\) + \@\(\(B + A\ K + B\ K\)\/\(\((A \
++ B)\)\ K\)\) + 
+                              12\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\
+\(\((A + B)\)\ K\)\))\) + 3\ K\ \((\(-4\) + 
+                                    3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\))\))\))\)\ \((x - 1)\)\^2)\)/\((8\ \((A + B)\)\^3\ \((\(-1\) + \
+\@\(1 + B\/\(\((A + B)\)\ K\)\))\)\^2\ \@\(1 + B\/\(\((A + B)\)\ K\)\)\ K\ \
+\((B + A\ K + B\ K)\))\)\), 
+        "+", \(\((\((\(-272\)\ A\^7\ k\^2\ K\^4\ \((\(-1\) + \@\(\(B + A\ K + \
+B\ K\)\/\(\((A + B)\)\ K\)\))\) - 
+                  68\ A\^6\ B\ k\^2\ K\^3\ \((\(-13\) + 
+                        11\ \@\(\(B + A\ K + B\ K\)\/\(A\ K + B\ K\)\) + 
+                        
+                        28\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(A\ K + \
+B\ K\)\))\))\) - 
+                  4\ B\^7\ \((K\ \((53 - 
+                              17\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\
+\) + K\ \((66 - 74\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\))\) + 
+                              17\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\
+\(\((A + B)\)\ K\)\))\))\) + 
+                        17\ k\^2\ \((1 + K)\)\^2\ \((\(-1\) + 
+                              4\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                              K\ \((\(-5\) + 
+                                    3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\))\))\) + 
+                  A\^4\ B\^3\ K\ \((\(-11\) + 
+                        21\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        316\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        K\ \((\(-462\) + 
+                              502\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\) - 68\ k\^2\ \((\(-7\) + 
+                              3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\) + 140\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\))\
+\) + 25\ K\ \((\(-3\) + 2\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\))\) + 
+                              15\ K\^2\ \((\(-13\) + 
+                                    11\ \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\))\) - 
+                  2\ A\^2\ B\^5\ \((\(-12\) + 
+                        K\^2\ \((1165 - 
+                              1129\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\
+\)\))\) + K\ \((374 - 156\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\))\) - 
+                        132\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        34\ k\^2\ \((\(-3\) + 
+                              84\ K\^4\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\
+\(\((A + B)\)\ K\)\))\) + 50\ K\^2\ \((\(-3\) + 
+                                    2\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\) + 6\ K\ \((\(-7\) + 
+                                    3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\) + 15\ K\^3\ \((\(-13\) + 
+                                    11\ \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\))\) + 
+                  A\^3\ B\^4\ \((14 + 
+                        520\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 
+                        K\ \((\(-219\) + 
+                              125\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\) + 2\ K\^2\ \((\(-823\) + 
+                              809\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\) - 68\ k\^2\ \((\(-1\) + 
+                              140\ K\^4\ \((\(-1\) + \@\(\(B + A\ K + B\ \
+K\)\/\(\((A + B)\)\ K\)\))\) + 50\ K\^2\ \((\(-3\) + 
+                                    2\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\) + 4\ K\ \((\(-7\) + 
+                                    3\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\) + 20\ K\^3\ \((\(-13\) + 
+                                    11\ \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\))\) - 
+                  2\ A\ B\^6\ \((7 + 
+                        K\^2\ \((685 - 
+                              690\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\) + K\ \((376 - 
+                              138\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ \
+K\)\))\) + 
+                        34\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A \
++ B)\)\ K\)\))\) + 34\ k\^2\ \((1 + K)\)\ \((\(-3\) + 
+                              28\ K\^3\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\
+\(\((A + B)\)\ K\)\))\) + K\ \((\(-25\) + 
+                                    12\ \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\) + K\^2\ \((\(-50\) + 
+                                    38\ \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\))\) + 
+                  2\ A\^5\ B\^2\ K\^2\ \((\(-20\) + 
+                        29\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\ K\)\) + 
+                        30\ K\ \((\(-1\) + \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\) - 
+                        34\ k\^2\ \((84\ K\^2\ \((\(-1\) + \@\(\(B + A\ K + B\
+\ K\)\/\(\((A + B)\)\ K\)\))\) + 
+                              5\ \((\(-3\) + 
+                                    2\ \@\(\(B + A\ K + B\ K\)\/\(\((A + B)\)\
+\ K\)\))\) + K\ \((\(-78\) + 
+                                    66\ \@\(\(B + A\ K + B\ K\)\/\(\((A + \
+B)\)\ K\)\))\))\))\))\)\ \((x - 1)\)\^3)\)/\((32\ \((A + B)\)\^5\ \((\(-1\) + \
+\@\(1 + B\/\(\((A + B)\)\ K\)\))\)\^3\ \@\(1 + B\/\(\((A + B)\)\ K\)\)\ K\^2\ \
+\((B + A\ K + B\ K)\)\^2)\)\), "+", 
+        InterpretationBox[\(O[x - 1]\^4\),
+          SeriesData[ x, 1, {}, 1, 4, 1]]}],
+      SeriesData[ x, 1, {
+        Times[ 
+          Rational[ -1, 2], 
+          Power[ 
+            Plus[ -1, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], -1], 
+          Plus[ 1, 
+            Times[ -1, 
+              Power[ k, 2], 
+              Plus[ -1, 
+                Power[ 
+                  Plus[ 1, 
+                    Times[ B, 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1]]], 
+                  Rational[ 1, 2]]]], 
+            Times[ 
+              Rational[ 1, 2], 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ -1, 2]], 
+              Plus[ 2, 
+                Times[ -1, 
+                  Power[ B, 2], 
+                  Power[ 
+                    Plus[ A, B], -2], 
+                  Power[ K, -1]], 
+                Times[ B, 
+                  Power[ 
+                    Plus[ A, B], -1], 
+                  Power[ K, -1]]]]]], 
+        Times[ 
+          Rational[ 1, 8], 
+          Power[ 
+            Plus[ A, B], -3], 
+          Power[ 
+            Plus[ -1, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], -2], 
+          Power[ 
+            Plus[ 1, 
+              Times[ B, 
+                Power[ 
+                  Plus[ A, B], -1], 
+                Power[ K, -1]]], 
+            Rational[ -1, 2]], 
+          Power[ K, -1], 
+          Power[ 
+            Plus[ B, 
+              Times[ A, K], 
+              Times[ B, K]], -1], 
+          Plus[ 
+            Times[ -20, 
+              Power[ A, 4], 
+              Power[ k, 2], 
+              Power[ K, 2], 
+              Plus[ -1, 
+                Power[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1], 
+                    Plus[ B, 
+                      Times[ A, K], 
+                      Times[ B, K]]], 
+                  Rational[ 1, 2]]]], 
+            Times[ -2, 
+              Power[ B, 4], 
+              Plus[ 9, 
+                Times[ K, 
+                  Plus[ 3, 
+                    Times[ 8, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 5, 
+                  Power[ k, 2], 
+                  Plus[ 1, K], 
+                  Plus[ -2, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]], 
+                    Times[ 2, K, 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]]]]]], 
+            Times[ -5, 
+              Power[ A, 3], B, K, 
+              Plus[ 1, 
+                Power[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ 
+                        Times[ A, K], 
+                        Times[ B, K]], -1], 
+                    Plus[ B, 
+                      Times[ A, K], 
+                      Times[ B, K]]], 
+                  Rational[ 1, 2]], 
+                Times[ 2, 
+                  Power[ k, 2], 
+                  Plus[ -4, 
+                    Times[ 3, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]], 
+                    Times[ 8, K, 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]]]]]], 
+            Times[ -1, A, 
+              Power[ B, 3], 
+              Plus[ 31, 
+                Times[ -3, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ K, 
+                  Plus[ 25, 
+                    Times[ 29, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 10, 
+                  Power[ k, 2], 
+                  Plus[ 
+                    Times[ 2, 
+                      Plus[ -2, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 8, 
+                      Power[ K, 2], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 3, K, 
+                      Plus[ -4, 
+                        Times[ 3, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]], 
+            Times[ -1, 
+              Power[ A, 2], 
+              Power[ B, 2], 
+              Plus[ 8, 
+                Power[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1], 
+                    Plus[ B, 
+                      Times[ A, K], 
+                      Times[ B, K]]], 
+                  Rational[ 1, 2]], 
+                Times[ 6, K, 
+                  Plus[ 4, 
+                    Times[ 3, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 10, 
+                  Power[ k, 2], 
+                  Plus[ -2, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]], 
+                    Times[ 12, 
+                      Power[ K, 2], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 3, K, 
+                      Plus[ -4, 
+                        Times[ 3, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]]]], 
+        Times[ 
+          Rational[ 1, 32], 
+          Power[ 
+            Plus[ A, B], -5], 
+          Power[ 
+            Plus[ -1, 
+              Power[ 
+                Plus[ 1, 
+                  Times[ B, 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1]]], 
+                Rational[ 1, 2]]], -3], 
+          Power[ 
+            Plus[ 1, 
+              Times[ B, 
+                Power[ 
+                  Plus[ A, B], -1], 
+                Power[ K, -1]]], 
+            Rational[ -1, 2]], 
+          Power[ K, -2], 
+          Power[ 
+            Plus[ B, 
+              Times[ A, K], 
+              Times[ B, K]], -2], 
+          Plus[ 
+            Times[ -272, 
+              Power[ A, 7], 
+              Power[ k, 2], 
+              Power[ K, 4], 
+              Plus[ -1, 
+                Power[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, B], -1], 
+                    Power[ K, -1], 
+                    Plus[ B, 
+                      Times[ A, K], 
+                      Times[ B, K]]], 
+                  Rational[ 1, 2]]]], 
+            Times[ -68, 
+              Power[ A, 6], B, 
+              Power[ k, 2], 
+              Power[ K, 3], 
+              Plus[ -13, 
+                Times[ 11, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ 
+                          Times[ A, K], 
+                          Times[ B, K]], -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 28, K, 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ 
+                            Times[ A, K], 
+                            Times[ B, K]], -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]]]], 
+            Times[ -4, 
+              Power[ B, 7], 
+              Plus[ 
+                Times[ K, 
+                  Plus[ 53, 
+                    Times[ -17, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]], 
+                    Times[ K, 
+                      Plus[ 66, 
+                        Times[ -74, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 17, 
+                      Power[ K, 2], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]]]], 
+                Times[ 17, 
+                  Power[ k, 2], 
+                  Power[ 
+                    Plus[ 1, K], 2], 
+                  Plus[ -1, 
+                    Times[ 4, 
+                      Power[ K, 2], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ K, 
+                      Plus[ -5, 
+                        Times[ 3, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]], 
+            Times[ 
+              Power[ A, 4], 
+              Power[ B, 3], K, 
+              Plus[ -11, 
+                Times[ 21, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 316, 
+                  Power[ K, 2], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ K, 
+                  Plus[ -462, 
+                    Times[ 502, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ -68, 
+                  Power[ k, 2], 
+                  Plus[ -7, 
+                    Times[ 3, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]], 
+                    Times[ 140, 
+                      Power[ K, 3], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 25, K, 
+                      Plus[ -3, 
+                        Times[ 2, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 15, 
+                      Power[ K, 2], 
+                      Plus[ -13, 
+                        Times[ 11, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]], 
+            Times[ -2, 
+              Power[ A, 2], 
+              Power[ B, 5], 
+              Plus[ -12, 
+                Times[ 
+                  Power[ K, 2], 
+                  Plus[ 1165, 
+                    Times[ -1129, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ K, 
+                  Plus[ 374, 
+                    Times[ -156, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ -132, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 34, 
+                  Power[ k, 2], 
+                  Plus[ -3, 
+                    Times[ 84, 
+                      Power[ K, 4], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 50, 
+                      Power[ K, 2], 
+                      Plus[ -3, 
+                        Times[ 2, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 6, K, 
+                      Plus[ -7, 
+                        Times[ 3, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 15, 
+                      Power[ K, 3], 
+                      Plus[ -13, 
+                        Times[ 11, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]], 
+            Times[ 
+              Power[ A, 3], 
+              Power[ B, 4], 
+              Plus[ 14, 
+                Times[ 520, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ K, 
+                  Plus[ -219, 
+                    Times[ 125, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 2, 
+                  Power[ K, 2], 
+                  Plus[ -823, 
+                    Times[ 809, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ -68, 
+                  Power[ k, 2], 
+                  Plus[ -1, 
+                    Times[ 140, 
+                      Power[ K, 4], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 50, 
+                      Power[ K, 2], 
+                      Plus[ -3, 
+                        Times[ 2, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 4, K, 
+                      Plus[ -7, 
+                        Times[ 3, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 20, 
+                      Power[ K, 3], 
+                      Plus[ -13, 
+                        Times[ 11, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]], 
+            Times[ -2, A, 
+              Power[ B, 6], 
+              Plus[ 7, 
+                Times[ 
+                  Power[ K, 2], 
+                  Plus[ 685, 
+                    Times[ -690, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ K, 
+                  Plus[ 376, 
+                    Times[ -138, 
+                      Power[ 
+                        Times[ 
+                          Power[ 
+                            Plus[ A, B], -1], 
+                          Power[ K, -1], 
+                          Plus[ B, 
+                            Times[ A, K], 
+                            Times[ B, K]]], 
+                        Rational[ 1, 2]]]]], 
+                Times[ 34, 
+                  Power[ K, 3], 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ 34, 
+                  Power[ k, 2], 
+                  Plus[ 1, K], 
+                  Plus[ -3, 
+                    Times[ 28, 
+                      Power[ K, 3], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ K, 
+                      Plus[ -25, 
+                        Times[ 12, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ 
+                      Power[ K, 2], 
+                      Plus[ -50, 
+                        Times[ 38, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]], 
+            Times[ 2, 
+              Power[ A, 5], 
+              Power[ B, 2], 
+              Power[ K, 2], 
+              Plus[ -20, 
+                Times[ 29, 
+                  Power[ 
+                    Times[ 
+                      Power[ 
+                        Plus[ A, B], -1], 
+                      Power[ K, -1], 
+                      Plus[ B, 
+                        Times[ A, K], 
+                        Times[ B, K]]], 
+                    Rational[ 1, 2]]], 
+                Times[ 30, K, 
+                  Plus[ -1, 
+                    Power[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, B], -1], 
+                        Power[ K, -1], 
+                        Plus[ B, 
+                          Times[ A, K], 
+                          Times[ B, K]]], 
+                      Rational[ 1, 2]]]], 
+                Times[ -34, 
+                  Power[ k, 2], 
+                  Plus[ 
+                    Times[ 84, 
+                      Power[ K, 2], 
+                      Plus[ -1, 
+                        Power[ 
+                          Times[ 
+                            Power[ 
+                              Plus[ A, B], -1], 
+                            Power[ K, -1], 
+                            Plus[ B, 
+                              Times[ A, K], 
+                              Times[ B, K]]], 
+                          Rational[ 1, 2]]]], 
+                    Times[ 5, 
+                      Plus[ -3, 
+                        Times[ 2, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]], 
+                    Times[ K, 
+                      Plus[ -78, 
+                        Times[ 66, 
+                          Power[ 
+                            Times[ 
+                              Power[ 
+                                Plus[ A, B], -1], 
+                              Power[ K, -1], 
+                              Plus[ B, 
+                                Times[ A, K], 
+                                Times[ B, K]]], 
+                            Rational[ 1, 2]]]]]]]]]]]}, 1, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(?Series\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\<\"Series[f, {x, x0, n}] generates a power series expansion for \
+f about the point x = x0 to order (x - x0)^n. Series[f, {x, x0, nx}, {y, y0, \
+ny}] successively finds series expansions with respect to y, then x.\"\>", 
+      " ", 
+      ButtonBox[
+        StyleBox["More\[Ellipsis]",
+          "SR"],
+        ButtonData:>"Series",
+        Active->True,
+        ButtonStyle->"RefGuideLink"]}]], "Print",
+  CellTags->"Info3224584644-4673839"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pseries[x_] = Simplify[Series[p[x^2], {x, 0, 3}]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+      "1", "-", \(\(2\ x\)\/\@\(B\/\(A\ K\)\)\), 
+        "+", \(\((B\/A - \(2\ A\ K\)\/B)\)\ x\^2\), 
+        "-", \(\(\@\(B\/\(A\ K\)\)\ K\ \((B\^2 + A\^2\ K)\)\ x\^3\)\/B\^2\), 
+        "+", 
+        InterpretationBox[\(O[x]\^4\),
+          SeriesData[ x, 0, {}, 0, 4, 1]]}],
+      SeriesData[ x, 0, {1, 
+        Times[ -2, 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ -1, 2]]], 
+        Plus[ 
+          Times[ 
+            Power[ A, -1], B], 
+          Times[ -2, A, 
+            Power[ B, -1], K]], 
+        Times[ -1, 
+          Power[ B, -2], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ 1, 2]], K, 
+          Plus[ 
+            Power[ B, 2], 
+            Times[ 
+              Power[ A, 2], K]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(qseries[x_] = Simplify[Series[q[x^2], {x, 0, 3}]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((\(-\(1\/4\)\) - k\^2)\), 
+        "-", \(\(5\ x\)\/\(4\ \@\(B\/\(A\ K\)\)\)\), 
+        "+", \(\((B\/\(2\ A\) - \(9\ A\ K\)\/\(4\ B\))\)\ x\^2\), 
+        "-", \(\(\((\@\(B\/\(A\ K\)\)\ K\ \((9\ B\^2 + 
+                      13\ A\^2\ K)\))\)\ x\^3\)\/\(8\ B\^2\)\), "+", 
+        InterpretationBox[\(O[x]\^4\),
+          SeriesData[ x, 0, {}, 0, 4, 1]]}],
+      SeriesData[ x, 0, {
+        Plus[ 
+          Rational[ -1, 4], 
+          Times[ -1, 
+            Power[ k, 2]]], 
+        Times[ 
+          Rational[ -5, 4], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ -1, 2]]], 
+        Plus[ 
+          Times[ 
+            Rational[ 1, 2], 
+            Power[ A, -1], B], 
+          Times[ 
+            Rational[ -9, 4], A, 
+            Power[ B, -1], K]], 
+        Times[ 
+          Rational[ -1, 8], 
+          Power[ B, -2], 
+          Power[ 
+            Times[ 
+              Power[ A, -1], B, 
+              Power[ K, -1]], 
+            Rational[ 1, 2]], K, 
+          Plus[ 
+            Times[ 9, 
+              Power[ B, 2]], 
+            Times[ 13, 
+              Power[ A, 2], K]]]}, 0, 4, 1]]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{906, 643},
+WindowMargins->{{1, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{
+  "Info3224584644-4673839"->{
+    Cell[68551, 1848, 470, 11, 44, "Print",
+      CellTags->"Info3224584644-4673839"]}
+  }
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{
+  {"Info3224584644-4673839", 72076, 1964}
+  }
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 88, 1, 30, "Input"],
+Cell[1818, 55, 87, 1, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1942, 61, 62, 1, 30, "Input"],
+Cell[2007, 64, 131, 3, 53, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2175, 72, 188, 4, 30, "Input"],
+Cell[2366, 78, 284, 5, 95, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2687, 88, 60, 1, 30, "Input"],
+Cell[2750, 91, 393, 6, 116, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3180, 102, 57, 1, 30, "Input"],
+Cell[3240, 105, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3312, 111, 67, 1, 30, "Input"],
+Cell[3382, 114, 352, 5, 118, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3771, 124, 62, 1, 30, "Input"],
+Cell[3836, 127, 38, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3911, 133, 58, 1, 30, "Input"],
+Cell[3972, 136, 209, 3, 83, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4218, 144, 60, 1, 30, "Input"],
+Cell[4281, 147, 436, 6, 84, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4754, 158, 329, 7, 50, "Input"],
+Cell[5086, 167, 1261, 18, 404, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6384, 190, 56, 1, 30, "Input"],
+Cell[6443, 193, 1410, 20, 681, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7890, 218, 57, 1, 30, "Input"],
+Cell[7950, 221, 50, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8037, 227, 69, 1, 30, "Input"],
+Cell[8109, 230, 980, 15, 347, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9126, 250, 62, 1, 30, "Input"],
+Cell[9191, 253, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9263, 259, 80, 1, 30, "Input"],
+Cell[9346, 262, 973, 31, 96, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10356, 298, 80, 1, 30, "Input"],
+Cell[10439, 301, 1118, 35, 96, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11594, 341, 90, 1, 30, "Input"],
+Cell[11687, 344, 18878, 514, 585, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30602, 863, 90, 1, 30, "Input"],
+Cell[30695, 866, 37772, 974, 1106, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[68504, 1845, 44, 1, 30, "Input"],
+Cell[68551, 1848, 470, 11, 44, "Print",
+  CellTags->"Info3224584644-4673839"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[69058, 1864, 82, 1, 30, "Input"],
+Cell[69143, 1867, 940, 31, 93, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[70120, 1903, 82, 1, 30, "Input"],
+Cell[70205, 1906, 1249, 40, 96, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

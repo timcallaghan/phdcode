@@ -1,0 +1,745 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     16850,        600]*)
+(*NotebookOutlinePosition[     17493,        622]*)
+(*  CellTagsIndexPosition[     17449,        618]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(a0 = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p0 = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(A = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(B =  .1\)], "Input"],
+
+Cell[BoxData[
+    \(0.1`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(K0 = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(k = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p0 = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p1 = \(-4\)*Sqrt[A*K0/B]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-12.649110640673518`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p2 = 2*B/A - 4*A*K0/B\)], "Input"],
+
+Cell[BoxData[
+    \(\(-39.8`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p3 = \(-2\)/
+          B^2*\((Sqrt[B/\((K0*A)\)]*K0*\((B^2 + A^2*K0)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-63.87800873540125`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(q0 = \(-1\) - 4*k^2\)], "Input"],
+
+Cell[BoxData[
+    \(\(-5\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(q1 = \(-5\)*Sqrt[A*K0/B]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-15.811388300841898`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(q2 = 2*B/A - 9*A*K0/B\)], "Input"],
+
+Cell[BoxData[
+    \(\(-89.8`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(q3 = \(-1\)/\((2*B^2)\)*\((Sqrt[B/\((K0*A)\)]*
+            K0*\((9*B^2 + 13*A^2*K0)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-206.9710728580204`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a0 = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(r1 = Sqrt[\(-q0\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\@5\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(F[n_] = n^2 + 2*n*r1\)], "Input"],
+
+Cell[BoxData[
+    \(2\ \@5\ n + n\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a1 = \(-a0\)*\((r1*p1 + q1)\)/F[1]\)], "Input"],
+
+Cell[BoxData[
+    \(8.058217104057164`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a2 = \(-1\)/
+          F[2]*\((a0*\((r1*p2 + q2)\) + 
+            a1*\((\((r1 + 1)\)*p1 + q1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(49.13811975131346`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a3 = \(-1\)/
+          F[3]*\((a0*\((r1*p3 + q3)\) + a1*\((\((r1 + 1)\)*p2 + q2)\) + 
+            a2*\((\((r1 + 2)\)*p1 + q1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(246.30090349224153`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(V1[t_] = t^\((r1)\)*\((1 + a1*t + a2*t^2 + a3*t^3)\)\)], "Input"],
+
+Cell[BoxData[
+    \(t\^\(\@5\)\ \((1 + 8.058217104057164`\ t + 49.13811975131346`\ t\^2 + 
+          246.30090349224153`\ t\^3)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Plot[V1[t], {t, 0, 1}]\)], "Input"],
+
+Cell[GraphicsData["PostScript", "\<\
+%!
+%%Creator: Mathematica
+%%AspectRatio: .61803 
+MathPictureStart
+/Mabs {
+Mgmatrix idtransform
+Mtmatrix dtransform
+} bind def
+/Mabsadd { Mabs
+3 -1 roll add
+3 1 roll add
+exch } bind def
+%% Graphics
+%%IncludeResource: font Courier
+%%IncludeFont: Courier
+/Courier findfont 10  scalefont  setfont
+% Scaling calculations
+0.0238095 0.952381 0.0147151 0.00767895 [
+[.21429 .00222 -9 -9 ]
+[.21429 .00222 9 0 ]
+[.40476 .00222 -9 -9 ]
+[.40476 .00222 9 0 ]
+[.59524 .00222 -9 -9 ]
+[.59524 .00222 9 0 ]
+[.78571 .00222 -9 -9 ]
+[.78571 .00222 9 0 ]
+[.97619 .00222 -3 -9 ]
+[.97619 .00222 3 0 ]
+[.01131 .16829 -12 -4.5 ]
+[.01131 .16829 0 4.5 ]
+[.01131 .32187 -12 -4.5 ]
+[.01131 .32187 0 4.5 ]
+[.01131 .47545 -12 -4.5 ]
+[.01131 .47545 0 4.5 ]
+[ 0 0 0 0 ]
+[ 1 .61803 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+0 g
+.25 Mabswid
+[ ] 0 setdash
+.21429 .01472 m
+.21429 .02097 L
+s
+[(0.2)] .21429 .00222 0 1 Mshowa
+.40476 .01472 m
+.40476 .02097 L
+s
+[(0.4)] .40476 .00222 0 1 Mshowa
+.59524 .01472 m
+.59524 .02097 L
+s
+[(0.6)] .59524 .00222 0 1 Mshowa
+.78571 .01472 m
+.78571 .02097 L
+s
+[(0.8)] .78571 .00222 0 1 Mshowa
+.97619 .01472 m
+.97619 .02097 L
+s
+[(1)] .97619 .00222 0 1 Mshowa
+.125 Mabswid
+.07143 .01472 m
+.07143 .01847 L
+s
+.11905 .01472 m
+.11905 .01847 L
+s
+.16667 .01472 m
+.16667 .01847 L
+s
+.2619 .01472 m
+.2619 .01847 L
+s
+.30952 .01472 m
+.30952 .01847 L
+s
+.35714 .01472 m
+.35714 .01847 L
+s
+.45238 .01472 m
+.45238 .01847 L
+s
+.5 .01472 m
+.5 .01847 L
+s
+.54762 .01472 m
+.54762 .01847 L
+s
+.64286 .01472 m
+.64286 .01847 L
+s
+.69048 .01472 m
+.69048 .01847 L
+s
+.7381 .01472 m
+.7381 .01847 L
+s
+.83333 .01472 m
+.83333 .01847 L
+s
+.88095 .01472 m
+.88095 .01847 L
+s
+.92857 .01472 m
+.92857 .01847 L
+s
+.25 Mabswid
+0 .01472 m
+1 .01472 L
+s
+.02381 .16829 m
+.03006 .16829 L
+s
+[(20)] .01131 .16829 1 0 Mshowa
+.02381 .32187 m
+.03006 .32187 L
+s
+[(40)] .01131 .32187 1 0 Mshowa
+.02381 .47545 m
+.03006 .47545 L
+s
+[(60)] .01131 .47545 1 0 Mshowa
+.125 Mabswid
+.02381 .05311 m
+.02756 .05311 L
+s
+.02381 .0915 m
+.02756 .0915 L
+s
+.02381 .1299 m
+.02756 .1299 L
+s
+.02381 .20669 m
+.02756 .20669 L
+s
+.02381 .24508 m
+.02756 .24508 L
+s
+.02381 .28348 m
+.02756 .28348 L
+s
+.02381 .36027 m
+.02756 .36027 L
+s
+.02381 .39866 m
+.02756 .39866 L
+s
+.02381 .43706 m
+.02756 .43706 L
+s
+.02381 .51385 m
+.02756 .51385 L
+s
+.02381 .55224 m
+.02756 .55224 L
+s
+.02381 .59064 m
+.02756 .59064 L
+s
+.25 Mabswid
+.02381 0 m
+.02381 .61803 L
+s
+0 0 m
+1 0 L
+1 .61803 L
+0 .61803 L
+closepath
+clip
+newpath
+.5 Mabswid
+.02381 .01472 m
+.02499 .01472 L
+.02605 .01472 L
+.02729 .01472 L
+.02846 .01472 L
+.02954 .01472 L
+.03053 .01472 L
+.03279 .01472 L
+.03506 .01472 L
+.03756 .01472 L
+.04017 .01472 L
+.04262 .01472 L
+.04761 .01472 L
+.05217 .01472 L
+.05744 .01472 L
+.06244 .01472 L
+.0675 .01473 L
+.07289 .01473 L
+.08259 .01474 L
+.08853 .01475 L
+.09412 .01476 L
+.10458 .01478 L
+.11434 .01481 L
+.12466 .01485 L
+.13346 .0149 L
+.14313 .01496 L
+.16264 .01513 L
+.17358 .01526 L
+.18355 .01541 L
+.20264 .01579 L
+.21342 .01607 L
+.2234 .01637 L
+.24206 .01711 L
+.26267 .0182 L
+.28201 .01957 L
+.30287 .02151 L
+.32291 .02394 L
+.34401 .02721 L
+.38212 .03551 L
+.40173 .04128 L
+.42268 .04881 L
+.44259 .0575 L
+.46418 .06888 L
+.50416 .09643 L
+.54508 .13546 L
+.58448 .18621 L
+.62237 .25016 L
+.66271 .33826 L
+.70153 .44666 L
+.74281 .59247 L
+Mistroke
+Mfstroke
+.74281 .59247 m
+.74858 .61803 L
+s
+% End of Graphics
+MathPictureEnd
+\
+\>"], "Graphics",
+  ImageSize->{288, 177.938},
+  ImageMargins->{{43, 0}, {0, 0}},
+  ImageRegion->{{0, 1}, {0, 1}},
+  ImageCache->GraphicsData["Bitmap", "\<\
+CF5dJ6E]HGAYHf4PAg9QL6QYHg<PAVmbKF5d0`40004P0000/A000`40O003h00Oogoo8Goo000oOol2
+0004Ool20003Ool4000TOol20004Ool20005Ool3000TOol20004Ool20003Ool3000VOol20004Ool2
+0004Ool2000[Ool50008Ool003ioo`04001oogoo0008Ool00`00Oomoo`0TOol01000Oomoo`002goo
+00<007ooOol08Woo00@007ooOol000Qoo`04001oogoo000TOol01000Oomoo`0027oo00@007ooOol0
+02aoo`03001oogoo00Qoo`00?Woo00@007ooOol000Uoo`03001oogoo02=oo`04001oogoo0008Ool5
+000SOol01000Oomoo`0027oo00@007ooOol002Aoo`04001oogoo0008Ool01000Oomoo`00;7oo00<0
+07ooOol027oo000nOol01000Oomoo`002Woo00<007ooOol08Woo00@007ooOol000Qoo`04001oogoo
+000TOol01000Oomoo`0027oo0`009Goo00@007ooOol000Uoo`8002eoo`03001oogoo00Qoo`00?Woo
+00@007ooOol000Qoo`04001oogoo000SOol01000Oomoo`002Goo00<007oo000097oo00@007ooOol0
+00Uoo`03001oogoo02Aoo`04001oogoo0008Ool01000Oomoo`00;7oo00<007ooOol027oo000oOol2
+000:Ool2000UOol2000;Ool2000UOol2000:Ool3000UOol2000:Ool2000/Ool2000:Ool00?moob5o
+o`004Woo00<007ooOol0ogoo37oo000BOol00`00Oomoo`3oOol<Ool0019oo`03001oogoo0?moo`ao
+o`004Woo00<007ooOol0ogoo37oo000;Oooo000C0003Ool0019oo`03001oogoo00Yoo`03001oogoo
+00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03001oogoo009ooa0000Eoo`03001oogoo00Yoo`03
+001oogoo00Uoo`03001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03
+001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03
+001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Yoo`03001oogoo00Qoo`004Woo00<007ooOol0
+<Goo00<007ooOol04Woo2`004goo00<007ooOol0<Goo00<007ooOol0<Goo00<007ooOol0<Goo00<0
+07ooOol027oo000BOol00`00Oomoo`1AOol5002eOol0019oo`03001oogoo05Ioo`<00;9oo`004Woo
+00<007ooOol0FGoo1000[Woo000BOol00`00Oomoo`1MOol4002ZOol0019oo`03001oogoo065oo`D0
+0:Eoo`004Woo00<007ooOol0IWoo0P00Xgoo000BOol00`00Oomoo`1XOol2002QOol0019oo`8006]o
+o`8009moo`004Woo00<007ooOol0K7oo0P00WGoo000BOol00`00Oomoo`1^Ool2002KOol0019oo`03
+001oogoo071oo`8009Uoo`004Woo00<007ooOol0LWoo0P00Ugoo000BOol00`00Oomoo`1dOol2002E
+Ool0019oo`03001oogoo07Ioo`8009=oo`004Woo00<007ooOol0N7oo00<007ooOol0T7oo000BOol0
+0`00Oomoo`1iOol2002@Ool0019oo`03001oogoo07]oo`8008ioo`004Woo00<007ooOol0OGoo00<0
+07ooOol0Rgoo000BOol2001oOol2002;Ool0019oo`03001oogoo081oo`03001oogoo08Qoo`004Woo
+00<007ooOol0PGoo00<007ooOol0Qgoo000BOol00`00Oomoo`22Ool00`00Oomoo`26Ool0019oo`03
+001oogoo08=oo`03001oogoo08Eoo`004Woo00<007ooOol0Q7oo00<007ooOol0Q7oo000BOol00`00
+Oomoo`25Ool00`00Oomoo`23Ool0019oo`03001oogoo08Ioo`03001oogoo089oo`004Woo00<007oo
+Ool0Qgoo00<007ooOol0PGoo000BOol00`00Oomoo`28Ool00`00Oomoo`20Ool0019oo`8008Yoo`03
+001oogoo07moo`004Woo00<007ooOol0RWoo00<007ooOol0OWoo000BOol00`00Oomoo`2;Ool00`00
+Oomoo`1mOol0019oo`03001oogoo08aoo`03001oogoo07aoo`004Woo00<007ooOol0S7oo00<007oo
+Ool0O7oo000BOol00`00Oomoo`2=Ool00`00Oomoo`1kOol0019oo`03001oogoo08ioo`03001oogoo
+07Yoo`004Woo00<007ooOol0Sgoo00<007ooOol0NGoo000BOol00`00Oomoo`2?Ool00`00Oomoo`1i
+Ool000=oo`@000=oo`8000Ioo`03001oogoo091oo`03001oogoo07Qoo`000goo00<007ooOol00goo
+00@007ooOol000Eoo`03001oogoo095oo`03001oogoo07Moo`0017oo00<007ooOol00Woo00@007oo
+Ool000Eoo`80099oo`03001oogoo07Moo`001Goo00D007ooOomoo`00009oo`03001oogoo00=oo`03
+001oogoo099oo`03001oogoo07Ioo`000goo00@007ooOol0009oo`04001oogoo0005Ool00`00Oomo
+o`2COol00`00Oomoo`1eOol000Aoo`8000Aoo`8000Ioo`03001oogoo09Aoo`03001oogoo07Aoo`00
+4Woo00<007ooOol0U7oo00<007ooOol0M7oo000BOol00`00Oomoo`2EOol00`00Oomoo`1cOol0019o
+o`03001oogoo09Ioo`03001oogoo079oo`004Woo00<007ooOol0UWoo00<007ooOol0LWoo000BOol0
+0`00Oomoo`2GOol00`00Oomoo`1aOol0019oo`03001oogoo09Qoo`03001oogoo071oo`004Woo0P00
+VGoo00<007ooOol0L7oo000BOol00`00Oomoo`2IOol00`00Oomoo`1_Ool0019oo`03001oogoo09Yo
+o`03001oogoo06ioo`004Woo00<007ooOol0VWoo00<007ooOol0KWoo000BOol00`00Oomoo`2KOol0
+0`00Oomoo`1]Ool0019oo`03001oogoo09]oo`03001oogoo06eoo`004Woo00<007ooOol0W7oo00<0
+07ooOol0K7oo000BOol00`00Oomoo`2MOol00`00Oomoo`1[Ool0019oo`03001oogoo09eoo`03001o
+ogoo06]oo`004Woo00<007ooOol0WWoo00<007ooOol0JWoo000BOol00`00Oomoo`2OOol00`00Oomo
+o`1YOol0019oo`800:1oo`03001oogoo06Uoo`004Woo00<007ooOol0X7oo00<007ooOol0J7oo000B
+Ool00`00Oomoo`2POol00`00Oomoo`1XOol0019oo`03001oogoo0:5oo`03001oogoo06Moo`004Woo
+00<007ooOol0XGoo00<007ooOol0Igoo000BOol00`00Oomoo`2ROol00`00Oomoo`1VOol0019oo`03
+001oogoo0:9oo`03001oogoo06Ioo`004Woo00<007ooOol0Xgoo00<007ooOol0IGoo000BOol00`00
+Oomoo`2SOol00`00Oomoo`1UOol0019oo`03001oogoo0:Aoo`03001oogoo06Aoo`004Woo0P00YGoo
+00<007ooOol0I7oo000BOol00`00Oomoo`2UOol00`00Oomoo`1SOol0019oo`03001oogoo0:Eoo`03
+001oogoo06=oo`004Woo00<007ooOol0YWoo00<007ooOol0HWoo000BOol00`00Oomoo`2VOol00`00
+Oomoo`1ROol0019oo`03001oogoo0:Ioo`03001oogoo069oo`004Woo00<007ooOol0Ygoo00<007oo
+Ool0HGoo000BOol00`00Oomoo`2WOol00`00Oomoo`1QOol0019oo`03001oogoo0:Qoo`03001oogoo
+061oo`001Goo0`000Woo0P001Woo00<007ooOol0Z7oo00<007ooOol0H7oo0006Ool01000Oomoo`00
+0Woo00<007ooOol00goo00<007ooOol0ZGoo00<007ooOol0Ggoo0003Ool500001Goo001oogoo0000
+1Goo0P00ZWoo00<007ooOol0Ggoo0003Ool01000Oomoo`000Woo00@007ooOol000Eoo`03001oogoo
+0:Yoo`03001oogoo05ioo`0017oo00<007oo00000Woo00@007ooOol000Eoo`03001oogoo0:Yoo`03
+001oogoo05ioo`001Goo0P000goo0P001Woo00<007ooOol0Zgoo00<007ooOol0GGoo000BOol00`00
+Oomoo`2[Ool00`00Oomoo`1MOol0019oo`03001oogoo0:]oo`03001oogoo05eoo`004Woo00<007oo
+Ool0[7oo00<007ooOol0G7oo000BOol00`00Oomoo`2/Ool00`00Oomoo`1LOol0019oo`03001oogoo
+0:aoo`03001oogoo05aoo`004Woo00<007ooOol0[Goo00<007ooOol0Fgoo000BOol2002^Ool00`00
+Oomoo`1KOol0019oo`03001oogoo0:eoo`03001oogoo05]oo`004Woo00<007ooOol0[Woo00<007oo
+Ool0FWoo000BOol00`00Oomoo`2^Ool00`00Oomoo`1JOol0019oo`03001oogoo0:ioo`03001oogoo
+05Yoo`004Woo00<007ooOol0[goo00<007ooOol0FGoo000BOol00`00Oomoo`2_Ool00`00Oomoo`1I
+Ool0019oo`03001oogoo0:moo`03001oogoo05Uoo`004Woo00<007ooOol0/7oo00<007ooOol0F7oo
+000BOol00`00Oomoo`2`Ool00`00Oomoo`1HOol0019oo`03001oogoo0;1oo`03001oogoo05Qoo`00
+4Woo0P00/Woo00<007ooOol0Egoo000BOol00`00Oomoo`2aOol00`00Oomoo`1GOol0019oo`03001o
+ogoo0;5oo`03001oogoo05Moo`004Woo00<007ooOol0/Woo00<007ooOol0EWoo000BOol00`00Oomo
+o`2bOol00`00Oomoo`1FOol0019oo`03001oogoo0;9oo`03001oogoo05Ioo`004Woo00<007ooOol0
+/goo00<007ooOol0EGoo000BOol00`00Oomoo`2cOol00`00Oomoo`1EOol0019oo`03001oogoo0;=o
+o`03001oogoo05Eoo`004Woo00<007ooOol0]7oo00<007ooOol0E7oo000BOol2002eOol00`00Oomo
+o`1DOol0019oo`03001oogoo0;Aoo`03001oogoo05Aoo`004Woo00<007ooOol0]Goo00<007ooOol0
+Dgoo000BOol00`00Oomoo`2eOol00`00Oomoo`1COol0019oo`03001oogoo0;Eoo`03001oogoo05=o
+o`004Woo00<007ooOol0]Woo00<007ooOol0DWoo000BOol00`00Oomoo`2fOol00`00Oomoo`1BOol0
+019oo`03001oogoo0;Ioo`03001oogoo059oo`004Woo00<007ooOol0]goo00<007ooOol0DGoo0003
+Ool30004Ool20006Ool00`00Oomoo`2gOol00`00Oomoo`1AOol000=oo`04001oogoo0002Ool01000
+Oomoo`001Goo00<007ooOol0]goo00<007ooOol0DGoo0003Ool01000Oomoo`000Woo00@007ooOol0
+00Eoo`800;Qoo`03001oogoo055oo`000goo0`000goo00@007ooOol000Eoo`03001oogoo0;Qoo`03
+001oogoo051oo`0017oo00<007ooOol00Woo00@007ooOol000Eoo`03001oogoo0;Qoo`03001oogoo
+051oo`0017oo0`000goo0P001Woo00<007ooOol0^7oo00<007ooOol0D7oo000BOol00`00Oomoo`2i
+Ool00`00Oomoo`1?Ool0019oo`03001oogoo0;Uoo`03001oogoo04moo`004Woo00<007ooOol0^Goo
+00<007ooOol0Cgoo000BOol00`00Oomoo`2jOol00`00Oomoo`1>Ool0019oo`03001oogoo0;Yoo`03
+001oogoo04ioo`004Woo00<007ooOol0^Woo00<007ooOol0CWoo000BOol2002kOol00`00Oomoo`1>
+Ool0019oo`03001oogoo0;]oo`03001oogoo04eoo`004Woo00<007ooOol0^goo00<007ooOol0CGoo
+000BOol00`00Oomoo`2kOol00`00Oomoo`1=Ool0019oo`03001oogoo0;aoo`03001oogoo04aoo`00
+4Woo00<007ooOol0_7oo00<007ooOol0C7oo000BOol00`00Oomoo`2lOol00`00Oomoo`1<Ool0019o
+o`03001oogoo0;eoo`03001oogoo04]oo`004Woo00<007ooOol0_Goo00<007ooOol0Bgoo000BOol0
+0`00Oomoo`2mOol00`00Oomoo`1;Ool0019oo`03001oogoo0;eoo`03001oogoo04]oo`004Woo0P00
+_goo00<007ooOol0BWoo000BOol00`00Oomoo`2nOol00`00Oomoo`1:Ool0019oo`03001oogoo0;io
+o`03001oogoo04Yoo`004Woo00<007ooOol0_goo00<007ooOol0BGoo000BOol00`00Oomoo`2oOol0
+0`00Oomoo`19Ool0019oo`03001oogoo0;moo`03001oogoo04Uoo`004Woo00<007ooOol0`7oo00<0
+07ooOol0B7oo000BOol00`00Oomoo`30Ool00`00Oomoo`18Ool0019oo`03001oogoo0<1oo`03001o
+ogoo04Qoo`004Woo00<007ooOol0`7oo00<007ooOol0B7oo000BOol20032Ool00`00Oomoo`17Ool0
+019oo`03001oogoo0<5oo`03001oogoo04Moo`004Woo00<007ooOol0`Goo00<007ooOol0Agoo000B
+Ool00`00Oomoo`31Ool00`00Oomoo`17Ool0019oo`03001oogoo0<9oo`03001oogoo04Ioo`004Woo
+00<007ooOol0`Woo00<007ooOol0AWoo000BOol00`00Oomoo`32Ool00`00Oomoo`16Ool0019oo`03
+001oogoo0<9oo`03001oogoo04Ioo`00\
+\>"],
+  ImageRangeCache->{{{0, 287}, {176.938, 0}} -> {-0.0696796, -5.92537, \
+0.00385028, 0.477531}}],
+
+Cell[BoxData[
+    TagBox[\(\[SkeletonIndicator]  Graphics  \[SkeletonIndicator]\),
+      False,
+      Editable->False]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{685, 548},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 39, 1, 30, "Input"],
+Cell[1769, 55, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1841, 61, 39, 1, 30, "Input"],
+Cell[1883, 64, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1955, 70, 38, 1, 30, "Input"],
+Cell[1996, 73, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2068, 79, 40, 1, 30, "Input"],
+Cell[2111, 82, 38, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2186, 88, 39, 1, 30, "Input"],
+Cell[2228, 91, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2300, 97, 38, 1, 30, "Input"],
+Cell[2341, 100, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2413, 106, 39, 1, 30, "Input"],
+Cell[2455, 109, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2527, 115, 57, 1, 30, "Input"],
+Cell[2587, 118, 58, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2682, 124, 54, 1, 30, "Input"],
+Cell[2739, 127, 44, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2820, 133, 106, 2, 30, "Input"],
+Cell[2929, 137, 57, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3023, 143, 52, 1, 30, "Input"],
+Cell[3078, 146, 40, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3155, 152, 57, 1, 30, "Input"],
+Cell[3215, 155, 58, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3310, 161, 54, 1, 30, "Input"],
+Cell[3367, 164, 44, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3448, 170, 121, 2, 30, "Input"],
+Cell[3572, 174, 57, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3666, 180, 39, 1, 30, "Input"],
+Cell[3708, 183, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3780, 189, 51, 1, 30, "Input"],
+Cell[3834, 192, 37, 1, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3908, 198, 53, 1, 30, "Input"],
+Cell[3964, 201, 50, 1, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4051, 207, 67, 1, 30, "Input"],
+Cell[4121, 210, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4210, 216, 131, 3, 30, "Input"],
+Cell[4344, 221, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4433, 227, 163, 3, 30, "Input"],
+Cell[4599, 232, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4689, 238, 85, 1, 30, "Input"],
+Cell[4777, 241, 143, 2, 35, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4957, 248, 55, 1, 30, "Input"],
+Cell[5015, 251, 11686, 341, 186, 3391, 234, "GraphicsData", "PostScript", \
+"Graphics"],
+Cell[16704, 594, 130, 3, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

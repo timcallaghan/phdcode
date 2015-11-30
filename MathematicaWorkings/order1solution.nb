@@ -1,0 +1,1186 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     39527,       1088]*)
+(*NotebookOutlinePosition[     40173,       1110]*)
+(*  CellTagsIndexPosition[     40129,       1106]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(ur[\[Lambda]_, \[Phi]_] = \[Epsilon]^2*
+          ur2[\[Lambda], \[Phi]] + \[Epsilon]^3*ur3[\[Lambda], \[Phi]] + 
+        O[\[Epsilon]]^4\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(ur2[\[Lambda], \[Phi]]\ \[Epsilon]\^2\), 
+        "+", \(ur3[\[Lambda], \[Phi]]\ \[Epsilon]\^3\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^4\),
+          SeriesData[ \[Epsilon], 0, {}, 2, 4, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        ur2[ \[Lambda], \[Phi]], 
+        ur3[ \[Lambda], \[Phi]]}, 2, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(u\[Lambda][\[Lambda]_, \[Phi]_] = \(-Cos[\[Phi]]\) + 
+        Sqrt[Cos[\[Phi]]^2 + 
+            B*Cos[\[Phi]]/\((K01*\((A + B*Cos[\[Phi]])\))\)] + \[Epsilon]*
+          u\[Lambda]1[\[Lambda], \[Phi]] + \[Epsilon]^2*
+          u\[Lambda]2[\[Lambda], \[Phi]] + \[Epsilon]^3*
+          u\[Lambda]3[\[Lambda], \[Phi]] + O[\[Epsilon]]^4\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ Cos[\[Phi]]\)\/\
+\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\), 
+        "+", \(u\[Lambda]1[\[Lambda], \[Phi]]\ \[Epsilon]\), 
+        "+", \(u\[Lambda]2[\[Lambda], \[Phi]]\ \[Epsilon]\^2\), 
+        "+", \(u\[Lambda]3[\[Lambda], \[Phi]]\ \[Epsilon]\^3\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^4\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 4, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ -1, 
+            Cos[ \[Phi]]], 
+          Power[ 
+            Plus[ 
+              Power[ 
+                Cos[ \[Phi]], 2], 
+              Times[ B, 
+                Power[ K01, -1], 
+                Cos[ \[Phi]], 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1]]], 
+            Rational[ 1, 2]]], 
+        u\[Lambda]1[ \[Lambda], \[Phi]], 
+        u\[Lambda]2[ \[Lambda], \[Phi]], 
+        u\[Lambda]3[ \[Lambda], \[Phi]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(u\[Phi][\[Lambda]_, \[Phi]_] = \[Epsilon]*
+          u\[Phi]1[\[Lambda], \[Phi]] + \[Epsilon]^2*
+          u\[Phi]2[\[Lambda], \[Phi]] + \[Epsilon]^3*
+          u\[Phi]3[\[Lambda], \[Phi]] + O[\[Epsilon]]^4\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(u\[Phi]1[\[Lambda], \[Phi]]\ \[Epsilon]\), 
+        "+", \(u\[Phi]2[\[Lambda], \[Phi]]\ \[Epsilon]\^2\), 
+        "+", \(u\[Phi]3[\[Lambda], \[Phi]]\ \[Epsilon]\^3\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^4\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 4, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        u\[Phi]1[ \[Lambda], \[Phi]], 
+        u\[Phi]2[ \[Lambda], \[Phi]], 
+        u\[Phi]3[ \[Lambda], \[Phi]]}, 1, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho][\[Lambda]_, \[Phi]_] = 
+      A + B*Cos[\[Phi]] + \[Epsilon]*\[Rho]1[\[Lambda], \[Phi]] + \
+\[Epsilon]^2*\[Rho]2[\[Lambda], \[Phi]] + \[Epsilon]^3*\[Rho]3[\[Lambda], \
+\[Phi]] + O[\[Epsilon]]^4\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((A + B\ Cos[\[Phi]])\), 
+        "+", \(\[Rho]1[\[Lambda], \[Phi]]\ \[Epsilon]\), 
+        "+", \(\[Rho]2[\[Lambda], \[Phi]]\ \[Epsilon]\^2\), 
+        "+", \(\[Rho]3[\[Lambda], \[Phi]]\ \[Epsilon]\^3\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^4\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 4, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ A, 
+          Times[ B, 
+            Cos[ \[Phi]]]], 
+        \[Rho]1[ \[Lambda], \[Phi]], 
+        \[Rho]2[ \[Lambda], \[Phi]], 
+        \[Rho]3[ \[Lambda], \[Phi]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p[\[Lambda]_, \[Phi]_] = \((A + B*Cos[\[Phi]])\)/K01 + \[Epsilon]*
+          p1[\[Lambda], \[Phi]] + \[Epsilon]^2*
+          p2[\[Lambda], \[Phi]] + \[Epsilon]^3*p3[\[Lambda], \[Phi]] + 
+        O[\[Epsilon]]^4\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\(A + B\ Cos[\[Phi]]\)\/K01\), 
+        "+", \(p1[\[Lambda], \[Phi]]\ \[Epsilon]\), 
+        "+", \(p2[\[Lambda], \[Phi]]\ \[Epsilon]\^2\), 
+        "+", \(p3[\[Lambda], \[Phi]]\ \[Epsilon]\^3\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^4\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 4, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ 
+          Power[ K01, -1], 
+          Plus[ A, 
+            Times[ B, 
+              Cos[ \[Phi]]]]], 
+        p1[ \[Lambda], \[Phi]], 
+        p2[ \[Lambda], \[Phi]], 
+        p3[ \[Lambda], \[Phi]]}, 0, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(K = 
+      1/\[Epsilon]*K01 + 
+        K0 + \[Epsilon]*K1 + \[Epsilon]^2*K2 + \[Epsilon]^3*K3 + 
+        O[\[Epsilon]]^4\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(K01\/\[Epsilon]\), "+", "K0", "+", \(K1\ \[Epsilon]\), 
+        "+", \(K2\ \[Epsilon]\^2\), "+", \(K3\ \[Epsilon]\^3\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^4\),
+          SeriesData[ \[Epsilon], 0, {}, -1, 4, 1]]}],
+      SeriesData[ \[Epsilon], 0, {K01, K0, K1, K2, K3}, -1, 4, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Kur\[Rho][\[Lambda]_, \[Phi]_] = 
+      K*ur[\[Lambda], \[Phi]]*\[Rho][\[Lambda], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(K01\ \((A + 
+              B\ Cos[\[Phi]])\)\ ur2[\[Lambda], \[Phi]]\ \[Epsilon]\), 
+        "+", \(\((K0\ \((A + B\ Cos[\[Phi]])\)\ ur2[\[Lambda], \[Phi]] + 
+              K01\ \((\((A + B\ Cos[\[Phi]])\)\ ur3[\[Lambda], \[Phi]] + 
+                    ur2[\[Lambda], \[Phi]]\ \[Rho]1[\[Lambda], \[Phi]])\))\)\ \
+\[Epsilon]\^2\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^3\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 3, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Times[ K01, 
+          Plus[ A, 
+            Times[ B, 
+              Cos[ \[Phi]]]], 
+          ur2[ \[Lambda], \[Phi]]], 
+        Plus[ 
+          Times[ K0, 
+            Plus[ A, 
+              Times[ B, 
+                Cos[ \[Phi]]]], 
+            ur2[ \[Lambda], \[Phi]]], 
+          Times[ K01, 
+            Plus[ 
+              Times[ 
+                Plus[ A, 
+                  Times[ B, 
+                    Cos[ \[Phi]]]], 
+                ur3[ \[Lambda], \[Phi]]], 
+              Times[ 
+                ur2[ \[Lambda], \[Phi]], 
+                \[Rho]1[ \[Lambda], \[Phi]]]]]]}, 1, 3, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Kpdiv\[Rho][\[Lambda]_, \[Phi]_] = 
+      K*p[\[Lambda], \[Phi]]/\[Rho][\[Lambda], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(1\/\[Epsilon]\), 
+        "+", \((K0\/K01 + 
+            K01\ \((p1[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \[Rho]1[\
+\[Lambda], \[Phi]]\/\(K01\ \((A + B\ Cos[\[Phi]])\)\))\))\), 
+        "+", \(\((K1\/K01 + 
+              K0\ \((p1[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \[Rho]1[\
+\[Lambda], \[Phi]]\/\(K01\ \((A + B\ Cos[\[Phi]])\)\))\) + 
+              K01\ \((p2[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \(p1[\
+\[Lambda], \[Phi]]\ \[Rho]1[\[Lambda], \[Phi]]\)\/\((A + B\ Cos[\[Phi]])\)\^2 \
++ \(\[Rho]1[\[Lambda], \[Phi]]\^2\/\((A + B\ Cos[\[Phi]])\)\^2 - \[Rho]2[\
+\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\)\)\/K01)\))\)\ \[Epsilon]\), 
+        "+", \(\((K2\/K01 + 
+              K1\ \((p1[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \[Rho]1[\
+\[Lambda], \[Phi]]\/\(K01\ \((A + B\ Cos[\[Phi]])\)\))\) + 
+              K0\ \((p2[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \(p1[\
+\[Lambda], \[Phi]]\ \[Rho]1[\[Lambda], \[Phi]]\)\/\((A + B\ Cos[\[Phi]])\)\^2 \
++ \(\[Rho]1[\[Lambda], \[Phi]]\^2\/\((A + B\ Cos[\[Phi]])\)\^2 - \[Rho]2[\
+\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\)\)\/K01)\) + 
+              K01\ \((p3[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \(p2[\
+\[Lambda], \[Phi]]\ \[Rho]1[\[Lambda], \[Phi]]\)\/\((A + B\ Cos[\[Phi]])\)\^2 \
++ \(p1[\[Lambda], \[Phi]]\ \((\[Rho]1[\[Lambda], \[Phi]]\^2\/\((A + B\ Cos[\
+\[Phi]])\)\^2 - \[Rho]2[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\))\)\)\/\(A \
++ B\ Cos[\[Phi]]\) + \(\(\[Rho]1[\[Lambda], \[Phi]]\ \[Rho]2[\[Lambda], \
+\[Phi]]\)\/\((A + B\ Cos[\[Phi]])\)\^2 - \(\[Rho]1[\[Lambda], \[Phi]]\ \((\
+\[Rho]1[\[Lambda], \[Phi]]\^2\/\((A + B\ Cos[\[Phi]])\)\^2 - \
+\[Rho]2[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\))\)\)\/\(A + B\ Cos[\[Phi]]\
+\) - \[Rho]3[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\)\)\/K01)\))\)\ \
+\[Epsilon]\^2\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^3\),
+          SeriesData[ \[Epsilon], 0, {}, -1, 3, 1]]}],
+      SeriesData[ \[Epsilon], 0, {1, 
+        Plus[ 
+          Times[ K0, 
+            Power[ K01, -1]], 
+          Times[ K01, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p1[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ K01, -1], 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                \[Rho]1[ \[Lambda], \[Phi]]]]]], 
+        Plus[ 
+          Times[ 
+            Power[ K01, -1], K1], 
+          Times[ K0, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p1[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ K01, -1], 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                \[Rho]1[ \[Lambda], \[Phi]]]]], 
+          Times[ K01, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p2[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -2], 
+                p1[ \[Lambda], \[Phi]], 
+                \[Rho]1[ \[Lambda], \[Phi]]], 
+              Times[ 
+                Power[ K01, -1], 
+                Plus[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -2], 
+                    Power[ 
+                      \[Rho]1[ \[Lambda], \[Phi]], 2]], 
+                  Times[ -1, 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    \[Rho]2[ \[Lambda], \[Phi]]]]]]]], 
+        Plus[ 
+          Times[ 
+            Power[ K01, -1], K2], 
+          Times[ K1, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p1[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ K01, -1], 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                \[Rho]1[ \[Lambda], \[Phi]]]]], 
+          Times[ K0, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p2[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -2], 
+                p1[ \[Lambda], \[Phi]], 
+                \[Rho]1[ \[Lambda], \[Phi]]], 
+              Times[ 
+                Power[ K01, -1], 
+                Plus[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -2], 
+                    Power[ 
+                      \[Rho]1[ \[Lambda], \[Phi]], 2]], 
+                  Times[ -1, 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    \[Rho]2[ \[Lambda], \[Phi]]]]]]], 
+          Times[ K01, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p3[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -2], 
+                p2[ \[Lambda], \[Phi]], 
+                \[Rho]1[ \[Lambda], \[Phi]]], 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p1[ \[Lambda], \[Phi]], 
+                Plus[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -2], 
+                    Power[ 
+                      \[Rho]1[ \[Lambda], \[Phi]], 2]], 
+                  Times[ -1, 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    \[Rho]2[ \[Lambda], \[Phi]]]]], 
+              Times[ 
+                Power[ K01, -1], 
+                Plus[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -2], 
+                    \[Rho]1[ \[Lambda], \[Phi]], 
+                    \[Rho]2[ \[Lambda], \[Phi]]], 
+                  Times[ -1, 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    \[Rho]1[ \[Lambda], \[Phi]], 
+                    Plus[ 
+                      Times[ 
+                        Power[ 
+                          Plus[ A, 
+                            Times[ B, 
+                              Cos[ \[Phi]]]], -2], 
+                        Power[ 
+                          \[Rho]1[ \[Lambda], \[Phi]], 2]], 
+                      Times[ -1, 
+                        Power[ 
+                          Plus[ A, 
+                            Times[ B, 
+                              Cos[ \[Phi]]]], -1], 
+                        \[Rho]2[ \[Lambda], \[Phi]]]]], 
+                  Times[ -1, 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    \[Rho]3[ \[Lambda], \[Phi]]]]]]]]}, -1, 3, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Mass[\[Lambda]_, \[Phi]_] = \(-Kur\[Rho][\[Lambda], \[Phi]]\) + 
+        u\[Lambda][\[Lambda], \[Phi]]/Cos[\[Phi]]*
+          D[\[Rho][\[Lambda], \[Phi]], \[Lambda]] + 
+        u\[Phi][\[Lambda], \[Phi]]*D[\[Rho][\[Lambda], \[Phi]], \[Phi]] + 
+        2*\[Rho][\[Lambda], \[Phi]]*
+          ur[\[Lambda], \[Phi]] + \[Rho][\[Lambda], \[Phi]]/Cos[\[Phi]]*
+          D[u\[Lambda][\[Lambda], \[Phi]], \[Lambda]] - \[Rho][\[Lambda], \
+\[Phi]]*u\[Phi][\[Lambda], \[Phi]]*Tan[\[Phi]] + \[Rho][\[Lambda], \[Phi]]*
+          D[u\[Phi][\[Lambda], \[Phi]], \[Phi]] + O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{
+          RowBox[{"(", 
+            
+            RowBox[{\(\(-K01\)\ \((A + 
+                    B\ Cos[\[Phi]])\)\ ur2[\[Lambda], \[Phi]]\), 
+              "-", \(B\ Sin[\[Phi]]\ u\[Phi]1[\[Lambda], \[Phi]]\), 
+              "-", \(\((A + 
+                    B\ Cos[\[Phi]])\)\ Tan[\[Phi]]\ u\[Phi]1[\[Lambda], \
+\[Phi]]\), "+", 
+              RowBox[{\((A + B\ Cos[\[Phi]])\), " ", 
+                RowBox[{
+                  SuperscriptBox["u\[Phi]1", 
+                    TagBox[\((0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                  "]"}]}], "+", 
+              RowBox[{\((A + B\ Cos[\[Phi]])\), " ", \(Sec[\[Phi]]\), " ", 
+                RowBox[{
+                  SuperscriptBox["u\[Lambda]1", 
+                    TagBox[\((1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                  "]"}]}], "+", 
+              
+              RowBox[{\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ Cos[\
+\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\), " ", \(Sec[\[Phi]]\), " ", 
+                
+                RowBox[{
+                  SuperscriptBox["\[Rho]1", 
+                    TagBox[\((1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                  "]"}]}]}], ")"}], " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ -1, K01, 
+            Plus[ A, 
+              Times[ B, 
+                Cos[ \[Phi]]]], 
+            ur2[ \[Lambda], \[Phi]]], 
+          Times[ -1, B, 
+            Sin[ \[Phi]], 
+            u\[Phi]1[ \[Lambda], \[Phi]]], 
+          Times[ -1, 
+            Plus[ A, 
+              Times[ B, 
+                Cos[ \[Phi]]]], 
+            Tan[ \[Phi]], 
+            u\[Phi]1[ \[Lambda], \[Phi]]], 
+          Times[ 
+            Plus[ A, 
+              Times[ B, 
+                Cos[ \[Phi]]]], 
+            Derivative[ 0, 1][ u\[Phi]1][ \[Lambda], \[Phi]]], 
+          Times[ 
+            Plus[ A, 
+              Times[ B, 
+                Cos[ \[Phi]]]], 
+            Sec[ \[Phi]], 
+            Derivative[ 1, 0][ u\[Lambda]1][ \[Lambda], \[Phi]]], 
+          Times[ 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            Sec[ \[Phi]], 
+            Derivative[ 1, 0][ \[Rho]1][ \[Lambda], \[Phi]]]]}, 1, 2, 
+        1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rmoment[\[Lambda]_, \[Phi]_] = 
+      1/\[Epsilon] + 
+        u\[Lambda][\[Lambda], \[Phi]]/Cos[\[Phi]]*
+          D[ur[\[Lambda], \[Phi]], \[Lambda]] + 
+        u\[Phi][\[Lambda], \[Phi]]*D[ur[\[Lambda], \[Phi]], \[Phi]] - 
+        u\[Lambda][\[Lambda], \[Phi]]^2 - u\[Phi][\[Lambda], \[Phi]]^2 - 
+        2*u\[Lambda][\[Lambda], \[Phi]] Cos[\[Phi]] - 
+        Kpdiv\[Rho][\[Lambda], \[Phi]] + O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\((\(-\(K0\/K01\)\) - 
+            2\ Cos[\[Phi]]\ \((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ \
+Cos[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\) - \((\(-Cos[\[Phi]]\) + \
+\@\(Cos[\[Phi]]\^2 + \(B\ Cos[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\
+\)\^2 - K01\ \((p1[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \[Rho]1[\
+\[Lambda], \[Phi]]\/\(K01\ \((A + B\ Cos[\[Phi]])\)\))\))\), 
+        "+", \(\((\(-\(K1\/K01\)\) - 
+              2\ Cos[\[Phi]]\ u\[Lambda]1[\[Lambda], \[Phi]] - 
+              2\ \((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ \
+Cos[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\)\ u\[Lambda]1[\[Lambda], \
+\[Phi]] - 
+              K0\ \((p1[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \[Rho]1[\
+\[Lambda], \[Phi]]\/\(K01\ \((A + B\ Cos[\[Phi]])\)\))\) - 
+              K01\ \((p2[\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\) - \(p1[\
+\[Lambda], \[Phi]]\ \[Rho]1[\[Lambda], \[Phi]]\)\/\((A + B\ Cos[\[Phi]])\)\^2 \
++ \(\[Rho]1[\[Lambda], \[Phi]]\^2\/\((A + B\ Cos[\[Phi]])\)\^2 - \[Rho]2[\
+\[Lambda], \[Phi]]\/\(A + B\ Cos[\[Phi]]\)\)\/K01)\))\)\ \[Epsilon]\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ -1, K0, 
+            Power[ K01, -1]], 
+          Times[ -2, 
+            Cos[ \[Phi]], 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]]], 
+          Times[ -1, 
+            Power[ 
+              Plus[ 
+                Times[ -1, 
+                  Cos[ \[Phi]]], 
+                Power[ 
+                  Plus[ 
+                    Power[ 
+                      Cos[ \[Phi]], 2], 
+                    Times[ B, 
+                      Power[ K01, -1], 
+                      Cos[ \[Phi]], 
+                      Power[ 
+                        Plus[ A, 
+                          Times[ B, 
+                            Cos[ \[Phi]]]], -1]]], 
+                  Rational[ 1, 2]]], 2]], 
+          Times[ -1, K01, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p1[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ K01, -1], 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                \[Rho]1[ \[Lambda], \[Phi]]]]]], 
+        Plus[ 
+          Times[ -1, 
+            Power[ K01, -1], K1], 
+          Times[ -2, 
+            Cos[ \[Phi]], 
+            u\[Lambda]1[ \[Lambda], \[Phi]]], 
+          Times[ -2, 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            u\[Lambda]1[ \[Lambda], \[Phi]]], 
+          Times[ -1, K0, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p1[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ K01, -1], 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                \[Rho]1[ \[Lambda], \[Phi]]]]], 
+          Times[ -1, K01, 
+            Plus[ 
+              Times[ 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -1], 
+                p2[ \[Lambda], \[Phi]]], 
+              Times[ -1, 
+                Power[ 
+                  Plus[ A, 
+                    Times[ B, 
+                      Cos[ \[Phi]]]], -2], 
+                p1[ \[Lambda], \[Phi]], 
+                \[Rho]1[ \[Lambda], \[Phi]]], 
+              Times[ 
+                Power[ K01, -1], 
+                Plus[ 
+                  Times[ 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -2], 
+                    Power[ 
+                      \[Rho]1[ \[Lambda], \[Phi]], 2]], 
+                  Times[ -1, 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    \[Rho]2[ \[Lambda], \[Phi]]]]]]]]}, 0, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Lambda]moment[\[Lambda]_, \[Phi]_] = 
+      u\[Lambda][\[Lambda], \[Phi]]/Cos[\[Phi]]*
+          D[u\[Lambda][\[Lambda], \[Phi]], \[Lambda]] + 
+        u\[Phi][\[Lambda], \[Phi]]*D[u\[Lambda][\[Lambda], \[Phi]], \[Phi]] + 
+        ur[\[Lambda], \[Phi]]*u\[Lambda][\[Lambda], \[Phi]] - 
+        u\[Phi][\[Lambda], \[Phi]]*u\[Lambda][\[Lambda], \[Phi]]*
+          Tan[\[Phi]] + 2*ur[\[Lambda], \[Phi]]*Cos[\[Phi]] - 
+        2*u\[Phi][\[Lambda], \[Phi]]*Sin[\[Phi]] + 
+        1/\((Cos[\[Phi]]*\[Rho][\[Lambda], \[Phi]])\)*
+          D[p[\[Lambda], \[Phi]], \[Lambda]] + O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{
+          RowBox[{"(", 
+            
+            RowBox[{\(\(-2\)\ Sin[\[Phi]]\ u\[Phi]1[\[Lambda], \[Phi]]\), 
+              "+", \(\((Sin[\[Phi]] + \(\(-2\)\ Cos[\[Phi]]\ Sin[\[Phi]] + \
+\(B\^2\ Cos[\[Phi]]\ Sin[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\^2\) - \
+\(B\ Sin[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\)\/\(2\ \@\(Cos[\[Phi]]\
+\^2 + \(B\ Cos[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\)\))\)\ u\[Phi]1[\
+\[Lambda], \[Phi]]\), 
+              "-", \(\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ Cos[\
+\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\)\ Tan[\[Phi]]\ u\[Phi]1[\
+\[Lambda], \[Phi]]\), "+", 
+              FractionBox[
+                RowBox[{\(Sec[\[Phi]]\), " ", 
+                  RowBox[{
+                    SuperscriptBox["p1", 
+                      TagBox[\((1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                    "]"}]}], \(A + B\ Cos[\[Phi]]\)], "+", 
+              
+              RowBox[{\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ Cos[\
+\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\), " ", \(Sec[\[Phi]]\), " ", 
+                
+                RowBox[{
+                  SuperscriptBox["u\[Lambda]1", 
+                    TagBox[\((1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                  "]"}]}]}], ")"}], " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ -2, 
+            Sin[ \[Phi]], 
+            u\[Phi]1[ \[Lambda], \[Phi]]], 
+          Times[ 
+            Plus[ 
+              Sin[ \[Phi]], 
+              Times[ 
+                Rational[ 1, 2], 
+                Power[ 
+                  Plus[ 
+                    Power[ 
+                      Cos[ \[Phi]], 2], 
+                    Times[ B, 
+                      Power[ K01, -1], 
+                      Cos[ \[Phi]], 
+                      Power[ 
+                        Plus[ A, 
+                          Times[ B, 
+                            Cos[ \[Phi]]]], -1]]], 
+                  Rational[ -1, 2]], 
+                Plus[ 
+                  Times[ -2, 
+                    Cos[ \[Phi]], 
+                    Sin[ \[Phi]]], 
+                  Times[ 
+                    Power[ B, 2], 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -2], 
+                    Sin[ \[Phi]]], 
+                  Times[ -1, B, 
+                    Power[ K01, -1], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1], 
+                    Sin[ \[Phi]]]]]], 
+            u\[Phi]1[ \[Lambda], \[Phi]]], 
+          Times[ -1, 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            Tan[ \[Phi]], 
+            u\[Phi]1[ \[Lambda], \[Phi]]], 
+          Times[ 
+            Power[ 
+              Plus[ A, 
+                Times[ B, 
+                  Cos[ \[Phi]]]], -1], 
+            Sec[ \[Phi]], 
+            Derivative[ 1, 0][ p1][ \[Lambda], \[Phi]]], 
+          Times[ 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            Sec[ \[Phi]], 
+            Derivative[ 1, 0][ u\[Lambda]1][ \[Lambda], \[Phi]]]]}, 1, 2, 
+        1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Phi]moment[\[Lambda]_, \[Phi]_] = 
+      u\[Lambda][\[Lambda], \[Phi]]/Cos[\[Phi]]*
+          D[u\[Phi][\[Lambda], \[Phi]], \[Lambda]] + 
+        u\[Phi][\[Lambda], \[Phi]]*D[u\[Phi][\[Lambda], \[Phi]], \[Phi]] + 
+        ur[\[Lambda], \[Phi]]*u\[Phi][\[Lambda], \[Phi]] + 
+        u\[Lambda][\[Lambda], \[Phi]]^2*Tan[\[Phi]] + 
+        2*u\[Lambda][\[Lambda], \[Phi]]*Sin[\[Phi]] + 
+        1/\[Rho][\[Lambda], \[Phi]]*D[p[\[Lambda], \[Phi]], \[Phi]] + 
+        O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{
+          RowBox[{"(", 
+            
+            RowBox[{\(2\ Sin[\[Phi]]\ u\[Lambda]1[\[Lambda], \[Phi]]\), 
+              "+", \(2\ \((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ Cos[\
+\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\)\ Tan[\[Phi]]\ u\[Lambda]1[\
+\[Lambda], \[Phi]]\), 
+              "+", \(\(B\ Sin[\[Phi]]\ \[Rho]1[\[Lambda], \[Phi]]\)\/\(K01\ \
+\((A + B\ Cos[\[Phi]])\)\^2\)\), "+", 
+              FractionBox[
+                RowBox[{
+                  SuperscriptBox["p1", 
+                    TagBox[\((0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                  "]"}], \(A + B\ Cos[\[Phi]]\)], "+", 
+              
+              RowBox[{\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ Cos[\
+\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\), " ", \(Sec[\[Phi]]\), " ", 
+                
+                RowBox[{
+                  SuperscriptBox["u\[Phi]1", 
+                    TagBox[\((1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Lambda], \[Phi]\), 
+                  "]"}]}]}], ")"}], " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ 2, 
+            Sin[ \[Phi]], 
+            u\[Lambda]1[ \[Lambda], \[Phi]]], 
+          Times[ 2, 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            Tan[ \[Phi]], 
+            u\[Lambda]1[ \[Lambda], \[Phi]]], 
+          Times[ B, 
+            Power[ K01, -1], 
+            Power[ 
+              Plus[ A, 
+                Times[ B, 
+                  Cos[ \[Phi]]]], -2], 
+            Sin[ \[Phi]], 
+            \[Rho]1[ \[Lambda], \[Phi]]], 
+          Times[ 
+            Power[ 
+              Plus[ A, 
+                Times[ B, 
+                  Cos[ \[Phi]]]], -1], 
+            Derivative[ 0, 1][ p1][ \[Lambda], \[Phi]]], 
+          Times[ 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            Sec[ \[Phi]], 
+            Derivative[ 1, 0][ u\[Phi]1][ \[Lambda], \[Phi]]]]}, 1, 2, 
+        1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Energy[\[Lambda]_, \[Phi]_] = 
+      1/\((\[Gamma] - 
+                1)\)*\((u\[Lambda][\[Lambda], \[Phi]]/
+                  Cos[\[Phi]]*\((D[p[\[Lambda], \[Phi]], \[Lambda]] - 
+                    p[\[Lambda], \[Phi]]/\[Rho][\[Lambda], \[Phi]]*
+                      D[\[Rho][\[Lambda], \[Phi]], \[Lambda]])\) + 
+              u\[Phi][\[Lambda], \[Phi]]*\((D[p[\[Lambda], \[Phi]], \[Phi]] - 
+                    p[\[Lambda], \[Phi]]/\[Rho][\[Lambda], \[Phi]]*
+                      D[\[Rho][\[Lambda], \[Phi]], \[Phi]])\))\) - 
+        p[\[Lambda], \[Phi]]/\[Rho][\[Lambda], \[Phi]]*\((\(-Kur\[Rho][\
+\[Lambda], \[Phi]]\) + 
+              u\[Lambda][\[Lambda], \[Phi]]/Cos[\[Phi]]*
+                D[\[Rho][\[Lambda], \[Phi]], \[Lambda]] + 
+              u\[Phi][\[Lambda], \[Phi]]*
+                D[\[Rho][\[Lambda], \[Phi]], \[Phi]])\) + 
+        O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{
+        RowBox[{
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{\(1\/\(\(-1\) + \[Gamma]\)\), 
+                RowBox[{"(", 
+                  
+                  RowBox[{\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ \
+Cos[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\), " ", \(Sec[\[Phi]]\), 
+                    " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["p1", 
+                            TagBox[\((1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi]\), "]"}], "-", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[Rho]1", 
+                              TagBox[\((1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], 
+                            "[", \(\[Lambda], \[Phi]\), "]"}], "K01"]}], 
+                      ")"}]}], ")"}]}], "-", 
+              RowBox[{\(1\/K01\), 
+                RowBox[{"(", 
+                  
+                  RowBox[{\(\(-K01\)\ \((A + 
+                          B\ Cos[\[Phi]])\)\ ur2[\[Lambda], \[Phi]]\), 
+                    "-", \(B\ Sin[\[Phi]]\ u\[Phi]1[\[Lambda], \[Phi]]\), "+",
+                     
+                    
+                    RowBox[{\((\(-Cos[\[Phi]]\) + \@\(Cos[\[Phi]]\^2 + \(B\ \
+Cos[\[Phi]]\)\/\(K01\ \((A + B\ Cos[\[Phi]])\)\)\))\), " ", \(Sec[\[Phi]]\), 
+                      " ", 
+                      RowBox[{
+                        SuperscriptBox["\[Rho]1", 
+                          TagBox[\((1, 0)\),
+                            Derivative],
+                          MultilineFunction->None], 
+                        "[", \(\[Lambda], \[Phi]\), "]"}]}]}], ")"}]}]}], 
+            ")"}], " ", "\[Epsilon]"}], "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 1, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Plus[ 
+          Times[ 
+            Power[ 
+              Plus[ -1, \[Gamma]], -1], 
+            Plus[ 
+              Times[ -1, 
+                Cos[ \[Phi]]], 
+              Power[ 
+                Plus[ 
+                  Power[ 
+                    Cos[ \[Phi]], 2], 
+                  Times[ B, 
+                    Power[ K01, -1], 
+                    Cos[ \[Phi]], 
+                    Power[ 
+                      Plus[ A, 
+                        Times[ B, 
+                          Cos[ \[Phi]]]], -1]]], 
+                Rational[ 1, 2]]], 
+            Sec[ \[Phi]], 
+            Plus[ 
+              Derivative[ 1, 0][ p1][ \[Lambda], \[Phi]], 
+              Times[ -1, 
+                Power[ K01, -1], 
+                Derivative[ 1, 0][ \[Rho]1][ \[Lambda], \[Phi]]]]], 
+          Times[ -1, 
+            Power[ K01, -1], 
+            Plus[ 
+              Times[ -1, K01, 
+                Plus[ A, 
+                  Times[ B, 
+                    Cos[ \[Phi]]]], 
+                ur2[ \[Lambda], \[Phi]]], 
+              Times[ -1, B, 
+                Sin[ \[Phi]], 
+                u\[Phi]1[ \[Lambda], \[Phi]]], 
+              Times[ 
+                Plus[ 
+                  Times[ -1, 
+                    Cos[ \[Phi]]], 
+                  Power[ 
+                    Plus[ 
+                      Power[ 
+                        Cos[ \[Phi]], 2], 
+                      Times[ B, 
+                        Power[ K01, -1], 
+                        Cos[ \[Phi]], 
+                        Power[ 
+                          Plus[ A, 
+                            Times[ B, 
+                              Cos[ \[Phi]]]], -1]]], 
+                    Rational[ 1, 2]]], 
+                Sec[ \[Phi]], 
+                Derivative[ 1, 0][ \[Rho]1][ \[Lambda], \[Phi]]]]]]}, 1, 2, 
+        1]]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{499, 537},
+WindowMargins->{{225, Automatic}, {Automatic, 14}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 170, 3, 30, "Input"],
+Cell[1900, 57, 383, 8, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2320, 70, 364, 6, 70, "Input"],
+Cell[2687, 78, 1048, 27, 75, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3772, 110, 239, 4, 50, "Input"],
+Cell[4014, 116, 501, 10, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4552, 131, 233, 4, 50, "Input"],
+Cell[4788, 137, 603, 14, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5428, 156, 243, 4, 50, "Input"],
+Cell[5674, 162, 631, 16, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6342, 183, 153, 4, 30, "Input"],
+Cell[6498, 189, 360, 6, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6895, 200, 122, 2, 30, "Input"],
+Cell[7020, 204, 1148, 31, 48, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8205, 240, 123, 2, 30, "Input"],
+Cell[8331, 244, 8235, 219, 754, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16603, 468, 604, 9, 90, "Input"],
+Cell[17210, 479, 3039, 83, 182, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20286, 567, 443, 8, 70, "Input"],
+Cell[20732, 577, 5145, 142, 395, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25914, 724, 619, 10, 110, "Input"],
+Cell[26536, 736, 4433, 121, 415, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31006, 862, 513, 9, 90, "Input"],
+Cell[31522, 873, 3083, 86, 233, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[34642, 964, 901, 16, 190, "Input"],
+Cell[35546, 982, 3965, 103, 239, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

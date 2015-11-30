@@ -1,0 +1,1520 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     31605,       1097]*)
+(*NotebookOutlinePosition[     32310,       1121]*)
+(*  CellTagsIndexPosition[     32266,       1117]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(\[Kappa] = 4\)], "Input"],
+
+Cell[BoxData[
+    \(4\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(M = 3\)], "Input"],
+
+Cell[BoxData[
+    \(3\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(wref = 7.848*10^\((\(-6\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(7.848`*^-6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vref = 40\)], "Input"],
+
+Cell[BoxData[
+    \(40\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g = 9.80616\)], "Input"],
+
+Cell[BoxData[
+    \(9.80616`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Omega = 2*Pi/\((24*60*60)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/43200\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a = 6.37122*10^6\)], "Input"],
+
+Cell[BoxData[
+    \(6.37122`*^6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(href = 8*10^3\)], "Input"],
+
+Cell[BoxData[
+    \(8000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(cref = Omega/30\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/1296000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Sr = a*cref/vref\)], "Input"],
+
+Cell[BoxData[
+    \(0.3861068276698372`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Fr = vref/Sqrt[g*href]\)], "Input"],
+
+Cell[BoxData[
+    \(0.142812266053059`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Ro = vref/\((2*Omega*a)\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.04316594650048109`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(w = wref*a/vref\)], "Input"],
+
+Cell[BoxData[
+    \(1.250033364`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(h0 = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(c = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulamz[\[Phi]_] = w*Cos[\[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    \(1.250033364`\ Cos[\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(hz[\[Phi]_] = 
+      w*\((Fr^2)\)/2*\((1/Ro + w)\)*Cos[\[Phi]]^2 + h0\)], "Input"],
+
+Cell[BoxData[
+    \(1 + 0.3112468938957029`\ Cos[\[Phi]]\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"A", "=", 
+      RowBox[{"(", GridBox[{
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"}
+            }], ")"}]}]], "Input"],
+
+Cell[BoxData[
+    \({{1, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 
+        0}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(ulam[\[Eta]_, \[Phi]_] := 
+      ulamz[\[Phi]] + \[Sum]\+\(m = 0\)\%\(M - 1\)\(\[Sum]\+\(l = \
+m*\[Kappa]\)\%\(2  M + m*\[Kappa] - 1\)A[\([m + 1, l - m*\[Kappa] + 1]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m*\[Kappa])\)!\)/\((4*
+                        Pi*\(\((l + m*\[Kappa])\)!\))\)]*
+              LegendreP[l, m*\[Kappa], Sin[\[Phi]]]*
+              Cos[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"B", "=", 
+      RowBox[{"(", GridBox[{
+            {"0", "1", "0", "1", "0", "1"},
+            {"0", "1", "0", "1", "0", "1"},
+            {"0", "1", "0", "1", "0", "1"}
+            }], ")"}]}]], "Input"],
+
+Cell[BoxData[
+    \({{0, 1, 0, 1, 0, 1}, {0, 1, 0, 1, 0, 1}, {0, 1, 0, 1, 0, 
+        1}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(uphi[\[Eta]_, \[Phi]_] := \[Sum]\+\(m = 1\)\%M\(\[Sum]\+\(l = \
+m*\[Kappa]\)\%\(2  M + m*\[Kappa] - 1\)B[\([m, l - m*\[Kappa] + 1]\)]*
+            Sqrt[\((2  l + 
+                    1)\)*\(\((l - m*\[Kappa])\)!\)/\((4*
+                      Pi*\(\((l + m*\[Kappa])\)!\))\)]*
+            LegendreP[l, m*\[Kappa], Sin[\[Phi]]]*
+            Sin[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"CC", "=", 
+      RowBox[{"(", GridBox[{
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"}
+            }], ")"}]}]], "Input"],
+
+Cell[BoxData[
+    \({{1, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 
+        0}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(h[\[Eta]_, \[Phi]_] := 
+      hz[\[Phi]] + \[Sum]\+\(m = 0\)\%\(M - 1\)\(\[Sum]\+\(l = m*\[Kappa]\)\%\
+\(2  M + m*\[Kappa] - 1\)CC[\([m + 1, l - m*\[Kappa] + 1]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m*\[Kappa])\)!\)/\((4*
+                        Pi*\(\((l + m*\[Kappa])\)!\))\)]*
+              LegendreP[l, m*\[Kappa], Sin[\[Phi]]]*
+              Cos[\[Kappa]*m*\[Eta]]\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(ulameta[\[Eta]_, \[Phi]_] = 
+        D[ulam[\[Eta], \[Phi]], \[Eta]];\)\)], "Input"],
+
+Cell[BoxData[
+    \(Clear[\[Eta]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(uphieta[\[Eta]_, \[Phi]_] = 
+        D[uphi[\[Eta], \[Phi]], \[Eta]];\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(heta[\[Eta]_, \[Phi]_] = D[h[\[Eta], \[Phi]], \[Eta]];\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(ulamphi[\[Eta]_, \[Phi]_] = 
+        D[ulam[\[Eta], \[Phi]], \[Phi]];\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(uphiphi[\[Eta]_, \[Phi]_] = 
+        D[uphi[\[Eta], \[Phi]], \[Phi]];\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(hphi[\[Eta]_, \[Phi]_] = D[h[\[Eta], \[Phi]], \[Phi]];\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = Pi/\((2*M*\[Kappa])\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/24\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 2.409437144067864*10^\((\(-001\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.24094371440678639`\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(<< LinearAlgebra`MatrixManipulation`\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 1.643}, {uphi, uphi[eta, phi], 0.58075}, {h, 
+          h[eta, phi], 1.7226}, {ulameta, 
+          ulameta[eta, phi], \(-0.41534\)*\[Kappa]}, {uphieta, 
+          uphieta[eta, phi], 0.47639*\[Kappa]}, {heta, 
+          heta[eta, phi], \(-0.41534\)*\[Kappa]}, {ulamphi, 
+          ulamphi[eta, phi], \(-2.5275\)}, {uphiphi, 
+          uphiphi[eta, phi], \(-2.9283\)}, {hphi, 
+          hphi[eta, phi], \(-2.3734\)}}]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "1.642970143196467`", "1.643`"},
+            {"uphi", "0.5807506602943551`", "0.58075`"},
+            {"h", "1.7225709901886057`", "1.7226`"},
+            {"ulameta", \(-1.6613492099577274`\), \(-1.66136`\)},
+            {"uphieta", "1.9055505588418291`", "1.90556`"},
+            {"heta", \(-1.6613492099577274`\), \(-1.66136`\)},
+            {"ulamphi", \(-2.527472107498421`\), \(-2.5275`\)},
+            {"uphiphi", \(-2.928302352377505`\), \(-2.9283`\)},
+            {"hphi", \(-2.373438312146212`\), \(-2.3734`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 7.224297003074091*10^\((\(-001\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.7224297003074092`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 2.0549}, {uphi, uphi[eta, phi], 2.0087}, {h, 
+          h[eta, phi], 2.2923}, {ulameta, 
+          ulameta[eta, phi], \(-1.8299\)*\[Kappa]}, {uphieta, 
+          uphieta[eta, phi], 1.5493*\[Kappa]}, {heta, 
+          heta[eta, phi], \(-1.8299\)*\[Kappa]}, {ulamphi, ulamphi[eta, phi], 
+          0.902}, {uphiphi, uphiphi[eta, phi], \(-1.3182\)}, {hphi, 
+          hphi[eta, phi], 1.4198}}]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "2.054880818978074`", "2.0549`"},
+            {"uphi", "2.00870484081997`", "2.0087`"},
+            {"h", "2.2922744538965105`", "2.2923`"},
+            {"ulameta", \(-7.319670435244002`\), \(-7.3196`\)},
+            {"uphieta", "6.1971090130549005`", "6.1972`"},
+            {"heta", \(-7.319670435244002`\), \(-7.3196`\)},
+            {"ulamphi", "0.901999527991748`", "0.902`"},
+            {"uphiphi", \(-1.3182101662775074`\), \(-1.3182`\)},
+            {"hphi", "1.419751372216356`", "1.4198`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 1.201189674850068\)], "Input"],
+
+Cell[BoxData[
+    \(1.201189674850068`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 0.64604}, {uphi, uphi[eta, phi], 0.19831}, {h, 
+          h[eta, phi], 1.2351}, {ulameta, 
+          ulameta[eta, phi], \(-0.12929\)*\[Kappa]}, {uphieta, 
+          uphieta[eta, phi], 0.33078*\[Kappa]}, {heta, 
+          heta[eta, phi], \(-0.12929\)*\[Kappa]}, {ulamphi, 
+          ulamphi[eta, phi], \(-2.8895\)}, {uphiphi, 
+          uphiphi[eta, phi], \(-1.7995\)}, {hphi, 
+          hphi[eta, phi], \(-1.9336\)}}]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "0.6460420772790553`", "0.64604`"},
+            {"uphi", "0.19830867490844914`", "0.19831`"},
+            {"h", "1.2350870889974863`", "1.2351`"},
+            {"ulameta", \(-0.5171602712214988`\), \(-0.51716`\)},
+            {"uphieta", "1.3231065241201632`", "1.32312`"},
+            {"heta", \(-0.5171602712214988`\), \(-0.51716`\)},
+            {"ulamphi", \(-2.8895060380098614`\), \(-2.8895`\)},
+            {"uphiphi", \(-1.7994969326696224`\), \(-1.7995`\)},
+            {"hphi", \(-1.933577168514383`\), \(-1.9336`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = Pi/\((M*\[Kappa])\) + Pi/\((2*M*\[Kappa])\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/8\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 2.409437144067864*10^\((\(-001\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.24094371440678639`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 1.0301}, {uphi, uphi[eta, phi], 0.024382}, {h, 
+          h[eta, phi], 1.1097}, {ulameta, ulameta[eta, phi], 
+          0.40321*\[Kappa]}, {uphieta, 
+          uphieta[eta, phi], \(-0.50806\)*\[Kappa]}, {heta, heta[eta, phi], 
+          0.40321*\[Kappa]}, {ulamphi, ulamphi[eta, phi], 0.46652}, {uphiphi, 
+          uphiphi[eta, phi], 0.99868}, {hphi, hphi[eta, phi], 
+          0.62055}}]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "1.030093139038539`", "1.0301`"},
+            {"uphi", "0.02438163405411109`", "0.024382`"},
+            {"h", "1.1096939860306778`", "1.1097`"},
+            {"ulameta", "1.6128286665421188`", "1.61284`"},
+            {"uphieta", \(-2.0322295467685496`\), \(-2.03224`\)},
+            {"heta", "1.6128286665421188`", "1.61284`"},
+            {"ulamphi", "0.46652079154658654`", "0.46652`"},
+            {"uphiphi", "0.9986763891966026`", "0.99868`"},
+            {"hphi", "0.6205545868987961`", "0.62055`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = 2*Pi/\((M*\[Kappa])\) + Pi/\((2*M*\[Kappa])\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(5\ \[Pi]\)\/24\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 2.409437144067864*10^\((\(-001\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.24094371440678639`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 1.1379}, {uphi, uphi[eta, phi], 0.14076}, {h, 
+          h[eta, phi], 1.2175}, {ulameta, 
+          ulameta[eta, phi], \(-0.3756\)*\[Kappa]}, {uphieta, 
+          uphieta[eta, phi], 0.03167*\[Kappa]}, {heta, 
+          heta[eta, phi], \(-0.3756\)*\[Kappa]}, {ulamphi, ulamphi[eta, phi], 
+          0.32922}, {uphiphi, uphiphi[eta, phi], \(-0.73707\)}, {hphi, 
+          hphi[eta, phi], 0.48326}}]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "1.1379463608043099`", "1.1379`"},
+            {"uphi", "0.14076005683863024`", "0.14076`"},
+            {"h", "1.2175472077964486`", "1.2175`"},
+            {"ulameta", \(-1.5024081459207066`\), \(-1.5024`\)},
+            {"uphieta", "0.12667898792672017`", "0.12668`"},
+            {"heta", \(-1.5024081459207066`\), \(-1.5024`\)},
+            {"ulamphi", "0.32922233526908395`", "0.32922`"},
+            {"uphiphi", \(-0.7370655714403869`\), \(-0.73707`\)},
+            {"hphi", "0.48325613062129325`", "0.48326`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = Pi/\((2*M*\[Kappa])\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/24\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 2.409437144067864*10^\((\(-001\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.24094371440678639`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+            phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+              phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+            phi]}, {uphiphi[eta, phi]}, {hphi[eta, phi]}}\)], "Input"],
+
+Cell[BoxData[
+    \({{1.642970143196467`}, {0.5807506602943551`}, {1.7225709901886057`}, \
+{\(-0.41533730248943185`\)}, {0.4763876397104573`}, \
+{\(-0.41533730248943185`\)}, {\(-2.527472107498421`\)}, \
+{\(-2.928302352377505`\)}, {\(-2.373438312146212`\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[vars]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"1.642970143196467`"},
+            {"0.5807506602943551`"},
+            {"1.7225709901886057`"},
+            {\(-0.41533730248943185`\)},
+            {"0.4763876397104573`"},
+            {\(-0.41533730248943185`\)},
+            {\(-2.527472107498421`\)},
+            {\(-2.928302352377505`\)},
+            {\(-2.373438312146212`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lammom\  = \ \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*
+          vars[\([4]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([7]\)] - \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([2]\)] + \[Kappa]*vars[\([6]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({\(-88.3346330170567`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phimom\  = \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*vars[\([5]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([8]\)] + \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([1]\)] + Cos[phi]*vars[\([9]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({\(-102.78118095119682`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Mass = \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*vars[\([6]\)] + 
+        Cos[phi]*vars[\([2]\)]*vars[\([9]\)] + 
+        vars[\([3]\)]*\((\[Kappa]*vars[\([4]\)] + Cos[phi]*vars[\([8]\)] - 
+              Sin[phi]*vars[\([2]\)])\)\)], "Input"],
+
+Cell[BoxData[
+    \({\(-11.44417812375049`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(comparison\ \  = \ {{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, \
+{"\<lammom\>", lammom, \(-88.3346\)}, {"\<phimom\>", 
+          phimom, \(-102.7812\)}, {"\<mass\>", 
+          Mass, \(-11.4442\)}}\)], "Input"],
+
+Cell[BoxData[
+    \({{" ", "Mathematica", 
+        "MATLAB"}, {"lammom", {\(-88.3346330170567`\)}, \(-88.3346`\)}, \
+{"phimom", {\(-102.78118095119682`\)}, \(-102.7812`\)}, {"mass", \
+{\(-11.44417812375049`\)}, \(-11.4442`\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[comparison]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", \({\(-88.3346330170567`\)}\), \(-88.3346`\)},
+            {"\<\"phimom\"\>", \({\(-102.78118095119682`\)}\), \
+\(-102.7812`\)},
+            {"\<\"mass\"\>", \({\(-11.44417812375049`\)}\), \(-11.4442`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(phi = 7.224297003074091*10^\((\(-001\))\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+            phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+              phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+            phi]}, {uphiphi[eta, phi]}, {hphi[eta, phi]}}\)], "Input"],
+
+Cell[BoxData[
+    \({{2.0369298290330273`}, {2.00870484081997`}, {2.274323463951464`}, \
+{\(-3.5235355336315353`\)}, {1.5492772532637251`}, \
+{\(-3.5235355336315353`\)}, {\(-0.10005454084866224`\)}, \
+{\(-1.3182101662775074`\)}, {0.41769730337594607`}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[vars]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"2.0369298290330273`"},
+            {"2.00870484081997`"},
+            {"2.274323463951464`"},
+            {\(-3.5235355336315353`\)},
+            {"1.5492772532637251`"},
+            {\(-3.5235355336315353`\)},
+            {\(-0.10005454084866224`\)},
+            {\(-1.3182101662775074`\)},
+            {"0.41769730337594607`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lammom\  = \ \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*
+          vars[\([4]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([7]\)] - \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([2]\)] + \[Kappa]*vars[\([6]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({\(-741.6125099275199`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phimom\  = \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*vars[\([5]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([8]\)] + \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([1]\)] + Cos[phi]*vars[\([9]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({50.35646173993423`}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Mass = \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*vars[\([6]\)] + 
+        Cos[phi]*vars[\([2]\)]*vars[\([9]\)] + 
+        vars[\([3]\)]*\((\[Kappa]*vars[\([4]\)] + Cos[phi]*vars[\([8]\)] - 
+              Sin[phi]*vars[\([2]\)])\)\)], "Input"],
+
+Cell[BoxData[
+    \({\(-61.32132483599642`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(comparison\ \  = \ {{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, \
+{"\<lammom\>", 
+          lammom, \(-7.416125099275245\)*10^\((\(+002\))\)}, {"\<phimom\>", 
+          phimom, 5.035646173993393*10^\((1)\)}, {"\<mass\>", 
+          Mass, \(-6.132132483599667\)*10^\((1)\)}}\)], "Input"],
+
+Cell[BoxData[
+    \({{" ", "Mathematica", 
+        "MATLAB"}, {"lammom", {\(-741.6125099275199`\)}, \
+\(-741.6125099275245`\)}, {"phimom", {50.35646173993423`}, 
+        50.35646173993393`}, {"mass", {\(-61.32132483599642`\)}, \
+\(-61.32132483599668`\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[comparison]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", \({\(-741.6125099275199`\)}\), \
+\(-741.6125099275245`\)},
+            {"\<\"phimom\"\>", \({50.35646173993423`}\), 
+              "50.35646173993393`"},
+            {"\<\"mass\"\>", \({\(-61.32132483599642`\)}\), \
+\(-61.32132483599668`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = 2*Pi/\((M*\[Kappa])\) + Pi/\((2*M*\[Kappa])\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(5\ \[Pi]\)\/24\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 1.201189674850068\)], "Input"],
+
+Cell[BoxData[
+    \(1.201189674850068`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+            phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+              phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+            phi]}, {uphiphi[eta, phi]}, {hphi[eta, phi]}}\)], "Input"],
+
+Cell[BoxData[
+    \({{0.2680898318042883`}, {0.1597348690295786`}, {0.8571348435227193`}, {\
+\(-0.09123304370875134`\)}, {\(-0.28623543661468104`\)}, \
+{\(-0.09123304370875134`\)}, {0.3497284075946394`}, {\(-1.08730630324238`\)}, \
+{1.3056572770901176`}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[vars]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"0.2680898318042883`"},
+            {"0.1597348690295786`"},
+            {"0.8571348435227193`"},
+            {\(-0.09123304370875134`\)},
+            {\(-0.28623543661468104`\)},
+            {\(-0.09123304370875134`\)},
+            {"0.3497284075946394`"},
+            {\(-1.08730630324238`\)},
+            {"1.3056572770901176`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lammom\  = \ \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*
+          vars[\([4]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([7]\)] - \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([2]\)] + \[Kappa]*vars[\([6]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({\(-19.206121148549784`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phimom\  = \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*vars[\([5]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([8]\)] + \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([1]\)] + Cos[phi]*vars[\([9]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({25.075323146788435`}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Mass = \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*vars[\([6]\)] + 
+        Cos[phi]*vars[\([2]\)]*vars[\([9]\)] + 
+        vars[\([3]\)]*\((\[Kappa]*vars[\([4]\)] + Cos[phi]*vars[\([8]\)] - 
+              Sin[phi]*vars[\([2]\)])\)\)], "Input"],
+
+Cell[BoxData[
+    \({\(-0.7487287552875906`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(comparison\ \  = \ {{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, \
+{"\<lammom\>", 
+          lammom, \(-1.92061211484759\)*10^\((\(+001\))\)}, {"\<phimom\>", 
+          phimom, 2.507532314678853*10^\((1)\)}, {"\<mass\>", 
+          Mass, \(-7.487287552859866\)*10^\((\(-1\))\)}}\)], "Input"],
+
+Cell[BoxData[
+    \({{" ", "Mathematica", 
+        "MATLAB"}, {"lammom", {\(-19.206121148549784`\)}, \
+\(-19.2061211484759`\)}, {"phimom", {25.075323146788435`}, 
+        25.07532314678853`}, {"mass", {\(-0.7487287552875906`\)}, \
+\(-0.7487287552859866`\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MatrixForm[comparison]\)], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", \({\(-19.206121148549784`\)}\), \
+\(-19.2061211484759`\)},
+            {"\<\"phimom\"\>", \({25.075323146788435`}\), 
+              "25.07532314678853`"},
+            {"\<\"mass\"\>", \({\(-0.7487287552875906`\)}\), \
+\(-0.7487287552859866`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(eta = Pi/\((2*M*\[Kappa])\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/24\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(phi = 2.409437144067864*10^\((\(-001\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.24094371440678639`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+            phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+              phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+            phi]}, {uphiphi[eta, phi]}, {hphi[eta, phi]}}\)], "Input"],
+
+Cell[BoxData[
+    \({{1.4737322719101482`}, {0.5807506602943551`}, {1.553333118902287`}, \
+{\(-1.0124105552920006`\)}, {0.4763876397104573`}, \
+{\(-1.0124105552920006`\)}, {\(-1.6905889584992322`\)}, \
+{\(-2.928302352377505`\)}, {\(-1.5365551631470227`\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulamA1 = 
+      Sqrt[\((2*\[Kappa] + 
+                1)\)*\(\((\[Kappa] - \[Kappa])\)!\)/\((4*
+                  Pi*\(\((\[Kappa] + \[Kappa])\)!\))\)]*
+        LegendreP[\[Kappa], \[Kappa], Sin[phi]]*Cos[\[Kappa]*eta]\)], "Input"],
+
+Cell[BoxData[
+    \(0.34084384445250077`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulametaA1 = \(-1\)*
+        Sqrt[\((2*\[Kappa] + 
+                1)\)*\(\((\[Kappa] - \[Kappa])\)!\)/\((4*
+                  Pi*\(\((\[Kappa] + \[Kappa])\)!\))\)]*
+        LegendreP[\[Kappa], \[Kappa], Sin[phi]]*Sin[\[Kappa]*eta]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-0.19678628534627823`\)\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Clear[\[Phi]]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(DLP[\[Phi]_, m_, l_] = 
+      D[LegendreP[l, m, Sin[\[Phi]]], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(Cos[\[Phi]]\ \((\(-\((l + m)\)\)\ LegendreP[\(-1\) + l, m, \
+Sin[\[Phi]]] + l\ LegendreP[l, m, Sin[\[Phi]]]\ Sin[\[Phi]])\)\)\/\(\(-1\) + \
+Sin[\[Phi]]\^2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ulamphiA1 = 
+      Sqrt[\((2*\[Kappa] + 
+                1)\)*\(\((\[Kappa] - \[Kappa])\)!\)/\((4*
+                  Pi*\(\((\[Kappa] + \[Kappa])\)!\))\)]*
+        DLP[phi, \[Kappa], \[Kappa]]*Cos[\[Kappa]*eta]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-0.3350047313003418`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(df1dA1 = \((\[Kappa]*vars[\([4]\)] - Sin[phi]*vars[\([2]\)])\)*
+          ulamA1 + \[Kappa] \((vars[\([1]\)] - Sr*c*Cos[phi])\)*ulametaA1 + 
+        Cos[phi]*vars[\([2]\)]*ulamphiA1\)], "Input"],
+
+Cell[BoxData[
+    \({\(-2.4813617561735843`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lammom1\  = \ \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*
+          vars[\([4]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([7]\)] - \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([2]\)] + \[Kappa]*vars[\([6]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({\(-207.28215901893063`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(-2.072821590189308\)*10^\((\(+002\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-207.2821590189308`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(epsilon = 10^\((\(-10\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/10000000000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"A", "=", 
+      RowBox[{"(", GridBox[{
+            {\(1 + epsilon\), "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"},
+            {"1", "0", "1", "0", "1", "0"}
+            }], ")"}]}]], "Input"],
+
+Cell[BoxData[
+    \({{10000000001\/10000000000, 0, 1, 0, 1, 0}, {1, 0, 1, 0, 1, 0}, {1, 0, 
+        1, 0, 1, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+            phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+              phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+            phi]}, {uphiphi[eta, phi]}, {hphi[eta, phi]}}\)], "Input"],
+
+Cell[BoxData[
+    \({{1.4737322719442327`}, {0.5807506602943551`}, {1.553333118902287`}, \
+{\(-1.0124105553116796`\)}, {0.4763876397104573`}, \
+{\(-1.0124105552920006`\)}, {\(-1.6905889585327327`\)}, \
+{\(-2.928302352377505`\)}, {\(-1.5365551631470227`\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lammom2\  = \ \[Kappa]*\((vars[\([1]\)] - Sr*c*Cos[phi])\)*
+          vars[\([4]\)] + 
+        Cos[phi]*vars[\([2]\)]*
+          vars[\([7]\)] - \((Cos[phi]/Ro + vars[\([1]\)])\)*Sin[phi]*
+          vars[\([2]\)] + \[Kappa]*vars[\([6]\)]/Fr^2\)], "Input"],
+
+Cell[BoxData[
+    \({\(-207.28215901917878`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(-2.075329781303095\)*10^\((\(+002\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(-207.53297813030952`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\((lammom2 - lammom1)\)/epsilon\)], "Input"],
+
+Cell[BoxData[
+    \({\(-2.481499450368574`\)}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(-\[Kappa]\)*Sr*Cos[phi]*heta[eta, phi]/\[Kappa]\)], "Input"],
+
+Cell[BoxData[
+    \(1.5184272989275371`\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{901, 651},
+WindowMargins->{{2, Automatic}, {Automatic, 5}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 45, 1, 30, "Input"],
+Cell[1775, 55, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1847, 61, 38, 1, 30, "Input"],
+Cell[1888, 64, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1960, 70, 61, 1, 30, "Input"],
+Cell[2024, 73, 44, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2105, 79, 42, 1, 30, "Input"],
+Cell[2150, 82, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2223, 88, 44, 1, 30, "Input"],
+Cell[2270, 91, 42, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2349, 97, 60, 1, 30, "Input"],
+Cell[2412, 100, 46, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2495, 106, 49, 1, 30, "Input"],
+Cell[2547, 109, 45, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2629, 115, 46, 1, 30, "Input"],
+Cell[2678, 118, 38, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2753, 124, 48, 1, 30, "Input"],
+Cell[2804, 127, 48, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2889, 133, 49, 1, 30, "Input"],
+Cell[2941, 136, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3031, 142, 55, 1, 30, "Input"],
+Cell[3089, 145, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3178, 151, 58, 1, 30, "Input"],
+Cell[3239, 154, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3330, 160, 48, 1, 30, "Input"],
+Cell[3381, 163, 46, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3464, 169, 39, 1, 30, "Input"],
+Cell[3506, 172, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3578, 178, 38, 1, 30, "Input"],
+Cell[3619, 181, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3691, 187, 63, 1, 30, "Input"],
+Cell[3757, 190, 59, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3853, 196, 102, 2, 30, "Input"],
+Cell[3958, 200, 73, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4068, 206, 231, 6, 57, "Input"],
+Cell[4302, 214, 103, 2, 29, "Output"]
+}, Open  ]],
+Cell[4420, 219, 441, 8, 115, "Input"],
+
+Cell[CellGroupData[{
+Cell[4886, 231, 231, 6, 57, "Input"],
+Cell[5120, 239, 103, 2, 29, "Output"]
+}, Open  ]],
+Cell[5238, 244, 396, 7, 73, "Input"],
+
+Cell[CellGroupData[{
+Cell[5659, 255, 232, 6, 57, "Input"],
+Cell[5894, 263, 103, 2, 29, "Output"]
+}, Open  ]],
+Cell[6012, 268, 436, 8, 115, "Input"],
+Cell[6451, 278, 106, 2, 30, "Input"],
+Cell[6560, 282, 46, 1, 30, "Input"],
+Cell[6609, 285, 106, 2, 30, "Input"],
+Cell[6718, 289, 91, 1, 30, "Input"],
+Cell[6812, 292, 106, 2, 30, "Input"],
+Cell[6921, 296, 106, 2, 30, "Input"],
+Cell[7030, 300, 91, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[7146, 305, 60, 1, 30, "Input"],
+Cell[7209, 308, 43, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7289, 314, 74, 1, 30, "Input"],
+Cell[7366, 317, 54, 1, 29, "Output"]
+}, Open  ]],
+Cell[7435, 321, 69, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[7529, 326, 538, 9, 90, "Input"],
+Cell[8070, 337, 789, 15, 183, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8896, 357, 74, 1, 30, "Input"],
+Cell[8973, 360, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9063, 366, 513, 8, 90, "Input"],
+Cell[9579, 376, 770, 15, 183, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10386, 396, 56, 1, 30, "Input"],
+Cell[10445, 399, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10534, 405, 540, 9, 90, "Input"],
+Cell[11077, 416, 795, 15, 169, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11909, 436, 82, 1, 30, "Input"],
+Cell[11994, 439, 42, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12073, 445, 74, 1, 30, "Input"],
+Cell[12150, 448, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12241, 454, 512, 8, 90, "Input"],
+Cell[12756, 464, 775, 15, 169, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13568, 484, 84, 1, 30, "Input"],
+Cell[13655, 487, 50, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13742, 493, 74, 1, 30, "Input"],
+Cell[13819, 496, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13910, 502, 519, 8, 90, "Input"],
+Cell[14432, 512, 787, 15, 169, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15256, 532, 60, 1, 30, "Input"],
+Cell[15319, 535, 43, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15399, 541, 74, 1, 30, "Input"],
+Cell[15476, 544, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15567, 550, 279, 4, 50, "Input"],
+Cell[15849, 556, 270, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16156, 565, 49, 1, 30, "Input"],
+Cell[16208, 568, 525, 14, 167, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16770, 587, 274, 5, 50, "Input"],
+Cell[17047, 594, 58, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17142, 600, 261, 4, 50, "Input"],
+Cell[17406, 606, 60, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17503, 612, 265, 4, 50, "Input"],
+Cell[17771, 618, 59, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17867, 624, 231, 4, 50, "Input"],
+Cell[18101, 630, 240, 4, 48, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18378, 639, 55, 1, 30, "Input"],
+Cell[18436, 642, 482, 10, 87, "Output"]
+}, Open  ]],
+Cell[18933, 655, 74, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[19032, 660, 279, 4, 50, "Input"],
+Cell[19314, 666, 266, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19617, 675, 49, 1, 30, "Input"],
+Cell[19669, 678, 523, 14, 153, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20229, 697, 274, 5, 50, "Input"],
+Cell[20506, 704, 59, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20602, 710, 261, 4, 50, "Input"],
+Cell[20866, 716, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20957, 722, 265, 4, 50, "Input"],
+Cell[21225, 728, 59, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[21321, 734, 306, 5, 50, "Input"],
+Cell[21630, 741, 268, 5, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[21935, 751, 55, 1, 30, "Input"],
+Cell[21993, 754, 520, 12, 73, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22550, 771, 84, 1, 30, "Input"],
+Cell[22637, 774, 50, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22724, 780, 56, 1, 30, "Input"],
+Cell[22783, 783, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22872, 789, 279, 4, 50, "Input"],
+Cell[23154, 795, 268, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23459, 804, 49, 1, 30, "Input"],
+Cell[23511, 807, 525, 14, 167, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24073, 826, 274, 5, 50, "Input"],
+Cell[24350, 833, 60, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24447, 839, 261, 4, 50, "Input"],
+Cell[24711, 845, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24803, 851, 265, 4, 50, "Input"],
+Cell[25071, 857, 60, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25168, 863, 310, 5, 50, "Input"],
+Cell[25481, 870, 271, 5, 48, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25789, 880, 55, 1, 30, "Input"],
+Cell[25847, 883, 523, 12, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26407, 900, 60, 1, 30, "Input"],
+Cell[26470, 903, 43, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26550, 909, 74, 1, 30, "Input"],
+Cell[26627, 912, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26718, 918, 279, 4, 50, "Input"],
+Cell[27000, 924, 270, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[27307, 933, 251, 5, 30, "Input"],
+Cell[27561, 940, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[27652, 946, 263, 5, 30, "Input"],
+Cell[27918, 953, 59, 1, 29, "Output"]
+}, Open  ]],
+Cell[27992, 957, 46, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[28063, 962, 102, 2, 30, "Input"],
+Cell[28168, 966, 192, 3, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28397, 974, 243, 5, 30, "Input"],
+Cell[28643, 981, 58, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28738, 987, 214, 3, 50, "Input"],
+Cell[28955, 992, 60, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29052, 998, 275, 5, 50, "Input"],
+Cell[29330, 1005, 60, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29427, 1011, 73, 1, 30, "Input"],
+Cell[29503, 1014, 57, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29597, 1020, 59, 1, 30, "Input"],
+Cell[29659, 1023, 48, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29744, 1029, 243, 6, 57, "Input"],
+Cell[29990, 1037, 126, 2, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30153, 1044, 279, 4, 50, "Input"],
+Cell[30435, 1050, 270, 4, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30742, 1059, 275, 5, 50, "Input"],
+Cell[31020, 1066, 60, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31117, 1072, 73, 1, 30, "Input"],
+Cell[31193, 1075, 58, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31288, 1081, 64, 1, 30, "Input"],
+Cell[31355, 1084, 59, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31451, 1090, 82, 1, 30, "Input"],
+Cell[31536, 1093, 53, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

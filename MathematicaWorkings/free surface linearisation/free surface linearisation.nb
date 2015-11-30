@@ -1,0 +1,200 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      5164,        152]*)
+(*NotebookOutlinePosition[      5807,        174]*)
+(*  CellTagsIndexPosition[      5763,        170]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(R[\[Lambda]_, \[Phi]_, t_] = 
+      R\_0[\[Lambda], \[Phi], t] + \[Epsilon]*R\_1[\[Lambda], \[Phi]] + 
+        O[\[Epsilon]]^2\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(R\_0[\[Lambda], \[Phi], t]\), 
+        "+", \(R\_1[\[Lambda], \[Phi]]\ \[Epsilon]\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Subscript[ R, 0][ \[Lambda], \[Phi], t], 
+        Subscript[ R, 1][ \[Lambda], \[Phi]]}, 0, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho]\_l[\[Lambda]_, \[Phi]_, 
+        t_] = \((A + 
+            B \((R\_0[\[Lambda], \[Phi], t] + \[Epsilon]*
+                    R\_1[\[Lambda], \[Phi]] + O[\[Epsilon]]^2 - 
+                  1)\))\)^\((1/\((\[Gamma] - 1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\((A + 
+                B\ \((\(-1\) + 
+                      R\_0[\[Lambda], \[Phi], 
+                        t])\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), 
+        "+", \(\(B\ \((A + B\ \((\(-1\) + R\_0[\[Lambda], \[Phi], \
+t])\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\ R\_1[\[Lambda], \[Phi]]\ \
+\[Epsilon]\)\/\(\(-1\) + \[Gamma]\)\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Power[ 
+          Plus[ A, 
+            Times[ B, 
+              Plus[ -1, 
+                Subscript[ R, 0][ \[Lambda], \[Phi], t]]]], 
+          Power[ 
+            Plus[ -1, \[Gamma]], -1]], 
+        Times[ B, 
+          Power[ 
+            Plus[ -1, \[Gamma]], -1], 
+          Power[ 
+            Plus[ A, 
+              Times[ B, 
+                Plus[ -1, 
+                  Subscript[ R, 0][ \[Lambda], \[Phi], t]]]], 
+            Plus[ -1, 
+              Power[ 
+                Plus[ -1, \[Gamma]], -1]]], 
+          Subscript[ R, 1][ \[Lambda], \[Phi]]]}, 0, 2, 1]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho]\_l[\[Lambda]_, \[Phi]_, 
+        t_] = \((A + 
+            B \((R\_0[\[Lambda], \[Phi], t] + \[Epsilon]*
+                    R\_1[\[Lambda], \[Phi]] + O[\[Epsilon]]^2 - 
+                  1)\))\)^\((1/\((\[Gamma] - 1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{\(\((A + 
+                B\ \((\(-1\) + 
+                      R\_0[\[Lambda], \[Phi], 
+                        t])\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), 
+        "+", \(\(B\ \((A + B\ \((\(-1\) + R\_0[\[Lambda], \[Phi], \
+t])\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\ R\_1[\[Lambda], \[Phi]]\ \
+\[Epsilon]\)\/\(\(-1\) + \[Gamma]\)\), "+", 
+        InterpretationBox[\(O[\[Epsilon]]\^2\),
+          SeriesData[ \[Epsilon], 0, {}, 0, 2, 1]]}],
+      SeriesData[ \[Epsilon], 0, {
+        Power[ 
+          Plus[ A, 
+            Times[ B, 
+              Plus[ -1, 
+                Subscript[ R, 0][ \[Lambda], \[Phi], t]]]], 
+          Power[ 
+            Plus[ -1, \[Gamma]], -1]], 
+        Times[ B, 
+          Power[ 
+            Plus[ -1, \[Gamma]], -1], 
+          Power[ 
+            Plus[ A, 
+              Times[ B, 
+                Plus[ -1, 
+                  Subscript[ R, 0][ \[Lambda], \[Phi], t]]]], 
+            Plus[ -1, 
+              Power[ 
+                Plus[ -1, \[Gamma]], -1]]], 
+          Subscript[ R, 1][ \[Lambda], \[Phi]]]}, 0, 2, 1]]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{766, 669},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 159, 3, 30, "Input"],
+Cell[1889, 57, 399, 8, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2325, 70, 262, 5, 30, "Input"],
+Cell[2590, 77, 1128, 30, 54, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3755, 112, 262, 5, 30, "Input"],
+Cell[4020, 119, 1128, 30, 54, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

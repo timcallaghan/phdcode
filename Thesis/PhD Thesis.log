@@ -1,0 +1,491 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.4) (preloaded format=latex 2000.11.28)  7 JAN 2005 12:06
+entering extended mode
+**PhD*Thesis.tex
+(PhD Thesis.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7m> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+(C:\texmf\tex\latex\base\report.cls
+Document Class: report 2001/04/21 v1.4e Standard LaTeX document class
+(C:\texmf\tex\latex\base\size11.clo
+File: size11.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\@indexfile=\write3
+
+Writing index file "PhD Thesis".idx
+(mathphdthesis.sty
+\textheit=\skip43
+\textwid=\skip44
+ (C:\texmf\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\texmf\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\texmf\tex\latex\graphics\graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+ (C:\texmf\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (C:\texmf\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2003/03/12 v1.1 MiKTeX 'graphics' configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(C:\texmf\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (C:\texmf\tex\latex\base\makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+) (C:\texmf\tex\latex\tocbibind\tocbibind.sty
+Package: tocbibind 2003/02/04 v1.5f extra ToC listings
+
+
+Package tocbibind Note: The document has chapter divisions.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\texmf\tex\latex\sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(C:\texmf\tex\latex\fancyhdr\fancyhdr.sty
+\headwidth=\dimen105
+)
+\li=\skip45
+\signed=\skip46
+)
+(C:\texmf\tex\latex\psfrag\psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count88
+\pfg@scount=\count89
+\pfg@temp=\write4
+) (C:\texmf\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+(C:\texmf\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(C:\texmf\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(C:\texmf\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+ (C:\texmf\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen106
+)) (C:\texmf\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(C:\texmf\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks17
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks18
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks19
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (PhD Thesis.aux (prelude.aux)
+(newcom.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
+(chap6.aux) (app0.aux) (app1.aux) (app2.aux) (app3.aux) (biby.aux) (index.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+(prelude.tex
+File: Utas_vert_BW.ps Graphic file (type eps)
+ <Utas_vert_BW.ps> [1
+
+
+] [2] [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+[5] [0] (PhD Thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+ (C:\texmf\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(C:\texmf\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+) [1
+
+] [2] [3])
+\tf@toc=\write5
+ [4] (PhD Thesis.lot)
+\tf@lot=\write6
+
+[5
+
+] (PhD Thesis.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6
+
+]
+Underfull \vbox (badness 1939) has occurred while \output is active []
+
+ [7])
+\tf@lof=\write7
+)
+[8] (newcom.tex) (chap1.tex
+Chapter 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+File: IMAGES/fig1.eps Graphic file (type eps)
+
+<IMAGES/fig1.eps> [4]
+Underfull \vbox (badness 3260) has occurred while \output is active []
+
+ [5]
+[6]) [7] (chap2.tex
+Chapter 2.
+File: IMAGES/freesurfparams.eps Graphic file (type eps)
+<IMAGES/freesurfparams.eps> [8
+
+
+
+] [9] [10] [11] [12] [13] [14] [15]
+Underfull \vbox (badness 2635) has occurred while \output is active []
+
+ [16]
+[17] [18]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 312.
+
+ (C:\texmf\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 312.
+ [19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+[22] [23] [24] [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+[27] [28]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 498.
+ [29] [30] [31]
+File: IMAGES/kappa4fullspectrumN5.eps Graphic file (type eps)
+ <IMAGES/kappa4fullspectrumN5.eps> [32]
+Underfull \vbox (badness 2181) has occurred while \output is active []
+
+ [33]
+File: IMAGES/kappa4zoomspectrumN50.eps Graphic file (type eps)
+
+<IMAGES/kappa4zoomspectrumN50.eps>
+Underfull \vbox (badness 2181) has occurred while \output is active []
+
+ [34]
+File: IMAGES/wvchconst1.eps Graphic file (type eps)
+
+<IMAGES/wvchconst1.eps> [35]
+File: IMAGES/swfsconts.eps Graphic file (type eps)
+ <IMAGES/swfsconts.eps>
+File: IMAGES/rhfsconts.eps Graphic file (type eps)
+ <IMAGES/rhfsconts.eps>
+[36] [37]
+File: IMAGES/fsvelfield.eps Graphic file (type eps)
+ <IMAGES/fsvelfield.eps> [38]) [39] (chap3.tex
+Chapter 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40
+
+
+
+]
+[41]
+Underfull \vbox (badness 5607) has occurred while \output is active []
+
+ [42]
+[43] [44] [45] [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+[49] [50] [51] [52] [53] [54]
+File: IMAGES/ampmeas.eps Graphic file (type eps)
+ <IMAGES/ampmeas.eps>
+Underfull \vbox (badness 1199) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+[57] [58]
+File: IMAGES/CvsAk4w125.eps Graphic file (type eps)
+ <IMAGES/CvsAk4w125.eps> [59]
+File: IMAGES/k4w125fsend.eps Graphic file (type eps)
+ <IMAGES/k4w125fsend.eps> [60] [61]
+File: IMAGES/CvsAk4w1.eps Graphic file (type eps)
+
+<IMAGES/CvsAk4w1.eps> [62]
+File: IMAGES/k4w1fsb1end.eps Graphic file (type eps)
+ <IMAGES/k4w1fsb1end.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [64]
+File: IMAGES/k4w1fsb4end.eps Graphic file (type eps)
+
+<IMAGES/k4w1fsb4end.eps>
+Underfull \vbox (badness 2158) has occurred while \output is active []
+
+ [65]
+File: IMAGES/k4w1fsb5end.eps Graphic file (type eps)
+
+<IMAGES/k4w1fsb5end.eps> [66]
+File: IMAGES/k4w1fsvvb5end.eps Graphic file (type eps)
+ <IMAGES/k4w1fsvvb5end.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+File: IMAGES/CvsAk5w125.eps Graphic file (type eps)
+
+<IMAGES/CvsAk5w125.eps> [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+File: IMAGES/k5w125fsb1end.eps Graphic file (type eps)
+
+<IMAGES/k5w125fsb1end.eps>
+Underfull \vbox (badness 1092) has occurred while \output is active []
+
+ [70]
+File: IMAGES/CvsAk5w1.eps Graphic file (type eps)
+
+<IMAGES/CvsAk5w1.eps> [71]
+File: IMAGES/k5w1fsend.eps Graphic file (type eps)
+ <IMAGES/k5w1fsend.eps> [72]) [73] (chap4.tex
+Chapter 4.
+File: IMAGES/freesurfparams.eps Graphic file (type eps)
+<IMAGES/freesurfparams.eps> [74
+
+
+
+] [75] [76] [77] [78] [79] [80] [81] [82]
+[83] [84] [85] [86] [87] [88] [89] [90] [91]
+File: IMAGES/wvchconstcomp.eps Graphic file (type eps)
+ <IMAGES/wvchconstcomp.eps>
+[92]
+File: IMAGES/swfscontscomp.eps Graphic file (type eps)
+ <IMAGES/swfscontscomp.eps>
+File: IMAGES/swrhocontscomp.eps Graphic file (type eps)
+ <IMAGES/swrhocontscomp.eps>
+Underfull \vbox (badness 3291) has occurred while \output is active []
+
+ [93]
+File: IMAGES/swpcontscomp.eps Graphic file (type eps)
+
+<IMAGES/swpcontscomp.eps>
+File: IMAGES/pandvelfieldcomp.eps Graphic file (type eps)
+ <IMAGES/pandvelfieldcomp.eps>) [94] [95] [96]
+(chap5.tex
+Chapter 5.
+
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+ [97
+
+
+
+]
+[98] [99] [100] [101]
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+ [102]
+[103]
+File: IMAGES/CvsAk4w125com.eps Graphic file (type eps)
+ <IMAGES/CvsAk4w125com.eps> [104]
+File: IMAGES/compk4w125fsb2.eps Graphic file (type eps)
+ <IMAGES/compk4w125fsb2.eps>
+File: IMAGES/comk4w125vecf.eps Graphic file (type eps)
+
+<IMAGES/comk4w125vecf.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106]
+File: IMAGES/CvsAk4w1com.eps Graphic file (type eps)
+
+<IMAGES/CvsAk4w1com.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107]
+File: IMAGES/CvsAk5w125com.eps Graphic file (type eps)
+
+<IMAGES/CvsAk5w125com.eps> [108] [109]
+File: IMAGES/CvsAk5w1com.eps Graphic file (type eps)
+ <IMAGES/CvsAk5w1com.eps>)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110]
+[111] (chap6.tex
+Chapter 6.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [113]
+[114]) [115] (app0.tex) (app1.tex
+Appendix A.
+[116
+
+
+
+
+
+]) [117] (app2.tex
+Appendix B.
+
+Underfull \vbox (badness 2608) has occurred while \output is active []
+
+ [118
+
+
+
+]
+[119]) [120] (app3.tex
+Appendix C.
+File: viewer/view1.eps Graphic file (type eps)
+<viewer/view1.eps> [121
+
+
+
+]
+File: viewer/view2.eps Graphic file (type eps)
+ <viewer/view2.eps>
+Underfull \vbox (badness 3930) has occurred while \output is active []
+
+ [122]
+File: viewer/view3.eps Graphic file (type eps)
+
+<viewer/view3.eps> [123]) [124] (biby.tex (PhD Thesis.bbl [125
+
+
+
+] [126] [127]
+[128])) [129] (index.tex (PhD Thesis.ind [130
+
+
+
+] [131] [132
+
+])) (PhD Thesis.aux
+(prelude.aux) (newcom.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux)
+(chap5.aux) (chap6.aux) (app0.aux) (app1.aux) (app2.aux) (app3.aux) (biby.aux)
+(index.aux)) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 77 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 3058 strings out of 95933
+ 31978 string characters out of 1195656
+ 90446 words of memory out of 1080174
+ 5422 multiletter control sequences out of 35000
+ 20737 words of font info for 77 fonts, out of 500000 for 1000
+ 15 hyphenation exceptions out of 607
+ 33i,19n,45p,1609b,483s stack positions out of 1500i,500n,5000p,200000b,32768s
+
+Output written on "PhD Thesis.dvi" (146 pages, 491412 bytes).

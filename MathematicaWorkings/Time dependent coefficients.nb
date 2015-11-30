@@ -1,0 +1,184 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      3641,        121]*)
+(*NotebookOutlinePosition[      4284,        143]*)
+(*  CellTagsIndexPosition[      4240,        139]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(ulam[\[Phi]_] = A*Cos[\[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    \(A\ Cos[\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p[\[Phi]_] = B/K01*Exp[1/2*Cos[\[Phi]]^2*K01*A*\((A + 2)\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(B\ \[ExponentialE]\^\(1\/2\ A\ \((2 + A)\)\ K01\ \
+Cos[\[Phi]]\^2\)\)\/K01\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Rho][\[Phi]_] = B*Exp[1/2*Cos[\[Phi]]^2*K01*A*\((A + 2)\)]\)], "Input"],
+
+Cell[BoxData[
+    \(B\ \[ExponentialE]\^\(1\/2\ A\ \((2 + A)\)\ K01\ Cos[\[Phi]]\^2\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(A[\[Phi]_] = Simplify[c0*Cos[\[Phi]] - ulam[\[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\((\(-A\) + c0)\)\ Cos[\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(B[\[Phi]_] = 
+      Simplify[D[1/\((\[Rho][\[Phi]]*Cos[\[Phi]])\), \[Phi]]*\[Rho][\[Phi]]*
+            Cos[\[Phi]]*\((c0*Cos[\[Phi]] - ulam[\[Phi]])\) - 
+          2*\((1 + c0)\)*Sin[\[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\((2 + A + c0 + 
+            A\ \((2 + A)\)\ \((A - 
+                  c0)\)\ K01\ Cos[\[Phi]]\^2)\)\)\ Sin[\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C1[\[Phi]_] = 
+      Simplify[D[ulam[\[Phi]], {\[Phi], 2}] - \((2 + c0)\)*
+            Cos[\[Phi]] - \((c0*Cos[\[Phi]] - ulam[\[Phi]])\)*
+            k^2/\((Cos[\[Phi]]^2)\) + 
+          D[1/\((\[Rho][\[Phi]]*Cos[\[Phi]])\), \[Phi]]*\[Rho][\[Phi]]*
+            Cos[\[Phi]]*\((D[ulam[\[Phi]], \[Phi]] - \((2 + c0)\)*
+                  Sin[\[Phi]])\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(1\/8\)\)\ \((8\ \((2 + c0 + c0\ k\^2)\) + A\^3\ K01 + 
+          A\^2\ \((4 + c0)\)\ K01 + 
+          A\ \((8 - 8\ k\^2 + 2\ \((2 + c0)\)\ K01)\) - 
+          A\ \((2 + A)\)\ \((2 + A + c0)\)\ K01\ Cos[
+              4\ \[Phi]])\)\ Sec[\[Phi]]\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{720, 560},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 62, 1, 30, "Input"],
+Cell[1792, 55, 48, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1877, 61, 92, 1, 30, "Input"],
+Cell[1972, 64, 110, 2, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2119, 71, 93, 1, 30, "Input"],
+Cell[2215, 74, 101, 2, 35, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2353, 81, 85, 1, 30, "Input"],
+Cell[2441, 84, 64, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2542, 90, 224, 4, 50, "Input"],
+Cell[2769, 96, 152, 3, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2958, 104, 382, 7, 70, "Input"],
+Cell[3343, 113, 282, 5, 62, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

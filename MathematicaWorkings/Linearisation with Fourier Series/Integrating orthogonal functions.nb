@@ -1,0 +1,205 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      3143,        131]*)
+(*NotebookOutlinePosition[      3786,        153]*)
+(*  CellTagsIndexPosition[      3742,        149]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(FullSimplify[\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)Cos[\((2*n - 1)\)*x]*
+          Cos[x]*Cos[2*l*x] \[DifferentialD]x, 
+      n \[Element] Integers\  && \ l \[Element] Integers]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/4\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(n = l + 1\)], "Input"],
+
+Cell[BoxData[
+    \(1 + l\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)Cos[
+            2*l*x] \[DifferentialD]x, 
+      n \[Element] Integers\  && \ l \[Element] Integers]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(l = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(FullSimplify[\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)Cos[2*s*x]*
+          Cos[2*t*x] \[DifferentialD]x, 
+      s \[Element] Integers\  && \ t \[Element] Integers]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(Clear[t]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(s = t\)], "Input"],
+
+Cell[BoxData[
+    \(t\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(s = 0\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(t = 0\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{752, 516},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 209, 3, 43, "Input"],
+Cell[1939, 57, 42, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2018, 63, 42, 1, 30, "Input"],
+Cell[2063, 66, 39, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2139, 72, 183, 3, 43, "Input"],
+Cell[2325, 77, 39, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2401, 83, 38, 1, 30, "Input"],
+Cell[2442, 86, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2514, 92, 192, 3, 43, "Input"],
+Cell[2709, 97, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[2759, 101, 41, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[2825, 106, 38, 1, 30, "Input"],
+Cell[2866, 109, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2938, 115, 38, 1, 30, "Input"],
+Cell[2979, 118, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3051, 124, 38, 1, 30, "Input"],
+Cell[3092, 127, 35, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

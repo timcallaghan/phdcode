@@ -1,0 +1,942 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     36587,        815]*)
+(*NotebookOutlinePosition[     37292,        839]*)
+(*  CellTagsIndexPosition[     37248,        835]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    \(<< LinearAlgebra`MatrixManipulation`\)], "Input"],
+
+Cell[BoxData[{
+    \(\(\[Kappa] = 1;\)\), "\[IndentingNewLine]", 
+    \(\(M = 2;\)\), "\[IndentingNewLine]", 
+    \(\(wref = 7.848*10^\((\(-6\))\);\)\), "\[IndentingNewLine]", 
+    \(\(vref = 40;\)\), "\[IndentingNewLine]", 
+    \(\(g = 9.80616;\)\), "\[IndentingNewLine]", 
+    \(\(Omega = 2*Pi/\((24*60*60)\);\)\), "\[IndentingNewLine]", 
+    \(\(a = 6.37122*10^6;\)\), "\[IndentingNewLine]", 
+    \(\(href = 8*10^3;\)\), "\[IndentingNewLine]", 
+    \(\(cref = Omega/30;\)\), "\[IndentingNewLine]", 
+    \(\(Sr = a*cref/vref;\)\), "\[IndentingNewLine]", 
+    \(\(Fr = vref/Sqrt[g*href];\)\), "\[IndentingNewLine]", 
+    \(\(Ro = vref/\((2*Omega*a)\);\)\), "\[IndentingNewLine]", 
+    \(\(w = wref*a/vref;\)\), "\[IndentingNewLine]", 
+    \(\(h0 = 1;\)\), "\[IndentingNewLine]", 
+    \(\(c = 1;\)\), "\[IndentingNewLine]", 
+    \(\(ulamz[\[Phi]_] = w*Cos[\[Phi]];\)\), "\[IndentingNewLine]", 
+    \(\(hz[\[Phi]_] = 
+        w*\((Fr^2)\)/2*\((1/Ro + w)\)*Cos[\[Phi]]^2 + h0;\)\)}], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"A1", "=", 
+        RowBox[{"(", GridBox[{
+              {"1", "0", "1", "0"},
+              {"1", "0", "1", "0"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"A2", "=", 
+        RowBox[{"(", GridBox[{
+              {"1", "0", "1", "0"},
+              {"1", "0", "1", "0"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \(ulam[\[Eta]_, \[Phi]_] := 
+      ulamz[\[Phi]] + \[Sum]\+\(l = 2\)\%\(2*M + 1\)A1[\([1, l - 1]\)]*
+            Sqrt[\((2  l + 1)\)/\((4*Pi)\)]*\((LegendreP[l, 0, Sin[\[Phi]]] - 
+                1)\) + \[Sum]\+\(m = 1\)\%\(M - 1\)\(\[Sum]\+\(l = m\)\%\(2  \
+M + m - 1\)A1[\([m + 1, l - m + 1]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+              LegendreP[l, m, Sin[\[Phi]]]*
+              Cos[m*\[Eta]]\) + \[Sum]\+\(m = 1\)\%M\(\[Sum]\+\(l = m\)\%\(2  \
+M + m - 1\)A2[\([m, l - m + 1]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+              LegendreP[l, m, Sin[\[Phi]]]*Sin[m*\[Eta]]\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"B1", "=", 
+        RowBox[{"(", GridBox[{
+              {"0", "1", "0", "1"},
+              {"0", "1", "0", "1"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"B2", "=", 
+        RowBox[{"(", GridBox[{
+              {"0", "1", "0", "1"},
+              {"0", "1", "0", "1"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \(uphi[\[Eta]_, \[Phi]_] := \[Sum]\+\(l = 2\)\%\(2*M + 1\)B1[\([\)\(1, 
+              l - 1\)\(]\)]*
+            Sqrt[\((2  l + 1)\)/\((4*Pi)\)]*\((LegendreP[l, 0, Sin[\[Phi]]] - 
+                Sin[\[Phi]])\) + \[Sum]\+\(m = 1\)\%\(M - 1\)\(\[Sum]\+\(l = \
+m\)\%\(2*M + m - 1\)B1[\([\)\(m + 1, l - m + 1\)\(]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+              LegendreP[l, m, Sin[\[Phi]]]*
+              Cos[m*\[Eta]]\) + \[Sum]\+\(m = 1\)\%M\(\[Sum]\+\(l = m\)\%\(2  \
+M + m - 1\)B2[\([\)\(m, l - m + 1\)\(]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+              LegendreP[l, m, Sin[\[Phi]]]*Sin[m*\[Eta]]\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"C1", "=", 
+        RowBox[{"(", GridBox[{
+              {"1", "0", "1", "0"},
+              {"1", "0", "1", "0"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"C2", "=", 
+        RowBox[{"(", GridBox[{
+              {"1", "0", "1", "0"},
+              {"1", "0", "1", "0"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \(h[\[Eta]_, \[Phi]_] := 
+      hz[\[Phi]] + \[Sum]\+\(m = 0\)\%\(M - 1\)\(\[Sum]\+\(l = m\)\%\(2  M + \
+m - 1\)C1[\([\)\(m + 1, l - m + 1\)\(]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+              LegendreP[l, m, Sin[\[Phi]]]*
+              Cos[m*\[Eta]]\) + \[Sum]\+\(m = 1\)\%M\(\[Sum]\+\(l = m\)\%\(2  \
+M + m - 1\)C2[\([\)\(m, l - m + 1\)\(]\)]*
+              Sqrt[\((2  l + 
+                      1)\)*\(\((l - m)\)!\)/\((4*Pi*\(\((l + m)\)!\))\)]*
+              LegendreP[l, m, Sin[\[Phi]]]*Sin[m*\[Eta]]\)\)], "Input"],
+
+Cell[BoxData[{
+    \(\(ulameta[\[Eta]_, \[Phi]_] = 
+        D[ulam[\[Eta], \[Phi]], \[Eta]];\)\), "\[IndentingNewLine]", 
+    \(\(uphieta[\[Eta]_, \[Phi]_] = 
+        D[uphi[\[Eta], \[Phi]], \[Eta]];\)\), "\[IndentingNewLine]", 
+    \(\(heta[\[Eta]_, \[Phi]_] = 
+        D[h[\[Eta], \[Phi]], \[Eta]];\)\), "\[IndentingNewLine]", 
+    \(\(ulamphi[\[Eta]_, \[Phi]_] = 
+        D[ulam[\[Eta], \[Phi]], \[Phi]];\)\), "\[IndentingNewLine]", 
+    \(\(uphiphi[\[Eta]_, \[Phi]_] = 
+        D[uphi[\[Eta], \[Phi]], \[Phi]];\)\), "\[IndentingNewLine]", 
+    \(\(hphi[\[Eta]_, \[Phi]_] = D[h[\[Eta], \[Phi]], \[Phi]];\)\)}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], \(-0.50046\)}, {uphi, 
+          uphi[eta, phi], \(-0.4772\)}, {h, h[eta, phi], 1.3584}, {ulameta, 
+          ulameta[eta, phi], 3.5826*10^\((\(-018\))\)}, {uphieta, 
+          uphieta[eta, phi], 2.6189*10^\((\(-017\))\)}, {heta, 
+          heta[eta, phi], 3.5826*10^\((\(-018\))\)}, {ulamphi, 
+          ulamphi[eta, phi], \(-1.4576\)}, {uphiphi, 
+          uphiphi[eta, phi], \(-2.3284\)}, {hphi, hphi[eta, phi], 
+          0.25042}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", \(-0.5004575756362727`\), \(-0.50046`\)},
+            {"uphi", \(-0.47720390777877286`\), \(-0.4772`\)},
+            {"h", "1.3584037491929557`", "1.3584`"},
+            {"ulameta", "0.`", "3.5826`*^-18"},
+            {"uphieta", "0.`", "2.6189`*^-17"},
+            {"heta", "0.`", "3.5826`*^-18"},
+            {"ulamphi", \(-1.4575714765189847`\), \(-1.4576`\)},
+            {"uphiphi", \(-2.328423634218975`\), \(-2.3284`\)},
+            {"hphi", "0.25042423281172077`", "0.25042`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = Pi/\((2*M)\);\)\), "\n", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], \(-0.87072\)}, {uphi, 
+          uphi[eta, phi], \(-1.8797\)}, {h, h[eta, phi], 1.3334}, {ulameta, 
+          ulameta[eta, phi], \(-2.7212\)*10^\((\(-017\))\)}, {uphieta, 
+          uphieta[eta, phi], \(-6.8811\)*10^\((\(-017\))\)}, {heta, 
+          heta[eta, phi], \(-2.7212\)*10^\((\(-017\))\)}, {ulamphi, 
+          ulamphi[eta, phi], 1.2147}, {uphiphi, uphiphi[eta, phi], 
+          1.121}, {hphi, hphi[eta, phi], \(-0.010604\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", \(-0.8707227859290525`\), \(-0.87072`\)},
+            {"uphi", \(-1.8796672689783027`\), \(-1.8797`\)},
+            {"h", "1.3333948626561565`", "1.3334`"},
+            {"ulameta", "0.`", \(-2.7212`*^-17\)},
+            {"uphieta", "0.`", \(-6.8811`*^-17\)},
+            {"heta", "0.`", \(-2.7212`*^-17\)},
+            {"ulamphi", "1.214696205122559`", "1.2147`"},
+            {"uphiphi", "1.1210149921065549`", "1.121`"},
+            {"hphi", \(-0.010604399952011567`\), \(-0.010604`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 3  Pi/\((M*2)\);\)\), "\n", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], \(-0.79267\)}, {uphi, 
+          uphi[eta, phi], \(-0.54537\)}, {h, h[eta, phi], 1.0662}, {ulameta, 
+          ulameta[eta, phi], 0.27809}, {uphieta, 
+          uphieta[eta, phi], \(-0.11934\)}, {heta, heta[eta, phi], 
+          0.27809}, {ulamphi, ulamphi[eta, phi], \(-2.4201\)}, {uphiphi, 
+          uphiphi[eta, phi], \(-3.5085\)}, {hphi, 
+          hphi[eta, phi], \(-0.71213\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", \(-0.7926714657949339`\), \(-0.79267`\)},
+            {"uphi", \(-0.5453666082367781`\), \(-0.54537`\)},
+            {"h", "1.0661898590342946`", "1.0662`"},
+            {"ulameta", "0.2780855719548524`", "0.27809`"},
+            {"uphieta", \(-0.11934181678220795`\), \(-0.11934`\)},
+            {"heta", "0.2780855719548524`", "0.27809`"},
+            {"ulamphi", \(-2.4201297744740016`\), \(-2.4201`\)},
+            {"uphiphi", \(-3.5084777002015706`\), \(-3.5085`\)},
+            {"hphi", \(-0.7121340651432964`\), \(-0.71213`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 3  Pi/\((M*2)\);\)\), "\n", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], \(-0.91749\)}, {uphi, 
+          uphi[eta, phi], \(-2.1384\)}, {h, h[eta, phi], 1.2866}, {ulameta, 
+          ulameta[eta, phi], 0.87755}, {uphieta, uphieta[eta, phi], 
+          1.12}, {heta, heta[eta, phi], 0.87755}, {ulamphi, 
+          ulamphi[eta, phi], 2.817}, {uphiphi, uphiphi[eta, phi], 
+          3.5557}, {hphi, hphi[eta, phi], 1.5917}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", \(-0.9174895159850529`\), \(-0.91749`\)},
+            {"uphi", \(-2.138411650521862`\), \(-2.1384`\)},
+            {"h", "1.286628132600156`", "1.2866`"},
+            {"ulameta", "0.8775459665644417`", "0.87755`"},
+            {"uphieta", "1.1199955923818548`", "1.12`"},
+            {"heta", "0.8775459665644417`", "0.87755`"},
+            {"ulamphi", "2.817034178896395`", "2.817`"},
+            {"uphiphi", "3.5556650536169983`", "3.5557`"},
+            {"hphi", "1.5917335738218243`", "1.5917`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 5  Pi/\((M*2)\);\)\), "\n", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 0.055714}, {uphi, 
+          uphi[eta, phi], \(-0.71589\)}, {h, h[eta, phi], 1.9146}, {ulameta, 
+          ulameta[eta, phi], 1.4281*10^\((\(-016\))\)}, {uphieta, 
+          uphieta[eta, phi], \(-3.559\)*10^\((\(-017\))\)}, {heta, 
+          heta[eta, phi], 1.4281*10^\((\(-016\))\)}, {ulamphi, 
+          ulamphi[eta, phi], 1.0899}, {uphiphi, 
+          uphiphi[eta, phi], \(-0.98732\)}, {hphi, hphi[eta, phi], 
+          2.7979}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "0.055713568273432046`", "0.055714`"},
+            {"uphi", \(-0.7158875413431889`\), \(-0.71589`\)},
+            {"h", "1.9145748931026605`", "1.9146`"},
+            {"ulameta", "0.`", "1.4281`*^-16"},
+            {"uphieta", "0.`", \(-3.559`*^-17\)},
+            {"heta", "0.`", "1.4281`*^-16"},
+            {"ulamphi", "1.089887604432027`", "1.0899`"},
+            {"uphiphi", \(-0.9873217492595505`\), \(-0.98732`\)},
+            {"hphi", "2.797883313762732`", "2.7979`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 5  Pi/\((M*2)\);\)\), "\n", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], 0.88437}, {uphi, uphi[eta, phi], 0.36032}, {h, 
+          h[eta, phi], 3.0885}, {ulameta, ulameta[eta, phi], 
+          3.6354*10^\((\(-016\))\)}, {uphieta, uphieta[eta, phi], 
+          3.7759*10^\((\(-017\))\)}, {heta, heta[eta, phi], 
+          3.6354*10^\((\(-016\))\)}, {ulamphi, ulamphi[eta, phi], 
+          0.2761}, {uphiphi, uphiphi[eta, phi], 2.2393}, {hphi, 
+          hphi[eta, phi], \(-0.9492\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", "0.8843691471998303`", "0.88437`"},
+            {"uphi", "0.36032391578540723`", "0.36032`"},
+            {"h", "3.0884867957850393`", "3.0885`"},
+            {"ulameta", "0.`", "3.6354000000000004`*^-16"},
+            {"uphieta", "0.`", "3.7759`*^-17"},
+            {"heta", "0.`", "3.6354000000000004`*^-16"},
+            {"ulamphi", "0.2761044586939053`", "0.2761`"},
+            {"uphiphi", "2.23932558695688`", "2.2393`"},
+            {"hphi", \(-0.9491961463806653`\), \(-0.9492`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 7  Pi/\((M*2)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], \(-0.79267\)}, {uphi, 
+          uphi[eta, phi], \(-0.54537\)}, {h, h[eta, phi], 1.0662}, {ulameta, 
+          ulameta[eta, phi], \(-0.27809\)}, {uphieta, uphieta[eta, phi], 
+          0.11934}, {heta, heta[eta, phi], \(-0.27809\)}, {ulamphi, 
+          ulamphi[eta, phi], \(-2.4201\)}, {uphiphi, 
+          uphiphi[eta, phi], \(-3.5085\)}, {hphi, 
+          hphi[eta, phi], \(-0.71213\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", \(-0.7926714657949337`\), \(-0.79267`\)},
+            {"uphi", \(-0.5453666082367781`\), \(-0.54537`\)},
+            {"h", "1.0661898590342949`", "1.0662`"},
+            {"ulameta", \(-0.2780855719548524`\), \(-0.27809`\)},
+            {"uphieta", "0.11934181678220795`", "0.11934`"},
+            {"heta", \(-0.2780855719548524`\), \(-0.27809`\)},
+            {"ulamphi", \(-2.4201297744740016`\), \(-2.4201`\)},
+            {"uphiphi", \(-3.5084777002015706`\), \(-3.5085`\)},
+            {"hphi", \(-0.7121340651432964`\), \(-0.71213`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 7  Pi/\((M*2)\);\)\), "\n", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {ulam, 
+          ulam[eta, phi], \(-0.91749\)}, {uphi, 
+          uphi[eta, phi], \(-2.1384\)}, {h, h[eta, phi], 1.2866}, {ulameta, 
+          ulameta[eta, phi], \(-0.87755\)}, {uphieta, 
+          uphieta[eta, phi], \(-1.12\)}, {heta, 
+          heta[eta, phi], \(-0.87755\)}, {ulamphi, ulamphi[eta, phi], 
+          2.817}, {uphiphi, uphiphi[eta, phi], 3.5557}, {hphi, 
+          hphi[eta, phi], 1.5917}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"ulam", \(-0.9174895159850529`\), \(-0.91749`\)},
+            {"uphi", \(-2.138411650521862`\), \(-2.1384`\)},
+            {"h", "1.286628132600156`", "1.2866`"},
+            {"ulameta", \(-0.8775459665644417`\), \(-0.87755`\)},
+            {"uphieta", \(-1.1199955923818548`\), \(-1.12`\)},
+            {"heta", \(-0.8775459665644417`\), \(-0.87755`\)},
+            {"ulamphi", "2.817034178896395`", "2.817`"},
+            {"uphiphi", "3.5556650536169983`", "3.5557`"},
+            {"hphi", "1.5917335738218246`", "1.5917`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([\)\(1\)\(]\)], 4.1076}, {"\<phimom\>", 
+            phimom[\([\)\(1\)\(]\)], 8.9703}, {"\<mass\>", 
+            Mass[\([\)\(1\)\(]\)], \(-2.8665\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", "4.107569707049996`", "4.1076`"},
+            {"\<\"phimom\"\>", "8.970316922270115`", "8.9703`"},
+            {"\<\"mass\"\>", \(-2.866527403394295`\), \(-2.8665`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], 16.4930}, {"\<phimom\>", 
+            phimom[\([\)\(1\)\(]\)], \(-9.5133\)}, {"\<mass\>", 
+            Mass[\([\)\(1\)\(]\)], 2.9283}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", "16.49303944835921`", "16.493`"},
+            {"\<\"phimom\"\>", \(-9.513337319066558`\), \(-9.5133`\)},
+            {"\<\"mass\"\>", "2.9283276265266363`", "2.9283`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 3  Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], 18.4471}, {"\<phimom\>", 
+            phimom[\([1]\)], \(-36.5569\)}, {"\<mass\>", 
+            Mass[\([1]\)], \(-2.9799\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", "18.447134718269417`", "18.4471`"},
+            {"\<\"phimom\"\>", \(-36.556923974938655`\), \(-36.5569`\)},
+            {"\<\"mass\"\>", \(-2.979865161819712`\), \(-2.9799`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 3  Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], 58.9847}, {"\<phimom\>", phimom[\([1]\)], 
+            25.9826}, {"\<mass\>", Mass[\([1]\)], 3.1163}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", "58.984727116068065`", "58.9847`"},
+            {"\<\"phimom\"\>", "25.982619559180254`", "25.9826`"},
+            {"\<\"mass\"\>", "3.116289717528784`", "3.1163`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 5  Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], 4.5824}, {"\<phimom\>", phimom[\([1]\)], 
+            130.0892}, {"\<mass\>", Mass[\([1]\)], \(-3.1954\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", "4.582362186846553`", "4.5824`"},
+            {"\<\"phimom\"\>", "130.08924480107936`", "130.0892`"},
+            {"\<\"mass\"\>", \(-3.1953730582446624`\), \(-3.1954`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 5  Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], \(-3.8782\)}, {"\<phimom\>", 
+            phimom[\([1]\)], \(-13.6069\)}, {"\<mass\>", Mass[\([1]\)], 
+            2.3838}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", \(-3.8781574483683645`\), \(-3.8782`\)},
+            {"\<\"phimom\"\>", \(-13.606878261076396`\), \(-13.6069`\)},
+            {"\<\"mass\"\>", "2.383786728549576`", "2.3838`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 7  Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 
+        3.468967403245241*10^\((\(-001\))\);\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], \(-8.1796\)}, {"\<phimom\>", 
+            phimom[\([1]\)], \(-36.8328\)}, {"\<mass\>", 
+            Mass[\([1]\)], \(-2.9300\)}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", \(-8.179570590851153`\), \(-8.1796`\)},
+            {"\<\"phimom\"\>", \(-36.832789456967895`\), \(-36.8328`\)},
+            {"\<\"mass\"\>", \(-2.930038381656362`\), \(-2.93`\)}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(eta = 7  Pi/\((2*M)\);\)\), "\[IndentingNewLine]", 
+    \(\(phi = 1.037500646545770;\)\), "\[IndentingNewLine]", 
+    \(\(vars = {{ulam[eta, phi]}, {uphi[eta, phi]}, {h[eta, 
+              phi]}, {ulameta[eta, phi]/\[Kappa]}, {uphieta[eta, 
+                phi]/\[Kappa]}, {heta[eta, phi]/\[Kappa]}, {ulamphi[eta, 
+              phi]}, {uphiphi[eta, phi]}, {hphi[eta, 
+              phi]}};\)\), "\[IndentingNewLine]", 
+    \(\(lammom\  = \ \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(4\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(7\)\(]\)] - \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(2\)\(]\)] + 
+          vars[\([\)\(6\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(phimom\  = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(5\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*
+            vars[\([\)\(8\)\(]\)] + \((Cos[phi]/Ro + vars[\([\)\(1\)\(]\)])\)*
+            Sin[phi]*vars[\([\)\(1\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(9\)\(]\)]/Fr^2;\)\), "\[IndentingNewLine]", 
+    \(\(Mass = \((vars[\([\)\(1\)\(]\)] - Sr*c*Cos[phi])\)*
+            vars[\([\)\(6\)\(]\)] + 
+          Cos[phi]*vars[\([\)\(2\)\(]\)]*vars[\([\)\(9\)\(]\)] + 
+          vars[\([\)\(3\)\(]\)]*\((vars[\([\)\(4\)\(]\)] + 
+                Cos[phi]*vars[\([\)\(8\)\(]\)] - 
+                Sin[phi]*
+                  vars[\([\)\(2\)\(]\)])\);\)\), "\[IndentingNewLine]", 
+    \(comparison\ \  = \ 
+      MatrixForm[{{"\< \>", "\<Mathematica\>", "\<MATLAB\>"}, {"\<lammom\>", 
+            lammom[\([1]\)], \(-25.1141\)}, {"\<phimom\>", phimom[\([1]\)], 
+            28.4775}, {"\<mass\>", Mass[\([1]\)], 2.8129}}]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {"\<\" \"\>", "\<\"Mathematica\"\>", "\<\"MATLAB\"\>"},
+            {"\<\"lammom\"\>", \(-25.114054749261953`\), \(-25.1141`\)},
+            {"\<\"phimom\"\>", "28.477468512697158`", "28.4775`"},
+            {"\<\"mass\"\>", "2.812918750591196`", "2.8129`"}
+            }], "\[NoBreak]", ")"}],
+      Function[ BoxForm`e$, 
+        MatrixForm[ BoxForm`e$]]]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{901, 651},
+WindowMargins->{{2, Automatic}, {Automatic, 5}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1705, 50, 69, 1, 30, "Input"],
+Cell[1777, 53, 990, 18, 350, "Input"],
+Cell[2770, 73, 198, 6, 41, "Input"],
+Cell[2971, 81, 198, 6, 41, "Input"],
+Cell[3172, 89, 754, 13, 141, "Input"],
+Cell[3929, 104, 198, 6, 41, "Input"],
+Cell[4130, 112, 198, 6, 41, "Input"],
+Cell[4331, 120, 779, 13, 141, "Input"],
+Cell[5113, 135, 198, 6, 41, "Input"],
+Cell[5314, 143, 198, 6, 41, "Input"],
+Cell[5515, 151, 612, 11, 118, "Input"],
+Cell[6130, 164, 622, 11, 130, "Input"],
+
+Cell[CellGroupData[{
+Cell[6777, 179, 707, 12, 130, "Input"],
+Cell[7487, 193, 754, 15, 191, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8278, 213, 662, 10, 130, "Input"],
+Cell[8943, 225, 757, 15, 191, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9737, 245, 642, 11, 130, "Input"],
+Cell[10382, 258, 803, 15, 183, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11222, 278, 578, 9, 130, "Input"],
+Cell[11803, 289, 769, 15, 183, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12609, 309, 689, 12, 130, "Input"],
+Cell[13301, 323, 745, 15, 191, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14083, 343, 640, 10, 130, "Input"],
+Cell[14726, 355, 758, 15, 191, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15521, 375, 664, 11, 130, "Input"],
+Cell[16188, 388, 809, 15, 183, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17034, 408, 604, 10, 130, "Input"],
+Cell[17641, 420, 787, 15, 183, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18465, 440, 1809, 32, 270, "Input"],
+Cell[20277, 474, 446, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20760, 488, 1775, 31, 270, "Input"],
+Cell[22538, 521, 447, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23022, 535, 1795, 32, 270, "Input"],
+Cell[24820, 569, 456, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25313, 583, 1745, 30, 270, "Input"],
+Cell[27061, 615, 444, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[27542, 629, 1777, 31, 270, "Input"],
+Cell[29322, 662, 450, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29809, 676, 1767, 31, 270, "Input"],
+Cell[31579, 709, 455, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[32071, 723, 1799, 32, 270, "Input"],
+Cell[33873, 757, 458, 9, 87, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[34368, 771, 1750, 30, 270, "Input"],
+Cell[36121, 803, 450, 9, 87, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

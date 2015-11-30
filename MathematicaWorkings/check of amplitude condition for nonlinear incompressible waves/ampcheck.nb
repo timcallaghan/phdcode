@@ -1,0 +1,455 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      8676,        321]*)
+(*NotebookOutlinePosition[      9319,        343]*)
+(*  CellTagsIndexPosition[      9275,        339]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(Sqrt[9/\((2*\(8!\))\)]*N[LegendreP[4, 4, Sin[Pi/4]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0.2773162398327944`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C1 = 875.6356344796186\)], "Input"],
+
+Cell[BoxData[
+    \(875.6356344796186`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C2 = 802.17678153377119\)], "Input"],
+
+Cell[BoxData[
+    \(802.1767815337712`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C3 = 44.501872539009156\)], "Input"],
+
+Cell[BoxData[
+    \(44.501872539009156`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C4 = 7.6389319063796002\)], "Input"],
+
+Cell[BoxData[
+    \(7.6389319063796`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(C5 = 0.25564304754291506\)], "Input"],
+
+Cell[BoxData[
+    \(0.25564304754291506`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(w = 7.848*10^\((\(-006\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(7.848`*^-6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Omega = 2*Pi/\((24*3600)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/43200\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(h0 = 8*10^3\)], "Input"],
+
+Cell[BoxData[
+    \(8000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term1 = 
+      875.635634479618*Sqrt[9/\((2*\(8!\))\)]*N[LegendreP[4, 4, Sin[Pi/4]]]*
+        Sqrt[1/\((2*Pi)\)]*Cos[0]\)], "Input"],
+
+Cell[BoxData[
+    \(96.87434873175899`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\(4!\)\)], "Input"],
+
+Cell[BoxData[
+    \(24\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term2 = 
+      802.1767815337711*
+        Sqrt[\((2*6 + 1)\)*\(\((6 - 4)\)!\)/\((2*\(\((6 + 4)\)!\))\)]*
+        N[LegendreP[6, 4, Sin[Pi/4]]]*Sqrt[1/\((2*Pi)\)]*Cos[0]\)], "Input"],
+
+Cell[BoxData[
+    \(321.9768507912463`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term3 = 
+      44.50187253900915*
+        Sqrt[\((2*8 + 1)\)*\(\((8 - 4)\)!\)/\((2*\(\((8 + 4)\)!\))\)]*
+        N[LegendreP[8, 4, Sin[Pi/4]]]*Sqrt[1/\((2*Pi)\)]*Cos[0]\)], "Input"],
+
+Cell[BoxData[
+    \(15.995521297203343`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term4 = 
+      7.638931906379600*
+        Sqrt[\((2*10 + 1)\)*\(\((10 - 4)\)!\)/\((2*\(\((10 + 4)\)!\))\)]*
+        N[LegendreP[10, 4, Sin[Pi/4]]]*Sqrt[1/\((2*Pi)\)]*Cos[0]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-1.1843152337381067`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term5 = 
+      0.2556430475429150*
+        Sqrt[\((2*12 + 1)\)*\(\((12 - 4)\)!\)/\((2*\(\((12 + 4)\)!\))\)]*
+        N[LegendreP[12, 4, Sin[Pi/4]]]*Sqrt[1/\((2*Pi)\)]*Cos[0]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-0.09896158344134962`\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term6 = term1 + term2 + term3 + term4 + term5\)], "Input"],
+
+Cell[BoxData[
+    \(433.5634440030292`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(a = 6.37112*10^6\)], "Input"],
+
+Cell[BoxData[
+    \(6.37112`*^6\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g = 9.80616\)], "Input"],
+
+Cell[BoxData[
+    \(9.80616`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(term7 = 
+      h0 + w*a^2*\((2*Omega + w)\)*Cos[Pi/4]^2/\((2*g)\) + term6\)], "Input"],
+
+Cell[BoxData[
+    \(9678.511938285708`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"check", "=", 
+      RowBox[{
+      "h0", "+", \(w*a^2*\((2*Omega + w)\)*Cos[Pi/4]^2/\((2*g)\)\), "+", 
+        RowBox[{
+          FormBox["875.6356344796186",
+            "InputForm"], "*", \(Sqrt[9/\((2*\(8!\))\)]\), 
+          "*", \(N[LegendreP[4, 4, Sin[Pi/4]]]\), "*", \(Sqrt[1/\((2*Pi)\)]\),
+           "*", \(Cos[0]\)}], "+", 
+        RowBox[{
+          FormBox["802.17678153377119",
+            "InputForm"], 
+          "*", \(Sqrt[\((2*6 + 
+                  1)\)*\(\((6 - 4)\)!\)/\((2*\(\((6 + 4)\)!\))\)]\), 
+          "*", \(N[LegendreP[6, 4, Sin[Pi/4]]]\), "*", \(Sqrt[1/\((2*Pi)\)]\),
+           "*", \(Cos[0]\)}], "+", 
+        RowBox[{
+          FormBox["44.501872539009156",
+            "InputForm"], 
+          "*", \(Sqrt[\((2*8 + 
+                  1)\)*\(\((8 - 4)\)!\)/\((2*\(\((8 + 4)\)!\))\)]\), 
+          "*", \(N[LegendreP[8, 4, Sin[Pi/4]]]\), "*", \(Sqrt[1/\((2*Pi)\)]\),
+           "*", \(Cos[0]\)}], "+", 
+        RowBox[{
+          FormBox["7.6389319063796002",
+            "InputForm"], 
+          "*", \(Sqrt[\((2*10 + 
+                  1)\)*\(\((10 - 4)\)!\)/\((2*\(\((10 + 4)\)!\))\)]\), 
+          "*", \(N[LegendreP[10, 4, Sin[Pi/4]]]\), 
+          "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}], "+", 
+        RowBox[{
+          FormBox["0.25564304754291506",
+            "InputForm"], 
+          "*", \(Sqrt[\((2*12 + 
+                  1)\)*\(\((12 - 4)\)!\)/\((2*\(\((12 + 4)\)!\))\)]\), 
+          "*", \(N[LegendreP[12, 4, Sin[Pi/4]]]\), 
+          "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}]}]}]], "Input"],
+
+Cell[BoxData[
+    \(Syntax::"sntxi" \(\(:\)\(\ \)\) 
+      "Incomplete expression; more input is needed.\!\(\"\"\)"\)], "Message"],
+
+Cell[BoxData[
+    StyleBox[
+      RowBox[{"check", "=", 
+        RowBox[{
+        "h0", "+", \(w*a^2*\((2*Omega + w)\)*Cos[Pi/4]^2/\((2*g)\)\), "+", 
+          RowBox[{
+            FormBox["875.6356344796186",
+              "InputForm"], "*", \(Sqrt[9/\((2*\(8!\))\)]\), 
+            "*", \(N[LegendreP[4, 4, Sin[Pi/4]]]\), 
+            "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}], "+", 
+          RowBox[{
+            FormBox["802.17678153377119",
+              "InputForm"], 
+            "*", \(Sqrt[\((2*6 + 
+                    1)\)*\(\((6 - 4)\)!\)/\((2*\(\((6 + 4)\)!\))\)]\), 
+            "*", \(N[LegendreP[6, 4, Sin[Pi/4]]]\), 
+            "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}], "+", 
+          RowBox[{
+            FormBox["44.501872539009156",
+              "InputForm"], 
+            "*", \(Sqrt[\((2*8 + 
+                    1)\)*\(\((8 - 4)\)!\)/\((2*\(\((8 + 4)\)!\))\)]\), 
+            "*", \(N[LegendreP[8, 4, Sin[Pi/4]]]\), 
+            "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}], "+", 
+          RowBox[{
+            FormBox["7.6389319063796002",
+              "InputForm"], 
+            "*", \(Sqrt[\((2*10 + 
+                    1)\)*\(\((10 - 4)\)!\)/\((2*\(\((10 + 4)\)!\))\)]\), 
+            "*", \(N[LegendreP[10, 4, Sin[Pi/4]]]\), 
+            "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}], "+", 
+          RowBox[{
+            FormBox["0.25564304754291506",
+              "InputForm"], 
+            "*", \(Sqrt[\((2*12 + 
+                    1)\)*\(\((12 - 4)\)!\)/\((2*\(\((12 + 4)\)!\))\)]\), 
+            "*", \(N[LegendreP[12, 4, Sin[Pi/4]]]\), 
+            "*", \(Sqrt[1/\((2*Pi)\)]\), "*", \(Cos[0]\)}]}]}],
+      ShowStringCharacters->True]], "Message"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{721, 603},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 85, 1, 30, "Input"],
+Cell[1815, 55, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1905, 61, 55, 1, 30, "Input"],
+Cell[1963, 64, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2052, 70, 56, 1, 30, "Input"],
+Cell[2111, 73, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2200, 79, 56, 1, 30, "Input"],
+Cell[2259, 82, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2349, 88, 56, 1, 30, "Input"],
+Cell[2408, 91, 50, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2495, 97, 57, 1, 30, "Input"],
+Cell[2555, 100, 54, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2646, 106, 60, 1, 30, "Input"],
+Cell[2709, 109, 44, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2790, 115, 59, 1, 30, "Input"],
+Cell[2852, 118, 46, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2935, 124, 44, 1, 30, "Input"],
+Cell[2982, 127, 38, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3057, 133, 152, 3, 50, "Input"],
+Cell[3212, 138, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3301, 144, 39, 1, 30, "Input"],
+Cell[3343, 147, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3416, 153, 201, 4, 50, "Input"],
+Cell[3620, 159, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3709, 165, 201, 4, 50, "Input"],
+Cell[3913, 171, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4003, 177, 205, 4, 50, "Input"],
+Cell[4211, 183, 58, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4306, 189, 206, 4, 50, "Input"],
+Cell[4515, 195, 59, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4611, 201, 78, 1, 30, "Input"],
+Cell[4692, 204, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4781, 210, 49, 1, 30, "Input"],
+Cell[4833, 213, 45, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4915, 219, 44, 1, 30, "Input"],
+Cell[4962, 222, 42, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5041, 228, 106, 2, 30, "Input"],
+Cell[5150, 232, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5239, 238, 1581, 36, 190, "Input"],
+Cell[6823, 276, 130, 2, 24, "Message"],
+Cell[6956, 280, 1704, 38, 168, "Message"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

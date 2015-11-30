@@ -1,0 +1,150 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      3658,        102]*)
+(*NotebookOutlinePosition[      4302,        124]*)
+(*  CellTagsIndexPosition[      4258,        120]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(\[Integral]\_\(\(-PI\)/2\)\%\(Pi/2\)Sin[2*n*\[Phi]]*Sin[2*t*\[Phi]]*
+        Cos[\[Phi]] \[DifferentialD]\[Phi]\)], "Input"],
+
+Cell[BoxData[
+    \(Sin[1\/2\ \[Pi]\ \((\(-1\) + 2\ n - 2\ t)\)]\/\(4\ \((\(-1\) + 2\ n - 2\
+\ t)\)\) + 
+      Sin[1\/2\ PI\ \((\(-1\) + 2\ n - 2\ t)\)]\/\(4\ \((\(-1\) + 2\ n - 2\ \
+t)\)\) + Sin[1\/2\ \[Pi]\ \((1 + 2\ n - 2\ t)\)]\/\(4\ \((1 + 2\ n - 2\ \
+t)\)\) + Sin[1\/2\ PI\ \((1 + 2\ n - 2\ t)\)]\/\(4\ \((1 + 2\ n - 2\ t)\)\) - 
+      Sin[1\/2\ \[Pi]\ \((\(-1\) + 2\ n + 2\ t)\)]\/\(4\ \((\(-1\) + 2\ n + 2\
+\ t)\)\) - 
+      Sin[1\/2\ PI\ \((\(-1\) + 2\ n + 2\ t)\)]\/\(4\ \((\(-1\) + 2\ n + 2\ \
+t)\)\) - Sin[1\/2\ \[Pi]\ \((1 + 2\ n + 2\ t)\)]\/\(4\ \((1 + 2\ n + 2\ \
+t)\)\) - Sin[1\/2\ PI\ \((1 + 2\ n + 2\ t)\)]\/\(4\ \((1 + 2\ n + 2\ \
+t)\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[
+      Sin[2*n*\[Phi]]*Sin[2*t*\[Phi]]*Cos[\[Phi]], {\[Phi], \(-Pi\)/2, Pi/2}, 
+      Assumptions \[Rule] {Element[n, Integers], 
+          Element[t, Integers]}]\)], "Input"],
+
+Cell[BoxData[
+    \(If[Im[n - t] == 0 && Im[n + t] == 0 && Im[\(-2\)\ n + 2\ t] == 0, 
+      1\/2\ \((Sin[1\/2\ \[Pi]\ \@\((1 + 2\ n - 2\ t)\)\^2]\/\@\((1 + 2\ n - \
+2\ t)\)\^2 + 
+            Sin[1\/2\ \[Pi]\ \@\((1 - 2\ n + 2\ t)\)\^2]\/\@\((1 - 2\ n + 2\ \
+t)\)\^2 - 
+            Sin[1\/2\ \[Pi]\ \@\((\(-1\) + 2\ n + 2\ t)\)\^2]\/\@\((\(-1\) + \
+2\ n + 2\ t)\)\^2 - 
+            Sin[1\/2\ \[Pi]\ \@\((1 + 2\ n + 2\ t)\)\^2]\/\@\((1 + 2\ n + 2\ \
+t)\)\^2)\), \[Integral]\_\(-\(\[Pi]\/2\)\)\%\(\[Pi]\/2\)\(Cos[\[Phi]]\ Sin[
+              2\ n\ \[Phi]]\ Sin[
+              2\ t\ \[Phi]]\) \[DifferentialD]\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Integrate[Cos[2*n*x], {x, \(-Pi\)/2, Pi/2}, \ 
+      Assumptions \[Rule] Element[n, Integers]]\)], "Input"],
+
+Cell[BoxData[
+    \(Sin[\@n\^2\ \[Pi]]\/\@n\^2\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{779, 549},
+WindowMargins->{{2, Automatic}, {Automatic, 14}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 144, 2, 43, "Input"],
+Cell[1874, 56, 670, 11, 98, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2581, 72, 205, 4, 50, "Input"],
+Cell[2789, 78, 626, 11, 145, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3452, 94, 127, 2, 30, "Input"],
+Cell[3582, 98, 60, 1, 53, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

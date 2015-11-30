@@ -1,0 +1,395 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      7383,        269]*)
+(*NotebookOutlinePosition[      8026,        291]*)
+(*  CellTagsIndexPosition[      7982,        287]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(uz[x_] = w*Cos[x]\)], "Input"],
+
+Cell[BoxData[
+    \(w\ Cos[x]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(uz[Pi/2]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pz[x_] = 1/\((1 - F^2*w*\((w + 1/R)\)*Cos[x]^2)\)^\((K/2)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\((1 - F\^2\ w\ \((1\/R + w)\)\ Cos[x]\^2)\)\^\(\(-K\)/2\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rhoz[x_] = 
+      1/\((1 - F^2*w*\((w + 1/R)\)*Cos[x]^2)\)^\((K/2 + 1)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\((1 - F\^2\ w\ \((1\/R + w)\)\ Cos[x]\^2)\)\^\(\(-1\) - K\/2\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)Cos[x]*rhoz[x]*
+        LegendreP[1, 1, Sin[x]]*
+        LegendreP[1, 1, Sin[x]] \[DifferentialD]x\)], "Input"],
+
+Cell[BoxData[
+    \(If[R\/\(F\^2\ w\ \((1 + R\ w)\)\) \[GreaterEqual] 1 || 
+        R\/\(F\^2\ w\ \((1 + R\ w)\)\) \[LessEqual] 0 || 
+        Im[R\/\(F\^2\ w\ \((1 + R\ w)\)\)] \[NotEqual] 0, 
+      4\/3\ Hypergeometric2F1[2, 1 + K\/2, 5\/2, 
+          F\^2\ w\ \((1\/R + 
+                w)\)], \[Integral]\_\(-\(\[Pi]\/2\)\)\%\(\[Pi]\/2\)\(Cos[
+              x]\ \((1 - F\^2\ w\ \((1\/R + w)\)\ Cos[x]\^2)\)\^\(\(-1\) - \
+K\/2\)\ \((1 - Sin[x]\^2)\)\) \[DifferentialD]x]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Integral]\_\(-1\)\%1 LegendreP[2, 2, x]*
+        LegendreP[2, 2, x] \[DifferentialD]x\)], "Input"],
+
+Cell[BoxData[
+    \(48\/5\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(F = 1.265*10^\((\(-3\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.0012649999999999998`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(w = 2*Pi/\((10*24*60*60)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\/432000\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(R = 1.0797*10^\((\(-2\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.010797000000000001`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rhoz[x_] = 
+      1/\((1 - F^2*w*\((w + 1/R)\)*Cos[x]^2)\)^\((K/2 + 1)\)\)], "Input"],
+
+Cell[BoxData[
+    \(\((1 - 1.077814717655783`*^-9\ Cos[x]\^2)\)\^\(\(-1\) - K\/2\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)Cos[x]*rhoz[x]*
+        LegendreP[2, 2, Sin[x]]*
+        LegendreP[2, 2, Sin[x]] \[DifferentialD]x\)], "Input"],
+
+Cell[BoxData[
+    \(\((\(\(9.599999999999998`\)\(\[InvisibleSpace]\)\) + 
+          2.1060043941874424`*^-31\ \[ImaginaryI])\)\ Hypergeometric2F1[3, 
+        1 + K\/2, 7\/2, 
+        1.0778147176557823`*^-9 - 
+          1.3198987514845427`*^-25\ \[ImaginaryI]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(NIntegrate[
+      Cos[x]*rhoz[x]*LegendreP[2, 2, Sin[x]]*
+        LegendreP[2, 2, Sin[x]], {x, \(-Pi\)/2, Pi/2}]\)], "Input"],
+
+Cell[BoxData[
+    \(NIntegrate::"inum" \(\(:\)\(\ \)\) 
+      "Integrand \!\(9.`\\ 0.9999999989221853`\^\(\(\(-1.`\)\) - \(\(0.5`\\ K\
+\)\)\)\) is not numerical at \!\({x}\) = \!\({0.`}\)."\)], "Message"],
+
+Cell[BoxData[
+    \(NIntegrate[
+      Cos[x]\ rhoz[x]\ LegendreP[2, 2, Sin[x]]\ LegendreP[2, 2, 
+          Sin[x]], {x, \(-\(\[Pi]\/2\)\), \[Pi]\/2}]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(M = 3.5738*10^\((\(-2\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(0.035738`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(K = M^2/F^2\)], "Input"],
+
+Cell[BoxData[
+    \(798.1406639691296`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rhoz[x_] = 
+      1/\((1 - F^2*w*\((w + 1/R)\)*Cos[x]^2)\)^\((K/2 + 1)\)\)], "Input"],
+
+Cell[BoxData[
+    \(1\/\((1 - 1.077814717655783`*^-9\ Cos[x]\^2)\)\^400.0703319845648`\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(NIntegrate[
+      Cos[x]*rhoz[x]*LegendreP[2, 2, Sin[x]]*
+        LegendreP[2, 2, Sin[x]], {x, \(-Pi\)/2, Pi/2}]\)], "Input"],
+
+Cell[BoxData[
+    \(9.600003548174534`\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Integral]\_\(\(-Pi\)/2\)\%\(Pi/2\)Cos[x]*rhoz[x]*
+        LegendreP[4, 2, Sin[x]]*
+        LegendreP[2, 2, Sin[x]] \[DifferentialD]x\)], "Input"],
+
+Cell[BoxData[
+    \(Integrate::"idiv" \(\(:\)\(\ \)\) 
+      "Integral of \!\(\(\(\(Cos[x]\)\)\\ \(\((\(\(-1\)\) + \(\[LeftSkeleton] \
+1 \[RightSkeleton]\)\^2)\)\)\\ \(\((1 - \(\(8\\ \(Sin[x]\)\^2\)\) + \(\(7\\ \
+\(Sin[x]\)\^4\)\))\)\)\)\/\((1 - \(\(\(\(\[LeftSkeleton] 22 \
+\[RightSkeleton]\)\)\\ \(\[LeftSkeleton] 1 \
+\[RightSkeleton]\)\^2\)\))\)\^400.0703319845648`\) does not converge on \!\({\
+\(\(-\(\(\[Pi]\/2\)\)\)\), \[Pi]\/2}\)."\)], "Message"],
+
+Cell[BoxData[
+    \(\[Integral]\_\(-\(\[Pi]\/2\)\)\%\(\[Pi]\/2\)\(\(45\ Cos[
+                x]\ \((\(-1\) + Sin[x]\^2)\)\ \((1 - 8\ Sin[x]\^2 + 
+                  7\ Sin[x]\^4)\)\)\/\(2\ \((1 - 1.077814717655783`*^-9\ \
+Cos[x]\^2)\)\^400.0703319845648`\)\) \[DifferentialD]x\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(NIntegrate[
+      Cos[x]*rhoz[x]*LegendreP[5, 2, Sin[x]]*
+        LegendreP[4, 2, Sin[x]], {x, \(-Pi\)/2, Pi/2}]\)], "Input"],
+
+Cell[BoxData[
+    \(NIntegrate::"ploss" \(\(:\)\(\ \)\) 
+      "Numerical integration stopping due to loss of precision. Achieved \
+neither the requested PrecisionGoal nor AccuracyGoal; suspect one of the \
+following: highly oscillatory integrand or the true value of the integral is \
+0. If your integrand is oscillatory try using the option Method->Oscillatory \
+in NIntegrate."\)], "Message"],
+
+Cell[BoxData[
+    \(0.`\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{729, 580},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 50, 1, 30, "Input"],
+Cell[1780, 55, 43, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1860, 61, 41, 1, 30, "Input"],
+Cell[1904, 64, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1976, 70, 92, 1, 30, "Input"],
+Cell[2071, 73, 92, 1, 43, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2200, 79, 105, 2, 30, "Input"],
+Cell[2308, 83, 99, 2, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2444, 90, 167, 3, 43, "Input"],
+Cell[2614, 95, 486, 8, 124, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3137, 108, 120, 2, 42, "Input"],
+Cell[3260, 112, 39, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3336, 118, 58, 1, 30, "Input"],
+Cell[3397, 121, 56, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3490, 127, 59, 1, 30, "Input"],
+Cell[3552, 130, 47, 1, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3636, 136, 59, 1, 30, "Input"],
+Cell[3698, 139, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3790, 145, 105, 2, 30, "Input"],
+Cell[3898, 149, 98, 2, 35, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4033, 156, 167, 3, 43, "Input"],
+Cell[4203, 161, 274, 5, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4514, 171, 145, 3, 50, "Input"],
+Cell[4662, 176, 204, 3, 24, "Message"],
+Cell[4869, 181, 163, 3, 40, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5069, 189, 59, 1, 30, "Input"],
+Cell[5131, 192, 43, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5211, 198, 44, 1, 30, "Input"],
+Cell[5258, 201, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5347, 207, 105, 2, 30, "Input"],
+Cell[5455, 211, 102, 2, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5594, 218, 145, 3, 50, "Input"],
+Cell[5742, 223, 52, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5831, 229, 167, 3, 43, "Input"],
+Cell[6001, 234, 454, 7, 61, "Message"],
+Cell[6458, 243, 289, 4, 51, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6784, 252, 145, 3, 50, "Input"],
+Cell[6932, 257, 395, 6, 96, "Message"],
+Cell[7330, 265, 37, 1, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

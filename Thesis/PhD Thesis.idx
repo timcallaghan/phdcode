@@ -1,0 +1,261 @@
+\indexentry{planetary wave}{1}
+\indexentry{Rossby wave}{1}
+\indexentry{$\beta$-plane}{1}
+\indexentry{free-surface}{5}
+\indexentry{spherical polar coordinate system}{5}
+\indexentry{radial coordinate}{5}
+\indexentry{longitude}{5}
+\indexentry{latitude}{5}
+\indexentry{North pole}{5}
+\indexentry{South pole}{5}
+\indexentry{density}{5}
+\indexentry{pressure}{5}
+\indexentry{gravitaitonal acceleration}{5}
+\indexentry{velocity vector}{5}
+\indexentry{$\ur$}{5}
+\indexentry{$\ulam$}{5}
+\indexentry{$\uphi$}{5}
+\indexentry{unit vector}{5}
+\indexentry{$\Omega$, angular velocity}{6}
+\indexentry{mass conservation}{6}
+\indexentry{continuity equation}{6}
+\indexentry{momentum conservation}{6}
+\indexentry{Euler equation}{6}
+\indexentry{energy conservation}{6}
+\indexentry{$T$, temperature}{6}
+\indexentry{ideal fluid}{6}
+\indexentry{ideal gas law}{6}
+\indexentry{conservation equations!spherical component form}{6}
+\indexentry{shallow atmosphere!incompressible}{8}
+\indexentry{$\bar{h}$, free-surface height}{8}
+\indexentry{$h$, free-surface depth}{9}
+\indexentry{energy conservation}{9}
+\indexentry{ideal gas law}{9}
+\indexentry{curvature terms}{9}
+\indexentry{shallow atmosphere approximation}{10}
+\indexentry{hydrostatic approximation}{10}
+\indexentry{pressure!incompressible}{10}
+\indexentry{scale analysis}{10}
+\indexentry{horizontal!pressure gradient}{11}
+\indexentry{horizontal!acceleration}{11}
+\indexentry{normal flow}{11}
+\indexentry{kinematic condition}{12}
+\indexentry{conservation equations!dimensional incompressible}{12}
+\indexentry{conservation equations!incompressible advective form}{13}
+\indexentry{progressive-wave}{13}
+\indexentry{$c$, angular wavespeed}{13}
+\indexentry{non-dimensionalization!incompressible equations}{14}
+\indexentry{characteristic scales}{14}
+\indexentry{Coriolis parameter}{15}
+\indexentry{Strouhal number}{15}
+\indexentry{Froude number}{15}
+\indexentry{Rossby number}{15}
+\indexentry{shallow atmosphere equations!non-dimensional incompressible}{15}
+\indexentry{Rossby wave}{15}
+\indexentry{zonal flow}{15}
+\indexentry{super rotation}{16}
+\indexentry{$\omega$, zonal angular speed}{16}
+\indexentry{$h_o$, polar free-surface height}{16}
+\indexentry{Linearization!incompressible}{17}
+\indexentry{shallow atmosphere equations!non-dimensional incompressible\\linearized}{17}
+\indexentry{Fourier mode}{18}
+\indexentry{parity}{18}
+\indexentry{$\kappa$, longitudinal wavenumber}{18}
+\indexentry{shallow atmosphere equations!non-dimensional incompressible\\linearized}{18}
+\indexentry{basis function}{19}
+\indexentry{basis function!spherical harmonics}{19}
+\indexentry{basis function!Fourier}{19}
+\indexentry{Fourier series}{19}
+\indexentry{symmetry conditions}{19}
+\indexentry{boundary conditions}{19}
+\indexentry{convergence of longitude}{20}
+\indexentry{pole problem}{20}
+\indexentry{stagnation point}{20}
+\indexentry{basis recombination}{21}
+\indexentry{boundary conditions}{21}
+\indexentry{Fourier coefficients}{21}
+\indexentry{orthogonality}{21}
+\indexentry{residual equation}{21}
+\indexentry{Galerkin method}{21}
+\indexentry{orthogonality}{22}
+\indexentry{index shifting}{23}
+\indexentry{orthogonality!algebraic equations}{24}
+\indexentry{linear system!infinite}{25}
+\indexentry{generalised eigenvalue problem}{25}
+\indexentry{Fourier series!truncation}{25}
+\indexentry{recurrence relation}{26}
+\indexentry{recurrence relation}{26}
+\indexentry{generalised eigenvalue problem!truncated}{27}
+\indexentry{eigenvalue}{27}
+\indexentry{eigenvector}{27}
+\indexentry{diagonal matrix}{27}
+\indexentry{parameter specification}{28}
+\indexentry{Strouhal number}{28}
+\indexentry{Froude number}{28}
+\indexentry{Rossby number}{28}
+\indexentry{large-scale flow}{28}
+\indexentry{generalised eigenvalue problem!solution of}{29}
+\indexentry{convergence}{29}
+\indexentry{valid zonal flow value}{31}
+\indexentry{$V_b$, base volume}{31}
+\indexentry{volume conservation}{31}
+\indexentry{$V_z$, zonal flow volume}{32}
+\indexentry{volume matching condition}{32}
+\indexentry{valid zonal flow value}{32}
+\indexentry{eigenspectrum!incompressible}{33}
+\indexentry{eigenvalues!central band}{33}
+\indexentry{eigenvalue!primary physical}{33}
+\indexentry{Rossby wave!stationary}{34}
+\indexentry{Rossby--Haurwitz!formula}{35}
+\indexentry{Rossby--Haurwitz!comparison with incompressible\\linearized solution}{35}
+\indexentry{height field matching}{36}
+\indexentry{polar stereographic projection}{36}
+\indexentry{Rossby--Haurwitz!free-surface contours}{37}
+\indexentry{geostrophic approximation}{38}
+\indexentry{shallow atmosphere equations!non-dimensional incompressible}{40}
+\indexentry{Fourier series}{41}
+\indexentry{series representation}{41}
+\indexentry{singular value decomposition}{42}
+\indexentry{volume specification}{43}
+\indexentry{$\kappa$, longitudinal wavenumber}{43}
+\indexentry{symmetry conditions}{43}
+\indexentry{$V_z$, zonal flow volume}{43}
+\indexentry{polar height parametrisation}{44}
+\indexentry{collocation method}{44}
+\indexentry{Galerkin method}{44}
+\indexentry{collocation method!advantages}{44}
+\indexentry{finite-difference scheme}{44}
+\indexentry{basis function!caching}{44}
+\indexentry{pseudospectral method}{45}
+\indexentry{collocation method!algorithm}{45}
+\indexentry{collocation mesh!optimal choice}{45}
+\indexentry{Newton--Raphson method}{45}
+\indexentry{root finding!multi-dimensional}{45}
+\indexentry{Newton--Raphson method!algorithm}{46}
+\indexentry{Jacobian matrix}{46}
+\indexentry{Newton--Raphson method!shortcomings}{46}
+\indexentry{Newton--Raphson method!damped}{47}
+\indexentry{Newton--Raphson method!algorithmic flow chart}{47}
+\indexentry{computer specifications}{48}
+\indexentry{Fourier series!truncation}{48}
+\indexentry{residual equation}{49}
+\indexentry{forcing}{49}
+\indexentry{forcing!wavespeed}{49}
+\indexentry{forcing!amplitude}{49}
+\indexentry{collocation mesh}{50}
+\indexentry{parity}{51}
+\indexentry{residual equation!redundancy}{51}
+\indexentry{latitude circle}{51}
+\indexentry{Jacobian matrix!linear dependence}{51}
+\indexentry{collocation mesh!definition}{51}
+\indexentry{basis function!caching}{51}
+\indexentry{basis function!caching example}{51}
+\indexentry{Jacobian matrix!calculation of}{52}
+\indexentry{numerical quadrature!adaptive recursive}{54}
+\indexentry{numerical quadrature!Lobatto}{54}
+\indexentry{bootstrapping}{54}
+\indexentry{bootstrapping!type 1}{54}
+\indexentry{bootstrapping!type 2}{54}
+\indexentry{bootstrapping!type 3}{55}
+\indexentry{Amplitude!measurement of}{55}
+\indexentry{Amplitude!measurement method}{56}
+\indexentry{Amplitude!$\mathcal{A}_{\text{e}}$}{57}
+\indexentry{Amplitude!$\mathcal{A}_{\text{p}}$}{57}
+\indexentry{Amplitude!$\mathcal{A}_{\text{ave}}$}{57}
+\indexentry{parameter specification}{57}
+\indexentry{$V_z$, zonal flow volume}{58}
+\indexentry{forcing!amplitude}{58}
+\indexentry{resonance!nonlinear}{61}
+\indexentry{forcing!wavespeed}{61}
+\indexentry{resonance!branch}{61}
+\indexentry{resonance!discrete branching}{62}
+\indexentry{resonance!planetary wave}{63}
+\indexentry{stability!planetary wave}{63}
+\indexentry{resonance!parameter region}{63}
+\indexentry{stagnation point}{63}
+\indexentry{bifurcation point}{64}
+\indexentry{reverse flow}{64}
+\indexentry{localised circulation}{64}
+\indexentry{stagnation point}{65}
+\indexentry{stagnation point!symmetrical location}{65}
+\indexentry{pressure!cut-off low}{66}
+\indexentry{Amplitude!maximum allowable}{68}
+\indexentry{resonance!damped}{69}
+\indexentry{bifurcation}{69}
+\indexentry{shallow atmosphere!compressible}{74}
+\indexentry{$\bar{h}$, free-surface height}{74}
+\indexentry{$h$, free-surface depth}{74}
+\indexentry{adiabatic flow}{74}
+\indexentry{polytropic atmosphere}{76}
+\indexentry{shallow atmosphere approximation}{76}
+\indexentry{hydrostatic approximation}{77}
+\indexentry{horizontal!pressure gradient}{78}
+\indexentry{horizontal!acceleration}{78}
+\indexentry{kinematic condition}{79}
+\indexentry{conservation equations!dimensional compressible}{81}
+\indexentry{shallow atmosphere equations!non-dimensional compressible}{83}
+\indexentry{Strouhal number}{83}
+\indexentry{Froude number}{83}
+\indexentry{Rossby number}{83}
+\indexentry{Mach number}{83}
+\indexentry{density!free-surface value}{84}
+\indexentry{pressure!free-surface value}{84}
+\indexentry{zonal flow}{84}
+\indexentry{$\omega$, zonal angular speed}{85}
+\indexentry{$h_o$, polar free-surface height}{85}
+\indexentry{Linearization!compressible}{85}
+\indexentry{shallow atmosphere equations!non-dimensional compressible\\linearized}{85}
+\indexentry{Fourier series!truncated}{86}
+\indexentry{symmetry conditions}{86}
+\indexentry{basis recombination}{86}
+\indexentry{Galerkin method}{86}
+\indexentry{generalised eigenvalue problem}{86}
+\indexentry{eigenvalue}{86}
+\indexentry{eigenvector}{86}
+\indexentry{diagonal matrix}{87}
+\indexentry{parameter specification}{87}
+\indexentry{density!sea-level}{88}
+\indexentry{pressure!sea-level}{88}
+\indexentry{mass specification}{88}
+\indexentry{$M_b$, base system mass}{89}
+\indexentry{$M_z$, zonal flow mass}{90}
+\indexentry{root finding}{90}
+\indexentry{generalised eigenvalue problem!solution of}{90}
+\indexentry{eigenvalue!primary physical}{90}
+\indexentry{Rossby--Haurwitz!formula}{92}
+\indexentry{Rossby--Haurwitz!comparison with compressible\\linearized solution}{92}
+\indexentry{polar stereographic projection}{93}
+\indexentry{height field matching}{93}
+\indexentry{barotropic flow}{94}
+\indexentry{geostrophic approximation}{94}
+\indexentry{shallow atmosphere equations!non-dimensional compressible}{97}
+\indexentry{mass specification}{98}
+\indexentry{Fourier series}{99}
+\indexentry{symmetry conditions}{99}
+\indexentry{basis recombination}{99}
+\indexentry{forcing!compressible model}{100}
+\indexentry{collocation}{100}
+\indexentry{collocation mesh}{101}
+\indexentry{residual vector}{101}
+\indexentry{Jacobian matrix}{101}
+\indexentry{Newton--Raphson method}{101}
+\indexentry{bootstrapping}{101}
+\indexentry{basis function!caching}{101}
+\indexentry{computer specifications}{101}
+\indexentry{Amplitude!measurement method}{102}
+\indexentry{parameter specification}{103}
+\indexentry{resonance!nonlinear}{104}
+\indexentry{flat-crested wave}{105}
+\indexentry{flat-crested wave}{106}
+\indexentry{resonance!nonlinear}{106}
+\indexentry{resonance!damped}{107}
+\indexentry{stagnation point}{107}
+\indexentry{resonance!damped}{109}
+\indexentry{resonance!nonlinear}{112}
+\indexentry{forcing!amplitude}{112}
+\indexentry{Rossby wave!observational method}{113}
+\indexentry{atmospheric blocking}{113}
+\indexentry{Rossby wave!stationary}{113}
+\indexentry{atmospheric blocking}{113}
+\indexentry{forcing!thermal}{114}
+\indexentry{forcing!topographical}{114}

@@ -1,0 +1,1625 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     30450,       1192]*)
+(*NotebookOutlinePosition[     31094,       1214]*)
+(*  CellTagsIndexPosition[     31050,       1210]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(mass[ur_, ul_, up_, 
+        p_, \[Rho]_] = \((ul/Cos[phi] - 
+              c)\)*\[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]] - 
+        K*ur*\[Rho] + up*\[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]] + 
+        2*\[Rho]*
+          ur + \[Rho]/Cos[\[Phi]]*\[PartialD]\_\[Eta]\ 
+            ul[\[Eta], \[Phi]] - \[Rho]*up*
+          Tan[\[Phi]] + \[Rho]*\[PartialD]\_\[Phi]\ 
+            up[\[Eta], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(2\ ur\ \[Rho]\), "-", \(K\ ur\ \[Rho]\), 
+      "-", \(up\ \[Rho]\ Tan[\[Phi]]\), "+", 
+      RowBox[{"\[Rho]", " ", 
+        RowBox[{
+          SuperscriptBox["up", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], "+", 
+      RowBox[{"up", " ", 
+        RowBox[{
+          SuperscriptBox["\[Rho]", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], "+", 
+      RowBox[{"\[Rho]", " ", \(Sec[\[Phi]]\), " ", 
+        RowBox[{
+          SuperscriptBox["ul", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], "+", 
+      RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+        RowBox[{
+          SuperscriptBox["\[Rho]", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], ur]\)], "Input"],
+
+Cell[BoxData[
+    \(2\ \[Rho] - K\ \[Rho]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], ul]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(Sec[phi]\), " ", 
+      RowBox[{
+        SuperscriptBox["\[Rho]", 
+          TagBox[\((1, 0)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], up]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(-\[Rho]\)\ Tan[\[Phi]]\), "+", 
+      RowBox[{
+        SuperscriptBox["\[Rho]", 
+          TagBox[\((0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], p]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[Rho]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(2\ ur\), "-", \(K\ ur\), "-", \(up\ Tan[\[Phi]]\), "+", 
+      RowBox[{
+        SuperscriptBox["up", 
+          TagBox[\((0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}], "+", 
+      RowBox[{\(Sec[\[Phi]]\), " ", 
+        RowBox[{
+          SuperscriptBox["ul", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Rho]\ Sec[\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-c\) + ul\ Sec[phi]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\[Rho]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[mass[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(up\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rmom[ur_, ul_, up_, 
+        p_, \[Rho]_] = \((ul/Cos[phi] - c)\)*\[PartialD]\_\[Eta]\ 
+            ur[\[Eta], \[Phi]] + up*\[PartialD]\_\[Phi]\ ur[\[Eta], \[Phi]] - 
+        ul^2 - up^2 - 2*ul*Cos[\[Phi]] - K*p/\[Rho] + \[Alpha]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(-ul\^2\), "-", \(up\^2\), "+", "\[Alpha]", 
+      "-", \(\(K\ p\)\/\[Rho]\), "-", \(2\ ul\ Cos[\[Phi]]\), "+", 
+      RowBox[{"up", " ", 
+        RowBox[{
+          SuperscriptBox["ur", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], "+", 
+      RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+        RowBox[{
+          SuperscriptBox["ur", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], ur]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], ul]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(-2\)\ ul\), "-", \(2\ Cos[\[Phi]]\), "+", 
+      RowBox[{\(Sec[phi]\), " ", 
+        RowBox[{
+          SuperscriptBox["ur", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], up]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(-2\)\ up\), "+", 
+      RowBox[{
+        SuperscriptBox["ur", 
+          TagBox[\((0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], p]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(K\/\[Rho]\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[Rho]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(K\ p\)\/\[Rho]\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-c\) + ul\ Sec[phi]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(up\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[rmom[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(lmom[ur_, ul_, up_, 
+        p_, \[Rho]_] = \((ul/Cos[phi] - c)\)*\[PartialD]\_\[Eta]\ 
+            ul[\[Eta], \[Phi]] + up*\[PartialD]\_\[Phi]\ ul[\[Eta], \[Phi]] + 
+        ur*ul - ul*up*Tan[\[Phi]] + 2*\((ur*Cos[\[Phi]] - up*Sin[\[Phi]])\) + 
+        1/\((\[Rho]*Cos[\[Phi]])\)*\[PartialD]\_\[Eta]\ 
+            p[\[Eta], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(ul\ ur\), "+", \(2\ \((ur\ Cos[\[Phi]] - up\ Sin[\[Phi]])\)\), 
+      "-", \(ul\ up\ Tan[\[Phi]]\), "+", 
+      RowBox[{"up", " ", 
+        RowBox[{
+          SuperscriptBox["ul", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], "+", 
+      FractionBox[
+        RowBox[{\(Sec[\[Phi]]\), " ", 
+          RowBox[{
+            SuperscriptBox["p", 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+        "\[Rho]"], "+", 
+      RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+        RowBox[{
+          SuperscriptBox["ul", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], ur]\)], "Input"],
+
+Cell[BoxData[
+    \(ul + 2\ Cos[\[Phi]]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], ul]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"ur", "-", \(up\ Tan[\[Phi]]\), "+", 
+      RowBox[{\(Sec[phi]\), " ", 
+        RowBox[{
+          SuperscriptBox["ul", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], up]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(-2\)\ Sin[\[Phi]]\), "-", \(ul\ Tan[\[Phi]]\), "+", 
+      RowBox[{
+        SuperscriptBox["ul", 
+          TagBox[\((0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], p]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[Rho]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      FractionBox[
+        RowBox[{\(Sec[\[Phi]]\), " ", 
+          RowBox[{
+            SuperscriptBox["p", 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+            "]"}]}], \(\[Rho]\^2\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-c\) + ul\ Sec[phi]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(Sec[\[Phi]]\/\[Rho]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(up\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[lmom[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pmom[ur_, ul_, up_, 
+        p_, \[Rho]_] = \((ul/Cos[phi] - c)\)*\[PartialD]\_\[Eta]\ 
+            up[\[Eta], \[Phi]] + up*\[PartialD]\_\[Phi]\ up[\[Eta], \[Phi]] + 
+        ur*up + ul^2*Tan[\[Phi]] + 2*ul*Sin[\[Phi]] + 
+        1/\[Rho]*\[PartialD]\_\[Phi]\ p[\[Eta], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(up\ ur\), "+", \(2\ ul\ Sin[\[Phi]]\), 
+      "+", \(ul\^2\ Tan[\[Phi]]\), "+", 
+      FractionBox[
+        RowBox[{
+          SuperscriptBox["p", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}], 
+        "\[Rho]"], "+", 
+      RowBox[{"up", " ", 
+        RowBox[{
+          SuperscriptBox["up", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], "+", 
+      RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+        RowBox[{
+          SuperscriptBox["up", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], ur]\)], "Input"],
+
+Cell[BoxData[
+    \(up\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], ul]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(2\ Sin[\[Phi]]\), "+", \(2\ ul\ Tan[\[Phi]]\), "+", 
+      RowBox[{\(Sec[phi]\), " ", 
+        RowBox[{
+          SuperscriptBox["up", 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], up]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"ur", "+", 
+      RowBox[{
+        SuperscriptBox["up", 
+          TagBox[\((0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], p]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[Rho]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      FractionBox[
+        RowBox[{
+          SuperscriptBox["p", 
+            TagBox[\((0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+          "]"}], \(\[Rho]\^2\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-c\) + ul\ Sec[phi]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(up\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(1\/\[Rho]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[pmom[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(energy[ur_, ul_, up_, p_, \[Rho]_] = 
+      1/\((\[Gamma] - 
+                1)\)*\((\((ul/Cos[phi] - c)\)*\[PartialD]\_\[Eta]\ 
+                  p[\[Eta], \[Phi]] + 
+              p/\[Rho]*\((c - 
+                    ul/Cos[\[Phi]])\)*\[PartialD]\_\[Eta]\ \[Rho][\[Eta], \
+\[Phi]] + up*\((\[PartialD]\_\[Phi]\ p[\[Eta], \[Phi]] - 
+                    p/\[Rho]*\[PartialD]\_\[Phi]\ \[Rho][\[Eta], \
+\[Phi]])\))\) - 
+        p/\[Rho]*\((\((ul/Cos[phi] - 
+                    c)\)*\[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]] - 
+              K*ur*\[Rho] + 
+              up*\[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]])\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"-", 
+        FractionBox[
+          RowBox[{"p", " ", 
+            RowBox[{"(", 
+              RowBox[{\(\(-K\)\ ur\ \[Rho]\), "+", 
+                RowBox[{"up", " ", 
+                  RowBox[{
+                    SuperscriptBox["\[Rho]", 
+                      TagBox[\((0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                    "]"}]}], "+", 
+                RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+                  RowBox[{
+                    SuperscriptBox["\[Rho]", 
+                      TagBox[\((1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                    "]"}]}]}], ")"}]}], "\[Rho]"]}], "+", 
+      FractionBox[
+        RowBox[{
+          RowBox[{"up", " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{
+                  SuperscriptBox["p", 
+                    TagBox[\((0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}], 
+                "-", 
+                FractionBox[
+                  RowBox[{"p", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[Rho]", 
+                        TagBox[\((0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                      "]"}]}], "\[Rho]"]}], ")"}]}], "+", 
+          RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+            RowBox[{
+              SuperscriptBox["p", 
+                TagBox[\((1, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+          "+", 
+          FractionBox[
+            RowBox[{"p", " ", \((c - ul\ Sec[\[Phi]])\), " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+            "\[Rho]"]}], \(\(-1\) + \[Gamma]\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], ur]\)], "Input"],
+
+Cell[BoxData[
+    \(K\ p\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], ul]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"-", 
+        FractionBox[
+          RowBox[{"p", " ", \(Sec[phi]\), " ", 
+            RowBox[{
+              SuperscriptBox["\[Rho]", 
+                TagBox[\((1, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+          "\[Rho]"]}], "+", 
+      FractionBox[
+        RowBox[{
+          RowBox[{\(Sec[phi]\), " ", 
+            RowBox[{
+              SuperscriptBox["p", 
+                TagBox[\((1, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+          "-", 
+          FractionBox[
+            RowBox[{"p", " ", \(Sec[\[Phi]]\), " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+            "\[Rho]"]}], \(\(-1\) + \[Gamma]\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], up]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"-", 
+        FractionBox[
+          RowBox[{"p", " ", 
+            RowBox[{
+              SuperscriptBox["\[Rho]", 
+                TagBox[\((0, 1)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+          "\[Rho]"]}], "+", 
+      FractionBox[
+        RowBox[{
+          RowBox[{
+            SuperscriptBox["p", 
+              TagBox[\((0, 1)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}], "-", 
+          FractionBox[
+            RowBox[{"p", " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((0, 1)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+            "\[Rho]"]}], \(\(-1\) + \[Gamma]\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], p]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"-", 
+        FractionBox[
+          RowBox[{\(\(-K\)\ ur\ \[Rho]\), "+", 
+            RowBox[{"up", " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((0, 1)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+            "+", 
+            RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                "]"}]}]}], "\[Rho]"]}], "+", 
+      FractionBox[
+        RowBox[{
+          RowBox[{"-", 
+            FractionBox[
+              RowBox[{"up", " ", 
+                RowBox[{
+                  SuperscriptBox["\[Rho]", 
+                    TagBox[\((0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                  "]"}]}], "\[Rho]"]}], "+", 
+          FractionBox[
+            RowBox[{\((c - ul\ Sec[\[Phi]])\), " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), "]"}]}], 
+            "\[Rho]"]}], \(\(-1\) + \[Gamma]\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[Rho]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(K\ p\ ur\)\/\[Rho]\), "+", 
+      FractionBox[
+        RowBox[{"p", " ", 
+          RowBox[{"(", 
+            RowBox[{\(\(-K\)\ ur\ \[Rho]\), "+", 
+              RowBox[{"up", " ", 
+                RowBox[{
+                  SuperscriptBox["\[Rho]", 
+                    TagBox[\((0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                  "]"}]}], "+", 
+              RowBox[{\((\(-c\) + ul\ Sec[phi])\), " ", 
+                RowBox[{
+                  SuperscriptBox["\[Rho]", 
+                    TagBox[\((1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                  "]"}]}]}], ")"}]}], \(\[Rho]\^2\)], "+", 
+      FractionBox[
+        RowBox[{
+          FractionBox[
+            RowBox[{"p", " ", "up", " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((0, 1)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                "]"}]}], \(\[Rho]\^2\)], "-", 
+          FractionBox[
+            RowBox[{"p", " ", \((c - ul\ Sec[\[Phi]])\), " ", 
+              RowBox[{
+                SuperscriptBox["\[Rho]", 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(\[Eta], \[Phi]\), 
+                "]"}]}], \(\[Rho]\^2\)]}], \(\(-1\) + \[Gamma]\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Eta]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(\(-c\) + ul\ Sec[phi]\)\/\(\(-1\) + \[Gamma]\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Eta]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(p\ \((\(-c\) + 
+                  ul\ Sec[
+                      phi])\)\)\/\[Rho]\)\) + \(p\ \((c - ul\ \
+Sec[\[Phi]])\)\)\/\(\((\(-1\) + \[Gamma])\)\ \[Rho]\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ur[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        ul[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        up[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, p, \[Rho]], \[PartialD]\_\[Phi]\ 
+        p[\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(up\/\(\(-1\) + \[Gamma]\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(D[energy[ur, ul, up, 
+        p, \[Rho]], \[PartialD]\_\[Phi]\ \[Rho][\[Eta], \[Phi]]]\)], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(p\ up\)\/\[Rho]\)\) - \(p\ up\)\/\(\((\(-1\) + \[Gamma])\)\ \
+\[Rho]\)\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{899, 612},
+WindowMargins->{{2, Automatic}, {Automatic, -1}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 434, 9, 50, "Input"],
+Cell[2164, 63, 1038, 27, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3239, 95, 67, 1, 30, "Input"],
+Cell[3309, 98, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3401, 104, 67, 1, 30, "Input"],
+Cell[3471, 107, 238, 7, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3746, 119, 67, 1, 30, "Input"],
+Cell[3816, 122, 254, 7, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4107, 134, 66, 1, 30, "Input"],
+Cell[4176, 137, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4248, 143, 71, 1, 30, "Input"],
+Cell[4322, 146, 497, 13, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4856, 164, 113, 2, 30, "Input"],
+Cell[4972, 168, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5044, 174, 113, 2, 30, "Input"],
+Cell[5160, 178, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5250, 184, 113, 2, 30, "Input"],
+Cell[5366, 188, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5438, 194, 112, 2, 30, "Input"],
+Cell[5553, 198, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5625, 204, 117, 2, 30, "Input"],
+Cell[5745, 208, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5837, 214, 113, 2, 30, "Input"],
+Cell[5953, 218, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6025, 224, 113, 2, 30, "Input"],
+Cell[6141, 228, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6213, 234, 113, 2, 30, "Input"],
+Cell[6329, 238, 40, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6406, 244, 112, 2, 30, "Input"],
+Cell[6521, 248, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6593, 254, 117, 2, 30, "Input"],
+Cell[6713, 258, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6786, 264, 262, 4, 30, "Input"],
+Cell[7051, 270, 602, 15, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7690, 290, 67, 1, 30, "Input"],
+Cell[7760, 293, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7832, 299, 67, 1, 30, "Input"],
+Cell[7902, 302, 309, 8, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8248, 315, 67, 1, 30, "Input"],
+Cell[8318, 318, 236, 7, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8591, 330, 66, 1, 30, "Input"],
+Cell[8660, 333, 52, 1, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8749, 339, 71, 1, 30, "Input"],
+Cell[8823, 342, 53, 1, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8913, 348, 113, 2, 30, "Input"],
+Cell[9029, 352, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9121, 358, 113, 2, 30, "Input"],
+Cell[9237, 362, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9309, 368, 113, 2, 30, "Input"],
+Cell[9425, 372, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9497, 378, 112, 2, 30, "Input"],
+Cell[9612, 382, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9684, 388, 117, 2, 30, "Input"],
+Cell[9804, 392, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9876, 398, 113, 2, 30, "Input"],
+Cell[9992, 402, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10065, 408, 113, 2, 30, "Input"],
+Cell[10181, 412, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10253, 418, 113, 2, 30, "Input"],
+Cell[10369, 422, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10441, 428, 112, 2, 30, "Input"],
+Cell[10556, 432, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10628, 438, 117, 2, 30, "Input"],
+Cell[10748, 442, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10820, 448, 365, 6, 50, "Input"],
+Cell[11188, 456, 868, 23, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12093, 484, 67, 1, 30, "Input"],
+Cell[12163, 487, 53, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12253, 493, 67, 1, 30, "Input"],
+Cell[12323, 496, 300, 8, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12660, 509, 67, 1, 30, "Input"],
+Cell[12730, 512, 271, 7, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13038, 524, 66, 1, 30, "Input"],
+Cell[13107, 527, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13179, 533, 71, 1, 30, "Input"],
+Cell[13253, 536, 319, 9, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13609, 550, 113, 2, 30, "Input"],
+Cell[13725, 554, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13797, 560, 113, 2, 30, "Input"],
+Cell[13913, 564, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14005, 570, 113, 2, 30, "Input"],
+Cell[14121, 574, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14193, 580, 112, 2, 30, "Input"],
+Cell[14308, 584, 53, 1, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14398, 590, 117, 2, 30, "Input"],
+Cell[14518, 594, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14590, 600, 113, 2, 30, "Input"],
+Cell[14706, 604, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14778, 610, 113, 2, 30, "Input"],
+Cell[14894, 614, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14967, 620, 113, 2, 30, "Input"],
+Cell[15083, 624, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15155, 630, 112, 2, 30, "Input"],
+Cell[15270, 634, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15342, 640, 117, 2, 30, "Input"],
+Cell[15462, 644, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15534, 650, 310, 5, 50, "Input"],
+Cell[15847, 657, 792, 22, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16676, 684, 67, 1, 30, "Input"],
+Cell[16746, 687, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16819, 693, 67, 1, 30, "Input"],
+Cell[16889, 696, 317, 8, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17243, 709, 67, 1, 30, "Input"],
+Cell[17313, 712, 226, 7, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17576, 724, 66, 1, 30, "Input"],
+Cell[17645, 727, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[17717, 733, 71, 1, 30, "Input"],
+Cell[17791, 736, 266, 8, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18094, 749, 113, 2, 30, "Input"],
+Cell[18210, 753, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18282, 759, 113, 2, 30, "Input"],
+Cell[18398, 763, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18470, 769, 113, 2, 30, "Input"],
+Cell[18586, 773, 55, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18678, 779, 112, 2, 30, "Input"],
+Cell[18793, 783, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[18865, 789, 117, 2, 30, "Input"],
+Cell[18985, 793, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19057, 799, 113, 2, 30, "Input"],
+Cell[19173, 803, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19245, 809, 113, 2, 30, "Input"],
+Cell[19361, 813, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19433, 819, 113, 2, 30, "Input"],
+Cell[19549, 823, 36, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19622, 829, 112, 2, 30, "Input"],
+Cell[19737, 833, 43, 1, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[19817, 839, 117, 2, 30, "Input"],
+Cell[19937, 843, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[20009, 849, 652, 13, 70, "Input"],
+Cell[20664, 864, 2157, 54, 98, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22858, 923, 69, 1, 30, "Input"],
+Cell[22930, 926, 38, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[23005, 932, 69, 1, 30, "Input"],
+Cell[23077, 935, 989, 27, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[24103, 967, 69, 1, 30, "Input"],
+Cell[24175, 970, 887, 25, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[25099, 1000, 68, 1, 30, "Input"],
+Cell[25170, 1003, 1417, 37, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26624, 1045, 73, 1, 30, "Input"],
+Cell[26700, 1048, 1515, 37, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28252, 1090, 115, 2, 30, "Input"],
+Cell[28370, 1094, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28442, 1100, 115, 2, 30, "Input"],
+Cell[28560, 1104, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28632, 1110, 115, 2, 30, "Input"],
+Cell[28750, 1114, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28822, 1120, 114, 2, 30, "Input"],
+Cell[28939, 1124, 82, 1, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29058, 1130, 119, 2, 30, "Input"],
+Cell[29180, 1134, 201, 4, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29418, 1143, 115, 2, 30, "Input"],
+Cell[29536, 1147, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29608, 1153, 115, 2, 30, "Input"],
+Cell[29726, 1157, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29798, 1163, 115, 2, 30, "Input"],
+Cell[29916, 1167, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[29988, 1173, 114, 2, 30, "Input"],
+Cell[30105, 1177, 59, 1, 42, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[30201, 1183, 119, 2, 30, "Input"],
+Cell[30323, 1187, 111, 2, 42, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

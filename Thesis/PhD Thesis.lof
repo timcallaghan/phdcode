@@ -1,0 +1,44 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Spherical coordinate system with free-surface.}}{5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Free-surface height parameters}}{8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Full eigen-spectrum for $\kappa =4$ with $N=5$.}}{33}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Zoomed eigen-spectrum for $\kappa =4$ with $N=50$.}}{34}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Comparison of incompressible linearized and Rossby-Haurwitz solutions for $\kappa =3,4$ and 5 with $N=100$.}}{36}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Incompresible shallow atmosphere free-surface contours for $\kappa =4$ with $N=100$.}}{37}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Rossby--Haurwitz free-surface contours for $\kappa =4$.}}{37}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Incompressible shallow atmosphere free-surface contours with corresponding velocity vector field for $\kappa =4$ with $N=100$}}{38}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Various amplitude measurement methods}}{56}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =4$ and $\omega =1.25$}}{59}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Incompressible shallow atmosphere free-surface contours for $\kappa =4$, $\omega =1.25$ at limit of computation. The average amplitude is $\@mathcal {A}_{ave}=12.5104 (deg.)$ and the wavespeed is $c=0.9580$.}}{60}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =4$ and $\omega =1.0$}}{62}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 1 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=13.6732 (deg.)$ and the wavespeed is $c=0.3978$.}}{64}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 4 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=17.11662 (deg.)$ and the wavespeed is $c=0.3997$.}}{65}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 5 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=17.11662 (deg.)$ and the wavespeed is $c=0.4016$.}}{66}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Incompressible shallow atmosphere free-surface contours with corresponding velocity vector field at end of branch 5 for $\kappa =4$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=17.11662 (deg.)$ and the wavespeed is $c=0.4016$.}}{67}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =5$ and $\omega =1.25$}}{68}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 1 for $\kappa =5$, $\omega =1.25$. The average amplitude is $\@mathcal {A}_{ave}=8.3678 (deg.)$ and the wavespeed is $c=1.5812$.}}{70}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Incompressible wavespeed versus amplitude for $\kappa =5$ and $\omega =1.0$}}{71}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Incompressible shallow atmosphere free-surface contours at end of branch 1 for $\kappa =5$, $\omega =1.0$. The average amplitude is $\@mathcal {A}_{ave}=9.3175 (deg.)$ and the wavespeed is $c=0.9945$.}}{72}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Free-surface height parameters}}{75}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of compressible linearized and Rossby--Haurwitz solutions for $\kappa =3,4$ and 5 with $N=100$.}}{92}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Compressible linearized free-surface contours for $\kappa =4$ with $N=100$.}}{93}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Compressible linearized density contours for $\kappa =4$ with $N=100$.}}{94}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Compressible linearized pressure contours for $\kappa =4$ with $N=100$.}}{95}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Compressible linearized pressure contours with corresponding velocity vector field for $\kappa =4$ with $N=100$}}{95}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Compressible wavespeed versus Amplitude for $\kappa =4$ and $\omega =1.25$}}{104}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Compressible free-surface contours at end of branch 2 for $\kappa =4$, $\omega =1.25$.}}{105}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Compressible free-surface contours with velocity field at end of branch 2 for $\kappa =4$, $\omega =1.25$.}}{106}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Compressible wavespeed versus amplitude for $\kappa =4$ and $\omega =1.0$}}{107}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Compressible wavespeed versus Amplitude for $\kappa =5$ and $\omega =1.25$}}{108}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Compressible wavespeed versus Amplitude for $\kappa =5$ and $\omega =1.0$}}{110}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Rossby-wave viewer output, Equatorial region}}{121}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Rossby-wave viewer output, Antarctic polar region}}{122}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Rossby-wave viewer output, Australian region}}{123}

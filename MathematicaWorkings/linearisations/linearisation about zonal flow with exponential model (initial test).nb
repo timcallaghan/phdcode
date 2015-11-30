@@ -1,0 +1,540 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     15335,        436]*)
+(*NotebookOutlinePosition[     15978,        458]*)
+(*  CellTagsIndexPosition[     15934,        454]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    RowBox[{"Solve", "[", 
+      RowBox[{
+        RowBox[{
+          RowBox[{
+            RowBox[{
+              StyleBox[\(-\[Kappa]\),
+                FontSize->14], 
+              RowBox[{
+                StyleBox["(",
+                  FontSize->14], 
+                RowBox[{
+                  StyleBox[\(u\_\[Lambda]z\),
+                    FontSize->14], 
+                  StyleBox["-",
+                    FontSize->14], 
+                  RowBox[{
+                    StyleBox["c",
+                      FontSize->14], 
+                    StyleBox["*",
+                      FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], 
+                ")"}], "*", "D"}], 
+            "+", \(\((2 - K\_a)\)*\[Rho]\_\(0  z\)*Cos[\[Phi]]*R\)}], 
+          "\[Equal]", "0"}], ",", "D"}], "]"}]], "Input"],
+
+Cell[BoxData[
+    \({{D \[Rule] \(R\ Cos[\[Phi]]\ \((2 - K\_a)\)\ \[Rho]\_0\)\/\(\[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Mass", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "D"}], 
+        "+", \(\((2 - K\_a)\)*\[Rho]\_\(0  z\)*Cos[\[Phi]]*R\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-D\)\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\) + 
+      R\ Cos[\[Phi]]\ \((2 - K\_a)\)\ \[Rho]\_0\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Mass \[Equal] 0, D]\)], "Input"],
+
+Cell[BoxData[
+    \({{D \[Rule] \(R\ Cos[\[Phi]]\ \((2 - K\_a)\)\ \[Rho]\_0\)\/\(\[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Mass", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "D"}], "+", \(\((2 - K\_a)\)*\[Rho]\_oz*Cos[\[Phi]]*R\), 
+        "-", \(\[Kappa]*\[Rho]\_oz*\[CapitalLambda]\), 
+        "-", \(Sin[\[Phi]]*\[Rho]\_oz*\[CapitalPhi]\), 
+        "+", \(Cos[\[Phi]]*\[Rho]\_oz*\[CapitalPhi]\_p\), 
+        "+", \(Cos[\[Phi]]*\[CapitalPhi]*\[Rho]\_ozp\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-D\)\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) - \[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz - \
+\[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz + 
+      R\ Cos[\[Phi]]\ \((2 - 
+            K\_a)\)\ \[Rho]\_oz + \[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp + 
+      Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Mass \[Equal] 0, R]\)], "Input"],
+
+Cell[BoxData[
+    \({{R \[Rule] \(Sec[\[Phi]]\ \((D\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\) + \[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz + \[CapitalPhi]\ \
+Sin[\[Phi]]\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp - \
+Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)\)\/\(\((2 - K\_a)\)\ \
+\[Rho]\_oz\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Rmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "R"}], "-", \(2*u\_\[Lambda]z*Cos[\[Phi]]*\[CapitalLambda]\), 
+        "-", \(Cos[\[Phi]]^2*\[CapitalLambda]/R\_o\), 
+        "+", \(K\_a*
+          Cos[\[Phi]]/
+            M^2*\((p\_oz*D/\[Rho]\_oz^2 - P/\[Rho]\_oz)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R\_o\)\) - 
+      2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + 
+      R\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \(Cos[\[Phi]]\ K\_a\ \((\(D\ \
+p\_oz\)\/\[Rho]\_oz\%2 - P\/\[Rho]\_oz)\)\)\/M\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Lmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "\[CapitalLambda]"}], 
+        "+", \(Cos[\[Phi]]*\[CapitalPhi]*u\_\[Lambda]zp\), 
+        "+", \(\(u\_\[Lambda]z\) \((Cos[\[Phi]] R - 
+              Sin[\[Phi]] \[CapitalPhi])\)\), 
+        "+", \(Cos[\[Phi]]/
+            R\_o \((Cos[\[Phi]]*R - Sin[\[Phi]] \[CapitalPhi])\)\), 
+        "-", \(\[Kappa]/\((M^2*\[Rho]\_oz)\)*P\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(Cos[\[Phi]]\ \((R\ Cos[\[Phi]] - \[CapitalPhi]\ \
+Sin[\[Phi]])\)\)\/R\_o + \((R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]])\)\ u\
+\_\[Lambda]z - \[Kappa]\ \[CapitalLambda]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \[CapitalPhi]\ Cos[\[Phi]]\ u\_\[Lambda]zp - \
+\(P\ \[Kappa]\)\/\(M\^2\ \[Rho]\_oz\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Pmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "\[CapitalPhi]"}], 
+        "+", \(2*u\_\[Lambda]z*Sin[\[Phi]]*\[CapitalLambda]\), 
+        "+", \(Sin[\[Phi]]*Cos[\[Phi]]*\[CapitalLambda]/R\_o\), 
+        "+", \(Cos[\[Phi]]/
+            M^2*\((P\_p/\[Rho]\_oz - D*p\_ozp/\[Rho]\_oz^2)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(\[CapitalLambda]\ Cos[\[Phi]]\ Sin[\[Phi]]\)\/R\_o + 
+      2\ \[CapitalLambda]\ Sin[\[Phi]]\ u\_\[Lambda]z + \[Kappa]\ \
+\[CapitalPhi]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \(Cos[\[Phi]]\ \((\(-\(\(D\ \
+p\_ozp\)\/\[Rho]\_oz\%2\)\) + P\_p\/\[Rho]\_oz)\)\)\/M\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Energy", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "P"}], "-", \(K\_a*p\_oz*Cos[\[Phi]]*R\), 
+        "+", \(Cos[\[Phi]]*p\_ozp*\[CapitalPhi]\), 
+        "+", \(\[Gamma]*
+          p\_oz*\((2*Cos[\[Phi]]*R - \[Kappa]*\[CapitalLambda] - 
+              Sin[\[Phi]]*\[CapitalPhi] + 
+              Cos[\[Phi]]*\[CapitalPhi]\_p)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-R\)\ Cos[\[Phi]]\ K\_a\ p\_oz + \[CapitalPhi]\ Cos[\[Phi]]\ p\_ozp - 
+      P\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \[Gamma]\ p\_oz\ \((\(-\[Kappa]\)\ \
+\[CapitalLambda] + 2\ R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]] + 
+            Cos[\[Phi]]\ \[CapitalPhi]\_p)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Mass \[Equal] 0, R]\)], "Input"],
+
+Cell[BoxData[
+    \({{R \[Rule] \(Sec[\[Phi]]\ \((D\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\) + \[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz + \[CapitalPhi]\ \
+Sin[\[Phi]]\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp - \
+Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)\)\/\(\((2 - K\_a)\)\ \
+\[Rho]\_oz\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Rmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", \((\(Sec[\[Phi]]\ \((D\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\) + \[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz + \[CapitalPhi]\ \
+Sin[\[Phi]]\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp - \
+Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)\)\/\(\((2 - K\_a)\)\ \
+\[Rho]\_oz\))\)}], "-", \(2*u\_\[Lambda]z*Cos[\[Phi]]*\[CapitalLambda]\), 
+        "-", \(Cos[\[Phi]]^2*\[CapitalLambda]/R\_o\), 
+        "+", \(K\_a*
+          Cos[\[Phi]]/
+            M^2*\((p\_oz*D/\[Rho]\_oz^2 - P/\[Rho]\_oz)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R\_o\)\) - 
+      2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + \(Cos[\[Phi]]\ K\_a\ \
+\((\(D\ p\_oz\)\/\[Rho]\_oz\%2 - P\/\[Rho]\_oz)\)\)\/M\^2 + \(\[Kappa]\ Sec[\
+\[Phi]]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \((D\ \[Kappa]\ \((\
+\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\) + \[Kappa]\ \[CapitalLambda]\ \
+\[Rho]\_oz + \[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\
+\[Phi]]\ \[Rho]\_ozp - Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)\)\/\(\((2 \
+- K\_a)\)\ \[Rho]\_oz\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Pmom \[Equal] 0, D]\)], "Input"],
+
+Cell[BoxData[
+    \({{D \[Rule] \(-\(\(M\^2\ Sec[\[Phi]]\ \((\(-\(\(\[CapitalLambda]\ Cos[\
+\[Phi]]\ Sin[\[Phi]]\)\/R\_o\)\) - 
+                      2\ \[CapitalLambda]\ Sin[\[Phi]]\ u\_\[Lambda]z - \
+\[Kappa]\ \[CapitalPhi]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                            u\_\[Lambda]z)\) - \(Cos[\[Phi]]\ P\_p\)\/\(M\^2\ \
+\[Rho]\_oz\))\)\ \[Rho]\_oz\%2\)\/p\_ozp\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Mass \[Equal] 0, D]\)], "Input"],
+
+Cell[BoxData[
+    \({{D \[Rule] \(-\(\(\[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz + \
+\[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz - 
+                  R\ Cos[\[Phi]]\ \((2 - 
+                        K\_a)\)\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\[Phi]]\ \
+\[Rho]\_ozp - 
+                  Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p\)\/\(\[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Rmom \[Equal] 0, R]\)], "Input"],
+
+Cell[BoxData[
+    \(Solve::"ifun" \(\(:\)\(\ \)\) 
+      "Inverse functions are being used by \!\(Solve\), so some solutions may \
+not be found."\)], "Message"],
+
+Cell[BoxData[
+    \({{R \[Rule] \(InverseFunction[Subscript, 1, 
+              2]\)[\((M\^2\ \[CapitalLambda]\ Cos[\[Phi]]\^2\ \((2 - 
+                      K\_a)\)\ \[Rho]\_oz\%2)\)/\((2\ D\ Cos[\[Phi]]\ K\_a\ p\
+\_oz - D\ Cos[\[Phi]]\ K\_a\%2\ p\_oz - 2\ P\ Cos[\[Phi]]\ K\_a\ \[Rho]\_oz + 
+                  P\ Cos[\[Phi]]\ K\_a\%2\ \[Rho]\_oz + 
+                  c\^2\ D\ M\^2\ \[Kappa]\^2\ Cos[\[Phi]]\ S\_r\%2\ \
+\[Rho]\_oz - 2\ c\ D\ M\^2\ \[Kappa]\^2\ S\_r\ u\_\[Lambda]z\ \[Rho]\_oz + 
+                  D\ M\^2\ \[Kappa]\^2\ Sec[\[Phi]]\ u\_\[Lambda]z\%2\ \[Rho]\
+\_oz - c\ M\^2\ \[Kappa]\^2\ \[CapitalLambda]\ S\_r\ \[Rho]\_oz\%2 - 
+                  c\ M\^2\ \[Kappa]\ \[CapitalPhi]\ Sin[\[Phi]]\ S\_r\ \[Rho]\
+\_oz\%2 - 
+                  4\ M\^2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z\ \
+\[Rho]\_oz\%2 + 
+                  M\^2\ \[Kappa]\^2\ \[CapitalLambda]\ Sec[\[Phi]]\ u\_\
+\[Lambda]z\ \[Rho]\_oz\%2 + 
+                  2\ M\^2\ \[CapitalLambda]\ Cos[\[Phi]]\ K\_a\ u\_\[Lambda]z\
+\ \[Rho]\_oz\%2 + 
+                  c\ M\^2\ \[Kappa]\ \[CapitalPhi]\ Cos[\[Phi]]\ S\_r\ \[Rho]\
+\_oz\ \[Rho]\_ozp - 
+                  M\^2\ \[Kappa]\ \[CapitalPhi]\ u\_\[Lambda]z\ \[Rho]\_oz\ \
+\[Rho]\_ozp + 
+                  c\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ S\_r\ \[Rho]\_oz\%2\ \
+\[CapitalPhi]\_p - 
+                  M\^2\ \[Kappa]\ u\_\[Lambda]z\ \[Rho]\_oz\%2\ \[CapitalPhi]\
+\_p + M\^2\ \[Kappa]\ \[CapitalPhi]\ u\_\[Lambda]z\ \[Rho]\_oz\%2\ \
+Tan[\[Phi]])\), o]}}\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{770, 638},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 816, 23, 30, "Input"],
+Cell[2546, 77, 158, 2, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2741, 84, 658, 20, 30, "Input"],
+Cell[3402, 106, 150, 2, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3589, 113, 58, 1, 30, "Input"],
+Cell[3650, 116, 158, 2, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3845, 123, 871, 23, 50, "Input"],
+Cell[4719, 148, 354, 6, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5110, 159, 58, 1, 30, "Input"],
+Cell[5171, 162, 339, 5, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5547, 172, 806, 23, 50, "Input"],
+Cell[6356, 197, 308, 5, 57, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6701, 207, 916, 25, 50, "Input"],
+Cell[7620, 234, 355, 5, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8012, 244, 825, 23, 50, "Input"],
+Cell[8840, 269, 323, 5, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9200, 279, 866, 24, 50, "Input"],
+Cell[10069, 305, 339, 5, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10445, 315, 58, 1, 30, "Input"],
+Cell[10506, 318, 339, 5, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10882, 328, 1100, 27, 108, "Input"],
+Cell[11985, 357, 580, 8, 97, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12602, 370, 58, 1, 30, "Input"],
+Cell[12663, 373, 399, 6, 59, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13099, 384, 58, 1, 30, "Input"],
+Cell[13160, 387, 403, 7, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[13600, 399, 58, 1, 30, "Input"],
+Cell[13661, 402, 160, 3, 24, "Message"],
+Cell[13824, 407, 1495, 26, 108, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

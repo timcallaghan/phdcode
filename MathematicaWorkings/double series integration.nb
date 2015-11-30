@@ -1,0 +1,219 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      3582,        140]*)
+(*NotebookOutlinePosition[      4228,        162]*)
+(*  CellTagsIndexPosition[      4184,        158]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(y[x_] = \[Sum]\+\(n = 0\)\%10 Sin[n*x]\)], "Input"],
+
+Cell[BoxData[
+    \(Sin[x] + Sin[2\ x] + Sin[3\ x] + Sin[4\ x] + Sin[5\ x] + Sin[6\ x] + 
+      Sin[7\ x] + Sin[8\ x] + Sin[9\ x] + Sin[10\ x]\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(g[x_] = \[Sum]\+\(m = 0\)\%4 A\_m*Sin[m*x]\)], "Input"],
+
+Cell[BoxData[
+    \(Sin[x]\ A\_1 + Sin[2\ x]\ A\_2 + Sin[3\ x]\ A\_3 + 
+      Sin[4\ x]\ A\_4\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\[Integral]\_\(-Pi\)\%Pi g[x]^2*Cos[x] \[DifferentialD]x\)], "Input"],
+
+Cell[BoxData[
+    \(\[Pi]\ \((A\_1\ A\_2 + A\_3\ \((A\_2 + A\_4)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rho0[\[Eta]_, \[Phi]_] = 
+      rho00 + \[Sum]\+\(m = 0\)\%MM\(\[Sum]\+\(n = 0\)\%NN Dc[m, n]*
+              Cos[\[Kappa]m\[Eta]]*Cos[\((2  n + 1)\) \[Phi]]\)\)], "Input"],
+
+Cell[BoxData[
+    \(rho00 + 2\ Cos[\[Kappa]m\[Eta]]\ Cos[\[Phi]] + 
+      Cos[\[Kappa]m\[Eta]]\ Cos[3\ \[Phi]]\ D\_0 + 
+      Cos[\[Kappa]m\[Eta]]\ Cos[3\ \[Phi]]\ D\_1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Dc[m_, n_] = D\_m\^n\)], "Input"],
+
+Cell[BoxData[
+    \(D\_m\%n\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Dc[3, 3]\)], "Input"],
+
+Cell[BoxData[
+    \(D\_3\%3\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rho0[x, y]^2\)], "Input"],
+
+Cell[BoxData[
+    \(\((rho00 + 2\ Cos[y]\ Cos[\[Kappa]m\[Eta]] + Cos[3\ y]\ Cos[\[Kappa]m\
+\[Eta]]\ D\_0 + Cos[3\ y]\ Cos[\[Kappa]m\[Eta]]\ D\_1)\)\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(MM = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(NN = 1\)], "Input"],
+
+Cell[BoxData[
+    \(1\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input"]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 695}},
+WindowSize->{499, 537},
+WindowMargins->{{176, Automatic}, {Automatic, 49}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 71, 1, 51, "Input"],
+Cell[1801, 55, 156, 2, 48, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[1994, 62, 75, 1, 51, "Input"],
+Cell[2072, 65, 107, 2, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2216, 72, 89, 1, 42, "Input"],
+Cell[2308, 75, 83, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2428, 81, 191, 3, 51, "Input"],
+Cell[2622, 86, 182, 3, 48, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2841, 94, 53, 1, 30, "Input"],
+Cell[2897, 97, 41, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2975, 103, 41, 1, 30, "Input"],
+Cell[3019, 106, 41, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3097, 112, 45, 1, 30, "Input"],
+Cell[3145, 115, 164, 2, 48, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3346, 122, 39, 1, 30, "Input"],
+Cell[3388, 125, 35, 1, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3460, 131, 39, 1, 30, "Input"],
+Cell[3502, 134, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[3552, 138, 26, 0, 30, "Input"]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

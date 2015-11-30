@@ -1,0 +1,680 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     22538,        572]*)
+(*NotebookOutlinePosition[     23181,        594]*)
+(*  CellTagsIndexPosition[     23137,        590]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    \(rho[r_, \[Lambda]_, \[Phi]_, 
+        t_] = \((\((\[Gamma] - 
+                1)\)*\((T\_FS/\((A*\((\[Gamma] - 
+                          1)\))\) + \[Alpha]*\[Beta]/\((A*\[Gamma])\)*\((R[\
+\[Lambda], \[Phi], t] - r)\))\))\)^\((1/\((\[Gamma] - 1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\((\((\(-1\) + \[Gamma])\)\ \((\(\[Alpha]\ \[Beta]\ \((\(-r\) + R[\
+\[Lambda], \[Phi], t])\)\)\/\(A\ \[Gamma]\) + T\_FS\/\(A\ \((\(-1\) + \
+\[Gamma])\)\))\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p[r_, \[Lambda]_, \[Phi]_, t_] = 
+      A/\[Beta] \((\((\[Gamma] - 
+                  1)\)*\((T\_FS/\((A*\((\[Gamma] - 
+                            1)\))\) + \[Alpha]*\[Beta]/\((A*\[Gamma])\)*\((R[\
+\[Lambda], \[Phi], t] - r)\))\))\)^\((\[Gamma]/\((\[Gamma] - 
+                  1)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(A\ \((\((\(-1\) + \[Gamma])\)\ \((\(\[Alpha]\ \[Beta]\ \((\(-r\) + R[\
+\[Lambda], \[Phi], t])\)\)\/\(A\ \[Gamma]\) + T\_FS\/\(A\ \((\(-1\) + \
+\[Gamma])\)\))\))\)\^\(\[Gamma]\/\(\(-1\) + \[Gamma]\)\)\)\/\[Beta]\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(T[r_, \[Lambda]_, \[Phi]_, t_] = 
+      A \((\[Gamma] - 
+            1)\)*\((T\_FS/\((A*\((\[Gamma] - 
+                      1)\))\) + \[Alpha]*\[Beta]/\((A*\[Gamma])\)*\((R[\
+\[Lambda], \[Phi], t] - r)\))\)\)], "Input"],
+
+Cell[BoxData[
+    \(A\ \((\(-1\) + \[Gamma])\)\ \((\(\[Alpha]\ \[Beta]\ \((\(-r\) + R[\
+\[Lambda], \[Phi], t])\)\)\/\(A\ \[Gamma]\) + 
+          T\_FS\/\(A\ \((\(-1\) + \[Gamma])\)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rhot[r_, \[Lambda]_, \[Phi]_, t_] = 
+      D[rho[r, \[Lambda], \[Phi], t], t]\)], "Input"],
+
+Cell[BoxData[
+    FractionBox[
+      RowBox[{
+      "\[Alpha]", " ", "\[Beta]", 
+        " ", \(\((\((\(-1\) + \[Gamma])\)\ \((T\/\(A\ \((\(-1\) + \[Gamma])\)\
+\) + \(\[Alpha]\ \[Beta]\ \((\(-r\) + R[\[Lambda], \[Phi], t])\)\)\/\(A\ \
+\[Gamma]\))\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+        RowBox[{
+          SuperscriptBox["R", 
+            TagBox[\((0, 0, 1)\),
+              Derivative],
+            MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+          "]"}]}], \(A\ \[Gamma]\)]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(p[r_, \[Lambda]_, \[Phi]_, t_] = 
+      Simplify[A/\[Beta] \((\((\[Gamma] - 
+                    1)\)*\((T/\((A*\((\[Gamma] - 
+                              1)\))\) + \
+\[Alpha]*\[Beta]/\((A*\[Gamma])\)*\((R[\[Lambda], \[Phi], t] - 
+                          r)\))\))\)^\((\[Gamma]/\((\[Gamma] - 
+                    1)\))\)]\)], "Input"],
+
+Cell[BoxData[
+    \(\(A\ \((\(\(-r\)\ \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\) + T\ \
+\[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \[Phi], \
+t]\)\/\(A\ \[Gamma]\))\)\^\(\[Gamma]\/\(\(-1\) + \[Gamma]\)\)\)\/\[Beta]\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pt[r_, \[Lambda]_, \[Phi]_, t_] = 
+      Simplify[D[p[r, \[Lambda], \[Phi], t], t]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+    "\[Alpha]", 
+      " ", \(\((\(\(-r\)\ \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\) + T\ \
+\[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \[Phi], \
+t]\)\/\(A\ \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+      RowBox[{
+        SuperscriptBox["R", 
+          TagBox[\((0, 0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I5[r_, \[Lambda]_, \[Phi]_, t_] = 
+      Simplify[\[Integral]pt[r, \[Lambda], \[Phi], 
+              t] \[DifferentialD]r]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      FractionBox[
+        RowBox[{
+        "A", " ", \(\((\(\(-r\)\ \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\) + \
+T\ \[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \
+\[Phi], t]\)\/\(A\ \[Gamma]\))\)\^\(\[Gamma]\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+          
+          RowBox[{
+            SuperscriptBox["R", 
+              TagBox[\((0, 0, 1)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+            "]"}]}], "\[Beta]"]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I6[r_, \[Lambda]_, \[Phi]_, t_] = 
+      Simplify[\[Integral]I5[r, \[Lambda], \[Phi], 
+              t] \[DifferentialD]r]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      FractionBox[
+        RowBox[{
+        "A", " ", \((r\ \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\) - 
+              T\ \[Gamma] - \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\
+\[Lambda], \[Phi], t])\), 
+          " ", \(\((\(\(-r\)\ \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\) + T\ \
+\[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \[Phi], \
+t]\)\/\(A\ \[Gamma]\))\)\^\(\[Gamma]\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+          RowBox[{
+            SuperscriptBox["R", 
+              TagBox[\((0, 0, 1)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+            "]"}]}], \(\[Alpha]\ \[Beta]\^2\ \((\(-1\) + 
+              2\ \[Gamma])\)\)]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I2[\[Lambda]_, \[Phi]_, t_] = 
+      Simplify[\[Integral]\_1\%\(R[\[Lambda], \[Phi], t]\)p[
+              r, \[Lambda], \[Phi], t] \[DifferentialD]r]\)], "Input"],
+
+Cell[BoxData[
+    \(\(A\ \((\(-T\)\ \((T\/A)\)\^\(\[Gamma]\/\(\(-1\) + \[Gamma]\)\)\ \
+\[Gamma] + A\ \[Gamma]\ \((\(T\ \[Gamma] + \[Alpha]\ \((\[Beta] - \[Beta]\ \
+\[Gamma])\) + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \
+\[Phi], t]\)\/\(A\ \[Gamma]\))\)\^\(1 + \[Gamma]\/\(\(-1\) + \
+\[Gamma]\)\))\)\)\/\(\[Alpha]\ \[Beta]\^2\ \((\(-1\) + 2\ \[Gamma])\)\)\)], \
+"Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pl[r_, \[Lambda]_, \[Phi]_, t_] = 
+      D[p[r, \[Lambda], \[Phi], t], \[Lambda]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+    "\[Alpha]", 
+      " ", \(\((\((\(-1\) + \[Gamma])\)\ \((T\/\(A\ \((\(-1\) + \[Gamma])\)\) \
++ \(\[Alpha]\ \[Beta]\ \((\(-r\) + R[\[Lambda], \[Phi], t])\)\)\/\(A\ \
+\[Gamma]\))\))\)\^\(\(-1\) + \[Gamma]\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+      RowBox[{
+        SuperscriptBox["R", 
+          TagBox[\((1, 0, 0)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I3[\[Lambda]_, \[Phi]_, t_] = 
+      Simplify[\[Integral]\_1\%\(R[\[Lambda], \[Phi], t]\)pl[
+              r, \[Lambda], \[Phi], t] \[DifferentialD]r]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      FractionBox[
+        RowBox[{
+        "A", " ", \((\((T\/A)\)\^\(\[Gamma]\/\(\(-1\) + \[Gamma]\)\) - \((\(T\
+\ \[Gamma] + \[Alpha]\ \((\[Beta] - \[Beta]\ \[Gamma])\) + \[Alpha]\ \[Beta]\ \
+\((\(-1\) + \[Gamma])\)\ R[\[Lambda], \[Phi], t]\)\/\(A\ \[Gamma]\))\)\^\(\
+\[Gamma]\/\(\(-1\) + \[Gamma]\)\))\), " ", 
+          RowBox[{
+            SuperscriptBox["R", 
+              TagBox[\((1, 0, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+            "]"}]}], "\[Beta]"]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I1[\[Lambda]_, \[Phi]_, t_] = 
+      Cancel[\[Integral]\_1\%\(R[\[Lambda], \[Phi], t]\)rhot[
+              r, \[Lambda], \[Phi], t] \[DifferentialD]r]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(-\((\((T\/A)\)\^\(1\/\(\(-1\) + \[Gamma]\)\) - \((\((\(-1\) + \
+\[Gamma])\)\ \((T\/\(A\ \((\(-1\) + \[Gamma])\)\) + \(\[Alpha]\ \[Beta]\ \
+\((\(-1\) + R[\[Lambda], \[Phi], t])\)\)\/\(A\ \
+\[Gamma]\))\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\))\)\), " ", 
+      RowBox[{
+        SuperscriptBox["R", 
+          TagBox[\((0, 0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+        "]"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(ur[r_, \[Lambda]_, \[Phi]_, t_] = 
+      D[R[\[Lambda], \[Phi], t], t] + 
+        ulam[\[Lambda], \[Phi], t]/\((r*Cos[\[Phi]])\)*
+          D[R[\[Lambda], \[Phi], t], \[Lambda]] + 
+        uphi[\[Lambda], \[Phi], t]/r*
+          D[R[\[Lambda], \[Phi], t], \[Phi]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{
+        SuperscriptBox["R", 
+          TagBox[\((0, 0, 1)\),
+            Derivative],
+          MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), "]"}], "+",
+       
+      FractionBox[
+        RowBox[{\(uphi[\[Lambda], \[Phi], t]\), " ", 
+          RowBox[{
+            SuperscriptBox["R", 
+              TagBox[\((0, 1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+            "]"}]}], "r"], "+", 
+      FractionBox[
+        RowBox[{\(Sec[\[Phi]]\), " ", \(ulam[\[Lambda], \[Phi], t]\), " ", 
+          RowBox[{
+            SuperscriptBox["R", 
+              TagBox[\((1, 0, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\), 
+            "]"}]}], "r"]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I2r[r_, \[Lambda]_, \[Phi]_, t_] = 
+      Simplify[ur[r, \[Lambda], \[Phi], t]*
+          D[rho[r, \[Lambda], \[Phi], t], r]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      RowBox[{\(1\/\(A\ r\ \[Gamma]\)\), 
+        RowBox[{"(", 
+          RowBox[{
+          "\[Alpha]", " ", "\[Beta]", 
+            " ", \(\((\(\(-r\)\ \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\) + \
+T\ \[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \
+\[Phi], t]\)\/\(A\ \[Gamma]\))\)\^\(\(-1\) + 1\/\(\(-1\) + \[Gamma]\)\)\), 
+            " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{"r", " ", 
+                  RowBox[{
+                    SuperscriptBox["R", 
+                      TagBox[\((0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\),
+                     "]"}]}], "+", 
+                RowBox[{\(uphi[\[Lambda], \[Phi], t]\), " ", 
+                  RowBox[{
+                    SuperscriptBox["R", 
+                      TagBox[\((0, 1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\),
+                     "]"}]}], "+", 
+                
+                RowBox[{\(Sec[\[Phi]]\), " ", \(ulam[\[Lambda], \[Phi], t]\), 
+                  " ", 
+                  RowBox[{
+                    SuperscriptBox["R", 
+                      TagBox[\((1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(\[Lambda], \[Phi], t\),
+                     "]"}]}]}], ")"}]}], ")"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(I2[\[Lambda]_, \[Phi]_, t_] = 
+      Simplify[\[Integral]\_1\%\(R[\[Lambda], \[Phi], t]\)I2r[
+              r, \[Lambda], \[Phi], t] \[DifferentialD]r]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"-", 
+      RowBox[{\(1\/\(\(-2\) + \[Gamma]\)\), 
+        RowBox[{"(", 
+          RowBox[{
+            RowBox[{
+              RowBox[{"(", 
+                
+                RowBox[{\(\((\(T\ \[Gamma] + \[Alpha]\ \((\[Beta] - \[Beta]\ \
+\[Gamma])\) + \[Alpha]\ \[Beta]\ \((\(-1\) + \[Gamma])\)\ R[\[Lambda], \
+\[Phi], t]\)\/\(A\ \[Gamma]\))\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      RowBox[{
+                        SuperscriptBox["R", 
+                          TagBox[\((0, 0, 1)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                        t\), "]"}], "+", 
+                      RowBox[{\(uphi[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                      
+                      RowBox[{\(Sec[\[Phi]]\), 
+                        " ", \(ulam[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((1, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}]}], ")"}], 
+                  " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      
+                      RowBox[{\((\(-2\) + \[Gamma])\), " ", \(Cos[\[Phi]]\), 
+                        " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 0, 1)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "-", 
+                      
+                      RowBox[{\(Hypergeometric2F1[\(\(-2\) + \
+\[Gamma]\)\/\(\(-1\) + \[Gamma]\), \(\(-2\) + \[Gamma]\)\/\(\(-1\) + \[Gamma]\
+\), 2 + 1\/\(1 - \[Gamma]\), \(T\ \[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \
+\[Gamma])\)\ R[\[Lambda], \[Phi], t]\)\/\(\[Alpha]\ \[Beta]\ \((\(-1\) + \
+\[Gamma])\)\)]\), 
+                        " ", \(\((1 + \(T\ \[Gamma]\)\/\(\[Alpha]\ \[Beta] - \
+\[Alpha]\ \[Beta]\ \[Gamma]\) - 
+                                R[\[Lambda], \[Phi], 
+                                  t])\)\^\(1\/\(1 - \[Gamma]\)\)\), " ", 
+                        RowBox[{"(", 
+                          RowBox[{
+                            
+                            RowBox[{\(Cos[\[Phi]]\), 
+                              " ", \(uphi[\[Lambda], \[Phi], t]\), " ", 
+                              RowBox[{
+                                SuperscriptBox["R", 
+                                  TagBox[\((0, 1, 0)\),
+                                    Derivative],
+                                  MultilineFunction->None], 
+                                "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                            RowBox[{\(ulam[\[Lambda], \[Phi], t]\), " ", 
+                              RowBox[{
+                                SuperscriptBox["R", 
+                                  TagBox[\((1, 0, 0)\),
+                                    Derivative],
+                                  MultilineFunction->None], 
+                                "[", \(\[Lambda], \[Phi], t\), "]"}]}]}], 
+                          ")"}]}]}], ")"}]}], ")"}], "/", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{\(Cos[\[Phi]]\), " ", 
+                    RowBox[{
+                      SuperscriptBox["R", 
+                        TagBox[\((0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                      t\), "]"}]}], "+", 
+                  
+                  RowBox[{\(Cos[\[Phi]]\), 
+                    " ", \(uphi[\[Lambda], \[Phi], t]\), " ", 
+                    RowBox[{
+                      SuperscriptBox["R", 
+                        TagBox[\((0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                      t\), "]"}]}], "+", 
+                  RowBox[{\(ulam[\[Lambda], \[Phi], t]\), " ", 
+                    RowBox[{
+                      SuperscriptBox["R", 
+                        TagBox[\((1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(\[Lambda], \[Phi], 
+                      t\), "]"}]}]}], ")"}]}], "-", 
+            RowBox[{
+              RowBox[{"(", 
+                RowBox[{\(\((T\/A)\)\^\(1\/\(\(-1\) + \[Gamma]\)\)\), " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      RowBox[{\(R[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 0, 1)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                      RowBox[{\(uphi[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                      
+                      RowBox[{\(Sec[\[Phi]]\), 
+                        " ", \(ulam[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((1, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}]}], ")"}], 
+                  " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      
+                      RowBox[{\((\(-2\) + \[Gamma])\), " ", \(Cos[\[Phi]]\), 
+                        " ", \(R[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 0, 1)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "-", 
+                      
+                      RowBox[{\(Hypergeometric2F1[\(\(-2\) + \
+\[Gamma]\)\/\(\(-1\) + \[Gamma]\), \(\(-2\) + \[Gamma]\)\/\(\(-1\) + \[Gamma]\
+\), 2 + 1\/\(1 - \[Gamma]\), \(T\ \[Gamma] + \[Alpha]\ \[Beta]\ \((\(-1\) + \
+\[Gamma])\)\ R[\[Lambda], \[Phi], t]\)\/\(\[Alpha]\ \[Beta]\ \((\(-1\) + \
+\[Gamma])\)\ R[\[Lambda], \[Phi], t]\)]\), 
+                        " ", \(\((\(T\ \[Gamma]\)\/\(\[Alpha]\ \[Beta]\ R[\
+\[Lambda], \[Phi], t] - \[Alpha]\ \[Beta]\ \[Gamma]\ R[\[Lambda], \[Phi], \
+t]\))\)\^\(1\/\(1 - \[Gamma]\)\)\), " ", 
+                        RowBox[{"(", 
+                          RowBox[{
+                            
+                            RowBox[{\(Cos[\[Phi]]\), 
+                              " ", \(uphi[\[Lambda], \[Phi], t]\), " ", 
+                              RowBox[{
+                                SuperscriptBox["R", 
+                                  TagBox[\((0, 1, 0)\),
+                                    Derivative],
+                                  MultilineFunction->None], 
+                                "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                            RowBox[{\(ulam[\[Lambda], \[Phi], t]\), " ", 
+                              RowBox[{
+                                SuperscriptBox["R", 
+                                  TagBox[\((1, 0, 0)\),
+                                    Derivative],
+                                  MultilineFunction->None], 
+                                "[", \(\[Lambda], \[Phi], t\), "]"}]}]}], 
+                          ")"}]}]}], ")"}]}], ")"}], "/", 
+              RowBox[{"(", 
+                RowBox[{\(R[\[Lambda], \[Phi], t]\), " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      
+                      RowBox[{\(Cos[\[Phi]]\), 
+                        " ", \(R[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 0, 1)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                      
+                      RowBox[{\(Cos[\[Phi]]\), 
+                        " ", \(uphi[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}], "+", 
+                      RowBox[{\(ulam[\[Lambda], \[Phi], t]\), " ", 
+                        RowBox[{
+                          SuperscriptBox["R", 
+                            TagBox[\((1, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], 
+                          "[", \(\[Lambda], \[Phi], t\), "]"}]}]}], ")"}]}], 
+                ")"}]}]}], ")"}]}]}]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{784, 524},
+WindowMargins->{{0, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 283, 5, 30, "Input"],
+Cell[2013, 59, 223, 3, 49, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2273, 67, 319, 6, 30, "Input"],
+Cell[2595, 75, 248, 4, 59, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2880, 84, 240, 5, 30, "Input"],
+Cell[3123, 91, 199, 3, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[3359, 99, 110, 2, 30, "Input"],
+Cell[3472, 103, 526, 12, 61, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4035, 120, 358, 7, 30, "Input"],
+Cell[4396, 129, 254, 4, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4687, 138, 116, 2, 30, "Input"],
+Cell[4806, 142, 458, 11, 49, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5301, 158, 155, 3, 41, "Input"],
+Cell[5459, 163, 545, 13, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6041, 181, 155, 3, 41, "Input"],
+Cell[6199, 186, 762, 16, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6998, 207, 182, 3, 42, "Input"],
+Cell[7183, 212, 387, 6, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7607, 223, 114, 2, 30, "Input"],
+Cell[7724, 227, 464, 11, 47, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8225, 243, 183, 3, 42, "Input"],
+Cell[8411, 248, 581, 13, 58, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9029, 266, 183, 3, 42, "Input"],
+Cell[9215, 271, 471, 10, 52, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9723, 286, 296, 6, 30, "Input"],
+Cell[10022, 294, 833, 23, 45, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[10892, 322, 158, 3, 30, "Input"],
+Cell[11053, 327, 1484, 34, 97, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12574, 366, 184, 3, 42, "Input"],
+Cell[12761, 371, 9761, 198, 357, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

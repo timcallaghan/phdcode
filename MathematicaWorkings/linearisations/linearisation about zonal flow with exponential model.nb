@@ -1,0 +1,1777 @@
+(************** Content-type: application/mathematica **************
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     97586,       1654]*)
+(*NotebookOutlinePosition[     98229,       1676]*)
+(*  CellTagsIndexPosition[     98185,       1672]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+    RowBox[{"Mass", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "D"}], "+", \(\((2 - K\_a)\)*\[Rho]\_oz*Cos[\[Phi]]*R\), 
+        "-", \(\[Kappa]*\[Rho]\_oz*\[CapitalLambda]\), 
+        "-", \(Sin[\[Phi]]*\[Rho]\_oz*\[CapitalPhi]\), 
+        "+", \(Cos[\[Phi]]*\[Rho]\_oz*\[CapitalPhi]\_p\), 
+        "+", \(Cos[\[Phi]]*\[CapitalPhi]*\[Rho]\_ozp\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-D\)\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) - \[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz - \
+\[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz + 
+      R\ Cos[\[Phi]]\ \((2 - 
+            K\_a)\)\ \[Rho]\_oz + \[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp + 
+      Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Rmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "R"}], "-", \(2*u\_\[Lambda]z*Cos[\[Phi]]*\[CapitalLambda]\), 
+        "-", \(Cos[\[Phi]]^2*\[CapitalLambda]/R0\), 
+        "+", \(K\_a*
+          Cos[\[Phi]]/
+            M^2*\((p\_oz*D/\[Rho]\_oz^2 - P/\[Rho]\_oz)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0\)\) - 
+      2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + 
+      R\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \(Cos[\[Phi]]\ K\_a\ \((\(D\ \
+p\_oz\)\/\[Rho]\_oz\%2 - P\/\[Rho]\_oz)\)\)\/M\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Lmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "\[CapitalLambda]"}], 
+        "+", \(Cos[\[Phi]]*\[CapitalPhi]*u\_\[Lambda]zp\), 
+        "+", \(\(u\_\[Lambda]z\) \((Cos[\[Phi]] R - 
+              Sin[\[Phi]] \[CapitalPhi])\)\), 
+        "+", \(Cos[\[Phi]]/
+            R0 \((Cos[\[Phi]]*R - Sin[\[Phi]] \[CapitalPhi])\)\), 
+        "-", \(\[Kappa]/\((M^2*\[Rho]\_oz)\)*P\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(Cos[\[Phi]]\ \((R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]])\)\)\/R0 \
++ \((R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]])\)\ u\_\[Lambda]z - \[Kappa]\
+\ \[CapitalLambda]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \[CapitalPhi]\ Cos[\[Phi]]\ u\_\[Lambda]zp - \
+\(P\ \[Kappa]\)\/\(M\^2\ \[Rho]\_oz\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Pmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "\[CapitalPhi]"}], 
+        "+", \(2*u\_\[Lambda]z*Sin[\[Phi]]*\[CapitalLambda]\), 
+        "+", \(Sin[\[Phi]]*Cos[\[Phi]]*\[CapitalLambda]/R0\), 
+        "+", \(Cos[\[Phi]]/
+            M^2*\((P\_p/\[Rho]\_oz - D*p\_ozp/\[Rho]\_oz^2)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(\[CapitalLambda]\ Cos[\[Phi]]\ Sin[\[Phi]]\)\/R0 + 
+      2\ \[CapitalLambda]\ Sin[\[Phi]]\ u\_\[Lambda]z + \[Kappa]\ \
+\[CapitalPhi]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \(Cos[\[Phi]]\ \((\(-\(\(D\ \
+p\_ozp\)\/\[Rho]\_oz\%2\)\) + P\_p\/\[Rho]\_oz)\)\)\/M\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Energy", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "P"}], "-", \(K\_a*p\_oz*Cos[\[Phi]]*R\), 
+        "+", \(Cos[\[Phi]]*p\_ozp*\[CapitalPhi]\), 
+        "+", \(\[Gamma]*
+          p\_oz*\((2*Cos[\[Phi]]*R - \[Kappa]*\[CapitalLambda] - 
+              Sin[\[Phi]]*\[CapitalPhi] + 
+              Cos[\[Phi]]*\[CapitalPhi]\_p)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-R\)\ Cos[\[Phi]]\ K\_a\ p\_oz + \[CapitalPhi]\ Cos[\[Phi]]\ p\_ozp - 
+      P\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \[Gamma]\ p\_oz\ \((\(-\[Kappa]\)\ \
+\[CapitalLambda] + 2\ R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]] + 
+            Cos[\[Phi]]\ \[CapitalPhi]\_p)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Mass \[Equal] 0, D]\)], "Input"],
+
+Cell[BoxData[
+    \({{D \[Rule] \(-\(\((\[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz + \
+\[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz - 
+                  R\ Cos[\[Phi]]\ \((2 - 
+                        K\_a)\)\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\[Phi]]\ \
+\[Rho]\_ozp - 
+                  Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)/\((\[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\))\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Rmom \[Equal] 0, R]\)], "Input"],
+
+Cell[BoxData[
+    \({{R \[Rule] \(\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0 + 2\ \
+\[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z - \(Cos[\[Phi]]\ K\_a\ \((\(D\ p\
+\_oz\)\/\[Rho]\_oz\%2 - P\/\[Rho]\_oz)\)\)\/M\^2\)\/\(\[Kappa]\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Lmom \[Equal] 0, \[CapitalLambda]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\[CapitalLambda] \[Rule] \(-\(\(\(-\(\(Cos[\[Phi]]\ \((R\ Cos[\[Phi]] \
+- \[CapitalPhi]\ Sin[\[Phi]])\)\)\/R0\)\) - \((R\ Cos[\[Phi]] - \[CapitalPhi]\
+\ Sin[\[Phi]])\)\ u\_\[Lambda]z - \[CapitalPhi]\ Cos[\[Phi]]\ u\_\[Lambda]zp \
++ \(P\ \[Kappa]\)\/\(M\^2\ \[Rho]\_oz\)\)\/\(\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\
+\ S\_r + u\_\[Lambda]z)\)\)\)\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Rmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "R"}], "-", \(2*u\_\[Lambda]z*Cos[\[Phi]]*\[CapitalLambda]\), 
+        "-", \(Cos[\[Phi]]^2*\[CapitalLambda]/R0\), 
+        "+", \(K\_a*
+          Cos[\[Phi]]/
+            M^2*\((p\_oz*\((\(-\((\[Kappa]\ \[CapitalLambda]\ \[Rho]\_oz + \
+\[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz - 
+                            R\ Cos[\[Phi]]\ \((2 - 
+                                  K\_a)\)\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\
+\[Phi]]\ \[Rho]\_ozp - 
+                            Cos[\[Phi]]\ \[Rho]\_oz\ \
+\[CapitalPhi]\_p)\)\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                              u\_\[Lambda]z)\))\))\)/\[Rho]\_oz^2 - 
+              P/\[Rho]\_oz)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-\(\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0\)\) - 
+      2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + 
+      R\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \(Cos[\[Phi]]\ K\_a\ \((\(-\(P\/\[Rho]\_oz\)\) \
++ \(p\_oz\ \((\(-\[Kappa]\)\ \[CapitalLambda]\ \[Rho]\_oz - \[CapitalPhi]\ \
+Sin[\[Phi]]\ \[Rho]\_oz + R\ Cos[\[Phi]]\ \((2 - K\_a)\)\ \[Rho]\_oz + \
+\[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp + Cos[\[Phi]]\ \[Rho]\_oz\ \
+\[CapitalPhi]\_p)\)\)\/\(\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\))\)\)\/M\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Lmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "\[CapitalLambda]"}], 
+        "+", \(Cos[\[Phi]]*\[CapitalPhi]*u\_\[Lambda]zp\), 
+        "+", \(\(u\_\[Lambda]z\) \((Cos[\[Phi]] R - 
+              Sin[\[Phi]] \[CapitalPhi])\)\), 
+        "+", \(Cos[\[Phi]]/
+            R0 \((Cos[\[Phi]]*R - Sin[\[Phi]] \[CapitalPhi])\)\), 
+        "-", \(\[Kappa]/\((M^2*\[Rho]\_oz)\)*P\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(Cos[\[Phi]]\ \((R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]])\)\)\/R0 \
++ \((R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]])\)\ u\_\[Lambda]z - \[Kappa]\
+\ \[CapitalLambda]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \[CapitalPhi]\ Cos[\[Phi]]\ u\_\[Lambda]zp - \
+\(P\ \[Kappa]\)\/\(M\^2\ \[Rho]\_oz\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Pmom", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox["\[Kappa]",
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "\[CapitalPhi]"}], 
+        "+", \(2*u\_\[Lambda]z*Sin[\[Phi]]*\[CapitalLambda]\), 
+        "+", \(Sin[\[Phi]]*Cos[\[Phi]]*\[CapitalLambda]/R0\), 
+        "+", \(Cos[\[Phi]]/
+            M^2*\((P\_p/\[Rho]\_oz - \((\(-\((\[Kappa]\ \[CapitalLambda]\ \
+\[Rho]\_oz + \[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz - 
+                          R\ Cos[\[Phi]]\ \((2 - 
+                                K\_a)\)\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\
+\[Phi]]\ \[Rho]\_ozp - 
+                          Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)\)/\((\
+\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\))\))\)*
+                p\_ozp/\[Rho]\_oz^2)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(\[CapitalLambda]\ Cos[\[Phi]]\ Sin[\[Phi]]\)\/R0 + 
+      2\ \[CapitalLambda]\ Sin[\[Phi]]\ u\_\[Lambda]z + \[Kappa]\ \
+\[CapitalPhi]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \(Cos[\[Phi]]\ \((P\_p\/\[Rho]\_oz - \(p\_ozp\ \
+\((\(-\[Kappa]\)\ \[CapitalLambda]\ \[Rho]\_oz - \[CapitalPhi]\ Sin[\[Phi]]\ \
+\[Rho]\_oz + R\ Cos[\[Phi]]\ \((2 - K\_a)\)\ \[Rho]\_oz + \[CapitalPhi]\ Cos[\
+\[Phi]]\ \[Rho]\_ozp + Cos[\[Phi]]\ \[Rho]\_oz\ \[CapitalPhi]\_p)\)\)\/\(\
+\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\))\)\
+\)\/M\^2\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Energy", "=", 
+      RowBox[{
+        RowBox[{
+          StyleBox[\(-\[Kappa]\),
+            FontSize->14], 
+          RowBox[{
+            StyleBox["(",
+              FontSize->14], 
+            RowBox[{
+              StyleBox[\(u\_\[Lambda]z\),
+                FontSize->14], 
+              StyleBox["-",
+                FontSize->14], 
+              RowBox[{
+                StyleBox["c",
+                  FontSize->14], 
+                StyleBox["*",
+                  FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+          "*", "P"}], "-", \(K\_a*p\_oz*Cos[\[Phi]]*R\), 
+        "+", \(Cos[\[Phi]]*p\_ozp*\[CapitalPhi]\), 
+        "+", \(\[Gamma]*
+          p\_oz*\((2*Cos[\[Phi]]*R - \[Kappa]*\[CapitalLambda] - 
+              Sin[\[Phi]]*\[CapitalPhi] + 
+              Cos[\[Phi]]*\[CapitalPhi]\_p)\)\)}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(-R\)\ Cos[\[Phi]]\ K\_a\ p\_oz + \[CapitalPhi]\ Cos[\[Phi]]\ p\_ozp - 
+      P\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \[Gamma]\ p\_oz\ \((\(-\[Kappa]\)\ \
+\[CapitalLambda] + 2\ R\ Cos[\[Phi]] - \[CapitalPhi]\ Sin[\[Phi]] + 
+            Cos[\[Phi]]\ \[CapitalPhi]\_p)\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Rmom \[Equal] 0, R]\)], "Input"],
+
+Cell[BoxData[
+    \({{R \[Rule] \((\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0 + 
+                2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + \(P\ Cos[\
+\[Phi]]\ K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \(\[CapitalLambda]\ Cos[\[Phi]]\ K\_a\
+\ p\_oz\)\/\(M\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \
+\[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ K\_a\ \
+p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \
+\[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \
+\[Rho]\_ozp\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \(Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \
+\[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                      u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \((2 - K\_a)\)\ \
+K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\))\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Lmom", "=", 
+      RowBox[{"Simplify", "[", 
+        RowBox[{
+          RowBox[{
+            StyleBox[\(-\[Kappa]\),
+              FontSize->14], 
+            RowBox[{
+              StyleBox["(",
+                FontSize->14], 
+              RowBox[{
+                StyleBox[\(u\_\[Lambda]z\),
+                  FontSize->14], 
+                StyleBox["-",
+                  FontSize->14], 
+                RowBox[{
+                  StyleBox["c",
+                    FontSize->14], 
+                  StyleBox["*",
+                    FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+            "*", "\[CapitalLambda]"}], 
+          "+", \(Cos[\[Phi]]*\[CapitalPhi]*u\_\[Lambda]zp\), 
+          "+", \(\(u\_\[Lambda]z\) \((Cos[\[Phi]] \((\((\(\[CapitalLambda]\ \
+Cos[\[Phi]]\^2\)\/R0 + 
+                          2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + \
+\(P\ Cos[\[Phi]]\ K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \(\[CapitalLambda]\ Cos[\
+\[Phi]]\ K\_a\ p\_oz\)\/\(M\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\
+\)\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\
+\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\
+\) - \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \[Rho]\_ozp\)\/\(M\^2\ \
+\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \
+\(Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \((2 - K\
+\_a)\)\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\))\))\) - Sin[\[Phi]] \[CapitalPhi])\)\), 
+          "+", \(Cos[\[Phi]]/
+              R0 \((Cos[\[Phi]]*\((\((\(\[CapitalLambda]\ \
+Cos[\[Phi]]\^2\)\/R0 + 
+                          2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + \
+\(P\ Cos[\[Phi]]\ K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \(\[CapitalLambda]\ Cos[\
+\[Phi]]\ K\_a\ p\_oz\)\/\(M\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\
+\)\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\
+\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\
+\) - \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \[Rho]\_ozp\)\/\(M\^2\ \
+\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \
+\(Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \((2 - K\
+\_a)\)\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\))\))\) - Sin[\[Phi]] \[CapitalPhi])\)\), 
+          "-", \(\[Kappa]/\((M^2*\[Rho]\_oz)\)*P\)}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+    \(\((R0\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz\ \((P\ R0\ \[Kappa] + 
+                M\^2\ \((\(-c\)\ R0\ \[Kappa]\ \[CapitalLambda]\ Cos[\[Phi]]\ \
+S\_r + R0\ \((\[Kappa]\ \[CapitalLambda] + \[CapitalPhi]\ Sin[\[Phi]])\)\ u\_\
+\[Lambda]z + \[CapitalPhi]\ Cos[\[Phi]]\ \((Sin[\[Phi]] - 
+                            R0\ u\_\[Lambda]zp)\))\)\ \[Rho]\_oz)\) + 
+          1\/8\ M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - 
+                u\_\[Lambda]z)\)\ \[Rho]\_oz\ \((\(-8\)\ M\^2\ \
+\[CapitalLambda]\ Cos[\[Phi]]\^4\ \[Rho]\_oz + 
+                8\ c\^2\ M\^2\ R0\^2\ \[Kappa]\^2\ \[CapitalLambda]\ Cos[\
+\[Phi]]\^2\ S\_r\%2\ \[Rho]\_oz - 
+                8\ M\^2\ R0\^2\ \((\[CapitalLambda] - \[Kappa]\^2\ \
+\[CapitalLambda] + \[CapitalLambda]\ Cos[
+                          2\ \[Phi]] - \[Kappa]\ \[CapitalPhi]\ \
+Sin[\[Phi]])\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz + 
+                2\ R0\ u\_\[Lambda]z\ \((4\ P\ R0\ \[Kappa]\^2 - 
+                      2\ M\^2\ Cos[\[Phi]]\ \((3\ \[CapitalLambda] + 
+                            3\ \[CapitalLambda]\ Cos[2\ \[Phi]] - 
+                            2\ \[Kappa]\ \[CapitalPhi]\ Sin[\[Phi]] + 
+                            2\ R0\ \[Kappa]\ \[CapitalPhi]\ u\_\[Lambda]zp)\)\
+\ \[Rho]\_oz)\) - 
+                4\ c\ R0\ \[Kappa]\ Cos[\[Phi]]\ S\_r\ \((2\ P\ R0\ \[Kappa] \
++ M\^2\ \((2\ R0\ \((2\ \[Kappa]\ \[CapitalLambda] + \[CapitalPhi]\ \
+Sin[\[Phi]])\)\ u\_\[Lambda]z + 
+                            2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((Sin[\[Phi]] - 
+                                  R0\ u\_\[Lambda]zp)\))\)\ \[Rho]\_oz)\))\) \
+- 1\/2\ R0\ Cos[\[Phi]]\^2\ K\_a\ \((2\ M\^2\ P\ \[Kappa]\ \((c\ Cos[\[Phi]]\ \
+S\_r - u\_\[Lambda]z)\)\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_oz + 
+                p\_oz\ \((4\ P\ R0\ \[Kappa] + 
+                      2\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((Cos[\[Phi]] + 
+                            R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp + 
+                      M\^2\ \[Rho]\_oz\ \((\(-4\)\ c\ R0\ \[Kappa]\ \
+\[CapitalLambda]\ Cos[\[Phi]]\ S\_r + 
+                            2\ R0\ u\_\[Lambda]z\ \((\[Kappa]\ \
+\[CapitalLambda] + \[CapitalPhi]\ Sin[\[Phi]] + 
+                                  Cos[\[Phi]]\ \[CapitalPhi]\_p)\) + 
+                            2\ Cos[\[Phi]]\ \((\(-\[Kappa]\)\ \
+\[CapitalLambda] + \[CapitalPhi]\ Sin[\[Phi]] - 
+                                  2\ R0\ \[CapitalPhi]\ u\_\[Lambda]zp + 
+                                  Cos[\[Phi]]\ \
+\[CapitalPhi]\_p)\))\))\))\))\)/\((M\^2\ R0\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\
+\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + 
+              M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Pmom", "=", 
+      RowBox[{"Simplify", "[", 
+        RowBox[{
+          RowBox[{
+            StyleBox["\[Kappa]",
+              FontSize->14], 
+            RowBox[{
+              StyleBox["(",
+                FontSize->14], 
+              RowBox[{
+                StyleBox[\(u\_\[Lambda]z\),
+                  FontSize->14], 
+                StyleBox["-",
+                  FontSize->14], 
+                RowBox[{
+                  StyleBox["c",
+                    FontSize->14], 
+                  StyleBox["*",
+                    FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+            "*", "\[CapitalPhi]"}], 
+          "+", \(2*u\_\[Lambda]z*Sin[\[Phi]]*\[CapitalLambda]\), 
+          "+", \(Sin[\[Phi]]*Cos[\[Phi]]*\[CapitalLambda]/R0\), 
+          "+", \(Cos[\[Phi]]/
+              M^2*\((P\_p/\[Rho]\_oz - \((\(-\((\[Kappa]\ \[CapitalLambda]\ \
+\[Rho]\_oz + \[CapitalPhi]\ Sin[\[Phi]]\ \[Rho]\_oz - \
+\((\((\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0 + 
+                                      2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\
+\[Lambda]z + \(P\ Cos[\[Phi]]\ K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \(\
+\[CapitalLambda]\ Cos[\[Phi]]\ K\_a\ p\_oz\)\/\(M\^2\ \((\(-c\)\ Cos[\[Phi]]\ \
+S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\
+\[Phi]]\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \
+\[Rho]\_ozp\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \(Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \
+\[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                        u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \
+\((2 - K\_a)\)\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\ \[Rho]\_oz\))\))\)\ Cos[\[Phi]]\ \((2 - 
+                                  K\_a)\)\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\
+\[Phi]]\ \[Rho]\_ozp - 
+                            Cos[\[Phi]]\ \[Rho]\_oz\ \
+\[CapitalPhi]\_p)\)\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                              u\_\[Lambda]z)\))\))\)*
+                  p\_ozp/\[Rho]\_oz^2)\)\)}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+    \(\(\[CapitalLambda]\ Cos[\[Phi]]\ Sin[\[Phi]]\)\/R0 + 
+      2\ \[CapitalLambda]\ Sin[\[Phi]]\ u\_\[Lambda]z + \[Kappa]\ \
+\[CapitalPhi]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+            u\_\[Lambda]z)\) + \((Cos[\[Phi]]\ \((R0\ Cos[\[Phi]]\^2\ K\_a\%2\
+\ \((P\ p\_ozp - p\_oz\ P\_p)\) + 
+                Cos[\[Phi]]\^2\ K\_a\ \((2\ R0\ p\_oz\ P\_p + 
+                      p\_ozp\ \((\(-2\)\ P\ R0 + 
+                            M\^2\ \[CapitalLambda]\ \((Cos[\[Phi]] + 
+                                  2\ R0\ u\_\[Lambda]z)\)\ \[Rho]\_oz)\))\) + 
+                M\^2\ \((R0\ \[Kappa]\^2\ P\_p\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz - 
+                      p\_ozp\ \((R0\ \[Kappa]\ \[CapitalPhi]\ Cos[\[Phi]]\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                  u\_\[Lambda]z)\)\ \[Rho]\_ozp + \[Rho]\_oz\ \
+\((2\ \[CapitalLambda]\ Cos[\[Phi]]\^3 + 
+                                  c\ R0\ \[Kappa]\ Cos[\[Phi]]\ S\_r\ \((\
+\[Kappa]\ \[CapitalLambda] + \[CapitalPhi]\ Sin[\[Phi]] - 
+                                        Cos[\[Phi]]\ \[CapitalPhi]\_p)\) + 
+                                  R0\ u\_\[Lambda]z\ \((2\ \[CapitalLambda] - \
+\[Kappa]\^2\ \[CapitalLambda] + 2\ \[CapitalLambda]\ Cos[
+                                        2\ \[Phi]] - \[Kappa]\ \[CapitalPhi]\ \
+Sin[\[Phi]] + \[Kappa]\ Cos[\[Phi]]\ \
+\[CapitalPhi]\_p)\))\))\))\))\))\)/\((M\^2\ R0\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\
+\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + 
+                M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Energy", "=", 
+      RowBox[{"Simplify", "[", 
+        RowBox[{
+          RowBox[{
+            StyleBox[\(-\[Kappa]\),
+              FontSize->14], 
+            RowBox[{
+              StyleBox["(",
+                FontSize->14], 
+              RowBox[{
+                StyleBox[\(u\_\[Lambda]z\),
+                  FontSize->14], 
+                StyleBox["-",
+                  FontSize->14], 
+                RowBox[{
+                  StyleBox["c",
+                    FontSize->14], 
+                  StyleBox["*",
+                    FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+            "*", "P"}], 
+          "-", \(K\_a*p\_oz*
+            Cos[\[Phi]]*\((\((\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0 + 
+                    2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + \(P\ \
+Cos[\[Phi]]\ K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \(\[CapitalLambda]\ Cos[\[Phi]]\ \
+K\_a\ p\_oz\)\/\(M\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \
+\[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ K\_a\ \
+p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \
+\[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \
+\[Rho]\_ozp\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \(Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \
+\[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                          u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \((2 - K\_a)\)\
+\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\))\))\)\), 
+          "+", \(Cos[\[Phi]]*p\_ozp*\[CapitalPhi]\), 
+          "+", \(\[Gamma]*
+            p\_oz*\((2*
+                  Cos[\[Phi]]*\((\((\(\[CapitalLambda]\ Cos[\[Phi]]\^2\)\/R0 \
++ 2\ \[CapitalLambda]\ Cos[\[Phi]]\ u\_\[Lambda]z + \(P\ Cos[\[Phi]]\ \
+K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \(\[CapitalLambda]\ Cos[\[Phi]]\ K\_a\ p\_oz\)\
+\/\(M\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\) + \(\
+\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\
+\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\) - \(\[CapitalPhi]\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \[Rho]\_ozp\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \(Cos[\[Phi]]\^2\ K\_a\ p\
+\_oz\ \[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \((2 - K\
+\_a)\)\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\ \[Rho]\_oz\))\))\) - \[Kappa]*\[CapitalLambda] - 
+                Sin[\[Phi]]*\[CapitalPhi] + 
+                Cos[\[Phi]]*\[CapitalPhi]\_p)\)\)}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+    \(\((Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \((4\ R0\ \[CapitalPhi]\ Cos[\[Phi]]\ p\
+\_ozp\ \[Rho]\_oz - 4\ P\ R0\ \[Kappa]\ u\_\[Lambda]z\ \[Rho]\_oz + 
+                4\ P\ R0\ \[Gamma]\ \[Kappa]\ u\_\[Lambda]z\ \[Rho]\_oz - 
+                2\ M\^2\ \[Kappa]\ \[CapitalLambda]\ Cos[\[Phi]]\ \
+u\_\[Lambda]z\ \[Rho]\_oz\%2 - 
+                4\ M\^2\ R0\ \[Kappa]\ \[CapitalLambda]\ u\_\[Lambda]z\%2\ \
+\[Rho]\_oz\%2 + 
+                2\ c\ \[Kappa]\ Cos[\[Phi]]\ S\_r\ \[Rho]\_oz\ \((\(-2\)\ P\ \
+R0\ \((\(-1\) + \[Gamma])\) + 
+                      M\^2\ \[CapitalLambda]\ \((Cos[\[Phi]] + 
+                            2\ R0\ u\_\[Lambda]z)\)\ \[Rho]\_oz)\) - 
+                4\ R0\ \[Gamma]\ \[CapitalPhi]\ Cos[\[Phi]]\ p\_oz\ \
+\[Rho]\_ozp)\) + 
+          2\ R0\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz\ \((\(-\[CapitalPhi]\)\ Cos[\
+\[Phi]]\ p\_ozp\ \[Rho]\_oz + 
+                p\_oz\ \((\[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp + \((\(-1\) \
++ \[Gamma])\)\ \[Rho]\_oz\ \((\[Kappa]\ \[CapitalLambda] + \[CapitalPhi]\ \
+Sin[\[Phi]] - Cos[\[Phi]]\ \[CapitalPhi]\_p)\))\))\) + 
+          M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - 
+                u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\ \((2\ R0\ \[Kappa]\ \((\
+\[CapitalPhi]\ Cos[\[Phi]]\ p\_ozp + 
+                      P\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - 
+                            u\_\[Lambda]z)\))\)\ \((c\ Cos[\[Phi]]\ S\_r - 
+                      u\_\[Lambda]z)\) - \[Gamma]\ p\_oz\ \((4\ \
+\[CapitalLambda]\ Cos[\[Phi]]\^3 + 
+                      2\ c\ R0\ \[Kappa]\ Cos[\[Phi]]\ S\_r\ \((\[Kappa]\ \
+\[CapitalLambda] + \[CapitalPhi]\ Sin[\[Phi]] - 
+                            Cos[\[Phi]]\ \[CapitalPhi]\_p)\) + 
+                      2\ R0\ u\_\[Lambda]z\ \((2\ \[CapitalLambda] - \[Kappa]\
+\^2\ \[CapitalLambda] + 2\ \[CapitalLambda]\ Cos[
+                                2\ \[Phi]] - \[Kappa]\ \[CapitalPhi]\ Sin[\
+\[Phi]] + \[Kappa]\ Cos[\[Phi]]\ \[CapitalPhi]\_p)\))\))\))\)/\((2\ R0\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - 
+              Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + 
+              M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\))\)\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Solve[Lmom \[Equal] 0, \[CapitalLambda]]\)], "Input"],
+
+Cell[BoxData[
+    \({{\[CapitalLambda] \[Rule] \((\(\[CapitalPhi]\ Cos[\[Phi]]\^3\ Sin[\
+\[Phi]]\ K\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\
+\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(P\ \[Kappa]\^3\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\
+\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(P\ \
+\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+\((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\
+\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\
+\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\
+\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\
+\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\)}}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    RowBox[{"Pmom", "=", 
+      RowBox[{"Simplify", "[", 
+        RowBox[{
+          RowBox[{
+            StyleBox["\[Kappa]",
+              FontSize->14], 
+            RowBox[{
+              StyleBox["(",
+                FontSize->14], 
+              RowBox[{
+                StyleBox[\(u\_\[Lambda]z\),
+                  FontSize->14], 
+                StyleBox["-",
+                  FontSize->14], 
+                RowBox[{
+                  StyleBox["c",
+                    FontSize->14], 
+                  StyleBox["*",
+                    FontSize->14], \(S\_r\), "*", \(Cos[\[Phi]]\)}]}], ")"}], 
+            "*", "\[CapitalPhi]"}], 
+          "+", \(2*u\_\[Lambda]z*
+            Sin[\[Phi]]*\((\((\(\[CapitalPhi]\ Cos[\[Phi]]\^3\ Sin[\[Phi]]\ K\
+\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(P\ \[Kappa]\^3\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\
+\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(P\ \
+\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+\((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\
+\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\
+\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\
+\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\
+\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\))\)\), 
+          "+", \(Sin[\[Phi]]*
+            Cos[\[Phi]]*\((\((\(\[CapitalPhi]\ Cos[\[Phi]]\^3\ Sin[\[Phi]]\ K\
+\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(P\ \[Kappa]\^3\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\
+\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(P\ \
+\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+\((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\
+\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\
+\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\
+\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\
+\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\))\)/R0\), 
+          "+", \(Cos[\[Phi]]/
+              M^2*\((P\_p/\[Rho]\_oz - \((\(-\((\[Kappa]\ \((\((\(\
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \
+\[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\
+\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ \
+Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(P\ \[Kappa]\^3\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(P\ \[Kappa]\ Cos[\
+\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Cos[\[Phi]] \
++ R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[CapitalPhi]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz\)\/\(M\^2\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\
+\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\
+\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Sin[\
+\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\
+\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\
+\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\))\)\ \[Rho]\_oz + \[CapitalPhi]\ \
+Sin[\[Phi]]\ \[Rho]\_oz - \((\((\(\(1\/R0\)\((\((\((\(\[CapitalPhi]\ Cos[\
+\[Phi]]\^3\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \[Kappa]\^3\ \
+Cos[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\
+\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\
+\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
+- \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\
+\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
+- \(P\ \[Kappa]\^3\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\
+\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\
+\[Lambda]zp)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\
+\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\
+\ p\_oz\)\/\(M\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\
+\_a\%2\ p\_oz\)\/\(M\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\ \[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \
+\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\
+\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz \
+- Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ \
+S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\
+\ Sin[\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \
+\[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\))\)\ Cos[\[Phi]]\^2)\)\) + 
+                                      2\ \((\((\(\[CapitalPhi]\ \
+Cos[\[Phi]]\^3\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \[Kappa]\^3\ \
+Cos[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\
+\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\
+\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
+- \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\
+\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
+- \(P\ \[Kappa]\^3\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\
+\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\
+\[Lambda]zp)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\
+\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\
+\ p\_oz\)\/\(M\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\
+\_a\%2\ p\_oz\)\/\(M\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\ \[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \
+\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\
+\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz \
+- Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ \
+S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\
+\ Sin[\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \
+\[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\))\)\ Cos[\[Phi]]\ u\_\[Lambda]z + \
+\(P\ Cos[\[Phi]]\ K\_a\)\/\(M\^2\ \[Rho]\_oz\) + \((\((\((\(\[CapitalPhi]\ \
+Cos[\[Phi]]\^3\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ \
+p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ P\ \[Kappa]\^3\ \
+Cos[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\
+\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\ p\_oz\ u\_\[Lambda]z\)\/\(2\
+\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
+- \(\[CapitalPhi]\ Cos[\[Phi]]\^2\ Sin[\[Phi]]\ K\_a\%2\ p\_oz\ u\_\[Lambda]z\
+\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
+- \(P\ \[Kappa]\^3\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\
+\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\)\/\(R0\ \((2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(2\ \
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]zp\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\
+\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\%2\ p\_oz\ \((Sin[\[Phi]] - R0\ u\_\
+\[Lambda]zp)\)\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\
+\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(2\ P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\_a\
+\ p\_oz\)\/\(M\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(P\ \[Kappa]\ Cos[\[Phi]]\^2\ K\
+\_a\%2\ p\_oz\)\/\(M\^2\ \[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ \
+Cos[\[Phi]]\ Sin[\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\ \[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\ M\^2\ \[Kappa]\^2\ \
+\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ S\_r\ \((c\ Cos[\[Phi]]\ S\_r - u\_\
+\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz \
+- Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ \
+S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\
+\ Sin[\[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \
+\[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\
+\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ u\_\[Lambda]zp\ \[Rho]\_oz\)\
+\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) \
++ \(c\ M\^2\ \[Kappa]\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz\)\/\(R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(\[CapitalPhi]\ Cos[\[Phi]]\^3\ K\_a\ \
+p\_oz\ \((Cos[\[Phi]] + R0\ u\_\[Lambda]z)\)\ \[Rho]\_ozp\)\/\(R0\ \[Rho]\_oz\
+\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^4\ K\_a\ p\_oz\ \[CapitalPhi]\_p\)\/\(R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) + \(Cos[\[Phi]]\^3\ K\_a\ p\_oz\ u\_\[Lambda]z\ \[CapitalPhi]\
+\_p\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + \
+M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\
+\_oz\))\)/\((\(\[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\)\/\(R0\ \((2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \
+\(2\ c\ \[Kappa]\ Cos[\[Phi]]\^3\ K\_a\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\
+\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ \
+Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(c\ \[Kappa]\ Cos[\
+\[Phi]]\^3\ K\_a\%2\ p\_oz\ S\_r\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\
+\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\
+\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(\[Kappa]\ Cos[\[Phi]]\^2\ K\_a\%2\ \
+p\_oz\ u\_\[Lambda]z\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ \
+K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \[Kappa]\ Cos[\[Phi]]\^4\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(R0\^2\ \((2\ Cos[\[Phi]]\^2\
+\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\
+\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\) + \(c\^2\ M\^2\ \
+\[Kappa]\^3\ Cos[\[Phi]]\^2\ S\_r\%2\ \((c\ Cos[\[Phi]]\ S\_r - \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+R0\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\
+\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(3\ M\^2\ \[Kappa]\ Cos[\[Phi]]\ Cos[2\ \[Phi]]\ \((c\ \
+Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ R0\ \
+\((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \
+\[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \
+\[Rho]\_oz)\)\) - \(2\ c\ M\^2\ \[Kappa]\^3\ Cos[\[Phi]]\ S\_r\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\ \[Rho]\_oz\)\/\(2\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\
+\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \
+\(M\^2\ \[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \
+u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) + \(M\^2\ \[Kappa]\^3\ \((c\ Cos[\
+\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\
+\[Phi]]\^2\ K\_a\ p\_oz - Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \
+\((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\) - \(M\^2\ \
+\[Kappa]\ Cos[2\ \[Phi]]\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz\)\/\(2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - \
+Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\
+\_r + u\_\[Lambda]z)\)\^2\ \[Rho]\_oz\))\))\)\ Cos[\[Phi]]\ K\_a\ \
+p\_oz)\)/\((M\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                        u\_\[Lambda]z)\)\ \[Rho]\_oz)\) + \(\
+\[CapitalPhi]\ Cos[\[Phi]]\ Sin[\[Phi]]\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\
+\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\) - \(\[CapitalPhi]\ \
+Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \[Rho]\_ozp\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\
+\[Phi]]\ S\_r + u\_\[Lambda]z)\)\ \[Rho]\_oz\%2\) - \(Cos[\[Phi]]\^2\ K\_a\ p\
+\_oz\ \[CapitalPhi]\_p\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\ \[Rho]\_oz\))\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                                        u\_\[Lambda]z)\) + \(Cos[\[Phi]]\^2\ \
+\((2 - K\_a)\)\ K\_a\ p\_oz\)\/\(M\^2\ \[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r \
++ u\_\[Lambda]z)\)\ \[Rho]\_oz\))\))\)\ Cos[\[Phi]]\ \((2 - 
+                                  K\_a)\)\ \[Rho]\_oz - \[CapitalPhi]\ Cos[\
+\[Phi]]\ \[Rho]\_ozp - 
+                            Cos[\[Phi]]\ \[Rho]\_oz\ \
+\[CapitalPhi]\_p)\)\)/\((\[Kappa]\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + 
+                              u\_\[Lambda]z)\))\))\)*
+                  p\_ozp/\[Rho]\_oz^2)\)\)}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+    \(\((\((4\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - 
+              2\ Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + 
+              2\ M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + u\_\
+\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\ \((\(-32\)\ M\^2\ \[Kappa]\ \((c\ \
+Cos[\[Phi]]\ S\_r - 
+                    u\_\[Lambda]z)\)\ \[Rho]\_oz\ \((Cos[\[Phi]]\ P\_p\ \
+\((Cos[\[Phi]]\^4 - c\^2\ R0\^2\ \[Kappa]\^2\ Cos[\[Phi]]\^2\ S\_r\%2 + 
+                          3\ R0\ Cos[\[Phi]]\^3\ u\_\[Lambda]z + 
+                          2\ c\ R0\^2\ \[Kappa]\^2\ Cos[\[Phi]]\ S\_r\ u\_\
+\[Lambda]z + R0\^2\ \((1 - \[Kappa]\^2 + 
+                                Cos[2\ \[Phi]])\)\ u\_\[Lambda]z\%2)\) + \
+\[Kappa]\ \((c\ Cos[\[Phi]]\ S\_r - 
+                          u\_\[Lambda]z)\)\ \((M\^2\ R0\^2\ \((\(-2\) + \
+\[Kappa]\^2)\)\ \[CapitalPhi]\ u\_\[Lambda]z\%2\ \[Rho]\_oz + 
+                          Cos[\[Phi]]\ \((\(-P\)\ R0\ \[Kappa]\ Sin[\[Phi]] + 
+                                M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((\(-1\) + 
+                                      c\^2\ R0\^2\ \[Kappa]\^2\ S\_r\%2 + 
+                                      R0\ Sin[\[Phi]]\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz)\) + R0\ u\_\[Lambda]z\ \((\(-2\)\ P\ R0\ \[Kappa]\ Sin[\[Phi]] + 
+                                M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((\(-3\) - 
+                                      2\ c\ R0\ \[Kappa]\^2\ S\_r + 
+                                      2\ R0\ Sin[\[Phi]]\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz)\))\))\) + 
+              4\ Cos[\[Phi]]\^2\ K\_a\%2\ \((8\ P\ R0\^2\ \[Kappa]\ \
+Cos[\[Phi]]\ p\_ozp\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\) + 
+                    p\_oz\ \((\(-8\)\ R0\^2\ \[Kappa]\ Cos[\[Phi]]\ P\_p\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\) + 
+                          8\ M\^2\ R0\^2\ \[CapitalPhi]\ \((\(-1\) + \[Kappa]\
+\^2 + Cos[2\ \[Phi]])\)\ u\_\[Lambda]z\%2\ \[Rho]\_oz + 
+                          2\ Cos[\[Phi]]\ \((\(-4\)\ P\ R0\ \[Kappa]\ Sin[\
+\[Phi]] + 2\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((\(-1\) + Cos[2\ \[Phi]] + 
+                                      2\ c\^2\ R0\^2\ \[Kappa]\^2\ S\_r\%2 + 
+                                      2\ R0\ Sin[\[Phi]]\ u\_\[Lambda]zp)\)\ \
+\[Rho]\_oz)\) + 
+                          2\ R0\ u\_\[Lambda]z\ \((\(-8\)\ P\ R0\ \[Kappa]\ \
+Sin[\[Phi]] - 
+                                4\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((2\ c\ \
+R0\ \[Kappa]\^2\ S\_r + Sin[\[Phi]]\ \((3\ Sin[\[Phi]] - 
+                                        2\ R0\ u\_\[Lambda]zp)\))\)\ \
+\[Rho]\_oz)\))\))\) - 
+              2\ Cos[\[Phi]]\ p\_ozp\ \((\(-16\)\ c\^2\ M\^2\ R0\^2\ \[Kappa]\
+\^2\ Cos[\[Phi]]\^2\ S\_r\%2\ \((\[CapitalPhi]\ Cos[\[Phi]]\ \[Rho]\_ozp + \
+\[Rho]\_oz\ \((\(-\[CapitalPhi]\)\ Sin[\[Phi]] + 
+                                Cos[\[Phi]]\ \[CapitalPhi]\_p)\))\) + 
+                    8\ Cos[\[Phi]]\^3\ \((4\ P\ R0\ \[Kappa] + 
+                          2\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ \[Rho]\_ozp \
++ 2\ M\^2\ Cos[\[Phi]]\ \[Rho]\_oz\ \((\[CapitalPhi]\ Sin[\[Phi]] - 
+                                2\ R0\ \[CapitalPhi]\ u\_\[Lambda]zp + 
+                                Cos[\[Phi]]\ \[CapitalPhi]\_p)\))\) - 
+                    2\ R0\ u\_\[Lambda]z\ \((8\ P\ R0\ \[Kappa]\ \((\(-2\) + \
+\[Kappa]\^2 - 2\ Cos[2\ \[Phi]])\) - 
+                          24\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^4\ \
+\[Rho]\_ozp - 2\ M\^2\ Cos[\[Phi]]\ \[Rho]\_oz\ \((2\ \[CapitalPhi]\ \((3 - 
+                                      2\ \[Kappa]\^2 + 
+                                      3\ Cos[2\ \[Phi]])\)\ Sin[\[Phi]] + 
+                                4\ R0\ \[CapitalPhi]\ \((\(-2\) + \[Kappa]\^2 \
+- 2\ Cos[2\ \[Phi]])\)\ u\_\[Lambda]zp + 
+                                12\ Cos[\[Phi]]\^3\ \[CapitalPhi]\_p)\))\) + 
+                    16\ M\^2\ R0\^2\ Cos[\[Phi]]\ u\_\[Lambda]z\%2\ \((\
+\[CapitalPhi]\ \((1 - \[Kappa]\^2 + 
+                                Cos[2\ \[Phi]])\)\ \[Rho]\_ozp + \[Rho]\_oz\ \
+\((\[CapitalPhi]\ Sin[2\ \[Phi]] + \((1 - \[Kappa]\^2 + 
+                                      Cos[2\ \[Phi]])\)\ \[CapitalPhi]\_p)\))\
+\) + 8\ c\ R0\ \[Kappa]\^2\ Cos[\[Phi]]\ S\_r\ \((2\ R0\ \((P\ \[Kappa] + 
+                                2\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ u\_\
+\[Lambda]z\ \[Rho]\_ozp)\) + 
+                          M\^2\ \[Rho]\_oz\ \((2\ \[CapitalPhi]\ Cos[\[Phi]]\ \
+\((Sin[\[Phi]] - R0\ u\_\[Lambda]zp)\) - 
+                                2\ R0\ u\_\[Lambda]z\ \((\[CapitalPhi]\ Sin[\
+\[Phi]] - 2\ Cos[\[Phi]]\ \[CapitalPhi]\_p)\))\))\))\) + 
+              4\ Cos[\[Phi]]\^2\ K\_a\ \((4\ M\^2\ P\ \[Kappa]\ Sin[\[Phi]]\ \
+\((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\)\ \((1 + Cos[2\ \[Phi]] + 
+                          6\ R0\ Cos[\[Phi]]\ u\_\[Lambda]z + 
+                          4\ R0\^2\ u\_\[Lambda]z\%2)\)\ \[Rho]\_oz + 
+                    2\ Cos[\[Phi]]\ p\_ozp\ \((\(-8\)\ c\ P\ R0\^2\ \[Kappa]\ \
+Cos[\[Phi]]\ S\_r + 
+                          8\ M\^2\ R0\^2\ \[CapitalPhi]\ Sin[\[Phi]]\ u\_\
+\[Lambda]z\%2\ \[Rho]\_oz + 
+                          4\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ \((Sin[\
+\[Phi]] - R0\ u\_\[Lambda]zp)\)\ \[Rho]\_oz + 
+                          2\ R0\ u\_\[Lambda]z\ \((6\ P\ R0\ \[Kappa] + 
+                                2\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\ \((3\ \
+Sin[\[Phi]] - 2\ R0\ u\_\[Lambda]zp)\)\ \[Rho]\_oz)\))\) + 
+                    4\ p\_oz\ \((2\ R0\ \[Kappa]\ Cos[\[Phi]]\ P\_p\ \((Cos[\
+\[Phi]] + 2\ c\ R0\ Cos[\[Phi]]\ S\_r - R0\ u\_\[Lambda]z)\) - 
+                          2\ M\^2\ R0\^2\ u\_\[Lambda]z\%2\ \((\(-\
+\[CapitalPhi]\)\ Sin[
+                                    2\ \[Phi]]\ \[Rho]\_ozp + \[Rho]\_oz\ \((\
+\[CapitalPhi]\ \((\(-1\) + \[Kappa]\^2 + Cos[2\ \[Phi]])\) - 
+                                      Sin[2\ \[Phi]]\ \[CapitalPhi]\_p)\))\) \
++ R0\ u\_\[Lambda]z\ \((2\ Sin[\[Phi]]\ \((4\ P\ R0\ \[Kappa] + 
+                                      3\ M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ \
+\[Rho]\_ozp)\) + M\^2\ Cos[\[Phi]]\ \[Rho]\_oz\ \((3\ \[CapitalPhi] + 
+                                      2\ \[Kappa]\^2\ \[CapitalPhi] - 
+                                      3\ \[CapitalPhi]\ Cos[2\ \[Phi]] + 
+                                      6\ c\ R0\ \[Kappa]\^2\ \[CapitalPhi]\ S\
+\_r - 8\ R0\ \[CapitalPhi]\ Sin[\[Phi]]\ u\_\[Lambda]zp + 
+                                      3\ Sin[
+                                        2\ \[Phi]]\ \[CapitalPhi]\_p)\))\) + 
+                          2\ Cos[\[Phi]]\ \((Sin[\[Phi]]\ \((2\ P\ R0\ \
+\[Kappa] + M\^2\ \[CapitalPhi]\ Cos[\[Phi]]\^2\ \[Rho]\_ozp)\) + 
+                                M\^2\ Cos[\[Phi]]\ \[Rho]\_oz\ \((\(-c\)\ R0\ \
+\[Kappa]\^2\ \[CapitalPhi]\ S\_r - 
+                                      2\ c\^2\ R0\^2\ \[Kappa]\^2\ \
+\[CapitalPhi]\ S\_r\%2 + Sin[\[Phi]]\ \((\[CapitalPhi]\ Sin[\[Phi]] - 
+                                        2\ R0\ \[CapitalPhi]\ u\_\[Lambda]zp \
++ Cos[\[Phi]]\ \[CapitalPhi]\_p)\))\))\))\))\))\))\)/\((32\ M\^2\ \[Kappa]\ \
+\[Rho]\_oz\ \((2\ Cos[\[Phi]]\^2\ K\_a\ p\_oz - 
+              Cos[\[Phi]]\^2\ K\_a\%2\ p\_oz + 
+              M\^2\ \[Kappa]\^2\ \((\(-c\)\ Cos[\[Phi]]\ S\_r + \
+u\_\[Lambda]z)\)\^2\ \[Rho]\_oz)\)\ \((\(-2\)\ R0\^2\ Cos[\[Phi]]\^2\ K\_a\%2\
+\ p\_oz\ \((c\ Cos[\[Phi]]\ S\_r - u\_\[Lambda]z)\) + 
+              2\ R0\ Cos[\[Phi]]\^2\ K\_a\ p\_oz\ \((Cos[\[Phi]] + 
+                    2\ c\ R0\ Cos[\[Phi]]\ S\_r - R0\ u\_\[Lambda]z)\) + 
+              2\ M\^2\ \((c\ Cos[\[Phi]]\ S\_r - 
+                    u\_\[Lambda]z)\)\ \((\(-Cos[\[Phi]]\^4\) + 
+                    c\^2\ R0\^2\ \[Kappa]\^2\ Cos[\[Phi]]\^2\ S\_r\%2 - 
+                    3\ R0\ Cos[\[Phi]]\^3\ u\_\[Lambda]z - 
+                    2\ c\ R0\^2\ \[Kappa]\^2\ Cos[\[Phi]]\ S\_r\ \
+u\_\[Lambda]z + R0\^2\ \((\(-1\) + \[Kappa]\^2 - 
+                          Cos[2\ \[Phi]])\)\ u\_\[Lambda]z\%2)\)\ \[Rho]\_oz)\
+\))\)\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"4.1 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 693}},
+WindowSize->{756, 671},
+WindowMargins->{{7, Automatic}, {Automatic, 0}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1727, 52, 871, 23, 50, "Input"],
+Cell[2601, 77, 354, 6, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2992, 88, 804, 23, 50, "Input"],
+Cell[3799, 113, 306, 5, 55, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[4142, 123, 914, 25, 50, "Input"],
+Cell[5059, 150, 353, 5, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[5449, 160, 823, 23, 50, "Input"],
+Cell[6275, 185, 321, 5, 56, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[6633, 195, 866, 24, 50, "Input"],
+Cell[7502, 221, 339, 5, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[7878, 231, 58, 1, 30, "Input"],
+Cell[7939, 234, 406, 7, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8382, 246, 58, 1, 30, "Input"],
+Cell[8443, 249, 292, 4, 70, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[8772, 258, 73, 1, 30, "Input"],
+Cell[8848, 261, 378, 5, 55, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[9263, 271, 1239, 31, 90, "Input"],
+Cell[10505, 304, 606, 9, 95, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[11148, 318, 914, 25, 50, "Input"],
+Cell[12065, 345, 353, 5, 44, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[12455, 355, 1223, 30, 110, "Input"],
+Cell[13681, 387, 603, 9, 91, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[14321, 401, 866, 24, 50, "Input"],
+Cell[15190, 427, 339, 5, 30, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[15566, 437, 58, 1, 30, "Input"],
+Cell[15627, 440, 989, 14, 137, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[16653, 459, 2920, 53, 447, "Input"],
+Cell[19576, 514, 2713, 43, 231, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[22326, 562, 2304, 45, 314, "Input"],
+Cell[24633, 609, 1630, 26, 142, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26300, 640, 2887, 53, 403, "Input"],
+Cell[29190, 695, 2171, 36, 167, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[31398, 736, 73, 1, 30, "Input"],
+Cell[31474, 739, 8034, 106, 1307, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[39545, 850, 50149, 677, 8170, "Input"],
+Cell[89697, 1529, 7873, 122, 601, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
