@@ -1,0 +1,18 @@
+4
+10
+0.80
+9.525692899062489e-001
+4.8194079293364473e06
+
+
+// Contains the vital parameters from the
+// linearized model for use in initialising
+// the nonlinear bootstrapping method
+
+// in order we have
+
+kappa (int)
+Nlin (int)
+w (double...as a percentage of wref)
+h0 (double)
+Vzon (double)
