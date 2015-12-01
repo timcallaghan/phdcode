@@ -1,0 +1,9 @@
+Inf
+NaN
+NaN
+-Inf
+NaN
+NaN
+NaN
+NaN
+NaN
