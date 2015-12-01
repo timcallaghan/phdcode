@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c748d880-3563-4af3-9eb9-56b4e08a91fd}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4b0fa59d-6724-4bce-b818-b16cdccde8d4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b65473eb-a90c-4119-ae66-3f2bce9342e4}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="glpng">
+      <UniqueIdentifier>{801eae79-bcdb-4ddc-b177-8beb34690068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glpng\png">
+      <UniqueIdentifier>{252e2aac-4b50-4967-8adc-9b7c6e25d9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glpng\zlib">
+      <UniqueIdentifier>{cad4988f-66c8-4138-acea-0d427030aa8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArcBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson48.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHeGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\glpng.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\png.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngerror.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngget.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngmem.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngpread.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngread.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngrio.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngrtran.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngrutil.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngset.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\png\pngtrans.c">
+      <Filter>glpng\png</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\adler32.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\compress.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\crc32.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\deflate.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\infback.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\inffast.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\inflate.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\inftrees.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\trees.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\uncompr.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="glpng\zlib\zutil.c">
+      <Filter>glpng\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script1.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArcBall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHeGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\png.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\pngconf.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\pngdebug.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\pnginfo.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\pnglibconf.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\pngpriv.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\png\pngstruct.h">
+      <Filter>glpng\png</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\crc32.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\deflate.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\inffast.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\inffixed.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\inflate.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\inftrees.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\trees.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\zconf.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\zlib.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="glpng\zlib\zutil.h">
+      <Filter>glpng\zlib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
