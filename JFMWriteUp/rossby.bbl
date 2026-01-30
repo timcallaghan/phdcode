@@ -1,0 +1,167 @@
+\begin{thebibliography}{38}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[Abromowitz \& Stegun(1972)]{Abramowitz:HMF}
+{\sc Abromowitz, M. \& Stegun, I.~A.} 1972 {\em Handbook of Mathematical
+  Functions with Formulas, Graphs, and Mathematical Tables\/}. Dover.
+
+\bibitem[Ames(1977)]{Ames:NMP}
+{\sc Ames, W.~F.} 1977 {\em Numerical Methods for partial differential
+  equations\/}, 2nd edn. Academic Press.
+
+\bibitem[Austin(1980)]{Austin:BML}
+{\sc Austin, J.~F.} 1980 The blocking of middle latitude westerly waves by
+  planetary waves. {\em Q. J. R. Meteorol. Soc.\/} {\bf 106}, 327--350.
+
+\bibitem[Baines(1976)]{Baines:SPW}
+{\sc Baines, P.~G.} 1976 The stability of planetary waves on a sphere. {\em J.
+  Fluid Mech.\/} {\bf 73}~(part 2), 193--213.
+
+\bibitem[Boyd(2000)]{Boyd:CFSM}
+{\sc Boyd, J.~P.} 2000 {\em Chebyshev and Fourier Spectral Methods\/}, 2nd edn.
+  Dover.
+
+\bibitem[Chen \& Saffman(1980a)]{Chen:NEE}
+{\sc Chen, B. \& Saffman, P.} 1980a Numerical evidence for the existence of new
+  types of gravity waves of permanent form on deep water. {\em Stud. Appl.
+  Maths\/} {\bf 62}, 1--21.
+
+\bibitem[Chen \& Saffman(1980b)]{Chen:SGC}
+{\sc Chen, B. \& Saffman, P.} 1980b Steady gravity-capillary waves on deep
+  water ii. {Numerical results for finite amplitude}. {\em Studies in Appl.
+  Math.\/} {\bf 62}, 95--111.
+
+\bibitem[Cokelet(1977)]{Cokelet:SGW}
+{\sc Cokelet, E.~D.} 1977 Steep gravity waves in water of arbitrary uniform
+  depth. {\em Philos. Trans. R. Soc. London Ser. {\em A}\/} {\bf 286},
+  183--230.
+
+\bibitem[Dutton(1976)]{Dutton:CW}
+{\sc Dutton, J.~A.} 1976 {\em The Ceaseless Wind: An Introduction to the Theory
+  of Atmospheric Motion\/}. McGraw-Hill.
+
+\bibitem[Forbes(1986)]{Forbes:SWL1}
+{\sc Forbes, L.~K.} 1986 Surface waves of large amplitude beneath an elastic
+  sheet. {Part 1. High-order series solution}. {\em J. Fluid Mech.\/} {\bf
+  169}, 409--428.
+
+\bibitem[Forbes(1988)]{Forbes:SWL2}
+{\sc Forbes, L.~K.} 1988 Surface waves of large amplitude beneath an elastic
+  sheet. {Part 2. Galerkin solution}. {\em J. Fluid Mech.\/} {\bf 188},
+  491--508.
+
+\bibitem[Gander \& Gautschi(2000)]{Gander:AQR}
+{\sc Gander, W. \& Gautschi, W.} 2000 Adaptive quadrature - revisited. {\em
+  BIT\/} {\bf 40}~(1), 84--101.
+
+\bibitem[Haltiner \& Williams(1980)]{Haltiner:NPD}
+{\sc Haltiner, G.~J. \& Williams, R.~T.} 1980 {\em Numerical Prediction and
+  Dynamic Meteorology\/}, 2nd edn. Wiley.
+
+\bibitem[Haurwitz(1940)]{Haurwitz:MAD}
+{\sc Haurwitz, B.} 1940 The motion of atmosphereic disturbances on the
+  spherical earth. {\em J. Marine Res.\/} {\bf 3}, 254--267.
+
+\bibitem[Hogan(1979)]{Hogan:SES1}
+{\sc Hogan, S.~J.} 1979 Some effects of surface tension on steep water waves.
+  {\em J. Fluid Mech.\/} {\bf 91}, 167--180.
+
+\bibitem[Hogan(1980)]{Hogan:SES2}
+{\sc Hogan, S.~J.} 1980 Some effects of surface tension on steep water waves.
+  {Part 2}. {\em J. Fluid Mech.\/} {\bf 96}, 417--445.
+
+\bibitem[Hogan(1981)]{Hogan:SES3}
+{\sc Hogan, S.~J.} 1981 Some effects of surface tension on steep water waves.
+  {Part 3}. {\em J. Fluid Mech.\/} {\bf 110}, 381--410.
+
+\bibitem[Holton(1972)]{Holton:IDM}
+{\sc Holton, J.~R.} 1972 {\em An Introduction to Dynamic Meteorology\/}.
+  Academic Press.
+
+\bibitem[Hoskins(1973)]{Hoskins:SRH}
+{\sc Hoskins, B.~J.} 1973 Stability of the {Rossby-Haurwitz} wave. {\em Quart.
+  J. R. Met. Soc.\/} {\bf 99}, 723--745.
+
+\bibitem[Klein(2000)]{Klein:AAA}
+{\sc Klein, R.} 2000 Asymptotic analyses for atmospheric flows and the
+  construction of asymptotically adaptive numerical methods. {\em ZAMM Math.
+  Mech.\/} {\bf 80}, 765--777.
+
+\bibitem[Kreyszig(1988)]{Kreyszig:AEM}
+{\sc Kreyszig, E.} 1988 {\em Advanced Engineering Mathematics\/}, sixth edn.
+  Wiley.
+
+\bibitem[Lilly(1973)]{Lilly:NBI}
+{\sc Lilly, D.~K.} 1973 A note on barotropic instability and predictability.
+  {\em J. Atmos. Sci.\/} {\bf 30}~(1), 145--146.
+
+\bibitem[Lindzen \& Schoeberl(1982)]{Lindzen:NLR}
+{\sc Lindzen, R.~S. \& Schoeberl, M.~R.} 1982 A note on the limits of rossby
+  wave amplitudes. {\em J. Atmos. Sci.\/} {\bf 39}~(5), 1171--1174.
+
+\bibitem[Longuet-Higgins(1964)]{Longuet:PWRS1}
+{\sc Longuet-Higgins, M.~S.} 1964 Planetary waves on a rotating sphere. {\em
+  Proc. R. Soc. Lond. {\em A}\/} {\bf 279}, 446--473.
+
+\bibitem[Longuet-Higgins(1965)]{Longuet:PWRS2}
+{\sc Longuet-Higgins, M.~S.} 1965 Planetary waves on a rotating sphere. {II}.
+  {\em Proc. R. Soc. Lond. {\em A}\/} {\bf 284}, 40--68.
+
+\bibitem[Longuet-Higgins \& Gill(1967)]{Longuet:RIP}
+{\sc Longuet-Higgins, M.~S. \& Gill, A.~E.} 1967 Resonant interactions between
+  planetary waves. {\em Proc. R. Soc. Lond. {\em A}\/} {\bf 299}, 120--140.
+
+\bibitem[Lorenz(1972)]{Lorenz:BIR}
+{\sc Lorenz, E.} 1972 Barotropic instability of {Rossby} wave motion. {\em J.
+  Atmos. Sci.\/} {\bf 29}~(2), 258--265.
+
+\bibitem[Pedlosky(1982)]{Pedlosky:GFD}
+{\sc Pedlosky, J.} 1982 {\em Geophysical Fluid Dynamics\/}. Springer-Verlag.
+
+\bibitem[Phillips(1959)]{Phillips:NIP}
+{\sc Phillips, N.~A.} 1959 Numerical integration of the primitive equations on
+  the hemisphere. {\em Mon. Weath. Rev.\/} {\bf 87}, 333--345.
+
+\bibitem[Rossby \& collaborators(1939)]{Rossby:RBV}
+{\sc Rossby, C.~G. \& collaborators} 1939 Relation between variations in the
+  intensity of the zonal circulation of the atmosphere and the displacements of
+  the semi-permanent centers of action. {\em J. Marine Res.\/} {\bf 2}, 38--55.
+
+\bibitem[Schwartz \& Fenton(1982)]{Schwartz:SNW}
+{\sc Schwartz, L. \& Fenton, J.} 1982 Strongly nonlinear waves. {\em Ann. Rev.
+  Fluid Mech.\/} {\bf 14}, 39--60.
+
+\bibitem[Schwartz(1974)]{Schwartz:CEA}
+{\sc Schwartz, L.~W.} 1974 Computer extension and analytic continuation of
+  stokes' expansion for gravity waves. {\em J. Fluid. Mech.\/} {\bf 62},
+  553--578.
+
+\bibitem[Schwartz \& Vanden-Broeck(1979)]{Schwartz:NSE}
+{\sc Schwartz, L.~W. \& Vanden-Broeck, J.-M.} 1979 Numerical solution of the
+  exact equations for capillary-gravity waves. {\em J. Fluid Mech.\/} {\bf 95},
+  119--139.
+
+\bibitem[Snyder(1987)]{Snyder:MP}
+{\sc Snyder, J.~P.} 1987 {\em Map projections--A Working Manual\/}. U.S.
+  Geological Survey professional paper ; 1395.
+
+\bibitem[Stokes(1847)]{Stokes:TOW}
+{\sc Stokes, G.~G.} 1847 On the theory of oscillatory waves. {\em Camb.
+  Trans.\/} {\bf viii}, 441--473.
+
+\bibitem[Thuburn \& Li(2000)]{Thuburn:NSR}
+{\sc Thuburn, J. \& Li, Y.} 2000 Numerical simulations of {Rossby-Haurwitz}
+  waves. {\em Tellus {\em A}\/} {\bf 52}, 181--189.
+
+\bibitem[Williamson {\em et~al.\/}(1992)Williamson, Drake, Hack, Jakob \&
+  Swarztrauber]{Williamson:STS}
+{\sc Williamson, D.~L., Drake, J.~B., Hack, J.~J., Jakob, R. \& Swarztrauber,
+  P.~N.} 1992 A standard test set for numerical approximations to the shallow
+  water equations in spherical geometry. {\em J. Comput. Phys.\/} {\bf 102},
+  211--224.
+
+\bibitem[Wilton(1915)]{Wilton:OR}
+{\sc Wilton, J.~R.} 1915 On ripples. {\em Philos. Mag.\/} {\bf 29}~(6),
+  688--700.
+
+\end{thebibliography}

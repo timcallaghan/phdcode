@@ -1,0 +1,26 @@
+This is e-TeX, Version 3.141592-2.1 (MiKTeX 2.4) (preloaded format=latex 2000.11.28)  22 SEP 2004 23:12
+entering extended mode
+**macros.tex
+(macros.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7m> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+\astrutbox=\box26
+\c@lemma=\count79
+\c@corollary=\count80
+)
+! Emergency stop.
+<*> macros.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 87 strings out of 95933
+ 480 string characters out of 1195656
+ 44513 words of memory out of 1048577
+ 3187 multiletter control sequences out of 35000
+ 3640 words of font info for 14 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 607
+ 9i,1n,11p,108b,26s stack positions out of 1500i,500n,5000p,200000b,32768s
+No pages of output.
