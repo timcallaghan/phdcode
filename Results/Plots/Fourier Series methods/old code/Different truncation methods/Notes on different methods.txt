@@ -1,0 +1,2 @@
+See my working paper "Different methods of series representation" for the 
+associated series method that each folder in this directory represents.
